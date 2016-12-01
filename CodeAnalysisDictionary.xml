@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary>
+	<Words>
+		<Recognized>
+			<Word>Authorised</Word>
+			<Word>Unsubmitted</Word>
+			<Word>Yort</Word>
+			<Word>Eftpos</Word>
+			<Word>Api</Word>
+			<Word>Uat</Word>
+		</Recognized>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>

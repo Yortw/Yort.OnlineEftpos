@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos", "Yort.OnlineEftpos.csproj", "{0CA0CB02-8BFB-485D-8CFC-80C25A529D29}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Yort.OnlineEftpos.SharedImplementation", "Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.SharedImplementation.shproj", "{EDADB31C-29F7-494F-BA99-2F3006E82076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos.Net40", "Yort.OnlineEftpos.Net40\Yort.OnlineEftpos.Net40.csproj", "{DBDB655D-4FDA-4F22-B39E-DA5A137F6766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos.Android", "Yort.OnlineEftpos.Android\Yort.OnlineEftpos.Android.csproj", "{FC34EAD8-DC77-4465-AA68-D244933512BF}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Yort.OnlineEftpos.SharedContracts", "Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.shproj", "{FB97EA90-6938-49CD-855B-9D695653FC54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos.iOS", "Yort.OnlineEftpos.iOS\Yort.OnlineEftpos.iOS.csproj", "{BBCC76AC-ED01-4457-9D19-9655122C0DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos.WinRT", "Yort.OnlineEftpos.WinRT\Yort.OnlineEftpos.WinRT.csproj", "{42324754-7F16-401E-BC63-92A0F69BC1A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos.Net40.Tests", "Yort.OnlineEftpos.Net40.Tests\Yort.OnlineEftpos.Net40.Tests.csproj", "{92B6C093-772A-412F-87EF-F542E49974E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.OnlineEftpos.SampleConsoleApp", "Yort.OnlineEftpos.SampleConsoleApp\Yort.OnlineEftpos.SampleConsoleApp.csproj", "{3094D67C-3D85-419E-B081-1AF1E1652312}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.Shared.projitems*{42324754-7f16-401e-bc63-92a0f69bc1a3}*SharedItemsImports = 4
+		Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems*{42324754-7f16-401e-bc63-92a0f69bc1a3}*SharedItemsImports = 4
+		Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.Shared.projitems*{bbcc76ac-ed01-4457-9d19-9655122c0dd7}*SharedItemsImports = 4
+		Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems*{bbcc76ac-ed01-4457-9d19-9655122c0dd7}*SharedItemsImports = 4
+		Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.Shared.projitems*{edadb31c-29f7-494f-ba99-2f3006e82076}*SharedItemsImports = 13
+		Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.Shared.projitems*{fc34ead8-dc77-4465-aa68-d244933512bf}*SharedItemsImports = 4
+		Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems*{fc34ead8-dc77-4465-aa68-d244933512bf}*SharedItemsImports = 4
+		Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems*{0ca0cb02-8bfb-485d-8cfc-80c25a529d29}*SharedItemsImports = 4
+		Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems*{fb97ea90-6938-49cd-855b-9d695653fc54}*SharedItemsImports = 13
+		Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.Shared.projitems*{dbdb655d-4fda-4f22-b39e-da5a137f6766}*SharedItemsImports = 4
+		Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems*{dbdb655d-4fda-4f22-b39e-da5a137f6766}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CA0CB02-8BFB-485D-8CFC-80C25A529D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA0CB02-8BFB-485D-8CFC-80C25A529D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA0CB02-8BFB-485D-8CFC-80C25A529D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA0CB02-8BFB-485D-8CFC-80C25A529D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDB655D-4FDA-4F22-B39E-DA5A137F6766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDB655D-4FDA-4F22-B39E-DA5A137F6766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDB655D-4FDA-4F22-B39E-DA5A137F6766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDB655D-4FDA-4F22-B39E-DA5A137F6766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC34EAD8-DC77-4465-AA68-D244933512BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC34EAD8-DC77-4465-AA68-D244933512BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC34EAD8-DC77-4465-AA68-D244933512BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC34EAD8-DC77-4465-AA68-D244933512BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCC76AC-ED01-4457-9D19-9655122C0DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCC76AC-ED01-4457-9D19-9655122C0DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCC76AC-ED01-4457-9D19-9655122C0DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCC76AC-ED01-4457-9D19-9655122C0DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42324754-7F16-401E-BC63-92A0F69BC1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42324754-7F16-401E-BC63-92A0F69BC1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42324754-7F16-401E-BC63-92A0F69BC1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42324754-7F16-401E-BC63-92A0F69BC1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92B6C093-772A-412F-87EF-F542E49974E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B6C093-772A-412F-87EF-F542E49974E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B6C093-772A-412F-87EF-F542E49974E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B6C093-772A-412F-87EF-F542E49974E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3094D67C-3D85-419E-B081-1AF1E1652312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3094D67C-3D85-419E-B081-1AF1E1652312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3094D67C-3D85-419E-B081-1AF1E1652312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3094D67C-3D85-419E-B081-1AF1E1652312}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

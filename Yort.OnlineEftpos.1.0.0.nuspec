@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Yort.OnlineEftpos</id>
+        <version>1.0.0</version>
+        <title>Paymark Online Eftpos</title>
+        <authors>Troy Willmot</authors>
+        <owners>Yortw</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Provides an OOP model for .Net users to make payment and refund requests via the Paymark Online Eftpos API.</description>
+        <summary>A lightweight .Net wrapper around the Paymark Online Eftpos API.</summary>
+        <copyright />
+        <language>en-NZ</language>
+        <tags>online eftpos paymark</tags>
+        <dependencies>
+            <group targetFramework="MonoTouch0.0">
+                <dependency id="Newtonsoft.Json" version="8.0.2" />
+            </group>
+            <group targetFramework="MonoAndroid0.0">
+                <dependency id="Newtonsoft.Json" version="8.0.2" />
+            </group>
+            <group targetFramework=".NETCore4.5">
+                <dependency id="Newtonsoft.Json" version="6.0.8" />
+            </group>
+            <group targetFramework=".NETPortable0.0-net4+wp8+win8">
+                <dependency id="Newtonsoft.Json" version="8.0.2" />
+                <dependency id="Microsoft.Net.Http" version="2.2.29" />
+                <dependency id="Microsoft.Bcl" version="1.1.10" />
+                <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+                <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+            </group>
+            <group targetFramework="WindowsPhoneAppx8.1">
+                <dependency id="Newtonsoft.Json" version="6.0.8" />
+            </group>
+            <group targetFramework=".NETFramework4.0">
+                <dependency id="Microsoft.Net.Http" version="2.2.29" />
+                <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+                <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+                <dependency id="Microsoft.Bcl" version="1.1.10" />
+                <dependency id="Newtonsoft.Json" version="8.0.2" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Yort.OnlineEftpos.Android\bin\Release\Yort.OnlineEftpos.dll" target="lib\MonoAndroid\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos.Android\bin\Release\Yort.OnlineEftpos.pdb" target="lib\MonoAndroid\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos.Android\bin\Release\Yort.OnlineEftpos.XML" target="lib\MonoAndroid\Yort.OnlineEftpos.XML" />
+        <file src="Yort.OnlineEftpos.iOS\bin\iPhone\Release\Yort.OnlineEftpos.dll" target="lib\MonoTouch\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos.iOS\bin\iPhone\Release\Yort.OnlineEftpos.pdb" target="lib\MonoTouch\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos.iOS\bin\iPhone\Release\Yort.OnlineEftpos.XML" target="lib\MonoTouch\Yort.OnlineEftpos.XML" />
+        <file src="Yort.OnlineEftpos.Net40\bin\Release\Yort.OnlineEftpos.dll" target="lib\net40\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos.Net40\bin\Release\Yort.OnlineEftpos.pdb" target="lib\net40\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos.Net40\bin\Release\Yort.OnlineEftpos.XML" target="lib\net40\Yort.OnlineEftpos.XML" />
+        <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.dll" target="lib\netcore45\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.pdb" target="lib\netcore45\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.XML" target="lib\netcore45\Yort.OnlineEftpos.XML" />
+        <file src="Yort.OnlineEftpos\bin\Release\Yort.OnlineEftpos.dll" target="lib\portable-net4+wp8+win8\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos\bin\Release\Yort.OnlineEftpos.pdb" target="lib\portable-net4+wp8+win8\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos\bin\Release\Yort.OnlineEftpos.XML" target="lib\portable-net4+wp8+win8\Yort.OnlineEftpos.XML" />
+        <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.dll" target="lib\wpa81\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.pdb" target="lib\wpa81\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.XML" target="lib\wpa81\Yort.OnlineEftpos.XML" />
+    </files>
+</package>
