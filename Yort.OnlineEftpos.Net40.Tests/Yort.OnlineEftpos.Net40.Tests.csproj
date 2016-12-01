@@ -85,6 +85,7 @@
     <Compile Include="BankDetailsTests.cs" />
     <Compile Include="ErasableStringTests.cs" />
     <Compile Include="IntegrationTests.cs" />
+    <Compile Include="KnownBanksTests.cs" />
     <Compile Include="MerchantDetailsTests.cs" />
     <Compile Include="MockHttpClientHandler.cs" />
     <Compile Include="OnlineEftposApiRouterTests.cs" />
