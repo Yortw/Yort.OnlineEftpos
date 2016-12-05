@@ -22,7 +22,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposAuthenticationException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposInvalidDataException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposNotification.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RefundStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PaymentStatus.cs" />

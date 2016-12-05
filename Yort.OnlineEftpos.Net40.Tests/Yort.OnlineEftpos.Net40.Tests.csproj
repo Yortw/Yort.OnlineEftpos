@@ -91,6 +91,7 @@
     <Compile Include="OnlineEftposApiRouterTests.cs" />
     <Compile Include="OnlineEftposCredentialsProviderTests.cs" />
     <Compile Include="OnlineEftposCredentialsTests.cs" />
+    <Compile Include="OnlineEftposNotificationTests.cs" />
     <Compile Include="OnlineEftposRequestAuthoriserTests.cs" />
     <Compile Include="PayerIdTests.cs" />
     <Compile Include="PaymentDetailsTests.cs" />

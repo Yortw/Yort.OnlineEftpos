@@ -136,6 +136,39 @@ namespace Yort.OnlineEftpos
 			return await SendApiRequest<OnlineEftposPaymentStatus>($"transaction/oepayment/{safeTransactionId}").ConfigureAwait(false);
 		}
 
+		/// <summary>
+		/// Searches for payments based on one or more provided criteria and returns a <see cref="OnlineEftposPaymentSearchResult"/> containing any found transactions.
+		/// </summary>
+		/// <remarks>
+		/// <para>The <see cref="OnlineEftposPaymentSearchResult"/> returned also contains information such as pagination url's for searches with many results.</para>
+		/// </remarks>
+		/// <param name="options">A <see cref="OnlineEftposPaymentSearchOptions"/> instance containing the search criteria and options for the search.</param>
+		/// <returns>An <see cref="OnlineEftposPaymentSearchResult"/> instance containing the initial search results and any related meta-data.</returns>
+		public async Task<OnlineEftposPaymentSearchResult> PaymentSearch(OnlineEftposPaymentSearchOptions options)
+		{
+			options.GuardNull(nameof(options));
+
+			Uri requestUri = options.PaginationUri;
+			if (requestUri == null)
+			{
+				var queryStr = options.BuildSearchQueryString();
+				if (String.IsNullOrEmpty(queryStr))
+					throw new ArgumentException("No search criteria specified.", nameof(options));
+				requestUri = _ApiRouter.GetUrl($"transaction/oepayment/?{queryStr}");
+			}
+
+			var requestMessage = new HttpRequestMessage()
+			{
+				Method = HttpMethod.Get,
+				RequestUri = requestUri,
+			};
+			var result = await SendApiRequest<OnlineEftposPaymentSearchResult>(HttpStatusCode.OK, requestMessage).ConfigureAwait(false);
+
+			result.Links = result.Links ?? new HateoasLink[] { };
+			result.Payments = result.Payments ?? new OnlineEftposPaymentStatus[] { };
+			return result;
+		}
+
 		#endregion
 
 		#region Refund Members
@@ -188,7 +221,7 @@ namespace Yort.OnlineEftpos
 
 			retVal.DefaultRequestHeaders.UserAgent.Add(new System.Net.Http.Headers.ProductInfoHeaderValue("Yort.OnlineEftpos", OnlineEftposGlobals.GetVersionString()));
 			retVal.DefaultRequestHeaders.UserAgent.Add(new System.Net.Http.Headers.ProductInfoHeaderValue(OnlineEftposGlobals.UserAgentComment));
-			
+
 			return retVal;
 		}
 
@@ -222,11 +255,17 @@ namespace Yort.OnlineEftpos
 				Method = endpointHttpMethod,
 				RequestUri = _ApiRouter.GetUrl(endpointRelativePath),
 			};
+			return await SendApiRequest<RS>(expectedResponseStatus, requestMessage);
+		}
+
+		private async Task<RS> SendApiRequest<RS>(HttpStatusCode expectedResponseStatus, HttpRequestMessage requestMessage)
+		{
 			requestMessage.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(OnlineEftposContentType));
 			//At time of writingt Paymark will fail the request if the charset is included, it seems
 			//the content type must be an exact string match to the OnlineEftposContentType constant.
 			//Clear the char set here to prevent 415 errors.
-			requestMessage.Content.Headers.ContentType.CharSet = null;
+			if (requestMessage.Content?.Headers?.ContentType != null)
+				requestMessage.Content.Headers.ContentType.CharSet = null;
 
 			await _RequestAuthoriser.AuthoriseRequest(requestMessage).ConfigureAwait(false);
 

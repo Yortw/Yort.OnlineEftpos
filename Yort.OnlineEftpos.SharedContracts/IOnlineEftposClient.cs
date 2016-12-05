@@ -84,5 +84,13 @@ namespace Yort.OnlineEftpos
 		/// <seealso cref="OnlineEftposRefundStatus"/>
 		Task<OnlineEftposRefundStatus> CheckRefundStatus(string transactionId);
 
-	}
+		/// <summary>
+		/// Searches for payments based on one or more provided criteria and returns a <see cref="OnlineEftposPaymentSearchResult"/> containing any found transactions.
+		/// </summary>
+		/// <remarks>
+		/// <para>The <see cref="OnlineEftposPaymentSearchResult"/> returned also contains information such as pagination url's for searches with many results.</para>
+		/// </remarks>
+		/// <param name="options">A <see cref="OnlineEftposPaymentSearchOptions"/> instance containing the search criteria and options for the search.</param>
+		/// <returns>An <see cref="OnlineEftposPaymentSearchResult"/> instance containing the initial search results and any related meta-data.</returns>
+		Task<OnlineEftposPaymentSearchResult> PaymentSearch(OnlineEftposPaymentSearchOptions options);	}
 }
