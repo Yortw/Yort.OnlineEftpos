@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Yort.OnlineEftpos</id>
-        <version>1.0.0</version>
+        <version>0.0.5-alpha</version>
         <title>Paymark Online Eftpos</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>

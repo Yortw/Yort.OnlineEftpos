@@ -10,6 +10,9 @@ namespace Yort.OnlineEftpos
 	/// </summary>
 	public sealed class PaymentDetails : TransactionRequestDetails
 	{
+
+		private static readonly char[] InvalidOrderIdCharacters = new char[] { '@', '#', '^', '%', '&', '|', '<', '>', '"', ';', '.', '\\', '/', '!', ':', ',' };
+
 		/// <summary>
 		/// Sets or returns the amount of the payment in the minimum unit of the currency (i.e for NZ, Australia, US this would be cents).
 		/// </summary>
@@ -64,14 +67,22 @@ namespace Yort.OnlineEftpos
 				Amount.GuardMinValue(1, nameof(Amount));
 
 				Description.GuardMaxLength(12, nameof(Description));
-				OrderId.GuardMaxLength(100, nameof(OrderId));
-
+				ValidateOrderId(OrderId);
 				ValidateCurrency(Currency);
 			}
 			catch (ArgumentException ae)
 			{
 				throw new OnlineEftposInvalidDataException(ae);
 			}
+		}
+
+		private void ValidateOrderId(string orderId)
+		{
+			if (String.IsNullOrEmpty(orderId)) return;
+
+			OrderId.GuardMaxLength(100, nameof(OrderId));
+			var invalidCharIndex = OrderId.IndexOfAny(InvalidOrderIdCharacters);
+			if (invalidCharIndex >= 0) throw new ArgumentException("OrderId cannot contain " + orderId.Substring(invalidCharIndex, 1));
 		}
 
 		private void ValidateCurrency(string currency)

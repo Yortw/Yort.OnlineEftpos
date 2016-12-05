@@ -144,10 +144,30 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 		[TestMethod]
 		[ExpectedException(typeof(OnlineEftposInvalidDataException))]
-		public void PaymentDetails_ThrowsOnTooLongDescription()
+		public void PaymentDetails_ThrowsOnTooLongOrderId()
 		{
 			var paymentDetails = GetPaymentDetails();
 			paymentDetails.Description = "1234567890123";
+
+			paymentDetails.EnsureValid();
+		}
+
+		[TestMethod]
+		[ExpectedException(typeof(OnlineEftposInvalidDataException))]
+		public void PaymentDetails_ThrowsOnTooLongDescription()
+		{
+			var paymentDetails = GetPaymentDetails();
+			paymentDetails.OrderId = new string('A', 200);
+
+			paymentDetails.EnsureValid();
+		}
+		
+		[TestMethod]
+		[ExpectedException(typeof(OnlineEftposInvalidDataException))]
+		public void PaymentDetails_ThrowsOnOrderIdWithInvalidCharacter()
+		{
+			var paymentDetails = GetPaymentDetails();
+			paymentDetails.OrderId = "test%me";
 
 			paymentDetails.EnsureValid();
 		}

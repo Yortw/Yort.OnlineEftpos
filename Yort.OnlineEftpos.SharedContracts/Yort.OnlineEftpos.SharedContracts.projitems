@@ -11,10 +11,13 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)BankDetails.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GuardExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HateoasLink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)INotificationVerifier.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOnlineEftposClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOnlineEftposCredentialProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)KnownBanks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MerchantDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationVerifierBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiError.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiException.cs" />
@@ -24,6 +27,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposInvalidDataException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposNotification.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposRefundSearchResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposRefundSearchOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentStatus.cs" />

@@ -98,42 +98,12 @@ namespace Yort.OnlineEftpos
 			}
 		}
 
-		#endregion
-
-		#region Public Methods
-
 		/// <summary>
-		/// Verifies the signature using the specified public key and returns true if the verification succeeds.
+		/// Returns the content of the notification that was signed as proof of authenticity.
 		/// </summary>
-		/// <param name="publicKey">The public key to use during verification.</param>
-		/// <returns></returns>
-		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="publicKey"/> is null.</exception>
-		/// <exception cref="System.ArgumentException">Thrown if <paramref name="publicKey"/> has a zero length.</exception>
-		public bool VerifySignature(byte[] publicKey)
+		public string SignedData
 		{
-			if (publicKey == null) throw new ArgumentNullException(nameof(publicKey));
-			if (publicKey.Length == 0) throw new ArgumentException("Length of publicKey cannot be zero.", nameof(publicKey));
-
-			//TODO: Actually verify the signature.
-			
-#if DEBUG
-			return !String.IsNullOrWhiteSpace(_SignedData);
-#else
-			throw new NotImplementedException("Signature verification not yet implemented.");
-#endif
-		}
-
-		/// <summary>
-		/// Checks the signature using the specified public key, and throws an <see cref="InvalidOperationException"/> if it is not valid.
-		/// </summary>
-		/// <param name="publicKey">The public key to use during verification.</param>
-		/// <exception cref="System.InvalidOperationException">Thrown if the signature is not verfiyable using the publichkey.</exception>
-		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="publicKey"/> is null.</exception>
-		/// <exception cref="System.ArgumentException">Thrown if <paramref name="publicKey"/> has a zero length.</exception>
-		public void ThrowIfSignatureInvalid(byte[] publicKey)
-		{
-			if (!VerifySignature(publicKey))
-				throw new InvalidOperationException("The notification signature did not verify.");
+			get { return _SignedData; }
 		}
 
 		#endregion

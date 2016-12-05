@@ -16,6 +16,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		#region Payment Tests
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_RequestPayment()
 		{
 			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
@@ -66,6 +67,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_CheckPaymentStatus()
 		{
 
@@ -126,6 +128,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_CheckPaymentStatusByOrderId()
 		{
 
@@ -192,6 +195,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_CheckPaymentStatusSearchPagination()
 		{
 
@@ -238,6 +242,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		#region Refund Tests
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_SendRefund()
 		{
 			#region Test Setup
@@ -318,6 +323,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_CheckRefundStatus()
 		{
 			#region Test Setup
@@ -408,17 +414,132 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_CheckRefundStatusByRefundId()
 		{
-			//TODO: This.
-			throw new NotImplementedException();
+			#region Test Setup
+
+			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
+			System.Net.ServicePointManager.Expect100Continue = false;
+			System.Net.ServicePointManager.UseNagleAlgorithm = false;
+
+			var credProvider = new SecureStringOnlineEftposCredentialProvider(
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
+			);
+
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			var orderId = System.Guid.NewGuid().ToString();
+			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
+			{
+				Bank = new BankDetails()
+				{
+					BankId = "ASB",
+					PayerIdType = "MOBILE",
+					PayerId = "021555123"
+				},
+				Merchant = new MerchantDetails()
+				{
+					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
+					MerchantUrl = new Uri("http://www.ontempo.co.nz")
+				},
+				Transaction = new PaymentDetails()
+				{
+					Amount = 1000,
+					Currency = "NZD",
+					Description = "Test Tran",
+					OrderId = orderId,
+					UserAgent = "Yort.OnlineEftpos.Tests",
+					UserIPAddress = "10.10.10.100"
+				}
+			}).ConfigureAwait(false);
+
+			Assert.IsNotNull(result);
+
+			var sw = new Stopwatch();
+			sw.Start();
+			while (result.Status != PaymentStatus.Authorised && sw.Elapsed.Seconds < 60)
+			{
+				System.Threading.Thread.Sleep(1000);
+				result = await client.CheckPaymentStatus(result.Id).ConfigureAwait(false);
+			}
+
+			Assert.IsTrue(result.Status == PaymentStatus.Authorised, "Payment wasn't authroised after 1 minute, cannot attempt refund.");
+
+			var refundResult = await client.SendRefund(new OnlineEftposRefundRequest()
+			{
+				Merchant = new MerchantDetails()
+				{
+					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
+					MerchantUrl = new Uri("http://www.ontempo.co.nz")
+				},
+				Transaction = new RefundDetails()
+				{
+					RefundId = System.Guid.NewGuid().ToString(),
+					RefundAmount = 1000,
+					RefundReason = "Test",
+					OriginalPaymentId = result.Id,
+					UserAgent = "Yort.OnlineEftpos.Tests",
+					UserIPAddress = "10.10.10.100"
+				}
+			}).ConfigureAwait(false);
+
+			Assert.IsNotNull(refundResult);
+			Assert.IsTrue(!String.IsNullOrWhiteSpace(refundResult.Id), "Invalid (blank) refund id returned.");
+			Assert.AreEqual(refundResult.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
+			Assert.IsTrue(refundResult.Status == RefundStatus.Refunded, "Status is not refunded");
+
+			#endregion
+
+			var recheckResult = await client.CheckRefundStatus(refundResult.Id).ConfigureAwait(false);
+			Assert.IsNotNull(recheckResult);
+			Assert.IsTrue(!String.IsNullOrWhiteSpace(recheckResult.Id), "Invalid (blank) refund id returned.");
+			Assert.AreEqual(recheckResult.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
+			Assert.IsTrue(recheckResult.Status == RefundStatus.Refunded, "Status is not refunded");
 		}
 
 		[TestMethod]
+		[TestCategory("Integration")]
 		public async Task Integration_CheckRefundStatusSearchPagination()
 		{
-			//TODO: This.
-			throw new NotImplementedException();
+			#region Test Setup
+
+			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
+			System.Net.ServicePointManager.Expect100Continue = false;
+			System.Net.ServicePointManager.UseNagleAlgorithm = false;
+
+			var credProvider = new SecureStringOnlineEftposCredentialProvider(
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
+			);
+
+			#endregion
+
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+
+			var searchResult = await client.RefundSearch(new OnlineEftposRefundSearchOptions()
+			{
+				MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
+				Limit = 1
+			}).ConfigureAwait(false);
+
+			Assert.IsTrue(searchResult.Refunds.Count() > 0, "No refunds returned, expected some payments.");
+			Assert.IsFalse(searchResult.Refunds.Count() > 1, "Too many refunds returned, limit not being applied.");
+
+			Assert.IsNotNull(searchResult.NextPageUri, "No next page URI returned, expected next page with limit of 1 result per page.");
+			Assert.IsNull(searchResult.PreviousPageUri, "Previous page URI returned, not expected on first search request.");
+
+			var paymentId = searchResult.Refunds.First().Id;
+
+			searchResult = await client.RefundSearch(new OnlineEftposRefundSearchOptions()
+			{
+				PaginationUri = searchResult.NextPageUri
+			}).ConfigureAwait(false);
+
+			Assert.IsNotNull(searchResult.PreviousPageUri, "Previous page URI not returned, expected on second search request.");
+			Assert.AreNotEqual(paymentId, searchResult.Refunds.First().Id, "First and second search request returned same payment.");
 		}
 
 		#endregion

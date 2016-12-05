@@ -169,6 +169,39 @@ namespace Yort.OnlineEftpos
 			return result;
 		}
 
+		/// <summary>
+		/// Searches for refunds based on one or more provided criteria and returns a <see cref="OnlineEftposRefundSearchResult"/> containing any found transactions.
+		/// </summary>
+		/// <remarks>
+		/// <para>The <see cref="OnlineEftposRefundSearchResult"/> returned also contains information such as pagination url's for searches with many results.</para>
+		/// </remarks>
+		/// <param name="options">A <see cref="OnlineEftposRefundSearchOptions"/> instance containing the search criteria and options for the search.</param>
+		/// <returns>An <see cref="OnlineEftposRefundSearchResult"/> instance containing the initial search results and any related meta-data.</returns>
+		public async Task<OnlineEftposRefundSearchResult> RefundSearch(OnlineEftposRefundSearchOptions options)
+		{
+			options.GuardNull(nameof(options));
+
+			Uri requestUri = options.PaginationUri;
+			if (requestUri == null)
+			{
+				var queryStr = options.BuildSearchQueryString();
+				if (String.IsNullOrEmpty(queryStr))
+					throw new ArgumentException("No search criteria specified.", nameof(options));
+				requestUri = _ApiRouter.GetUrl($"transaction/oerefund/?{queryStr}");
+			}
+
+			var requestMessage = new HttpRequestMessage()
+			{
+				Method = HttpMethod.Get,
+				RequestUri = requestUri,
+			};
+			var result = await SendApiRequest<OnlineEftposRefundSearchResult>(HttpStatusCode.OK, requestMessage).ConfigureAwait(false);
+
+			result.Links = result.Links ?? new HateoasLink[] { };
+			result.Refunds = result.Refunds ?? new OnlineEftposRefundStatus[] { };
+			return result;
+		}
+
 		#endregion
 
 		#region Refund Members
