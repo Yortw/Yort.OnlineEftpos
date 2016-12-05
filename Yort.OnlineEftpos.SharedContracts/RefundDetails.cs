@@ -38,6 +38,12 @@ namespace Yort.OnlineEftpos
 		public string OriginalPaymentId { get; set; }
 
 		/// <summary>
+		/// The merchant reference for this refund id. Not required to be unique, but recommended.
+		/// </summary>
+		[JsonProperty("refundId")]
+		public string RefundId { get; set; }
+
+		/// <summary>
 		/// Throws if the details are invalid.
 		/// </summary>
 		/// <remarks>
