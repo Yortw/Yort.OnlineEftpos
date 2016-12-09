@@ -7,8 +7,8 @@
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Provides an OOP model for .Net users to make payment and refund requests via the Paymark Online Eftpos API.</description>
-        <summary>A lightweight .Net wrapper around the Paymark Online Eftpos API.</summary>
+        <description>Provides an OOP model for .Net users to make payment and refund requests via the Paymark Online Eftpos API. See http://docs.dev.paymark.nz/oe for the official API documentation.</description>
+        <summary>An unofficial, lightweight .Net wrapper around the Paymark Online Eftpos API.</summary>
         <copyright />
         <language>en-NZ</language>
         <tags>online eftpos paymark</tags>
