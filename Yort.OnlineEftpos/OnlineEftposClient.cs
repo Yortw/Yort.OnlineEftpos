@@ -1,7 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Net;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,22 +10,8 @@ namespace Yort.OnlineEftpos
 	/// <summary>
 	/// Core class for communication with the PayMark Online Eftpos API. Provides methods for performing transactions such as payments and refunds.
 	/// </summary>
-	public sealed class OnlineEftposClient : IOnlineEftposClient, IDisposable
+	public sealed class OnlineEftposClient : IOnlineEftposClient
 	{
-
-		#region Fields & Constants
-
-		private readonly OnlineEftposRequestAuthoriser _RequestAuthoriser;
-		private readonly OnlineEftposApiRouter _ApiRouter;
-		private HttpClient _HttpClient;
-		private bool _HttpClientIsOwned;
-
-		private const string OnlineEftposContentType = "application/vnd.paymark_api+json";
-
-		#endregion
-
-		#region Constructors
-
 		/// <summary>
 		/// Minium constructor.
 		/// </summary>
@@ -35,9 +20,9 @@ namespace Yort.OnlineEftpos
 		/// <param name="apiEnvironment">A value from the <see cref="ApiEnvironment"/> enum specifying either a test or live environment for this client to connect to.</param>
 		/// <seealso cref="ApiVersion"/>
 		/// <seealso cref="ApiEnvironment"/>
-		public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment) : this(credentialProvider, apiVersion, apiEnvironment, CreateDefaultHttpClient())
+		public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment)
 		{
-			_HttpClientIsOwned = true;
+			ExceptionHelper.ThrowYoureDoingItWrong();
 		}
 
 		/// <summary>
@@ -46,22 +31,13 @@ namespace Yort.OnlineEftpos
 		/// <param name="credentialProvider">A <see cref="IOnlineEftposCredentialProvider"/> instance that can provide credentials used to obtain a token from the API for subsequent calls. See SecureStringOnlineEftposCredentialProvider (if available) or <see cref="OnlineEftposCredentialsProvider"/> for default implementations, or create your own.</param>
 		/// <param name="apiVersion">A value from the <see cref="ApiVersion"/> enum specifying the version of the Online Eftpos API this client connects to.</param>
 		/// <param name="apiEnvironment">A value from the <see cref="ApiEnvironment"/> enum specifying either a test or live environment for this client to connect to.</param>
-		/// <param name="httpClient">A instance of <see cref="HttpClient"/> that will be used by this instance to perform all HTTP communication with the Online Eftpos API.</param>
+		/// <param name="httpClient">A instance of <see cref="System.Net.Http.HttpClient"/> that will be used by this instance to perform all HTTP communication with the Online Eftpos API.</param>
 		/// <seealso cref="ApiVersion"/>
 		/// <seealso cref="ApiEnvironment"/>
 		public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment, HttpClient httpClient)
 		{
-			credentialProvider.GuardNull(nameof(credentialProvider));
-			httpClient.GuardNull(nameof(httpClient));
-
-			_HttpClient = httpClient;
-			_ApiRouter = new OnlineEftposApiRouter(apiEnvironment, apiVersion);
-			_RequestAuthoriser = new OnlineEftposRequestAuthoriser(credentialProvider, _HttpClient, _ApiRouter);
+			ExceptionHelper.ThrowYoureDoingItWrong();
 		}
-
-		#endregion
-
-		#region IOnlineEftposClient Members
 
 		/// <summary>
 		/// Returns a value indicating the version of the Online Eftpos API this client will connect to.
@@ -75,7 +51,8 @@ namespace Yort.OnlineEftpos
 		{
 			get
 			{
-				return _ApiRouter.Version;
+				ExceptionHelper.ThrowYoureDoingItWrong();
+				return OnlineEftposApiVersion.Latest; //Work around compiler warning.
 			}
 		}
 
@@ -91,11 +68,10 @@ namespace Yort.OnlineEftpos
 		{
 			get
 			{
-				return _ApiRouter.Environment;
+				ExceptionHelper.ThrowYoureDoingItWrong();
+				return OnlineEftposApiEnvironment.Uat; //Work around compiler warning.
 			}
 		}
-
-		#region Payment Members
 
 		/// <summary>
 		/// Starts a payment transaction. Sends a request for payment to the API, which will be forwarded to the payer for approval.
@@ -110,12 +86,10 @@ namespace Yort.OnlineEftpos
 		/// <seealso cref="OnlineEftposPaymentRequest"/>
 		/// <seealso cref="OnlineEftposPaymentStatus"/>
 		/// <seealso cref="CheckPaymentStatus(string)"/>
-		public async Task<OnlineEftposPaymentStatus> RequestPayment(OnlineEftposPaymentRequest paymentRequest)
+		public Task<OnlineEftposPaymentStatus> RequestPayment(OnlineEftposPaymentRequest paymentRequest)
 		{
-			paymentRequest.GuardNull(nameof(paymentRequest));
-			paymentRequest.EnsureValid();
-
-			return await SendApiRequest<OnlineEftposPaymentRequest, OnlineEftposPaymentStatus>(paymentRequest, "transaction/oepayment", HttpMethod.Post, System.Net.HttpStatusCode.Created).ConfigureAwait(false);
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null; //Avoid compiler warning.
 		}
 
 		/// <summary>
@@ -127,14 +101,12 @@ namespace Yort.OnlineEftpos
 		/// <exception cref="OnlineEftposAuthenticationException">Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.</exception>
 		/// <exception cref="OnlineEftposException">Thrown if an exception occurs or error information is returned from the API.</exception>
 		/// <seealso cref="OnlineEftposPaymentStatus"/>
-		public async Task<OnlineEftposPaymentStatus> CheckPaymentStatus(string transactionId)
+		public Task<OnlineEftposPaymentStatus> CheckPaymentStatus(string transactionId)
 		{
-			transactionId.GuardNullEmptyOrWhitespace(nameof(transactionId));
-
-			var safeTransactionId = Uri.EscapeDataString(transactionId);
-
-			return await SendApiRequest<OnlineEftposPaymentStatus>($"transaction/oepayment/{safeTransactionId}").ConfigureAwait(false);
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null; //Avoid compiler warning.
 		}
+
 
 		/// <summary>
 		/// Searches for payments based on one or more provided criteria and returns a <see cref="OnlineEftposPaymentSearchResult"/> containing any found transactions.
@@ -144,34 +116,11 @@ namespace Yort.OnlineEftpos
 		/// </remarks>
 		/// <param name="options">A <see cref="OnlineEftposPaymentSearchOptions"/> instance containing the search criteria and options for the search.</param>
 		/// <returns>An <see cref="OnlineEftposPaymentSearchResult"/> instance containing the initial search results and any related meta-data.</returns>
-		public async Task<OnlineEftposPaymentSearchResult> PaymentSearch(OnlineEftposPaymentSearchOptions options)
+		public Task<OnlineEftposPaymentSearchResult> PaymentSearch(OnlineEftposPaymentSearchOptions options)
 		{
-			options.GuardNull(nameof(options));
-
-			Uri requestUri = options.PaginationUri;
-			if (requestUri == null)
-			{
-				var queryStr = options.BuildSearchQueryString();
-				if (String.IsNullOrEmpty(queryStr))
-					throw new ArgumentException("No search criteria specified.", nameof(options));
-				requestUri = _ApiRouter.GetUrl($"transaction/oepayment/?{queryStr}");
-			}
-
-			var requestMessage = new HttpRequestMessage()
-			{
-				Method = HttpMethod.Get,
-				RequestUri = requestUri,
-			};
-			var result = await SendApiRequest<OnlineEftposPaymentSearchResult>(HttpStatusCode.OK, requestMessage).ConfigureAwait(false);
-
-			result.Links = result.Links ?? new HateoasLink[] { };
-			result.Payments = result.Payments ?? new OnlineEftposPaymentStatus[] { };
-			return result;
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null;
 		}
-
-		#endregion
-
-		#region Refund Members
 
 		/// <summary>
 		/// Sends a refund for a previous payment to the original payer.
@@ -183,12 +132,10 @@ namespace Yort.OnlineEftpos
 		/// <exception cref="OnlineEftposException">Thrown if an exception occurs or error information is returned from the API.</exception>
 		/// <seealso cref="OnlineEftposRefundStatus"/>
 		/// <seealso cref="CheckRefundStatus(string)"/>
-		public async Task<OnlineEftposRefundStatus> SendRefund(OnlineEftposRefundRequest refundRequest)
+		public Task<OnlineEftposRefundStatus> SendRefund(OnlineEftposRefundRequest refundRequest)
 		{
-			refundRequest.GuardNull(nameof(refundRequest));
-			refundRequest.EnsureValid();
-
-			return await SendApiRequest<OnlineEftposRefundRequest, OnlineEftposRefundStatus>(refundRequest, "transaction/oerefund", HttpMethod.Post, System.Net.HttpStatusCode.Created).ConfigureAwait(false);
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null; //Avoid compiler warning.
 		}
 
 		/// <summary>
@@ -200,13 +147,10 @@ namespace Yort.OnlineEftpos
 		/// <exception cref="OnlineEftposAuthenticationException">Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.</exception>
 		/// <exception cref="OnlineEftposException">Thrown if an exception occurs or error information is returned from the API.</exception>
 		/// <seealso cref="OnlineEftposRefundStatus"/>
-		public async Task<OnlineEftposRefundStatus> CheckRefundStatus(string transactionId)
+		public Task<OnlineEftposRefundStatus> CheckRefundStatus(string transactionId)
 		{
-			transactionId.GuardNullEmptyOrWhitespace(nameof(transactionId));
-
-			var safeTransactionId = Uri.EscapeDataString(transactionId);
-
-			return await SendApiRequest<OnlineEftposRefundStatus>($"transaction/oerefund/{safeTransactionId}").ConfigureAwait(false);
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null; //Avoid compiler warning.
 		}
 
 		/// <summary>
@@ -217,119 +161,19 @@ namespace Yort.OnlineEftpos
 		/// </remarks>
 		/// <param name="options">A <see cref="OnlineEftposRefundSearchOptions"/> instance containing the search criteria and options for the search.</param>
 		/// <returns>An <see cref="OnlineEftposRefundSearchResult"/> instance containing the initial search results and any related meta-data.</returns>
-		public async Task<OnlineEftposRefundSearchResult> RefundSearch(OnlineEftposRefundSearchOptions options)
+		public Task<OnlineEftposRefundSearchResult> RefundSearch(OnlineEftposRefundSearchOptions options)
 		{
-			options.GuardNull(nameof(options));
-
-			Uri requestUri = options.PaginationUri;
-			if (requestUri == null)
-			{
-				var queryStr = options.BuildSearchQueryString();
-				if (String.IsNullOrEmpty(queryStr))
-					throw new ArgumentException("No search criteria specified.", nameof(options));
-				requestUri = _ApiRouter.GetUrl($"transaction/oerefund/?{queryStr}");
-			}
-
-			var requestMessage = new HttpRequestMessage()
-			{
-				Method = HttpMethod.Get,
-				RequestUri = requestUri,
-			};
-			var result = await SendApiRequest<OnlineEftposRefundSearchResult>(HttpStatusCode.OK, requestMessage).ConfigureAwait(false);
-
-			result.Links = result.Links ?? new HateoasLink[] { };
-			result.Refunds = result.Refunds ?? new OnlineEftposRefundStatus[] { };
-			return result;
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null;
 		}
-
-		#endregion
-
-		#endregion
-
-		#region Private Members
-
-		private static HttpClient CreateDefaultHttpClient()
-		{
-			var retVal = new HttpClient();
-
-			retVal.DefaultRequestHeaders.UserAgent.Add(new System.Net.Http.Headers.ProductInfoHeaderValue("Yort.OnlineEftpos", OnlineEftposGlobals.GetVersionString()));
-			retVal.DefaultRequestHeaders.UserAgent.Add(new System.Net.Http.Headers.ProductInfoHeaderValue(OnlineEftposGlobals.UserAgentComment));
-
-			return retVal;
-		}
-
-		private async Task<RS> SendApiRequest<RS>(string endpointRelativePath)
-		{
-			var requestMessage = new HttpRequestMessage()
-			{
-				Method = HttpMethod.Get,
-				RequestUri = _ApiRouter.GetUrl(endpointRelativePath),
-			};
-			requestMessage.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(OnlineEftposContentType));
-
-			await _RequestAuthoriser.AuthoriseRequest(requestMessage).ConfigureAwait(false);
-
-			var result = await _HttpClient.SendAsync(requestMessage).ConfigureAwait(false);
-
-			if (result.StatusCode == System.Net.HttpStatusCode.OK)
-				return JsonConvert.DeserializeObject<RS>(await result.Content.ReadAsStringAsync().ConfigureAwait(false));
-			else
-			{
-				var apiError = JsonConvert.DeserializeObject<OnlineEftposApiError>(await result.Content.ReadAsStringAsync().ConfigureAwait(false));
-				throw new OnlineEftposApiException(result.StatusCode, result.ReasonPhrase, apiError);
-			}
-		}
-
-		private async Task<RS> SendApiRequest<RQ, RS>(RQ requestContent, string endpointRelativePath, HttpMethod endpointHttpMethod, HttpStatusCode expectedResponseStatus)
-		{
-			var requestMessage = new HttpRequestMessage()
-			{
-				Content = new System.Net.Http.StringContent(JsonConvert.SerializeObject(requestContent), null, OnlineEftposContentType),
-				Method = endpointHttpMethod,
-				RequestUri = _ApiRouter.GetUrl(endpointRelativePath),
-			};
-			return await SendApiRequest<RS>(expectedResponseStatus, requestMessage);
-		}
-
-		private async Task<RS> SendApiRequest<RS>(HttpStatusCode expectedResponseStatus, HttpRequestMessage requestMessage)
-		{
-			requestMessage.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(OnlineEftposContentType));
-			//At time of writingt Paymark will fail the request if the charset is included, it seems
-			//the content type must be an exact string match to the OnlineEftposContentType constant.
-			//Clear the char set here to prevent 415 errors.
-			if (requestMessage.Content?.Headers?.ContentType != null)
-				requestMessage.Content.Headers.ContentType.CharSet = null;
-
-			await _RequestAuthoriser.AuthoriseRequest(requestMessage).ConfigureAwait(false);
-
-			var result = await _HttpClient.SendAsync(requestMessage).ConfigureAwait(false);
-
-			if (result.StatusCode == expectedResponseStatus)
-				return JsonConvert.DeserializeObject<RS>(await result.Content.ReadAsStringAsync().ConfigureAwait(false));
-			else
-			{
-				var apiError = JsonConvert.DeserializeObject<OnlineEftposApiError>(await result.Content.ReadAsStringAsync().ConfigureAwait(false));
-				throw new OnlineEftposApiException(result.StatusCode, result.ReasonPhrase, apiError);
-			}
-		}
-
-		#endregion
-
-		#region IDisposable Members
 
 		/// <summary>
 		/// Disposes this instance and all internal resources, except the HttpClient provided in the constructor.
 		/// </summary>
 		public void Dispose()
 		{
-			if (_RequestAuthoriser != null)
-				_RequestAuthoriser.Dispose();
-
-			if (_HttpClientIsOwned)
-				_HttpClient.Dispose();
+			ExceptionHelper.ThrowYoureDoingItWrong();
 		}
-
-		#endregion
 
 	}
 }

@@ -12,7 +12,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 	[TestClass]
 	public class IntegrationTests
 	{
-
 		#region Payment Tests
 
 		[TestMethod]
@@ -66,6 +65,10 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual(result.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns></returns>
 		[TestMethod]
 		[TestCategory("Integration")]
 		public async Task Integration_CheckPaymentStatus()
@@ -236,6 +239,33 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.IsNotNull(searchResult.PreviousPageUri, "Previous page URI not returned, expected on second search request.");
 			Assert.AreNotEqual(paymentId, searchResult.Payments.First().Id, "First and second search request returned same payment.");
 		}
+
+		[ExpectedException(typeof(OnlineEftposApiException))]
+		[TestMethod]
+		[TestCategory("Integration")]
+		public async Task Integration_CheckPaymentStatus_PaymentDoesNotExist()
+		{
+
+			#region Test Setup
+
+			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
+			System.Net.ServicePointManager.Expect100Continue = false;
+			System.Net.ServicePointManager.UseNagleAlgorithm = false;
+
+			var credProvider = new SecureStringOnlineEftposCredentialProvider(
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
+			);
+
+			//Make a payment
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+
+			#endregion
+
+			var paymentId = System.Guid.NewGuid().ToString();
+			var statusResult = await client.CheckPaymentStatus(paymentId).ConfigureAwait(false);
+		}
+
 
 		#endregion
 
@@ -518,7 +548,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			#endregion
 
 			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
-
+			
 			var searchResult = await client.RefundSearch(new OnlineEftposRefundSearchOptions()
 			{
 				MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),

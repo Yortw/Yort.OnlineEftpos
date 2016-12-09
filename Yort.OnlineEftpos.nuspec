@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Yort.OnlineEftpos</id>
-        <version>0.0.5-alpha</version>
+        <version>0.0.9-alpha</version>
         <title>Paymark Online Eftpos</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
@@ -39,6 +39,9 @@
                 <dependency id="Microsoft.Bcl" version="1.1.10" />
                 <dependency id="Newtonsoft.Json" version="8.0.2" />
             </group>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="Newtonsoft.Json" version="8.0.2" />
+	    </group>
         </dependencies>
     </metadata>
     <files>
@@ -51,6 +54,9 @@
         <file src="Yort.OnlineEftpos.Net40\bin\Release\Yort.OnlineEftpos.dll" target="lib\net40\Yort.OnlineEftpos.dll" />
         <file src="Yort.OnlineEftpos.Net40\bin\Release\Yort.OnlineEftpos.pdb" target="lib\net40\Yort.OnlineEftpos.pdb" />
         <file src="Yort.OnlineEftpos.Net40\bin\Release\Yort.OnlineEftpos.XML" target="lib\net40\Yort.OnlineEftpos.XML" />
+        <file src="Yort.OnlineEftpos.Net45\bin\Release\Yort.OnlineEftpos.dll" target="lib\net45\Yort.OnlineEftpos.dll" />
+        <file src="Yort.OnlineEftpos.Net45\bin\Release\Yort.OnlineEftpos.pdb" target="lib\net45\Yort.OnlineEftpos.pdb" />
+        <file src="Yort.OnlineEftpos.Net45\bin\Release\Yort.OnlineEftpos.XML" target="lib\net45\Yort.OnlineEftpos.XML" />
         <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.dll" target="lib\netcore45\Yort.OnlineEftpos.dll" />
         <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.pdb" target="lib\netcore45\Yort.OnlineEftpos.pdb" />
         <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.XML" target="lib\netcore45\Yort.OnlineEftpos.XML" />

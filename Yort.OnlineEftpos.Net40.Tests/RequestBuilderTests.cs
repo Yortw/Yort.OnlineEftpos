@@ -313,7 +313,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			{
 				CallbackUrlTemplate = "https://www.mycoolsite.com/payments/callback?reference={orderId}",
 				DefaultCurrency = "NZD",
-				DefaultMerchantId = "Merch-1234",
+				DefaultMerchantIdCode = "Merch-1234",
 				DefaultCurrencyMultiplier = 100,
 				DefaultMerchantUrl = new Uri("www.mycoolsite.com", UriKind.Relative),
 				DefaultUserAgent = "MyUserAgent",

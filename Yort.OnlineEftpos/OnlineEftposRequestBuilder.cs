@@ -24,9 +24,7 @@ namespace Yort.OnlineEftpos
 		/// </summary>
 		public OnlineEftposRequestBuilder()
 		{
-			this.DefaultCurrencyMultiplier = 100;
-			this.DefaultUserAgent = OnlineEftposGlobals.UserAgentComment;
-			this.PurchaseDescriptionTemplate = "{orderId}";
+			ExceptionHelper.ThrowYoureDoingItWrong();
 		}
 
 		#endregion
@@ -90,7 +88,7 @@ namespace Yort.OnlineEftpos
 		/// <summary>
 		/// The default value for the <see cref="MerchantDetails.MerchantIdCode"/> property.
 		/// </summary>
-		public string DefaultMerchantIdCode { get; set; }
+		public string DefaultMerchantId { get; set; }
 
 		/// <summary>
 		/// A template string for creating callback urls.
@@ -117,31 +115,8 @@ namespace Yort.OnlineEftpos
 		/// <returns>An <see cref="OnlineEftposPaymentRequest"/> pre-populated with appropriate values, but unvalidated. Call the <see cref="OnlineEftposPaymentRequest.EnsureValid"/> method to confirm validity.</returns>
 		public OnlineEftposPaymentRequest CreatePaymentRequest(string payerId, string payerIdType, string bankId, string orderId, decimal amount)
 		{
-			return new OnlineEftposPaymentRequest()
-			{
-				Bank = new BankDetails()
-				{
-					BankId = bankId,
-					PayerId = payerId,
-					PayerIdType = payerIdType,
-				}
-				,
-				Merchant = new MerchantDetails()
-				{
-					CallbackUrl = BuildCallbackUrl(orderId),
-					MerchantIdCode = this.DefaultMerchantIdCode,
-					MerchantUrl = this.DefaultMerchantUrl
-				},
-				Transaction = new PaymentDetails()
-				{
-					Amount = DecimalToApiAmount(amount),
-					Currency = DefaultCurrency,
-					Description = BuildPurchaseDescription(orderId),
-					OrderId = orderId,
-					UserAgent = this.DefaultUserAgent,
-					UserIPAddress = this.DefaultUserIP
-				}
-			};
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null;
 		}
 
 		/// <summary>
@@ -153,54 +128,8 @@ namespace Yort.OnlineEftpos
 		/// <returns>An <see cref="OnlineEftposRefundRequest"/> pre-populated with appropriate values, but unvalidated. Call the <see cref="OnlineEftposRefundRequest.EnsureValid"/> method to confirm validity.</returns>
 		public OnlineEftposRefundRequest CreateRefundRequest(string orderId, string originalPaymentId, decimal amount)
 		{
-			return new OnlineEftposRefundRequest()
-			{
-				Merchant = new MerchantDetails()
-				{
-					MerchantIdCode = this.DefaultMerchantIdCode,
-				},
-				Transaction = new RefundDetails()
-				{
-					RefundAmount = DecimalToApiAmount(amount),
-					RefundReason = BuildRefundReason(orderId),
-					OriginalPaymentId = originalPaymentId,
-					UserAgent = this.DefaultUserAgent,
-					UserIPAddress = this.DefaultUserIP
-				}
-			};
-		}
-
-		#endregion
-
-		#region Private Methods
-
-		private string BuildPurchaseDescription(string orderId)
-		{
-			if (String.IsNullOrEmpty(this.PurchaseDescriptionTemplate)) return null;
-			if (String.IsNullOrEmpty(orderId)) return null;
-
-			return this.PurchaseDescriptionTemplate.Replace("{orderId}", orderId);
-		}
-
-		private string BuildRefundReason(string orderId)
-		{
-			if (String.IsNullOrEmpty(this.RefundReasonTemplate)) return null;
-			if (String.IsNullOrEmpty(orderId)) return null;
-
-			return this.RefundReasonTemplate.Replace("{orderId}", orderId);
-		}
-
-		private int DecimalToApiAmount(decimal amount)
-		{
-			return Convert.ToInt32(amount * this.DefaultCurrencyMultiplier);
-		}
-
-		private Uri BuildCallbackUrl(string orderId)
-		{
-			if (String.IsNullOrEmpty(this.CallbackUrlTemplate)) return null;
-			if (String.IsNullOrEmpty(orderId)) return null;
-
-			return new Uri(this.CallbackUrlTemplate.Replace("{orderId}", Uri.EscapeUriString(orderId)), UriKind.RelativeOrAbsolute);
+			ExceptionHelper.ThrowYoureDoingItWrong();
+			return null;
 		}
 
 		#endregion

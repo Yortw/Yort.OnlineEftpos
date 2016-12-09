@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ErasableString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KnownBanks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiRouter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposCredentials.cs" />
@@ -18,5 +19,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)PayerId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposRequestBuilder.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SecureStringOnlineEftposCredentialProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sha512WithRsaVerifier.cs" />
   </ItemGroup>
 </Project>

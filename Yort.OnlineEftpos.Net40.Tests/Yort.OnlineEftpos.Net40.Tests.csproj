@@ -103,6 +103,7 @@
     <Compile Include="RefundSerialisationTests.cs" />
     <Compile Include="RequestBuilderTests.cs" />
     <Compile Include="SecureStringOnlineEftposCredentialProviderTests.cs" />
+    <Compile Include="Sha512WithRsaVerifierTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

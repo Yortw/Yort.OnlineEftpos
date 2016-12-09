@@ -7,7 +7,7 @@ namespace Yort.OnlineEftpos
 	/// <summary>
 	/// Base class for <see cref="INotificationVerifier"/> providing reusable logic. Prefer <see cref="INotificationVerifier"/> for references.
 	/// </summary>
-	public class NotificationVerifierBase : INotificationVerifier
+	public abstract class NotificationVerifierBase : INotificationVerifier
 	{
 
 		#region Fields
@@ -24,9 +24,8 @@ namespace Yort.OnlineEftpos
 		/// <param name="base64PublicKey">A string containing the base 64 encoded public key to use for signature verification.</param>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="base64PublicKey"/> is null.</exception>
 		/// <exception cref="System.ArgumentException">Thrown if <paramref name="base64PublicKey"/> is not a valid base 64 string.</exception>
-		public NotificationVerifierBase(string base64PublicKey) : this(System.Convert.FromBase64String(base64PublicKey))
+		protected NotificationVerifierBase(string base64PublicKey) : this(Base64ToBinaryKey(base64PublicKey))
 		{
-			//TODO: Handle commong header a footer when parsing key.
 		}
 
 		/// <summary>
@@ -35,7 +34,7 @@ namespace Yort.OnlineEftpos
 		/// <param name="publicKey">A byte array containing the binary representation of the public key to use when verifying notification signatures.</param>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="publicKey"/> is null.</exception>
 		/// <exception cref="System.ArgumentException">Thrown if <paramref name="publicKey"/> is is zero length.</exception>
-		public NotificationVerifierBase(byte[] publicKey)
+		protected NotificationVerifierBase(byte[] publicKey)
 		{
 			publicKey.GuardNull(nameof(publicKey));
 			if (publicKey.Length == 0) throw new ArgumentException("Length of publicKey cannot be 0.", nameof(publicKey));
@@ -60,17 +59,7 @@ namespace Yort.OnlineEftpos
 		/// <param name="notification">The <see cref="OnlineEftposNotification"/> to verify.</param>
 		/// <returns>A boolean indicating if <paramref name="notification"/> passes verification.</returns>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="notification"/> is null.</exception>
-		public bool Verify(OnlineEftposNotification notification)
-		{
-			notification.GuardNull(nameof(notification));
-
-			//TODO: This.
-#if DEBUG
-			return true;
-#else
-			throw new NotImplementedException();
-#endif
-		}
+		public abstract bool Verify(OnlineEftposNotification notification);
 
 		/// <summary>
 		/// Returns a byte array containing the raw binary representation of the public key this instance was initialised with.
@@ -78,6 +67,24 @@ namespace Yort.OnlineEftpos
 		protected byte[] GetPublicKey()
 		{
 			return _PublicKey;
+		}
+
+		#endregion
+
+
+		#region Private Methods
+
+		private static byte[] Base64ToBinaryKey(string base64PublicKey)
+		{
+			if (base64PublicKey.StartsWith("-----BEGIN PUBLIC KEY-----"))
+			{
+				var sb = new StringBuilder(base64PublicKey);
+				sb.Replace("-----BEGIN PUBLIC KEY-----", String.Empty);
+				sb.Replace("-----END PUBLIC KEY-----", String.Empty);
+				return System.Convert.FromBase64String(sb.ToString());
+			}
+			else
+				return System.Convert.FromBase64String(base64PublicKey);
 		}
 
 		#endregion

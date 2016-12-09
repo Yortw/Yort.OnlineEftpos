@@ -11,7 +11,7 @@ namespace Yort.OnlineEftpos
 
 		private const string RootSandboxUrl = "https://apitest.paymark.nz/";
 		private const string RootUatUrl = "https://apitest.uat.paymark.nz/";
-		private const string RootLiveUrl = "TODO: This.";
+		private const string RootLiveUrl = "https://api.paymark.nz/";
 
 		private Uri _RootUrl;
 

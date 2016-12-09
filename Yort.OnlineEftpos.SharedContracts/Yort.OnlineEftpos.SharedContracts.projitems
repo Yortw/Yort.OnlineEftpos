@@ -9,13 +9,14 @@
     <Import_RootNamespace>Yort.OnlineEftpos</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfoCommon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BankDefinition.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BankDetails.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GuardExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HateoasLink.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)INotificationVerifier.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOnlineEftposClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOnlineEftposCredentialProvider.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)KnownBanks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MerchantDetails.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NotificationVerifierBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiEnvironment.cs" />

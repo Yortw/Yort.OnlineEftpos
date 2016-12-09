@@ -41,6 +41,7 @@
     <CodeAnalysisRuleSet>..\OnlineEftposCodeAnalysisRuleset.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="OnlineEftposGlobals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

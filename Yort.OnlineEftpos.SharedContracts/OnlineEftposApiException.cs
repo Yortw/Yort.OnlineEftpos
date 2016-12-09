@@ -83,7 +83,13 @@ namespace Yort.OnlineEftpos
 		/// </summary>
 		public HttpStatusCode StatusCode
 		{
-			get { return (HttpStatusCode)this.Data["Status"]; }
+			get
+			{
+				if (this.Data.Contains("Status"))
+					return (HttpStatusCode)this.Data["Status"];
+				else
+					return 0;
+			}
 		}
 
 		/// <summary>
@@ -91,7 +97,13 @@ namespace Yort.OnlineEftpos
 		/// </summary>
 		public string ReasonPhrase
 		{
-			get { return (string)this.Data["ReasonPhrase"]; }
+			get
+			{
+				if (this.Data.Contains("ReasonPhrase"))
+					return (string)this.Data["ReasonPhrase"];
+				else
+					return String.Empty;
+			}
 		}
 
 		/// <summary>

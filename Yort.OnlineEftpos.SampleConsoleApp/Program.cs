@@ -19,7 +19,7 @@ namespace Yort.OnlineEftpos.SampleConsoleApp
 			{
 				CallbackUrlTemplate = "https://www.mycoolsite.com/payments/callback?reference={orderId}",
 				DefaultCurrency = "NZD",
-				DefaultMerchantId = "02d48cb1-784e-41aa-a05f-5d3e9698ce47",
+				DefaultMerchantIdCode = "02d48cb1-784e-41aa-a05f-5d3e9698ce47",
 				DefaultCurrencyMultiplier = 100,
 				DefaultMerchantUrl = new Uri("www.mycoolsite.com", UriKind.Relative),
 				DefaultUserAgent = "MyUserAgent",
@@ -32,6 +32,8 @@ namespace Yort.OnlineEftpos.SampleConsoleApp
 			_Client = new OnlineEftposClient(new OnlineEftposCredentialsProvider(creds), OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Uat);
 
 			var t = StartLoopAsync();
+			Console.WriteLine("Press enter to quit.");
+			Console.ReadLine();
 		}
 
 		private static async Task StartLoopAsync()
