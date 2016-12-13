@@ -109,8 +109,8 @@ namespace Yort.OnlineEftpos
 		{
 			get
 			{
-				if (this.Data.Contains("Status"))
-					return (HttpStatusCode)this.Data["Status"];
+				if (this.Data.Contains("StatusCode"))
+					return (HttpStatusCode)this.Data["StatusCode"];
 				else
 					return 0;
 			}
