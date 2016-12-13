@@ -17,7 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Debug</OutputPath>
-    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_SERIALISEDEXCEPTIONS</DefineConstants>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_SERIALISEDEXCEPTIONS;SUPPORTS_CAS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -34,7 +34,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_SERIALISEDEXCEPTIONS</DefineConstants>
+    <DefineConstants>CODE_ANALYSIS;__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_SERIALISEDEXCEPTIONS;SUPPORTS_CAS</DefineConstants>
     <DocumentationFile>bin\iPhone\Release\Yort.OnlineEftpos.XML</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <RunCodeAnalysis>true</RunCodeAnalysis>

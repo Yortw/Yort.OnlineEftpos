@@ -89,7 +89,11 @@ namespace Yort.OnlineEftpos
 		/// </summary>
 		/// <param name="info"></param>
 		/// <param name="context"></param>
-    public override void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+#if SUPPORTS_CAS
+		[System.Security.Permissions.SecurityPermissionAttribute(System.Security.Permissions.SecurityAction.Demand, SerializationFormatter = true)]
+		[System.Security.SecurityCritical]
+#endif
+		public override void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     {
 			if (info == null) throw new ArgumentNullException(nameof(info));
 
