@@ -17,6 +17,8 @@ namespace Yort.OnlineEftpos
 	public class OnlineEftposApiException : OnlineEftposException
 	{
 
+		private readonly OnlineEftposApiError _ErrorContent;
+
 		/// <summary>
 		/// Runtime required constructor.
 		/// </summary>
@@ -55,6 +57,8 @@ namespace Yort.OnlineEftpos
 
 			if (errorContent != null)
 			{
+				_ErrorContent = errorContent;
+
 				this.Data.Add("ErrorMessage", errorContent.Error);
 				if (!String.IsNullOrEmpty(errorContent.Reference))
 					this.Data.Add("TransactionReference", errorContent.Reference);
@@ -75,7 +79,23 @@ namespace Yort.OnlineEftpos
 		/// </summary>
 		/// <param name="info"></param>
 		/// <param name="context"></param>
-		protected OnlineEftposApiException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
+		protected OnlineEftposApiException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : base(info, context)
+		{
+			_ErrorContent = (OnlineEftposApiError)info.GetValue(nameof(ErrorContent), typeof(OnlineEftposApiError));
+		}
+
+		/// <summary>
+		/// Serialises the <see cref="ApiErrorMessage"/> property along with the exception.
+		/// </summary>
+		/// <param name="info"></param>
+		/// <param name="context"></param>
+    public override void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+    {
+			if (info == null) throw new ArgumentNullException(nameof(info));
+
+			info.AddValue(nameof(ErrorContent), _ErrorContent, typeof(OnlineEftposApiError));
+			base.GetObjectData(info, context);
+    }
 #endif
 
 		/// <summary>
@@ -117,6 +137,17 @@ namespace Yort.OnlineEftpos
 					return (string)this.Data["ErrorMessage"];
 				else
 					return this.ReasonPhrase;
+			}
+		}
+
+		/// <summary>
+		/// Returns a <see cref="OnlineEftposApiError"/> instance containing details of the error that occurred. Maybe null if no such content was provided from the server for this error.
+		/// </summary>
+		public OnlineEftposApiError ErrorContent
+		{
+			get
+			{
+				return _ErrorContent;
 			}
 		}
 
