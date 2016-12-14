@@ -42,11 +42,12 @@ namespace Yort.OnlineEftpos
 		public string Description { get; set; }
 
 		/// <summary>
-		/// A string containing a unique reference for this payment, provided by the application code. This value will be passed back to the callback url provided with the transaction when the payment status changes.
+		/// A string containing a client generated reference for this payment, provided by the application code. This value will be passed back to the callback url provided with the transaction when the payment status changes.
 		/// </summary>
 		/// <remarks>
-		/// <para>Cannot be more than 100 characters long.</para>
-		/// <para>This value is optional, but recommended.</para>
+		/// <para>This value does not need to be unique, but it is recommended to be unique to facilitate tracking of transactions.</para>
+		/// <para>Cannot be more than 100 characters long. The first 12 characters will be shown on the customer's bank statement.</para>
+		/// <para>Special characters are not permitted, namely: @ # ^ ’ % &amp; | &lt; &gt; " ; . \ / ! : ,</para>
 		/// </remarks>
 		[JsonProperty("orderId")]
 		public string OrderId { get; set; }
@@ -76,19 +77,19 @@ namespace Yort.OnlineEftpos
 			}
 		}
 
-		private void ValidateOrderId(string orderId)
+		private static void ValidateOrderId(string orderId)
 		{
-			if (String.IsNullOrEmpty(orderId)) return;
+			if (String.IsNullOrEmpty(orderId)) throw new ArgumentException("OrderId is required.");
 
-			OrderId.GuardMaxLength(100, nameof(OrderId));
-			var invalidCharIndex = OrderId.IndexOfAny(InvalidOrderIdCharacters);
+			orderId.GuardMaxLength(100, nameof(OrderId));
+			var invalidCharIndex = orderId.IndexOfAny(InvalidOrderIdCharacters);
 			if (invalidCharIndex >= 0) throw new ArgumentException("OrderId cannot contain " + orderId.Substring(invalidCharIndex, 1));
 		}
 
-		private void ValidateCurrency(string currency)
+		private static void ValidateCurrency(string currency)
 		{
-			if (String.IsNullOrEmpty(Currency)) return;
-			if (Currency.Length != 3) throw new OnlineEftposInvalidDataException(new ArgumentException("Currency must be three upper case letters."));
+			if (String.IsNullOrEmpty(currency)) return;
+			if (currency.Length != 3) throw new OnlineEftposInvalidDataException(new ArgumentException("Currency must be three upper case letters."));
 
 			foreach (var c in currency)
 			{

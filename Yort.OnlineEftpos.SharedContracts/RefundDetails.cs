@@ -10,6 +10,9 @@ namespace Yort.OnlineEftpos
 	/// </summary>
 	public class RefundDetails : TransactionRequestDetails
 	{
+
+		private static readonly char[] InvalidOrderIdCharacters = new char[] { '@', '#', '^', '%', '&', '|', '<', '>', '"', ';', '.', '\\', '/', '!', ':', ',' };
+
 		/// <summary>
 		/// Sets or returns the amount of the refund in the minimum unit of the currency (i.e for NZ, Australia, US this would be cents).
 		/// </summary>
@@ -38,8 +41,13 @@ namespace Yort.OnlineEftpos
 		public string OriginalPaymentId { get; set; }
 
 		/// <summary>
-		/// The merchant reference for this refund id. Not required to be unique, but recommended.
+		/// A string containing a client generated reference for this refund, provided by the application code. This value will be passed back to the callback url provided with the transaction when the payment status changes.
 		/// </summary>
+		/// <remarks>
+		/// <para>This value does not need to be unique, but it is recommended to be unique to facilitate tracking of transactions.</para>
+		/// <para>Cannot be more than 100 characters long. The first 12 characters will be shown on the customer's bank statement.</para>
+		/// <para>Special characters are not permitted, namely: @ # ^ ’ % &amp; | &lt; &gt; " ; . \ / ! : ,</para>
+		/// </remarks>>
 		[JsonProperty("refundId")]
 		public string RefundId { get; set; }
 
@@ -60,6 +68,8 @@ namespace Yort.OnlineEftpos
 				RefundAmount.GuardMinValue(1, nameof(RefundAmount));
 				OriginalPaymentId.GuardNullEmptyOrWhitespace(nameof(OriginalPaymentId));
 
+				ValidateRefundId(RefundId);
+
 				if ((RefundReason?.Length ?? 0) > 512)
 					throw new ArgumentException(nameof(RefundReason) + "cannot be more than 512 characters.", nameof(RefundReason));
 			}
@@ -67,6 +77,15 @@ namespace Yort.OnlineEftpos
 			{
 				throw new OnlineEftposInvalidDataException(ae);
 			}
+		}
+
+		private static void ValidateRefundId(string refundId)
+		{
+			if (String.IsNullOrEmpty(refundId)) throw new ArgumentException("RefundId is required.");
+
+			refundId.GuardMaxLength(100, nameof(refundId));
+			var invalidCharIndex = refundId.IndexOfAny(InvalidOrderIdCharacters);
+			if (invalidCharIndex >= 0) throw new ArgumentException("RefundId cannot contain " + refundId.Substring(invalidCharIndex, 1));
 		}
 	}
 }

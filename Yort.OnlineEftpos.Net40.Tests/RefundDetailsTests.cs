@@ -100,6 +100,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		{
 			return new RefundDetails()
 			{
+				RefundId = System.Guid.NewGuid().ToString(),
 				OriginalPaymentId = "381a08c8-9189-4995-b07b-6c3821f70e35", 
 				RefundAmount = 1000,
 				RefundReason = "Defective goods",

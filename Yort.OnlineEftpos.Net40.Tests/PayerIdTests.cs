@@ -11,116 +11,185 @@ namespace Yort.OnlineEftpos.Net40.Tests
 	public class PayerIdTests
 	{
 
-		#region IsValidPhoneNumber Tests
+		#region Constants
+
+		private string[] ValidNZMobileNumbers = new string[]
+		{
+			"0215551234",
+			"021012345",
+			"0221234567"
+		};
+
+		private string[] InvalidNZMobileNumbers = new string[]
+		{
+			"021-012-345",
+			"+64 22 123 4567",
+			"026123456",
+			"abc",
+			"Not a phone number",
+			null,
+			String.Empty,
+			"(021)-555-1234",
+			"    ",
+			"123",
+			"12345678901234567890"
+		};
+
+		#endregion
+		
+		#region IsValid Tests
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_ValidatesNZPhoneNumber()
+		public void PayerId_IsValid_ValidatesCorrectNZPhoneNumbers()
 		{
-			Assert.AreEqual(true, PayerId.IsPhoneNumberValidId("0215551234"));
+			var payerIdType = new NZMobilePayerIdType();
+			foreach (var number in ValidNZMobileNumbers)
+			{
+				Assert.AreEqual(true, payerIdType.IsValid(number), $"Failed to validate number {number}");
+			}
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_ValidatesInternationalPhoneNumber()
+		public void PayerId_IsValid_ValidatesInvalidNZPhoneNumbers()
 		{
-			Assert.AreEqual(true, PayerId.IsPhoneNumberValidId("+64215551234"));
+			var payerIdType = new NZMobilePayerIdType();
+			foreach (var number in InvalidNZMobileNumbers)
+			{
+				Assert.AreEqual(false, payerIdType.IsValid(number), $"Failed to validate number {number}");
+			}
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_TextIsInvalid()
+		public void PayerId_IsValid_DoesNotValidateInternationalPhoneNumber()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId("Not a phone number"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("+64215551234"));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_FormattedPhoneNumberIsInvalid()
+		public void PayerId_IsValid_TextIsInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId("(021)-555-1234"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("Not a phone number"));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_NullIsInvalid()
+		public void PayerId_IsValid_FormattedPhoneNumberIsInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId(null));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("(021)-555-1234"));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_EmptyStringIsInvalid()
+		public void PayerId_IsValid_NullIsInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId(String.Empty));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid(null));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_WhitespaceOnlyIsInvalid()
+		public void PayerId_IsValid_EmptyStringIsInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId("   "));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid(String.Empty));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_TooShortNumberInvalid()
+		public void PayerId_IsValid_WhitespaceOnlyIsInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId("123"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("   "));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_TooLongNumberInvalid()
+		public void PayerId_IsValid_TooShortNumberInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId("123456789012345"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("123"));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_TooLongNumberWithInternationalPrefixInvalid()
+		public void PayerId_IsValid_TooLongNumberInvalid()
 		{
-			Assert.AreEqual(false, PayerId.IsPhoneNumberValidId("+123456789012345"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("123456789012345"));
 		}
 
 		[TestMethod]
-		public void PayerId_IsValidPhoneNumber_MaxLengthNumberWithInternationalPrefixIsValid()
+		public void PayerId_IsValid_TooLongNumberWithInternationalPrefixInvalid()
 		{
-			Assert.AreEqual(true, PayerId.IsPhoneNumberValidId("+12345678901234"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual(false, payerIdType.IsValid("+123456789012345"));
 		}
 
 		#endregion
 
-		#region FromPhoneNumber Tests
+		#region Normalize Tests
 
 		[TestMethod]
 		[ExpectedException(typeof(ArgumentNullException))]
-		public void PayerId_FromPhoneNumber_ThrowsOnNull()
+		public void PayerId_Normalize_ThrowsOnNull()
 		{
-			PayerId.FromPhoneNumber(null);
+			var payerIdType = new NZMobilePayerIdType();
+			payerIdType.Normalize(null);
 		}
 
 		[TestMethod]
 		[ExpectedException(typeof(ArgumentException))]
-		public void PayerId_FromPhoneNumber_ThrowsOnEmptyString()
+		public void PayerId_Normalize_ThrowsOnEmptyString()
 		{
-			PayerId.FromPhoneNumber(String.Empty);
+			var payerIdType = new NZMobilePayerIdType();
+			payerIdType.Normalize(String.Empty);
 		}
 
 		[TestMethod]
 		[ExpectedException(typeof(ArgumentException))]
-		public void PayerId_FromPhoneNumber_ThrowsOnWhitespaceOnly()
+		public void PayerId_Normalize_ThrowsOnWhitespaceOnly()
 		{
-			PayerId.FromPhoneNumber("    ");
+			var payerIdType = new NZMobilePayerIdType();
+			payerIdType.Normalize("    ");
 		}
 
 		[TestMethod]
-		public void PayerId_FromPhoneNumber_RemovesFormatting()
+		public void PayerId_Normalize_RemovesFormatting()
 		{
-			Assert.AreEqual("0215551234", PayerId.FromPhoneNumber("(021)-555-1234"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual("0215551234", payerIdType.Normalize("(021)-555-1234"));
 		}
 
 		[TestMethod]
-		public void PayerId_FromPhoneNumber_ValidNumberUnchanged()
+		public void PayerId_Normalize_ValidNumberUnchanged()
 		{
-			Assert.AreEqual("0215551234", PayerId.FromPhoneNumber("0215551234"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual("0215551234", payerIdType.Normalize("0215551234"));
 		}
 
 		[TestMethod]
 		[ExpectedException(typeof(OnlineEftposInvalidDataException))]
-		public void PayerId_FromPhoneNumber_ThrowsOnInvalidPhoneNumber()
+		public void PayerId_Normalize_ThrowsOnInvalidPhoneNumber()
 		{
-			Assert.AreEqual("0215551234", PayerId.FromPhoneNumber("Not a phone number"));
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual("0215551234", payerIdType.Normalize("Not a phone number"));
+		}
+
+		[TestMethod]
+		public void PayerId_Normalize_NormalizesInternationalNumberWithPrefix()
+		{
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual("0215551234", payerIdType.Normalize("+64215551234"));
+		}
+
+		[TestMethod]
+		public void PayerId_Normalize_NormalizesInternationalNumberWithoutPrefix()
+		{
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual("0215551234", payerIdType.Normalize("64215551234"));
+		}
+
+		public void PayerId_Normalize_NormalizesFormattedNumber()
+		{
+			var payerIdType = new NZMobilePayerIdType();
+			Assert.AreEqual("0215551234", payerIdType.Normalize("+64 (21) 555-1234"));
 		}
 
 		#endregion

@@ -38,6 +38,7 @@ namespace Yort.OnlineEftpos.SampleConsoleApp
 
 		private static async Task StartLoopAsync()
 		{
+			var payerIdType = new NZMobilePayerIdType();
 			while (true)
 			{
 				Console.WriteLine("Enter to quit, or enter payer id:");
@@ -47,7 +48,7 @@ namespace Yort.OnlineEftpos.SampleConsoleApp
 
 				try
 				{
-					payerId = PayerId.FromPhoneNumber(payerId);
+					payerId = payerIdType.Normalize(payerId);
 					Console.WriteLine("Normalised Id is: " + payerId);
 
 					await RequestPaymentAmount(payerId);

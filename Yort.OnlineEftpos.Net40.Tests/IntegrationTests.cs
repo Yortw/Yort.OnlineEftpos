@@ -105,7 +105,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Transaction = new PaymentDetails()
 				{
-					Amount = 1000,
+					Amount = 109 * 100,
 					Currency = "NZD",
 					Description = "Test Tran",
 					OrderId = paymentId,
@@ -122,7 +122,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			var statusResult = await client.CheckPaymentStatus(result.Id).ConfigureAwait(false);
 
 			Assert.AreEqual(paymentId, result.Transaction.OrderId);
-			Assert.AreEqual(1000, result.Transaction.Amount);
+			Assert.AreEqual(109 * 100, result.Transaction.Amount);
 			Assert.AreEqual("NZD", result.Transaction.Currency);
 			Assert.AreEqual("ASB", result.Bank.BankId);
 			Assert.AreEqual("MOBILE", result.Bank.PayerIdType);

@@ -16,7 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposCredentials.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposCredentialsProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposRequestAuthoriser.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)PayerId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NZMobilePayerIdType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposRequestBuilder.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SecureStringOnlineEftposCredentialProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Sha512WithRsaVerifier.cs" />
