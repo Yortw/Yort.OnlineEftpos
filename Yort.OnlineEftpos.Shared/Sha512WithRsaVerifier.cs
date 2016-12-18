@@ -79,13 +79,17 @@ namespace Yort.OnlineEftpos
 
 			byte[] bytesToVerify = System.Text.UTF8Encoding.UTF8.GetBytes(notification.SignedData);
 			byte[] signedBytes = System.Convert.FromBase64String(notification.Signature);
+#if NETSTANDARD
+			retVal = _Rsa.VerifyData(bytesToVerify, signedBytes, HashAlgorithmName.SHA512, RSASignaturePadding.Pkcs1);
+#else
 			retVal = _Rsa.VerifyData(bytesToVerify, CryptoConfig.MapNameToOID("SHA512"), signedBytes);
+#endif
 			return retVal;
 		}
 
-		#endregion
+#endregion
 
-		#region Private Methods
+#region Private Methods
 
 		/*
 		"CreateRsa" below is modified from http://www.jensign.com/JavaScience/dotnet/pempublic/
@@ -125,7 +129,7 @@ namespace Yort.OnlineEftpos
 					reader.ReadInt16(); //advance 2 bytes
 				else
 					throw new System.Security.Cryptography.CryptographicException("Could not decode public key.");
-
+				
 				var seq = reader.ReadBytes(15);   //read the Sequence OID
 				if (!CompareBytearrays(seq, SeqOID))  //make sure Sequence for OID is correct
 					throw new System.Security.Cryptography.CryptographicException("Could not decode public key.");

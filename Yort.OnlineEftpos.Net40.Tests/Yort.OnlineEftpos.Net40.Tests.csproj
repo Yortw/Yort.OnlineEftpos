@@ -88,6 +88,7 @@
     <Compile Include="KnownBanksTests.cs" />
     <Compile Include="MerchantDetailsTests.cs" />
     <Compile Include="MockHttpClientHandler.cs" />
+    <Compile Include="OnlineEftposApiExceptionTests.cs" />
     <Compile Include="OnlineEftposApiRouterTests.cs" />
     <Compile Include="OnlineEftposCredentialsProviderTests.cs" />
     <Compile Include="OnlineEftposCredentialsTests.cs" />

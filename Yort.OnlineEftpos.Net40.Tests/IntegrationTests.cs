@@ -39,7 +39,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -99,7 +99,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -160,7 +160,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -298,7 +298,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -331,7 +331,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			{
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -379,7 +379,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -410,7 +410,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			{
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -470,7 +470,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				},
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},
@@ -501,7 +501,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			{
 				Merchant = new MerchantDetails()
 				{
-					CallbackUrl = new Uri("https://connect.ontempo.ws/devtest1/store/v1/EPayment/Paymark/Notification"),
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
 					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
 					MerchantUrl = new Uri("http://www.ontempo.co.nz")
 				},

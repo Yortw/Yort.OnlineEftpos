@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Yort.OnlineEftpos</id>
-        <version>0.0.12-alpha</version>
+        <version>0.0.14-alpha</version>
         <title>Paymark Online Eftpos</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
@@ -42,9 +42,19 @@
             <group targetFramework=".NETFramework4.5">
                 <dependency id="Newtonsoft.Json" version="8.0.2" />
 	    </group>
+	    <group targetFramework=".NETStandard1.3">
+                <dependency id="Newtonsoft.Json" version="9.0.1" />
+                <dependency id="Microsoft.NETCore.Portable.Compatibility" version="1.0.1" />
+                <dependency id="NETStandard.Library" version="1.6.1" />
+                <dependency id="System.Security.Cryptography.Algorithms" version="4.3.0" />
+                <dependency id="System.Security.Cryptography.Primitives" version="4.3.0" />		
+	    </group>
         </dependencies>
     </metadata>
     <files>
+	<file src="Yort.OnlineEftpos.NetStandard13\Bin\Release\Yort.OnlineEftpos.dll" target="lib\netstandard13" />
+	<file src="Yort.OnlineEftpos.NetStandard13\Bin\Release\Yort.OnlineEftpos.xml" target="lib\netstandard13" />
+	<file src="Yort.OnlineEftpos.NetStandard13\Bin\Release\Yort.OnlineEftpos.pdb" target="lib\netstandard13" />
         <file src="Yort.OnlineEftpos.Android\bin\Release\Yort.OnlineEftpos.dll" target="lib\MonoAndroid\Yort.OnlineEftpos.dll" />
         <file src="Yort.OnlineEftpos.Android\bin\Release\Yort.OnlineEftpos.pdb" target="lib\MonoAndroid\Yort.OnlineEftpos.pdb" />
         <file src="Yort.OnlineEftpos.Android\bin\Release\Yort.OnlineEftpos.XML" target="lib\MonoAndroid\Yort.OnlineEftpos.XML" />

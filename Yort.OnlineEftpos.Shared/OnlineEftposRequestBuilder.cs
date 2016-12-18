@@ -117,6 +117,22 @@ namespace Yort.OnlineEftpos
 		/// <returns>An <see cref="OnlineEftposPaymentRequest"/> pre-populated with appropriate values, but unvalidated. Call the <see cref="OnlineEftposPaymentRequest.EnsureValid"/> method to confirm validity.</returns>
 		public OnlineEftposPaymentRequest CreatePaymentRequest(string payerId, string payerIdType, string bankId, string orderId, decimal amount)
 		{
+			return CreatePaymentRequest(payerId, payerIdType, bankId, orderId, amount, this.DefaultUserIP, this.DefaultUserAgent);
+		}
+
+		/// <summary>
+		/// Create a new (unvalidated) payment request using default and supplied values.
+		/// </summary>
+		/// <param name="payerId">The id of the entity to request payment from.</param>
+		/// <param name="payerIdType">The type id provided in the <paramref name="payerId"/> argument. Usually "MOBILE".</param>
+		/// <param name="bankId">The unique ID of the bank to which the payer is registered with/using for this request.</param>
+		/// <param name="orderId">Your (merchant) reference for the transaction.</param>
+		/// <param name="amount">The amount of the transaction as a decimal value.</param> 
+		/// <param name="userAgent">The user agent string of the requesting client.</param>
+		/// <param name="userIP">The IP address of the requesting client.</param>
+		/// <returns>An <see cref="OnlineEftposPaymentRequest"/> pre-populated with appropriate values, but unvalidated. Call the <see cref="OnlineEftposPaymentRequest.EnsureValid"/> method to confirm validity.</returns>
+		public OnlineEftposPaymentRequest CreatePaymentRequest(string payerId, string payerIdType, string bankId, string orderId, decimal amount, string userIP, string userAgent)
+		{
 			return new OnlineEftposPaymentRequest()
 			{
 				Bank = new BankDetails()
@@ -138,8 +154,8 @@ namespace Yort.OnlineEftpos
 					Currency = DefaultCurrency,
 					Description = BuildPurchaseDescription(orderId),
 					OrderId = orderId,
-					UserAgent = this.DefaultUserAgent,
-					UserIPAddress = this.DefaultUserIP
+					UserAgent = userAgent,
+					UserIPAddress = userIP
 				}
 			};
 		}
@@ -153,6 +169,20 @@ namespace Yort.OnlineEftpos
 		/// <returns>An <see cref="OnlineEftposRefundRequest"/> pre-populated with appropriate values, but unvalidated. Call the <see cref="OnlineEftposRefundRequest.EnsureValid"/> method to confirm validity.</returns>
 		public OnlineEftposRefundRequest CreateRefundRequest(string orderId, string originalPaymentId, decimal amount)
 		{
+			return CreateRefundRequest(orderId, originalPaymentId, amount, DefaultUserIP, DefaultUserAgent);
+		}
+
+		/// <summary>
+		/// Create a new (unvalidated) refund request using default and supplied values.
+		/// </summary>
+		/// <param name="orderId">Your (merchant) reference for the transaction.</param>
+		/// <param name="originalPaymentId">The id of the original payment being refunded.</param>
+		/// <param name="amount">The amount of the transaction as a decimal value.</param>
+		/// <param name="userAgent">The user agent string of the requesting client.</param>
+		/// <param name="userIP">The IP address of the requesting client.</param>
+		/// <returns>An <see cref="OnlineEftposRefundRequest"/> pre-populated with appropriate values, but unvalidated. Call the <see cref="OnlineEftposRefundRequest.EnsureValid"/> method to confirm validity.</returns>
+		public OnlineEftposRefundRequest CreateRefundRequest(string orderId, string originalPaymentId, decimal amount, string userIP, string userAgent)
+		{
 			return new OnlineEftposRefundRequest()
 			{
 				Merchant = new MerchantDetails()
@@ -164,8 +194,8 @@ namespace Yort.OnlineEftpos
 					RefundAmount = DecimalToApiAmount(amount),
 					RefundReason = BuildRefundReason(orderId),
 					OriginalPaymentId = originalPaymentId,
-					UserAgent = this.DefaultUserAgent,
-					UserIPAddress = this.DefaultUserIP
+					UserAgent = userAgent,
+					UserIPAddress = userIP
 				}
 			};
 		}
