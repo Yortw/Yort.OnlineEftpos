@@ -13,7 +13,8 @@ namespace Yort.OnlineEftpos.Net40.Tests
 	{
 
 		private const string UatRootUrl = "https://apitest.uat.paymark.nz";
-		private const string LiveRootUrl = "TODO: This.";
+		private const string SandboxUrl = "https://apitest.paymark.nz";
+		private const string LiveRootUrl = "https://api.paymark.nz";
 
 		[TestMethod]
 		public void OnlineEftposApiRouter_ConstructsFor_UatTest_Latest()
@@ -34,9 +35,21 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			TestConstructionAndPath(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.V1P1, UatRootUrl + "/v1.1/");
 		}
 
+		[TestMethod]
+		public void OnlineEftposApiRouter_ConstructsFor_Sandbox_V1P1()
+		{
+			TestConstructionAndPath(OnlineEftposApiEnvironment.Sandbox, OnlineEftposApiVersion.V1P1, SandboxUrl + "/v1.1/");
+		}
+
+		[TestMethod]
+		public void OnlineEftposApiRouter_ConstructsFor_Live_V1P1()
+		{
+			TestConstructionAndPath(OnlineEftposApiEnvironment.Live, OnlineEftposApiVersion.V1P1, LiveRootUrl + "/v1.1/");
+		}
+
 		private static OnlineEftposApiRouter TestConstructionAndPath(OnlineEftposApiEnvironment environment, OnlineEftposApiVersion version, string expectedRootUrl)
 		{
-			var apiRouter = new OnlineEftposApiRouter(OnlineEftposApiEnvironment.Uat, version);
+			var apiRouter = new OnlineEftposApiRouter(environment, version);
 			Assert.AreEqual(environment, apiRouter.Environment);
 			Assert.AreEqual(version, apiRouter.Version);
 			Assert.AreEqual(expectedRootUrl, apiRouter.GetRootUrl().ToString());

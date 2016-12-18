@@ -28,7 +28,7 @@ Currently;
 
 * .Net Framework 4.0
 * .Net Framework 4.5+
-* .Net Standard 1.3
+* .Net Standard 1.3 (supports ASP.Net Core)
 * Xamarin.iOS
 * Xamarin.Android
 * WinRT/UWP  
