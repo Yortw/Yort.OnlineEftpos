@@ -77,6 +77,22 @@ namespace Yort.OnlineEftpos
 			}
 		}
 
+		/// <summary>
+		/// Returns a <see cref="TransactionStatus"/> instance from the provided string containing the name of the status.
+		/// </summary>
+		/// <param name="status">A string containing a value that matches a <see cref="TransactionStatus.Name"/> for a status that is valid for a refund.</param>
+		/// <returns>A <see cref="TransactionStatus"/> instance.</returns>
+		/// <exception cref="Yort.OnlineEftpos.OnlineEftposInvalidDataException">Thrown if <paramref name="status"/> does not match any known status.</exception>
+		public static TransactionStatus FromString(string status)
+		{
+			if (status == Unsubmitted) return Unsubmitted;
+			if (status == Error) return Error;
+			if (status == Refunded) return Refunded;
+			if (status == Declined) return Declined;
+
+			throw new OnlineEftposInvalidDataException($"Unknown status \"{status}\"");
+		}
+
 		#endregion
 
 	}

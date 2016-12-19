@@ -69,5 +69,36 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual(false, RefundStatus.Refunded.IsTerminal);
 		}
 
+		[TestMethod]
+		public void RefundStatus_FromString_Declined()
+		{
+			Assert.AreEqual(RefundStatus.Declined, RefundStatus.FromString("Declined"));
+		}
+
+		[TestMethod]
+		public void RefundStatus_FromString_Error()
+		{
+			Assert.AreEqual(RefundStatus.Error, RefundStatus.FromString("Error"));
+		}
+
+		[TestMethod]
+		public void RefundStatus_FromString_Refunded()
+		{
+			Assert.AreEqual(RefundStatus.Refunded, RefundStatus.FromString("Refunded"));
+		}
+
+		[TestMethod]
+		public void RefundStatus_FromString_Unsubmitted()
+		{
+			Assert.AreEqual(RefundStatus.Unsubmitted, RefundStatus.FromString("Unsubmitted"));
+		}
+
+		[ExpectedException(typeof(OnlineEftposInvalidDataException))]
+		[TestMethod]
+		public void RefundStatus_FromString_UnknownStatus()
+		{
+			RefundStatus.FromString("Not A Status");
+		}
+
 	}
 }

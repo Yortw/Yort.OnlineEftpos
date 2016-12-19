@@ -124,5 +124,55 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual(false, PaymentStatus.Submitted.IsTerminal);
 		}
 
+
+		[TestMethod]
+		public void PaymentStatus_FromString_Authorised()
+		{
+			Assert.AreEqual(PaymentStatus.Authorised, PaymentStatus.FromString("Authorised"));
+		}
+
+		[TestMethod]
+		public void PaymentStatus_FromString_Declined()
+		{
+			Assert.AreEqual(PaymentStatus.Declined, PaymentStatus.FromString("Declined"));
+		}
+
+		[TestMethod]
+		public void PaymentStatus_FromString_Error()
+		{
+			Assert.AreEqual(PaymentStatus.Error, PaymentStatus.FromString("Error"));
+		}
+
+		[TestMethod]
+		public void PaymentStatus_FromString_Expired()
+		{
+			Assert.AreEqual(PaymentStatus.Expired, PaymentStatus.FromString("Expired"));
+		}
+
+		[TestMethod]
+		public void PaymentStatus_FromString_New()
+		{
+			Assert.AreEqual(PaymentStatus.New, PaymentStatus.FromString("New"));
+		}
+
+		[TestMethod]
+		public void PaymentStatus_FromString_Refunded()
+		{
+			Assert.AreEqual(PaymentStatus.Refunded, PaymentStatus.FromString("Refunded"));
+		}
+
+		[TestMethod]
+		public void PaymentStatus_FromString_Submitted()
+		{
+			Assert.AreEqual(PaymentStatus.Submitted, PaymentStatus.FromString("Submitted"));
+		}
+
+		[ExpectedException(typeof(OnlineEftposInvalidDataException))]
+		[TestMethod]
+		public void PaymentStatus_FromString_UnknownStatus()
+		{
+			PaymentStatus.FromString("Not A Status");
+		}
+
 	}
 }
