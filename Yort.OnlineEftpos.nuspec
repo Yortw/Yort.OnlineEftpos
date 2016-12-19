@@ -76,5 +76,6 @@
         <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.dll" target="lib\wpa81\Yort.OnlineEftpos.dll" />
         <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.pdb" target="lib\wpa81\Yort.OnlineEftpos.pdb" />
         <file src="Yort.OnlineEftpos.WinRT\bin\Release\Yort.OnlineEftpos.XML" target="lib\wpa81\Yort.OnlineEftpos.XML" />
+	<file src="**\*.cs" target="src" />
     </files>
 </package>

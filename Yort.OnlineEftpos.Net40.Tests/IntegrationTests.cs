@@ -63,6 +63,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual(result.Transaction.Description, "Test Tran");
 			Assert.AreEqual(result.Transaction.OrderId, orderId);
 			Assert.AreEqual(result.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 		}
 
 		/// <summary>
@@ -117,6 +120,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.IsNotNull(result);
 			Assert.IsTrue(!String.IsNullOrWhiteSpace(result.Id), "Invalid (blank) id returned.");
 
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
+
 			#endregion
 
 			var statusResult = await client.CheckPaymentStatus(result.Id).ConfigureAwait(false);
@@ -128,6 +134,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual("MOBILE", result.Bank.PayerIdType);
 			Assert.AreEqual("021555123", result.Bank.PayerId);
 			Assert.AreEqual(Environment.GetEnvironmentVariable("PaymarkMerchantId"), result.Merchant.MerchantIdCode);
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 		}
 
 		[TestMethod]
@@ -178,6 +187,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.IsNotNull(result);
 			Assert.IsTrue(!String.IsNullOrWhiteSpace(result.Id), "Invalid (blank) id returned.");
 
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
+
 			#endregion
 
 			var searchResult = await client.PaymentSearch(new OnlineEftposPaymentSearchOptions()
@@ -195,6 +207,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual("NZD", paymentResult.Transaction.Currency);
 			Assert.AreEqual("021555123", paymentResult.Bank.PayerId);
 			Assert.AreEqual(Environment.GetEnvironmentVariable("PaymarkMerchantId"), paymentResult.Merchant.MerchantIdCode);
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 		}
 
 		[TestMethod]
@@ -265,8 +280,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			var paymentId = System.Guid.NewGuid().ToString();
 			var statusResult = await client.CheckPaymentStatus(paymentId).ConfigureAwait(false);
 		}
-
-
+		
 		#endregion
 
 		#region Refund Tests
@@ -314,6 +328,8 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			}).ConfigureAwait(false);
 
 			Assert.IsNotNull(result);
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 
 			var sw = new Stopwatch();
 			sw.Start();
@@ -350,6 +366,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.IsTrue(!String.IsNullOrWhiteSpace(refundResult.Id), "Invalid (blank) refund id returned.");
 			Assert.AreEqual(refundResult.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
 			Assert.IsTrue(refundResult.Status == RefundStatus.Refunded, "Status is not refunded");
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 		}
 
 		[TestMethod]
@@ -396,6 +415,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			Assert.IsNotNull(result);
 
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
+
 			var sw = new Stopwatch();
 			sw.Start();
 			while (result.Status != PaymentStatus.Authorised && sw.Elapsed.Seconds < 60)
@@ -441,6 +463,8 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual(refundResult.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
 			Assert.IsTrue(refundResult.Status == RefundStatus.Refunded, "Status is not refunded");
 
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 		}
 
 		[TestMethod]
@@ -487,6 +511,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			Assert.IsNotNull(result);
 
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
+
 			var sw = new Stopwatch();
 			sw.Start();
 			while (result.Status != PaymentStatus.Authorised && sw.Elapsed.Seconds < 60)
@@ -528,6 +555,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.IsTrue(!String.IsNullOrWhiteSpace(recheckResult.Id), "Invalid (blank) refund id returned.");
 			Assert.AreEqual(recheckResult.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
 			Assert.IsTrue(recheckResult.Status == RefundStatus.Refunded, "Status is not refunded");
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
 		}
 
 		[TestMethod]
