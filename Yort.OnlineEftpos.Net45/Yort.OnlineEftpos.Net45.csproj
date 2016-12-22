@@ -57,12 +57,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <CodeAnalysisDictionary Include="..\CodeAnalysisDictionary.xml">
       <Link>Properties\CodeAnalysisDictionary.xml</Link>
     </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\Yort.OnlineEftpos.SharedContracts\Yort.OnlineEftpos.SharedContracts.projitems" Label="Shared" />
   <Import Project="..\Yort.OnlineEftpos.Shared\Yort.OnlineEftpos.Shared.projitems" Label="Shared" />

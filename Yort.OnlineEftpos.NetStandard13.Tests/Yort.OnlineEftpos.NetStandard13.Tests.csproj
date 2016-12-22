@@ -42,7 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="Yort.OnlineEftpos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Yort.OnlineEftpos.0.0.14-alpha\lib\net45\Yort.OnlineEftpos.dll</HintPath>
+      <HintPath>..\packages\Yort.OnlineEftpos.1.0.0\lib\net45\Yort.OnlineEftpos.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
