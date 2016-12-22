@@ -6,6 +6,9 @@
         <title>Yort.OnlineEFTPOS</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
+	<licenseUrl>https://github.com/Yortw/Yort.OnlineEftpos/blob/master/LICENSE.md</licenseUrl>
+	<projectUrl>https://github.com/Yortw/Yort.OnlineEftpos</projectUrl>
+	<iconUrl>https://raw.githubusercontent.com/Yortw/Yort.OnlineEftpos/master/Icon.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Provides an OOP model for .Net users to make payment and refund requests via the Paymark Online Eftpos API. See http://docs.dev.paymark.nz/oe for the official API documentation.</description>
         <summary>An unofficial, lightweight .Net wrapper around the Paymark Online Eftpos API.</summary>
