@@ -63,7 +63,7 @@ Then create a client, specifying the credential provider, target API version and
 ```C#
 IOnlineEftposClient client = new OnlineEftposClient(credentialProvider, 
     OnlineEftposApiVersion.Latest, 
-    OnlineEftposApiEnvironment.sandbox
+    OnlineEftposApiEnvironment.Sandbox
 );
 ```
 
@@ -142,7 +142,7 @@ Methods for status checking and transaction search should be self-explanatory af
 You can validate that a notification actually came from the Paymark API rather than a malicious actor by using the notification verifier.
 
 ```C#
-// Create a notification using the content sent to the end point.
+// Create a notification using the (string) content sent to the end point.
 var notification = new OnlineEftposNotification(content);
 
 // Create a verifier with the appropriate public key for the API environment, the notification came from. 
