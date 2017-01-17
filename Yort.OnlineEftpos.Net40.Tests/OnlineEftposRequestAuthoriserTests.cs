@@ -17,7 +17,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		public async Task OnlineEftposRequestAuthoriser_SignsRequest()
 		{
 			var credProvider = new OnlineEftposCredentialsProvider(new OnlineEftposCredentials("mykey", "mysecret"));
+#pragma warning disable CS0618 // Type or member is obsolete
 			var router = new OnlineEftposApiRouter(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.V1P1);
+#pragma warning restore CS0618 // Type or member is obsolete
 			var handler = GetMockHandler(TimeSpan.FromHours(1));
 			var client = new System.Net.Http.HttpClient(handler);
 			
@@ -36,7 +38,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		public async Task OnlineEftposRequestAuthoriser_DoesNotObtainTokenEveryRequest()
 		{
 			var credProvider = new OnlineEftposCredentialsProvider(new OnlineEftposCredentials("mykey", "mysecret"));
+#pragma warning disable CS0618 // Type or member is obsolete
 			var router = new OnlineEftposApiRouter(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.V1P1);
+#pragma warning restore CS0618 // Type or member is obsolete
 			var handler = GetMockHandler(TimeSpan.FromHours(1));
 			var client = new System.Net.Http.HttpClient(handler);
 
@@ -59,7 +63,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		public async Task OnlineEftposRequestAuthoriser_UpdatesExpiredToken()
 		{
 			var credProvider = new OnlineEftposCredentialsProvider(new OnlineEftposCredentials("mykey", "mysecret"));
+#pragma warning disable CS0618 // Type or member is obsolete
 			var router = new OnlineEftposApiRouter(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.V1P1);
+#pragma warning restore CS0618 // Type or member is obsolete
 			var handler = GetMockHandler(TimeSpan.FromSeconds(5));
 			var client = new System.Net.Http.HttpClient(handler);
 

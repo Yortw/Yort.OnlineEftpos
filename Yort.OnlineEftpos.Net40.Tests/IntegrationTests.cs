@@ -27,7 +27,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
 			);
 
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			var orderId = System.Guid.NewGuid().ToString();
 			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
 			{
@@ -91,7 +91,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			//Make a payment
 
 			var paymentId = System.Guid.NewGuid().ToString();
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
 			{
 				Bank = new BankDetails()
@@ -158,7 +158,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			//Make a payment
 
 			var orderId = System.Guid.NewGuid().ToString();
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
 			{
 				Bank = new BankDetails()
@@ -230,7 +230,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			#endregion
 
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 
 			var searchResult = await client.PaymentSearch(new OnlineEftposPaymentSearchOptions()
 			{
@@ -273,7 +273,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			);
 
 			//Make a payment
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 
 			#endregion
 
@@ -300,7 +300,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
 			);
 
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			var orderId = System.Guid.NewGuid().ToString();
 			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
 			{
@@ -386,7 +386,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
 			);
 
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			var orderId = System.Guid.NewGuid().ToString();
 			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
 			{
@@ -482,7 +482,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
 			);
 
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			var orderId = System.Guid.NewGuid().ToString();
 			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
 			{
@@ -577,7 +577,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			#endregion
 
-			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Sandbox);
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
 			
 			var searchResult = await client.RefundSearch(new OnlineEftposRefundSearchOptions()
 			{

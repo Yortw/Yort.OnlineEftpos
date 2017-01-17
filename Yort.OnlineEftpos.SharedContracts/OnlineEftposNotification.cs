@@ -21,9 +21,10 @@ namespace Yort.OnlineEftpos
 
 		private string _MerchantOrderId;
 		private string _Status;
+		private string _TransactionId;
 		private string _Signature;
 		private string _SignedData;
-
+		
 		#endregion
 
 		#region Constructors
@@ -69,6 +70,17 @@ namespace Yort.OnlineEftpos
 			{
 				return _MerchantOrderId;
 			}
+		}
+
+		/// <summary>
+		/// Returns the Paymark transaction id included in the notification, representing the transaction the notification is for.
+		/// </summary>
+		/// <remarks>
+		/// <para>This value is included in transactions from February 2017 onwards, may not be included in earlier notifications and may return null or "" instead.</para>
+		/// </remarks>
+		public string TransactionId
+		{
+			get { return _TransactionId; }
 		}
 
 		/// <summary>
@@ -137,6 +149,9 @@ namespace Yort.OnlineEftpos
 					break;
 				case "SIGNATURE":
 					_Signature = value;
+					break;
+				case "TRANSACTIONID":
+					_TransactionId = value;
 					break;
 			}
 		}

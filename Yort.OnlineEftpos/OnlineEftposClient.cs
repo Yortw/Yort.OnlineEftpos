@@ -52,7 +52,7 @@ namespace Yort.OnlineEftpos
 			get
 			{
 				ExceptionHelper.ThrowYoureDoingItWrong();
-				return OnlineEftposApiVersion.Latest; //Work around compiler warning.
+				return OnlineEftposApiVersion.None; //Work around compiler warning.
 			}
 		}
 

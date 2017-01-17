@@ -29,7 +29,7 @@ namespace Yort.OnlineEftpos.SampleConsoleApp
 			};
 
 			var creds = new OnlineEftposCredentials("yourkey", "yoursecret");
-			_Client = new OnlineEftposClient(new OnlineEftposCredentialsProvider(creds), OnlineEftposApiVersion.Latest, OnlineEftposApiEnvironment.Uat);
+			_Client = new OnlineEftposClient(new OnlineEftposCredentialsProvider(creds), OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Uat);
 
 			var t = StartLoopAsync();
 			Console.WriteLine("Press enter to quit.");

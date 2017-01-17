@@ -19,32 +19,40 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		[TestMethod]
 		public void OnlineEftposApiRouter_ConstructsFor_UatTest_Latest()
 		{
-			TestConstructionAndPath(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.Latest, UatRootUrl +"/v1.1/");
+			TestConstructionAndPath(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.None, UatRootUrl +"/");
 		}
 
 		[TestMethod]
 		public void OnlineEftposApiRouter_ConstructsRelativeUrlWithoutLeadingSlash()
 		{
+#pragma warning disable CS0618 // Type or member is obsolete
 			var router = TestConstructionAndPath(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.V1P1, UatRootUrl + "/v1.1/");
+#pragma warning restore CS0618 // Type or member is obsolete
 			Assert.AreEqual("https://apitest.uat.paymark.nz/v1.1/oempayment", router.GetUrl("oempayment").ToString());
 		}
 
 		[TestMethod]
 		public void OnlineEftposApiRouter_ConstructsFor_UatTest_V1P1()
 		{
+#pragma warning disable CS0618 // Type or member is obsolete
 			TestConstructionAndPath(OnlineEftposApiEnvironment.Uat, OnlineEftposApiVersion.V1P1, UatRootUrl + "/v1.1/");
+#pragma warning restore CS0618 // Type or member is obsolete
 		}
 
 		[TestMethod]
 		public void OnlineEftposApiRouter_ConstructsFor_Sandbox_V1P1()
 		{
+#pragma warning disable CS0618 // Type or member is obsolete
 			TestConstructionAndPath(OnlineEftposApiEnvironment.Sandbox, OnlineEftposApiVersion.V1P1, SandboxUrl + "/v1.1/");
+#pragma warning restore CS0618 // Type or member is obsolete
 		}
 
 		[TestMethod]
 		public void OnlineEftposApiRouter_ConstructsFor_Live_V1P1()
 		{
+#pragma warning disable CS0618 // Type or member is obsolete
 			TestConstructionAndPath(OnlineEftposApiEnvironment.Live, OnlineEftposApiVersion.V1P1, LiveRootUrl + "/v1.1/");
+#pragma warning restore CS0618 // Type or member is obsolete
 		}
 
 		private static OnlineEftposApiRouter TestConstructionAndPath(OnlineEftposApiEnvironment environment, OnlineEftposApiVersion version, string expectedRootUrl)

@@ -40,7 +40,15 @@ namespace Yort.OnlineEftpos
 		public Uri GetRootUrl()
 		{
 			if (_RootUrl == null)
-				_RootUrl = new Uri(new Uri(GetEnvironmentRootUrl(), UriKind.Absolute), GetVersionPath() + "/");
+			{
+				var root = new Uri(GetEnvironmentRootUrl(), UriKind.Absolute);
+
+				var versionPath = GetVersionPath();
+				if (!String.IsNullOrEmpty(versionPath))
+					root = new Uri(root, versionPath + "/");
+
+				_RootUrl = root;
+			}
 
 			return _RootUrl;
 		}
@@ -76,8 +84,12 @@ namespace Yort.OnlineEftpos
 		{
 			switch (_Version)
 			{
-				case OnlineEftposApiVersion.Latest:
+				case OnlineEftposApiVersion.None:
+					return null;
+
+#pragma warning disable CS0618 // Type or member is obsolete
 				case OnlineEftposApiVersion.V1P1:
+#pragma warning restore CS0618 // Type or member is obsolete
 					return "v1.1";
 
 				default:
