@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyProduct("Yort.OnlineEftpos")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: CLSCompliant(false)]
 
 // Version information for an assembly consists of the following four values:
