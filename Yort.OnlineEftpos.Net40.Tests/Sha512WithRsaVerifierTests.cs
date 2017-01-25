@@ -28,9 +28,18 @@ jHGLniT10ksfmpy1/Mkedup9/cu4Gk4+qaL9/IQZRi+R2nRkVfT9CuBlaeF96Oae
 -----END PUBLIC KEY-----";
 
 		[TestMethod]
-		public void Sha512withRsaVerifier_Verify_VerifiesCorrectSignature()
+		public void Sha512withRsaVerifier_Verify_VerifiesCorrectSignature_WithoutTransactionId()
 		{
 			var notification = new OnlineEftposNotification("merchantOrderId=4ddb8c39-fc54-4b94-90bd-9db5e8af6205&status=AUTHORISED&signature=G%2BcKtUuzwcOsFs%2Fy%2FHKHYbQWiQVkzoemSvkNTP9BJS15ugXhTO4x1B8A3OHtYk8JJHfn2RtRmovuC3B3eZ50VELWq62A06Nn5omSBWwtXuAJMBgnr4wT9fCTOLyC0E%2Ftiqx1HJo3Q%2FuPsDbXIVxag6iCMC79vQQA84ft6SC%2F3U%2FTzI28ZDEs163OM7jJZOtaDJuFeEzg4LFFBfm9O43T0XhWt177bqPHNvE2lGP8w0%2F9bce%2F6lr0ckauaYcVGRdY1Yq%2BUfx7j%2BF0Yzd36jFgz2oY5WSve2UbT7hDjrNEi12f7ZcV6hpZCgtXCTcoLRceHXaDXpGFEKrz0AyRLYJO%2Fm05F%2FTnK%2B9M52dptoXw4hNl7aEJ6hxIEKYgaPMzwuBzJrEn1Aqt7Zf8YHzV%2BmiGiDQWBE8d0QRJJbAN9pP%2B3GFrTVCNEzvORxBEFx%2BP1oKBQXkKa4UFMaYp8XNPbIC6UYPXKjifndvKHjYKNigFZbqBYjz9oHkTmjSzpvjdD6d7kpg0%2FYjScagWWtsAifSYMY9i1YlUeqAZxthXRotEBR%2FYvM6oYmMl0IiQMkE703B5xLkfWiL6pfucrnzDVOKYM%2BPbAc3IAH%2F8uUbd5RNJMSqjCnKIJo1ggthnN5ECBBbChnlUjcsuo1N%2BYcQqRq0NAdm2YEaJrr2pWx4Um3FtZO8%3D");
+			var verifier = new Sha512WithRsaVerifier(SandboxPublicKey);
+
+			Assert.IsTrue(verifier.Verify(notification));
+		}
+
+		[TestMethod]
+		public void Sha512withRsaVerifier_Verify_VerifiesCorrectSignature()
+		{
+			var notification = new OnlineEftposNotification("merchantOrderId=d387fd32-ca20-467c-8693-1c73dea9806e&status=AUTHORISED&transactionId=f2b22ebf-f2b4-490d-a537-a3a745b95a8c&signature=KN4C8fZQYY9opQI9NxUl%2BA9HyEh%2F5f%2Feid7Q00Iv815c%2FqugR3%2BjR6braSKUEacJLOJV0hojXAQ59mmjfw%2BtZKCCeYVQd%2Bqt%2FI%2Fn28ZNUEwr%2Fdb4UEiblIf0bz2aPJiGp6L%2FxGdIO7xD47JVR%2FWSy43wv%2FweLgWfrjwaiDJJD8K5Bv8dwPVC%2Ft%2BgmRW4CN2rk547Xja7aKOwxVze1kwtwGvaVtNsUQOWlKZhkcQLDmTgT1gAOCCHa6DCJUSZHzwiHvkltaMtgDqeFZv5AmayX14iiueOrUf24dHYi68YLuu9czCK%2Bc4FIZ4RHlir21hYUcCTzsqokAL1UpO%2BzGu%2BefWZi53CHQdlthNSrBWEVpmgi8d4zAq4FTvioPkosj%2BOefMaXTBCDKRus%2F3UrOWFWWIcEo%2F74yUotiUUkdhG%2FVnillyc7KvT98oIG0bh04byeVFE377WK%2Bur2kFHTZofb%2B8SK%2FRS8oEn%2FOSEK25MJDLHrOcCy3l4BkX3%2FW9lmS8ysUdnoHtzlvWrcJlfcjOCXxyl1LSUkZbTxou8xyUX02Vyn54nG8yOiNNZd10VxJ%2BZALcS0YgTUb73gfcNJWe6u7JcIuRDr9SJvvrfVuKR34Vq3rF%2FUheEBH%2B7Mzu5N%2BJyKJ%2BsUPSgczQRZM9%2B5KhR0DeM2hLWTlATCsY%2FzuK7CtA%3D");
 			var verifier = new Sha512WithRsaVerifier(SandboxPublicKey);
 
 			Assert.IsTrue(verifier.Verify(notification));
