@@ -1,0 +1,467 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.PayerId
+  commentId: T:Yort.OnlineEftpos.PayerId
+  id: PayerId
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.PayerId.FromPhoneNumber(System.String)
+  - Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PayerId
+  nameWithType: PayerId
+  fullName: Yort.OnlineEftpos.PayerId
+  type: Class
+  source:
+    id: PayerId
+    path: ''
+    startLine: 581
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nProvides methods for validation and normalising payer ids.\n"
+  example: []
+  syntax:
+    content: public static class PayerId
+    content.vb: Public Module PayerId
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Yort.OnlineEftpos.PayerId.FromPhoneNumber(System.String)
+  commentId: M:Yort.OnlineEftpos.PayerId.FromPhoneNumber(System.String)
+  id: FromPhoneNumber(System.String)
+  parent: Yort.OnlineEftpos.PayerId
+  langs:
+  - csharp
+  - vb
+  name: FromPhoneNumber(String)
+  nameWithType: PayerId.FromPhoneNumber(String)
+  fullName: Yort.OnlineEftpos.PayerId.FromPhoneNumber(System.String)
+  type: Method
+  source:
+    id: FromPhoneNumber
+    path: ''
+    startLine: 594
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nAttempts to normalise a string containing a phone number to a form that can be used as a payer id.\n"
+  remarks: "\n<p>This method will remove or ignore any invalid characters in the string provided and return the rules. The result is validated via the <xref href=\"Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)\" data-throw-if-not-resolved=\"false\"></xref> method before being returned, and if invalid an exception is thrown.</p>\n"
+  example: []
+  syntax:
+    content: public static string FromPhoneNumber(string phoneNumber)
+    parameters:
+    - id: phoneNumber
+      type: System.String
+      description: A string containing a phone number.
+    return:
+      type: System.String
+      description: A new string containing the normalised form of the phone number.
+    content.vb: Public Shared Function FromPhoneNumber(phoneNumber As String) As String
+  overload: Yort.OnlineEftpos.PayerId.FromPhoneNumber*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> is an empty string or contains only whitespace characters.
+  - type: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    description: Thrown if the converted <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> value does not pass validation by the <xref href="Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)" data-throw-if-not-resolved="false"></xref> method.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)
+  commentId: M:Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)
+  id: IsPhoneNumberValidId(System.String)
+  parent: Yort.OnlineEftpos.PayerId
+  langs:
+  - csharp
+  - vb
+  name: IsPhoneNumberValidId(String)
+  nameWithType: PayerId.IsPhoneNumberValidId(String)
+  fullName: Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)
+  type: Method
+  source:
+    id: IsPhoneNumberValidId
+    path: ''
+    startLine: 606
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns true if the specified strings matches the pattern for a phone number used as a payer id.\n"
+  example: []
+  syntax:
+    content: public static bool IsPhoneNumberValidId(string phoneNumber)
+    parameters:
+    - id: phoneNumber
+      type: System.String
+      description: A string containing the phone number to check.
+    return:
+      type: System.Boolean
+      description: True if the string matches the pattern for a phone number that can be used as a payer id.
+    content.vb: Public Shared Function IsPhoneNumberValidId(phoneNumber As String) As Boolean
+  overload: Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)
+  commentId: M:Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId(System.String)
+- uid: Yort.OnlineEftpos.PayerId.FromPhoneNumber*
+  commentId: Overload:Yort.OnlineEftpos.PayerId.FromPhoneNumber
+  isExternal: false
+  name: FromPhoneNumber
+  nameWithType: PayerId.FromPhoneNumber
+  fullName: Yort.OnlineEftpos.PayerId.FromPhoneNumber
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  isExternal: false
+  name: OnlineEftposInvalidDataException
+  nameWithType: OnlineEftposInvalidDataException
+  fullName: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId*
+  commentId: Overload:Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId
+  isExternal: false
+  name: IsPhoneNumberValidId
+  nameWithType: PayerId.IsPhoneNumberValidId
+  fullName: Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

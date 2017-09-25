@@ -1,0 +1,723 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.PaymentStatus
+  commentId: T:Yort.OnlineEftpos.PaymentStatus
+  id: PaymentStatus
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.PaymentStatus.Authorised
+  - Yort.OnlineEftpos.PaymentStatus.Declined
+  - Yort.OnlineEftpos.PaymentStatus.Error
+  - Yort.OnlineEftpos.PaymentStatus.Expired
+  - Yort.OnlineEftpos.PaymentStatus.FromString(System.String)
+  - Yort.OnlineEftpos.PaymentStatus.New
+  - Yort.OnlineEftpos.PaymentStatus.Refunded
+  - Yort.OnlineEftpos.PaymentStatus.Submitted
+  langs:
+  - csharp
+  - vb
+  name: PaymentStatus
+  nameWithType: PaymentStatus
+  fullName: Yort.OnlineEftpos.PaymentStatus
+  type: Class
+  source:
+    id: PaymentStatus
+    path: ''
+    startLine: 5023
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nProvides a list of the possible states for a payment transaction, and details of each status.\n"
+  example: []
+  syntax:
+    content: public static class PaymentStatus
+    content.vb: Public Module PaymentStatus
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Yort.OnlineEftpos.PaymentStatus.New
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.New
+  id: New
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: New
+  nameWithType: PaymentStatus.New
+  fullName: Yort.OnlineEftpos.PaymentStatus.New
+  type: Property
+  source:
+    id: New
+    path: ''
+    startLine: 5043
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe &apos;New&apos; status.\n"
+  remarks: "\n<p>A new payment request from a merchant, which has not been processed yet.</p>\n<p>Possible states following this one; <xref href=\"Yort.OnlineEftpos.PaymentStatus.Submitted\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Yort.OnlineEftpos.PaymentStatus.Error\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus New { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property New As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.New*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.Error
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Error
+  id: Error
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: PaymentStatus.Error
+  fullName: Yort.OnlineEftpos.PaymentStatus.Error
+  type: Property
+  source:
+    id: Error
+    path: ''
+    startLine: 5058
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe status for payment that has encountered a processing error.\n"
+  remarks: "\n<p>A payment request could not be successfully sent to the bank.</p>\n<p>This is a &apos;final&apos; status.</p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus Error { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property Error As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.Error*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.Submitted
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Submitted
+  id: Submitted
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Submitted
+  nameWithType: PaymentStatus.Submitted
+  fullName: Yort.OnlineEftpos.PaymentStatus.Submitted
+  type: Property
+  source:
+    id: Submitted
+    path: ''
+    startLine: 5073
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe &apos;Submitted&apos; status.\n"
+  remarks: "\n<p>A payment request which has been sent to a bank for processing, and for which the bank has acknowledge the request.</p>\n<p>Possible states following this one; <xref href=\"Yort.OnlineEftpos.PaymentStatus.Authorised\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Yort.OnlineEftpos.PaymentStatus.Declined\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Yort.OnlineEftpos.PaymentStatus.Error\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus Submitted { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property Submitted As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.Submitted*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.Authorised
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Authorised
+  id: Authorised
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Authorised
+  nameWithType: PaymentStatus.Authorised
+  fullName: Yort.OnlineEftpos.PaymentStatus.Authorised
+  type: Property
+  source:
+    id: Authorised
+    path: ''
+    startLine: 5088
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe &apos;Authorised&apos; status, indicating the payment has been processed succesfully and funds transferred.\n"
+  remarks: "\n<p></p>\n<p>This is NOT a &apos;final&apos; status as the payment could changed to a <xref href=\"Yort.OnlineEftpos.PaymentStatus.Refunded\" data-throw-if-not-resolved=\"false\"></xref> status.</p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus Authorised { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property Authorised As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.Authorised*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.Declined
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Declined
+  id: Declined
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Declined
+  nameWithType: PaymentStatus.Declined
+  fullName: Yort.OnlineEftpos.PaymentStatus.Declined
+  type: Property
+  source:
+    id: Declined
+    path: ''
+    startLine: 5103
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe &apos;Declined&apos; status indicating the payment was refused or could not be processed due to insufficient funds etc.\n"
+  remarks: "\n<p>A payment request, for which the bank has notified Paymark that the account holder has declined the payment.</p>\n<p>This is a &apos;final&apos; status.</p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus Declined { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property Declined As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.Declined*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.Expired
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Expired
+  id: Expired
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Expired
+  nameWithType: PaymentStatus.Expired
+  fullName: Yort.OnlineEftpos.PaymentStatus.Expired
+  type: Property
+  source:
+    id: Expired
+    path: ''
+    startLine: 5118
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe &apos;Expired&apos; status indicates a payment was not approved or declined within the timeframe allowed by the API.\n"
+  remarks: "\n<p>A payment request, for which the bank has notified Paymark that the account holder has declined the payment.</p>\n<p>This is a &apos;final&apos; status.</p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus Expired { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property Expired As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.Expired*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.Refunded
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Refunded
+  id: Refunded
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Refunded
+  nameWithType: PaymentStatus.Refunded
+  fullName: Yort.OnlineEftpos.PaymentStatus.Refunded
+  type: Property
+  source:
+    id: Refunded
+    path: ''
+    startLine: 5133
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe &apos;Refunded&apos; status indicates at least part of this payment has been refunded.\n"
+  remarks: "\n<p>A payment request which was successfully authorised, but which has been subsequently successfully refunded.</p>\n<p>This status is not considered &apos;final&apos; as part refunds can be refunded again, though the status technically changes it will still be &apos;refunded&apos;.</p>\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus Refunded { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+    content.vb: Public Shared ReadOnly Property Refunded As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.Refunded*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.PaymentStatus.FromString(System.String)
+  commentId: M:Yort.OnlineEftpos.PaymentStatus.FromString(System.String)
+  id: FromString(System.String)
+  parent: Yort.OnlineEftpos.PaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: FromString(String)
+  nameWithType: PaymentStatus.FromString(String)
+  fullName: Yort.OnlineEftpos.PaymentStatus.FromString(System.String)
+  type: Method
+  source:
+    id: FromString
+    path: ''
+    startLine: 5147
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a <xref href=\"Yort.OnlineEftpos.TransactionStatus\" data-throw-if-not-resolved=\"false\"></xref> instance from the provided string containing the name of the status.\n"
+  example: []
+  syntax:
+    content: public static TransactionStatus FromString(string status)
+    parameters:
+    - id: status
+      type: System.String
+      description: A string containing a value that matches a <xref href="Yort.OnlineEftpos.TransactionStatus.Name" data-throw-if-not-resolved="false"></xref> for a status that is valid for a payment.
+    return:
+      type: Yort.OnlineEftpos.TransactionStatus
+      description: A <xref href="Yort.OnlineEftpos.TransactionStatus" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function FromString(status As String) As TransactionStatus
+  overload: Yort.OnlineEftpos.PaymentStatus.FromString*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">status</code> does not match any known status.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.PaymentStatus.Submitted
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Submitted
+- uid: Yort.OnlineEftpos.PaymentStatus.Error
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Error
+- uid: Yort.OnlineEftpos.PaymentStatus.New*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.New
+  isExternal: false
+  name: New
+  nameWithType: PaymentStatus.New
+  fullName: Yort.OnlineEftpos.PaymentStatus.New
+- uid: Yort.OnlineEftpos.TransactionStatus
+  commentId: T:Yort.OnlineEftpos.TransactionStatus
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: TransactionStatus
+  nameWithType: TransactionStatus
+  fullName: Yort.OnlineEftpos.TransactionStatus
+- uid: Yort.OnlineEftpos.PaymentStatus.Error*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.Error
+  isExternal: false
+  name: Error
+  nameWithType: PaymentStatus.Error
+  fullName: Yort.OnlineEftpos.PaymentStatus.Error
+- uid: Yort.OnlineEftpos.PaymentStatus.Authorised
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Authorised
+- uid: Yort.OnlineEftpos.PaymentStatus.Declined
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Declined
+- uid: Yort.OnlineEftpos.PaymentStatus.Submitted*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.Submitted
+  isExternal: false
+  name: Submitted
+  nameWithType: PaymentStatus.Submitted
+  fullName: Yort.OnlineEftpos.PaymentStatus.Submitted
+- uid: Yort.OnlineEftpos.PaymentStatus.Refunded
+  commentId: P:Yort.OnlineEftpos.PaymentStatus.Refunded
+- uid: Yort.OnlineEftpos.PaymentStatus.Authorised*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.Authorised
+  isExternal: false
+  name: Authorised
+  nameWithType: PaymentStatus.Authorised
+  fullName: Yort.OnlineEftpos.PaymentStatus.Authorised
+- uid: Yort.OnlineEftpos.PaymentStatus.Declined*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.Declined
+  isExternal: false
+  name: Declined
+  nameWithType: PaymentStatus.Declined
+  fullName: Yort.OnlineEftpos.PaymentStatus.Declined
+- uid: Yort.OnlineEftpos.PaymentStatus.Expired*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.Expired
+  isExternal: false
+  name: Expired
+  nameWithType: PaymentStatus.Expired
+  fullName: Yort.OnlineEftpos.PaymentStatus.Expired
+- uid: Yort.OnlineEftpos.PaymentStatus.Refunded*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.Refunded
+  isExternal: false
+  name: Refunded
+  nameWithType: PaymentStatus.Refunded
+  fullName: Yort.OnlineEftpos.PaymentStatus.Refunded
+- uid: Yort.OnlineEftpos.TransactionStatus.Name
+  commentId: P:Yort.OnlineEftpos.TransactionStatus.Name
+- uid: Yort.OnlineEftpos.PaymentStatus.FromString*
+  commentId: Overload:Yort.OnlineEftpos.PaymentStatus.FromString
+  isExternal: false
+  name: FromString
+  nameWithType: PaymentStatus.FromString
+  fullName: Yort.OnlineEftpos.PaymentStatus.FromString
+- uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  isExternal: false
+  name: OnlineEftposInvalidDataException
+  nameWithType: OnlineEftposInvalidDataException
+  fullName: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

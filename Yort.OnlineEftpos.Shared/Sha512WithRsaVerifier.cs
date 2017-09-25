@@ -87,9 +87,9 @@ namespace Yort.OnlineEftpos
 			return retVal;
 		}
 
-#endregion
+		#endregion
 
-#region Private Methods
+		#region Private Methods
 
 		/*
 		"CreateRsa" below is modified from http://www.jensign.com/JavaScience/dotnet/pempublic/
@@ -129,7 +129,7 @@ namespace Yort.OnlineEftpos
 					reader.ReadInt16(); //advance 2 bytes
 				else
 					throw new System.Security.Cryptography.CryptographicException("Could not decode public key.");
-				
+
 				var seq = reader.ReadBytes(15);   //read the Sequence OID
 				if (!CompareBytearrays(seq, SeqOID))  //make sure Sequence for OID is correct
 					throw new System.Security.Cryptography.CryptographicException("Could not decode public key.");
@@ -217,9 +217,9 @@ namespace Yort.OnlineEftpos
 			return true;
 		}
 
-#endregion
+		#endregion
 
-#region IDisposable Members
+		#region IDisposable Members
 
 		/// <summary>
 		/// Disposes this instance and all internal resources.
@@ -229,7 +229,7 @@ namespace Yort.OnlineEftpos
 			_Rsa?.Dispose();
 		}
 
-#endregion
+		#endregion
 
 	}
 }

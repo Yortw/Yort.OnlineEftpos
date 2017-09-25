@@ -1,0 +1,982 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  id: OnlineEftposPaymentSearchOptions
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId
+  - Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposPaymentSearchOptions
+  nameWithType: OnlineEftposPaymentSearchOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  type: Class
+  source:
+    id: OnlineEftposPaymentSearchOptions
+    path: ''
+    startLine: 4287
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSearch criteria and options holder for <xref href=\"Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public class OnlineEftposPaymentSearchOptions
+    content.vb: Public Class OnlineEftposPaymentSearchOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId
+  id: OrderId
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: OrderId
+  nameWithType: OnlineEftposPaymentSearchOptions.OrderId
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId
+  type: Property
+  source:
+    id: OrderId
+    path: ''
+    startLine: 4295
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe merchant&apos;s original order id (<xref href=\"Yort.OnlineEftpos.PaymentDetails.OrderId\" data-throw-if-not-resolved=\"false\"></xref>) for the payment.\n"
+  example: []
+  syntax:
+    content: public string OrderId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OrderId As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode
+  id: MerchantIdCode
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: MerchantIdCode
+  nameWithType: OnlineEftposPaymentSearchOptions.MerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode
+  type: Property
+  source:
+    id: MerchantIdCode
+    path: ''
+    startLine: 4299
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe code that uniquley identifies the merchant who requested payment.\n"
+  example: []
+  syntax:
+    content: public string MerchantIdCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MerchantIdCode As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId
+  id: PayerId
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: PayerId
+  nameWithType: OnlineEftposPaymentSearchOptions.PayerId
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId
+  type: Property
+  source:
+    id: PayerId
+    path: ''
+    startLine: 4303
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe id of the payer that request was made to.\n"
+  example: []
+  syntax:
+    content: public string PayerId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PayerId As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime
+  id: CreationTime
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: CreationTime
+  nameWithType: OnlineEftposPaymentSearchOptions.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime
+  type: Property
+  source:
+    id: CreationTime
+    path: ''
+    startLine: 4307
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe date and time at which the payment was requested.\n"
+  example: []
+  syntax:
+    content: public DateTime? CreationTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property CreationTime As Date?
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status
+  id: Status
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: OnlineEftposPaymentSearchOptions.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status
+  type: Property
+  source:
+    id: Status
+    path: ''
+    startLine: 4311
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe current status of the payment.\n"
+  example: []
+  syntax:
+    content: public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields
+  id: Fields
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: OnlineEftposPaymentSearchOptions.Fields
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields
+  type: Property
+  source:
+    id: Fields
+    path: ''
+    startLine: 4319
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA list of field names to return. If empty, all fields are returned.\n"
+  remarks: "\n<p>If requesting sub-fields, each sub-field must be listed separately, i.e transaction.Amount, transaction.userIpAddress.</p>\n"
+  example: []
+  syntax:
+    content: public IList<string> Fields { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public ReadOnly Property Fields As IList(Of String)
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit
+  id: Limit
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: Limit
+  nameWithType: OnlineEftposPaymentSearchOptions.Limit
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit
+  type: Property
+  source:
+    id: Limit
+    path: ''
+    startLine: 4325
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe number of items to return &apos;per page&apos;.\n"
+  example: []
+  syntax:
+    content: public uint Limit { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property Limit As UInteger
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+  id: Offset
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: Offset
+  nameWithType: OnlineEftposPaymentSearchOptions.Offset
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+  type: Property
+  source:
+    id: Offset
+    path: ''
+    startLine: 4333
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe pagination offset to use, for when results span multiple &apos;pages&apos;.\n"
+  remarks: "\n<p>Use of this field is not recommended. Instead we recommend using <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  example: []
+  syntax:
+    content: public string Offset { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Offset As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+  id: PaginationUri
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: PaginationUri
+  nameWithType: OnlineEftposPaymentSearchOptions.PaginationUri
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+  type: Property
+  source:
+    id: PaginationUri
+    path: ''
+    startLine: 4338
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA Uri returned by a previous call to payment search, which is used to retrieve another page of results. Preferred over <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Uri PaginationUri { get; set; }
+    parameters: []
+    return:
+      type: Uri
+    content.vb: Public Property PaginationUri As Uri
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString
+  commentId: M:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString
+  id: BuildSearchQueryString
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  langs:
+  - csharp
+  - vb
+  name: BuildSearchQueryString()
+  nameWithType: OnlineEftposPaymentSearchOptions.BuildSearchQueryString()
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString()
+  type: Method
+  source:
+    id: BuildSearchQueryString
+    path: ''
+    startLine: 4348
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nConverts the properties of this instance into a url query string.\n"
+  example: []
+  syntax:
+    content: public string BuildSearchQueryString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function BuildSearchQueryString As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: PaymentSearch(OnlineEftposPaymentSearchOptions)
+  nameWithType: IOnlineEftposClient.PaymentSearch(OnlineEftposPaymentSearchOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+    name: PaymentSearch
+    nameWithType: IOnlineEftposClient.PaymentSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+    nameWithType: OnlineEftposPaymentSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+    name: PaymentSearch
+    nameWithType: IOnlineEftposClient.PaymentSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+    nameWithType: OnlineEftposPaymentSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.IOnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.IOnlineEftposClient
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IOnlineEftposClient
+  nameWithType: IOnlineEftposClient
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.PaymentDetails.OrderId
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.OrderId
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId
+  isExternal: false
+  name: OrderId
+  nameWithType: OnlineEftposPaymentSearchOptions.OrderId
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode
+  isExternal: false
+  name: MerchantIdCode
+  nameWithType: OnlineEftposPaymentSearchOptions.MerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId
+  isExternal: false
+  name: PayerId
+  nameWithType: OnlineEftposPaymentSearchOptions.PayerId
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime
+  isExternal: false
+  name: CreationTime
+  nameWithType: OnlineEftposPaymentSearchOptions.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status
+  isExternal: false
+  name: Status
+  nameWithType: OnlineEftposPaymentSearchOptions.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields
+  isExternal: false
+  name: Fields
+  nameWithType: OnlineEftposPaymentSearchOptions.Fields
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  nameWithType: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit
+  isExternal: false
+  name: Limit
+  nameWithType: OnlineEftposPaymentSearchOptions.Limit
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+  isExternal: false
+  name: Offset
+  nameWithType: OnlineEftposPaymentSearchOptions.Offset
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+  isExternal: false
+  name: PaginationUri
+  nameWithType: OnlineEftposPaymentSearchOptions.PaginationUri
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString
+  isExternal: false
+  name: BuildSearchQueryString
+  nameWithType: OnlineEftposPaymentSearchOptions.BuildSearchQueryString
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString

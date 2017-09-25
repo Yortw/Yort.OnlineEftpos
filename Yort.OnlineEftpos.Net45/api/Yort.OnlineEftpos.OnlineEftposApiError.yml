@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposApiError
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiError
+  id: OnlineEftposApiError
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposApiError.Error
+  - Yort.OnlineEftpos.OnlineEftposApiError.Messages
+  - Yort.OnlineEftpos.OnlineEftposApiError.Reference
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposApiError
+  nameWithType: OnlineEftposApiError
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError
+  type: Class
+  source:
+    id: OnlineEftposApiError
+    path: ''
+    startLine: 3625
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents error information returned from the Online EFTPOS API.\n"
+  example: []
+  syntax:
+    content: public sealed class OnlineEftposApiError
+    content.vb: Public NotInheritable Class OnlineEftposApiError
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposApiError.Error
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiError.Error
+  id: Error
+  parent: Yort.OnlineEftpos.OnlineEftposApiError
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: OnlineEftposApiError.Error
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError.Error
+  type: Property
+  source:
+    id: Error
+    path: ''
+    startLine: 3634
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nAn error message.\n"
+  example: []
+  syntax:
+    content: public string Error { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Error As String
+  overload: Yort.OnlineEftpos.OnlineEftposApiError.Error*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposApiError.Reference
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiError.Reference
+  id: Reference
+  parent: Yort.OnlineEftpos.OnlineEftposApiError
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: OnlineEftposApiError.Reference
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError.Reference
+  type: Property
+  source:
+    id: Reference
+    path: ''
+    startLine: 3639
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA unique reference for the error that can be reported to Paymark for more detail.\n"
+  example: []
+  syntax:
+    content: public string Reference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Reference As String
+  overload: Yort.OnlineEftpos.OnlineEftposApiError.Reference*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposApiError.Messages
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiError.Messages
+  id: Messages
+  parent: Yort.OnlineEftpos.OnlineEftposApiError
+  langs:
+  - csharp
+  - vb
+  name: Messages
+  nameWithType: OnlineEftposApiError.Messages
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError.Messages
+  type: Property
+  source:
+    id: Messages
+    path: ''
+    startLine: 3644
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nAn enumerable of <xref href=\"Yort.OnlineEftpos.ApiErrorMessage\" data-throw-if-not-resolved=\"false\"></xref> containing distinct errors with more detail (in the case of multiple errors, particularly with field validation).\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ApiErrorMessage> Messages { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Yort.OnlineEftpos.ApiErrorMessage}
+    content.vb: Public Property Messages As IEnumerable(Of ApiErrorMessage)
+  overload: Yort.OnlineEftpos.OnlineEftposApiError.Messages*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.OnlineEftposApiError.Error*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiError.Error
+  isExternal: false
+  name: Error
+  nameWithType: OnlineEftposApiError.Error
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError.Error
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposApiError.Reference*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiError.Reference
+  isExternal: false
+  name: Reference
+  nameWithType: OnlineEftposApiError.Reference
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError.Reference
+- uid: Yort.OnlineEftpos.ApiErrorMessage
+  commentId: T:Yort.OnlineEftpos.ApiErrorMessage
+  isExternal: false
+  name: ApiErrorMessage
+  nameWithType: ApiErrorMessage
+  fullName: Yort.OnlineEftpos.ApiErrorMessage
+- uid: Yort.OnlineEftpos.OnlineEftposApiError.Messages*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiError.Messages
+  isExternal: false
+  name: Messages
+  nameWithType: OnlineEftposApiError.Messages
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError.Messages
+- uid: System.Collections.Generic.IEnumerable{Yort.OnlineEftpos.ApiErrorMessage}
+  commentId: T:System.Collections.Generic.IEnumerable{Yort.OnlineEftpos.ApiErrorMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ApiErrorMessage>
+  nameWithType: IEnumerable<ApiErrorMessage>
+  fullName: System.Collections.Generic.IEnumerable<Yort.OnlineEftpos.ApiErrorMessage>
+  nameWithType.vb: IEnumerable(Of ApiErrorMessage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Yort.OnlineEftpos.ApiErrorMessage)
+  name.vb: IEnumerable(Of ApiErrorMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.ApiErrorMessage
+    name: ApiErrorMessage
+    nameWithType: ApiErrorMessage
+    fullName: Yort.OnlineEftpos.ApiErrorMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.ApiErrorMessage
+    name: ApiErrorMessage
+    nameWithType: ApiErrorMessage
+    fullName: Yort.OnlineEftpos.ApiErrorMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

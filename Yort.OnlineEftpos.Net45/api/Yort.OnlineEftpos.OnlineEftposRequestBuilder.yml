@@ -1,0 +1,1486 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  commentId: T:Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  id: OnlineEftposRequestBuilder
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal,System.String,System.String)
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal)
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal)
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal,System.String,System.String)
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  - Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposRequestBuilder
+  nameWithType: OnlineEftposRequestBuilder
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  type: Class
+  source:
+    id: OnlineEftposRequestBuilder
+    path: ''
+    startLine: 2469
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReduces the effort/code needed to construct a <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentRequest\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Yort.OnlineEftpos.OnlineEftposRefundRequest\" data-throw-if-not-resolved=\"false\"></xref> by using default &amp; templated values for properties that do not change or have a predictable pattern.\n"
+  remarks: "\n<p>Note: Values neither provided to the builder nor the resulting request objects are validated. To ensure a request is valid make sure to call the requests EnsureValid method.</p>\n"
+  example: []
+  syntax:
+    content: public class OnlineEftposRequestBuilder
+    content.vb: Public Class OnlineEftposRequestBuilder
+  seealso:
+  - linkId: Yort.OnlineEftpos.PaymentDetails
+    commentId: T:Yort.OnlineEftpos.PaymentDetails
+  - linkId: Yort.OnlineEftpos.RefundDetails
+    commentId: T:Yort.OnlineEftpos.RefundDetails
+  - linkId: Yort.OnlineEftpos.PaymentDetails.EnsureValid
+    commentId: M:Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  - linkId: Yort.OnlineEftpos.RefundDetails.EnsureValid
+    commentId: M:Yort.OnlineEftpos.RefundDetails.EnsureValid
+  - linkId: Yort.OnlineEftpos.PaymentDetails
+    commentId: T:Yort.OnlineEftpos.PaymentDetails
+  - linkId: Yort.OnlineEftpos.RefundDetails
+    commentId: T:Yort.OnlineEftpos.RefundDetails
+  - linkId: Yort.OnlineEftpos.PaymentDetails.EnsureValid
+    commentId: M:Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  - linkId: Yort.OnlineEftpos.RefundDetails.EnsureValid
+    commentId: M:Yort.OnlineEftpos.RefundDetails.EnsureValid
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  id: '#ctor'
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposRequestBuilder()
+  nameWithType: OnlineEftposRequestBuilder.OnlineEftposRequestBuilder()
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.OnlineEftposRequestBuilder()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 458
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nDefault constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposRequestBuilder()
+    content.vb: Public Sub New
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  id: DefaultCurrency
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultCurrency
+  nameWithType: OnlineEftposRequestBuilder.DefaultCurrency
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  type: Property
+  source:
+    id: DefaultCurrency
+    path: ''
+    startLine: 470
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe default value for the <xref href=\"Yort.OnlineEftpos.PaymentDetails.Currency\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultCurrency { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultCurrency As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  id: DefaultCurrencyMultiplier
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultCurrencyMultiplier
+  nameWithType: OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  type: Property
+  source:
+    id: DefaultCurrencyMultiplier
+    path: ''
+    startLine: 478
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSpecifies the multipler to convert a <xref href=\"System.Decimal\" data-throw-if-not-resolved=\"false\"></xref> value into a valid API amount (integer).\n"
+  remarks: "\n<p>The API requires amounts to be provided as an integer representing the total value in the minimum unit of the currency being used. For example, in the US, Australia and New Zealand the minimum unit is &apos;cents&apos;, at 0.01 for a single cent. If you want to charge $10.00 then the API requires you to provide an amount of 1000. The multiplier in this case would be 100 (10 * 100 = 1000).</p>\n<p>The default value for this property is 100.</p>\n"
+  example: []
+  syntax:
+    content: public int DefaultCurrencyMultiplier { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DefaultCurrencyMultiplier As Integer
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  id: PurchaseDescriptionTemplate
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: PurchaseDescriptionTemplate
+  nameWithType: OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  type: Property
+  source:
+    id: PurchaseDescriptionTemplate
+    path: ''
+    startLine: 489
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe template string to use for default purchase descriptions.\n"
+  remarks: "\n<p>The following tags can be used and will be runtime replaced;</p>\n\n"
+  example: []
+  syntax:
+    content: public string PurchaseDescriptionTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PurchaseDescriptionTemplate As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  id: RefundReasonTemplate
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: RefundReasonTemplate
+  nameWithType: OnlineEftposRequestBuilder.RefundReasonTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  type: Property
+  source:
+    id: RefundReasonTemplate
+    path: ''
+    startLine: 503
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe template string to use for default refund reasons.\n"
+  remarks: "\n<p>The following tags can be used and will be runtime replaced;</p>\n\n"
+  example: []
+  syntax:
+    content: public string RefundReasonTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RefundReasonTemplate As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  id: DefaultUserAgent
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultUserAgent
+  nameWithType: OnlineEftposRequestBuilder.DefaultUserAgent
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  type: Property
+  source:
+    id: DefaultUserAgent
+    path: ''
+    startLine: 511
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFor systems that do not interact with a user via HTTP, this is the fake value passed for the <xref href=\"Yort.OnlineEftpos.TransactionRequestDetails.UserAgent\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultUserAgent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultUserAgent As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  id: DefaultUserIP
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultUserIP
+  nameWithType: OnlineEftposRequestBuilder.DefaultUserIP
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  type: Property
+  source:
+    id: DefaultUserIP
+    path: ''
+    startLine: 515
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFor systems that do not interact with a user via HTTP, this is the fake value passed for the <xref href=\"Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultUserIP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultUserIP As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  id: DefaultMerchantUrl
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultMerchantUrl
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantUrl
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  type: Property
+  source:
+    id: DefaultMerchantUrl
+    path: ''
+    startLine: 520
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe default value for the <xref href=\"Yort.OnlineEftpos.MerchantDetails.MerchantUrl\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public Uri DefaultMerchantUrl { get; set; }
+    parameters: []
+    return:
+      type: Uri
+    content.vb: Public Property DefaultMerchantUrl As Uri
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId
+  id: DefaultMerchantId
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultMerchantId
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantId
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId
+  type: Property
+  source:
+    id: DefaultMerchantId
+    path: ''
+    startLine: 524
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe default value for the <xref href=\"Yort.OnlineEftpos.MerchantDetails.MerchantIdCode\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultMerchantId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultMerchantId As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  id: CallbackUrlTemplate
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CallbackUrlTemplate
+  nameWithType: OnlineEftposRequestBuilder.CallbackUrlTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  type: Property
+  source:
+    id: CallbackUrlTemplate
+    path: ''
+    startLine: 533
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA template string for creating callback urls.\n"
+  remarks: "\n<p>You can use {orderId} to indicate your transaction reference within the template.</p>\n<p>e.g. services.mycoolsite.com/payments/callback?orderId={orderId}</p>\n"
+  example: []
+  syntax:
+    content: public string CallbackUrlTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CallbackUrlTemplate As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  id: CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreatePaymentRequest(String, String, String, String, Decimal)
+  nameWithType: OnlineEftposRequestBuilder.CreatePaymentRequest(String, String, String, String, Decimal)
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String, System.String, System.String, System.String, System.Decimal)
+  type: Method
+  source:
+    id: CreatePaymentRequest
+    path: ''
+    startLine: 549
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCreate a new (unvalidated) payment request using default and supplied values.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposPaymentRequest CreatePaymentRequest(string payerId, string payerIdType, string bankId, string orderId, decimal amount)
+    parameters:
+    - id: payerId
+      type: System.String
+      description: The id of the entity to request payment from.
+    - id: payerIdType
+      type: System.String
+      description: The type id provided in the <code data-dev-comment-type="paramref" class="paramref">payerId</code> argument. Usually &quot;MOBILE&quot;.
+    - id: bankId
+      type: System.String
+      description: The unique ID of the bank to which the payer is registered with/using for this request.
+    - id: orderId
+      type: System.String
+      description: Your (merchant) reference for the transaction.
+    - id: amount
+      type: System.Decimal
+      description: The amount of the transaction as a decimal value.
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest" data-throw-if-not-resolved="false"></xref> pre-populated with appropriate values, but unvalidated. Call the <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest.EnsureValid" data-throw-if-not-resolved="false"></xref> method to confirm validity.
+    content.vb: Public Function CreatePaymentRequest(payerId As String, payerIdType As String, bankId As String, orderId As String, amount As Decimal) As OnlineEftposPaymentRequest
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal)
+  id: CreateRefundRequest(System.String,System.String,System.Decimal)
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateRefundRequest(String, String, Decimal)
+  nameWithType: OnlineEftposRequestBuilder.CreateRefundRequest(String, String, Decimal)
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String, System.String, System.Decimal)
+  type: Method
+  source:
+    id: CreateRefundRequest
+    path: ''
+    startLine: 562
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCreate a new (unvalidated) refund request using default and supplied values.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposRefundRequest CreateRefundRequest(string orderId, string originalPaymentId, decimal amount)
+    parameters:
+    - id: orderId
+      type: System.String
+      description: Your (merchant) reference for the transaction.
+    - id: originalPaymentId
+      type: System.String
+      description: The id of the original payment being refunded.
+    - id: amount
+      type: System.Decimal
+      description: The amount of the transaction as a decimal value.
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposRefundRequest
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> pre-populated with appropriate values, but unvalidated. Call the <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest.EnsureValid" data-throw-if-not-resolved="false"></xref> method to confirm validity.
+    content.vb: Public Function CreateRefundRequest(orderId As String, originalPaymentId As String, amount As Decimal) As OnlineEftposRefundRequest
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  id: '#ctor'
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposRequestBuilder()
+  nameWithType: OnlineEftposRequestBuilder.OnlineEftposRequestBuilder()
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.OnlineEftposRequestBuilder()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2477
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nDefault constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposRequestBuilder()
+    content.vb: Public Sub New
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  id: DefaultCurrency
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultCurrency
+  nameWithType: OnlineEftposRequestBuilder.DefaultCurrency
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  type: Property
+  source:
+    id: DefaultCurrency
+    path: ''
+    startLine: 2491
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe default value for the <xref href=\"Yort.OnlineEftpos.PaymentDetails.Currency\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultCurrency { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultCurrency As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  id: DefaultCurrencyMultiplier
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultCurrencyMultiplier
+  nameWithType: OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  type: Property
+  source:
+    id: DefaultCurrencyMultiplier
+    path: ''
+    startLine: 2499
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSpecifies the multipler to convert a <xref href=\"System.Decimal\" data-throw-if-not-resolved=\"false\"></xref> value into a valid API amount (integer).\n"
+  remarks: "\n<p>The API requires amounts to be provided as an integer representing the total value in the minimum unit of the currency being used. For example, in the US, Australia and New Zealand the minimum unit is &apos;cents&apos;, at 0.01 for a single cent. If you want to charge $10.00 then the API requires you to provide an amount of 1000. The multiplier in this case would be 100 (10 * 100 = 1000).</p>\n<p>The default value for this property is 100.</p>\n"
+  example: []
+  syntax:
+    content: public int DefaultCurrencyMultiplier { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DefaultCurrencyMultiplier As Integer
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  id: PurchaseDescriptionTemplate
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: PurchaseDescriptionTemplate
+  nameWithType: OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  type: Property
+  source:
+    id: PurchaseDescriptionTemplate
+    path: ''
+    startLine: 2510
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe template string to use for default purchase descriptions.\n"
+  remarks: "\n<p>The following tags can be used and will be runtime replaced;</p>\n\n"
+  example: []
+  syntax:
+    content: public string PurchaseDescriptionTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PurchaseDescriptionTemplate As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  id: RefundReasonTemplate
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: RefundReasonTemplate
+  nameWithType: OnlineEftposRequestBuilder.RefundReasonTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  type: Property
+  source:
+    id: RefundReasonTemplate
+    path: ''
+    startLine: 2524
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe template string to use for default refund reasons.\n"
+  remarks: "\n<p>The following tags can be used and will be runtime replaced;</p>\n\n"
+  example: []
+  syntax:
+    content: public string RefundReasonTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RefundReasonTemplate As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  id: DefaultUserAgent
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultUserAgent
+  nameWithType: OnlineEftposRequestBuilder.DefaultUserAgent
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  type: Property
+  source:
+    id: DefaultUserAgent
+    path: ''
+    startLine: 2532
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFor systems that do not interact with a user via HTTP, this is the fake value passed for the <xref href=\"Yort.OnlineEftpos.TransactionRequestDetails.UserAgent\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultUserAgent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultUserAgent As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  id: DefaultUserIP
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultUserIP
+  nameWithType: OnlineEftposRequestBuilder.DefaultUserIP
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  type: Property
+  source:
+    id: DefaultUserIP
+    path: ''
+    startLine: 2536
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFor systems that do not interact with a user via HTTP, this is the fake value passed for the <xref href=\"Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultUserIP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultUserIP As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  id: DefaultMerchantUrl
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultMerchantUrl
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantUrl
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  type: Property
+  source:
+    id: DefaultMerchantUrl
+    path: ''
+    startLine: 2541
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe default value for the <xref href=\"Yort.OnlineEftpos.MerchantDetails.MerchantUrl\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public Uri DefaultMerchantUrl { get; set; }
+    parameters: []
+    return:
+      type: Uri
+    content.vb: Public Property DefaultMerchantUrl As Uri
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  id: DefaultMerchantIdCode
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: DefaultMerchantIdCode
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  type: Property
+  source:
+    id: DefaultMerchantIdCode
+    path: ''
+    startLine: 2545
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe default value for the <xref href=\"Yort.OnlineEftpos.MerchantDetails.MerchantIdCode\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
+  example: []
+  syntax:
+    content: public string DefaultMerchantIdCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultMerchantIdCode As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  commentId: P:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  id: CallbackUrlTemplate
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CallbackUrlTemplate
+  nameWithType: OnlineEftposRequestBuilder.CallbackUrlTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  type: Property
+  source:
+    id: CallbackUrlTemplate
+    path: ''
+    startLine: 2554
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA template string for creating callback urls.\n"
+  remarks: "\n<p>You can use {orderId} to indicate your transaction reference within the template.</p>\n<p>e.g. services.mycoolsite.com/payments/callback?orderId={orderId}</p>\n"
+  example: []
+  syntax:
+    content: public string CallbackUrlTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CallbackUrlTemplate As String
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  id: CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal)
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreatePaymentRequest(String, String, String, String, Decimal)
+  nameWithType: OnlineEftposRequestBuilder.CreatePaymentRequest(String, String, String, String, Decimal)
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String, System.String, System.String, System.String, System.Decimal)
+  type: Method
+  source:
+    id: CreatePaymentRequest
+    path: ''
+    startLine: 2570
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCreate a new (unvalidated) payment request using default and supplied values.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposPaymentRequest CreatePaymentRequest(string payerId, string payerIdType, string bankId, string orderId, decimal amount)
+    parameters:
+    - id: payerId
+      type: System.String
+      description: The id of the entity to request payment from.
+    - id: payerIdType
+      type: System.String
+      description: The type id provided in the <code data-dev-comment-type="paramref" class="paramref">payerId</code> argument. Usually &quot;MOBILE&quot;.
+    - id: bankId
+      type: System.String
+      description: The unique ID of the bank to which the payer is registered with/using for this request.
+    - id: orderId
+      type: System.String
+      description: Your (merchant) reference for the transaction.
+    - id: amount
+      type: System.Decimal
+      description: The amount of the transaction as a decimal value.
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest" data-throw-if-not-resolved="false"></xref> pre-populated with appropriate values, but unvalidated. Call the <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest.EnsureValid" data-throw-if-not-resolved="false"></xref> method to confirm validity.
+    content.vb: Public Function CreatePaymentRequest(payerId As String, payerIdType As String, bankId As String, orderId As String, amount As Decimal) As OnlineEftposPaymentRequest
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal,System.String,System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal,System.String,System.String)
+  id: CreatePaymentRequest(System.String,System.String,System.String,System.String,System.Decimal,System.String,System.String)
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreatePaymentRequest(String, String, String, String, Decimal, String, String)
+  nameWithType: OnlineEftposRequestBuilder.CreatePaymentRequest(String, String, String, String, Decimal, String, String)
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest(System.String, System.String, System.String, System.String, System.Decimal, System.String, System.String)
+  type: Method
+  source:
+    id: CreatePaymentRequest
+    path: ''
+    startLine: 2586
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCreate a new (unvalidated) payment request using default and supplied values.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposPaymentRequest CreatePaymentRequest(string payerId, string payerIdType, string bankId, string orderId, decimal amount, string userIP, string userAgent)
+    parameters:
+    - id: payerId
+      type: System.String
+      description: The id of the entity to request payment from.
+    - id: payerIdType
+      type: System.String
+      description: The type id provided in the <code data-dev-comment-type="paramref" class="paramref">payerId</code> argument. Usually &quot;MOBILE&quot;.
+    - id: bankId
+      type: System.String
+      description: The unique ID of the bank to which the payer is registered with/using for this request.
+    - id: orderId
+      type: System.String
+      description: Your (merchant) reference for the transaction.
+    - id: amount
+      type: System.Decimal
+      description: The amount of the transaction as a decimal value.
+    - id: userIP
+      type: System.String
+      description: The IP address of the requesting client.
+    - id: userAgent
+      type: System.String
+      description: The user agent string of the requesting client.
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest" data-throw-if-not-resolved="false"></xref> pre-populated with appropriate values, but unvalidated. Call the <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest.EnsureValid" data-throw-if-not-resolved="false"></xref> method to confirm validity.
+    content.vb: Public Function CreatePaymentRequest(payerId As String, payerIdType As String, bankId As String, orderId As String, amount As Decimal, userIP As String, userAgent As String) As OnlineEftposPaymentRequest
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal)
+  id: CreateRefundRequest(System.String,System.String,System.Decimal)
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateRefundRequest(String, String, Decimal)
+  nameWithType: OnlineEftposRequestBuilder.CreateRefundRequest(String, String, Decimal)
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String, System.String, System.Decimal)
+  type: Method
+  source:
+    id: CreateRefundRequest
+    path: ''
+    startLine: 2622
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCreate a new (unvalidated) refund request using default and supplied values.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposRefundRequest CreateRefundRequest(string orderId, string originalPaymentId, decimal amount)
+    parameters:
+    - id: orderId
+      type: System.String
+      description: Your (merchant) reference for the transaction.
+    - id: originalPaymentId
+      type: System.String
+      description: The id of the original payment being refunded.
+    - id: amount
+      type: System.Decimal
+      description: The amount of the transaction as a decimal value.
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposRefundRequest
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> pre-populated with appropriate values, but unvalidated. Call the <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest.EnsureValid" data-throw-if-not-resolved="false"></xref> method to confirm validity.
+    content.vb: Public Function CreateRefundRequest(orderId As String, originalPaymentId As String, amount As Decimal) As OnlineEftposRefundRequest
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal,System.String,System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String,System.String,System.Decimal,System.String,System.String)
+  id: CreateRefundRequest(System.String,System.String,System.Decimal,System.String,System.String)
+  parent: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateRefundRequest(String, String, Decimal, String, String)
+  nameWithType: OnlineEftposRequestBuilder.CreateRefundRequest(String, String, Decimal, String, String)
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest(System.String, System.String, System.Decimal, System.String, System.String)
+  type: Method
+  source:
+    id: CreateRefundRequest
+    path: ''
+    startLine: 2636
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCreate a new (unvalidated) refund request using default and supplied values.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposRefundRequest CreateRefundRequest(string orderId, string originalPaymentId, decimal amount, string userIP, string userAgent)
+    parameters:
+    - id: orderId
+      type: System.String
+      description: Your (merchant) reference for the transaction.
+    - id: originalPaymentId
+      type: System.String
+      description: The id of the original payment being refunded.
+    - id: amount
+      type: System.Decimal
+      description: The amount of the transaction as a decimal value.
+    - id: userIP
+      type: System.String
+      description: The IP address of the requesting client.
+    - id: userAgent
+      type: System.String
+      description: The user agent string of the requesting client.
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposRefundRequest
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> pre-populated with appropriate values, but unvalidated. Call the <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest.EnsureValid" data-throw-if-not-resolved="false"></xref> method to confirm validity.
+    content.vb: Public Function CreateRefundRequest(orderId As String, originalPaymentId As String, amount As Decimal, userIP As String, userAgent As String) As OnlineEftposRefundRequest
+  overload: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposPaymentRequest
+  nameWithType: OnlineEftposPaymentRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+- uid: Yort.OnlineEftpos.OnlineEftposRefundRequest
+  commentId: T:Yort.OnlineEftpos.OnlineEftposRefundRequest
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposRefundRequest
+  nameWithType: OnlineEftposRefundRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposRefundRequest
+- uid: Yort.OnlineEftpos.PaymentDetails
+  commentId: T:Yort.OnlineEftpos.PaymentDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: PaymentDetails
+  nameWithType: PaymentDetails
+  fullName: Yort.OnlineEftpos.PaymentDetails
+- uid: Yort.OnlineEftpos.RefundDetails
+  commentId: T:Yort.OnlineEftpos.RefundDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: RefundDetails
+  nameWithType: RefundDetails
+  fullName: Yort.OnlineEftpos.RefundDetails
+- uid: Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  commentId: M:Yort.OnlineEftpos.PaymentDetails.EnsureValid
+- uid: Yort.OnlineEftpos.RefundDetails.EnsureValid
+  commentId: M:Yort.OnlineEftpos.RefundDetails.EnsureValid
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.#ctor
+  isExternal: false
+  name: OnlineEftposRequestBuilder
+  nameWithType: OnlineEftposRequestBuilder.OnlineEftposRequestBuilder
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.OnlineEftposRequestBuilder
+- uid: Yort.OnlineEftpos.PaymentDetails.Currency
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.Currency
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+  isExternal: false
+  name: DefaultCurrency
+  nameWithType: OnlineEftposRequestBuilder.DefaultCurrency
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  isExternal: false
+  name: DefaultCurrencyMultiplier
+  nameWithType: OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  isExternal: false
+  name: PurchaseDescriptionTemplate
+  nameWithType: OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+  isExternal: false
+  name: RefundReasonTemplate
+  nameWithType: OnlineEftposRequestBuilder.RefundReasonTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
+- uid: Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+  commentId: P:Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+  parent: Yort.OnlineEftpos.TransactionRequestDetails
+  isExternal: false
+  name: UserAgent
+  nameWithType: TransactionRequestDetails.UserAgent
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+  isExternal: false
+  name: DefaultUserAgent
+  nameWithType: OnlineEftposRequestBuilder.DefaultUserAgent
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent
+- uid: Yort.OnlineEftpos.TransactionRequestDetails
+  commentId: T:Yort.OnlineEftpos.TransactionRequestDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: TransactionRequestDetails
+  nameWithType: TransactionRequestDetails
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails
+- uid: Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+  commentId: P:Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+  parent: Yort.OnlineEftpos.TransactionRequestDetails
+  isExternal: false
+  name: UserIPAddress
+  nameWithType: TransactionRequestDetails.UserIPAddress
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+  isExternal: false
+  name: DefaultUserIP
+  nameWithType: OnlineEftposRequestBuilder.DefaultUserIP
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP
+- uid: Yort.OnlineEftpos.MerchantDetails.MerchantUrl
+  commentId: P:Yort.OnlineEftpos.MerchantDetails.MerchantUrl
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+  isExternal: false
+  name: DefaultMerchantUrl
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantUrl
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: Yort.OnlineEftpos.MerchantDetails.MerchantIdCode
+  commentId: P:Yort.OnlineEftpos.MerchantDetails.MerchantIdCode
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId
+  isExternal: false
+  name: DefaultMerchantId
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantId
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+  isExternal: false
+  name: CallbackUrlTemplate
+  nameWithType: OnlineEftposRequestBuilder.CallbackUrlTemplate
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest.EnsureValid
+  commentId: M:Yort.OnlineEftpos.OnlineEftposPaymentRequest.EnsureValid
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest
+  isExternal: false
+  name: CreatePaymentRequest
+  nameWithType: OnlineEftposRequestBuilder.CreatePaymentRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest
+- uid: Yort.OnlineEftpos.OnlineEftposRefundRequest.EnsureValid
+  commentId: M:Yort.OnlineEftpos.OnlineEftposRefundRequest.EnsureValid
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest
+  isExternal: false
+  name: CreateRefundRequest
+  nameWithType: OnlineEftposRequestBuilder.CreateRefundRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest
+- uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  isExternal: false
+  name: DefaultMerchantIdCode
+  nameWithType: OnlineEftposRequestBuilder.DefaultMerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode

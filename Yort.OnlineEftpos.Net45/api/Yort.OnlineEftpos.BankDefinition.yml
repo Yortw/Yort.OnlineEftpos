@@ -1,0 +1,671 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.BankDefinition
+  commentId: T:Yort.OnlineEftpos.BankDefinition
+  id: BankDefinition
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.BankDefinition.#ctor(System.String,System.Collections.Generic.IList{System.String})
+  - Yort.OnlineEftpos.BankDefinition.#ctor(System.String,System.String,System.Collections.Generic.IList{System.String})
+  - Yort.OnlineEftpos.BankDefinition.DisplayName
+  - Yort.OnlineEftpos.BankDefinition.Id
+  - Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+  langs:
+  - csharp
+  - vb
+  name: BankDefinition
+  nameWithType: BankDefinition
+  fullName: Yort.OnlineEftpos.BankDefinition
+  type: Class
+  source:
+    id: BankDefinition
+    path: ''
+    startLine: 3088
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents a bank known to be supported by Online EFTPOS, and the associated payer id types that is supports.\n"
+  example: []
+  syntax:
+    content: public class BankDefinition
+    content.vb: Public Class BankDefinition
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.BankDefinition.#ctor(System.String,System.Collections.Generic.IList{System.String})
+  commentId: M:Yort.OnlineEftpos.BankDefinition.#ctor(System.String,System.Collections.Generic.IList{System.String})
+  id: '#ctor(System.String,System.Collections.Generic.IList{System.String})'
+  parent: Yort.OnlineEftpos.BankDefinition
+  langs:
+  - csharp
+  - vb
+  name: BankDefinition(String, IList<String>)
+  nameWithType: BankDefinition.BankDefinition(String, IList<String>)
+  fullName: Yort.OnlineEftpos.BankDefinition.BankDefinition(System.String, System.Collections.Generic.IList<System.String>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3098
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nPartial constructor.\n"
+  example: []
+  syntax:
+    content: public BankDefinition(string id, IList<string> payerIdTypes)
+    parameters:
+    - id: id
+      type: System.String
+      description: The unique id of this bank, case insensitive. Also used for <xref href="Yort.OnlineEftpos.BankDefinition.DisplayName" data-throw-if-not-resolved="false"></xref>.
+    - id: payerIdTypes
+      type: System.Collections.Generic.IList{System.String}
+      description: A list of strings containing allowed payer id types for this bank.
+    content.vb: Public Sub New(id As String, payerIdTypes As IList(Of String))
+  overload: Yort.OnlineEftpos.BankDefinition.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <xref href="Yort.OnlineEftpos.BankDefinition.Id" data-throw-if-not-resolved="false"></xref> is an empty string or whitespace.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <xref href="Yort.OnlineEftpos.BankDefinition.Id" data-throw-if-not-resolved="false"></xref> or <xref href="Yort.OnlineEftpos.BankDefinition.PayerIdTypes" data-throw-if-not-resolved="false"></xref> is null.
+  nameWithType.vb: BankDefinition.BankDefinition(String, IList(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Yort.OnlineEftpos.BankDefinition.BankDefinition(System.String, System.Collections.Generic.IList(Of System.String))
+  name.vb: BankDefinition(String, IList(Of String))
+- uid: Yort.OnlineEftpos.BankDefinition.#ctor(System.String,System.String,System.Collections.Generic.IList{System.String})
+  commentId: M:Yort.OnlineEftpos.BankDefinition.#ctor(System.String,System.String,System.Collections.Generic.IList{System.String})
+  id: '#ctor(System.String,System.String,System.Collections.Generic.IList{System.String})'
+  parent: Yort.OnlineEftpos.BankDefinition
+  langs:
+  - csharp
+  - vb
+  name: BankDefinition(String, String, IList<String>)
+  nameWithType: BankDefinition.BankDefinition(String, String, IList<String>)
+  fullName: Yort.OnlineEftpos.BankDefinition.BankDefinition(System.String, System.String, System.Collections.Generic.IList<System.String>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3110
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFull constructor.\n"
+  example: []
+  syntax:
+    content: public BankDefinition(string id, string displayName, IList<string> payerIdTypes)
+    parameters:
+    - id: id
+      type: System.String
+      description: The unique id of this bank, case insensitive.
+    - id: displayName
+      type: System.String
+      description: The display name of this bank. If null then <code data-dev-comment-type="paramref" class="paramref">id</code> will be used.
+    - id: payerIdTypes
+      type: System.Collections.Generic.IList{System.String}
+      description: A list of strings containing allowed payer id types for this bank.
+    content.vb: Public Sub New(id As String, displayName As String, payerIdTypes As IList(Of String))
+  overload: Yort.OnlineEftpos.BankDefinition.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <xref href="Yort.OnlineEftpos.BankDefinition.Id" data-throw-if-not-resolved="false"></xref> is an empty string or whitespace.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <xref href="Yort.OnlineEftpos.BankDefinition.Id" data-throw-if-not-resolved="false"></xref> or <xref href="Yort.OnlineEftpos.BankDefinition.PayerIdTypes" data-throw-if-not-resolved="false"></xref> is null.
+  nameWithType.vb: BankDefinition.BankDefinition(String, String, IList(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Yort.OnlineEftpos.BankDefinition.BankDefinition(System.String, System.String, System.Collections.Generic.IList(Of System.String))
+  name.vb: BankDefinition(String, String, IList(Of String))
+- uid: Yort.OnlineEftpos.BankDefinition.Id
+  commentId: P:Yort.OnlineEftpos.BankDefinition.Id
+  id: Id
+  parent: Yort.OnlineEftpos.BankDefinition
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: BankDefinition.Id
+  fullName: Yort.OnlineEftpos.BankDefinition.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 3126
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the unique, case insensitive, id of this bank.\n"
+  remarks: "\n<p>This must be the actual id passed to the Online EFTPOS API via <xref href=\"Yort.OnlineEftpos.BankDetails.BankId\" data-throw-if-not-resolved=\"false\"></xref> when making transaction requests.</p>\n"
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: Yort.OnlineEftpos.BankDefinition.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.BankDefinition.DisplayName
+  commentId: P:Yort.OnlineEftpos.BankDefinition.DisplayName
+  id: DisplayName
+  parent: Yort.OnlineEftpos.BankDefinition
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: BankDefinition.DisplayName
+  fullName: Yort.OnlineEftpos.BankDefinition.DisplayName
+  type: Property
+  source:
+    id: DisplayName
+    path: ''
+    startLine: 3131
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the display name of this bank.\n"
+  example: []
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayName As String
+  overload: Yort.OnlineEftpos.BankDefinition.DisplayName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+  commentId: P:Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+  id: PayerIdTypes
+  parent: Yort.OnlineEftpos.BankDefinition
+  langs:
+  - csharp
+  - vb
+  name: PayerIdTypes
+  nameWithType: BankDefinition.PayerIdTypes
+  fullName: Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+  type: Property
+  source:
+    id: PayerIdTypes
+    path: ''
+    startLine: 3136
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA list of payer id types supported by this bank.\n"
+  example: []
+  syntax:
+    content: public IList<string> PayerIdTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public ReadOnly Property PayerIdTypes As IList(Of String)
+  overload: Yort.OnlineEftpos.BankDefinition.PayerIdTypes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.BankDefinition.DisplayName
+  commentId: P:Yort.OnlineEftpos.BankDefinition.DisplayName
+- uid: Yort.OnlineEftpos.BankDefinition.Id
+  commentId: P:Yort.OnlineEftpos.BankDefinition.Id
+- uid: Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+  commentId: P:Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+- uid: Yort.OnlineEftpos.BankDefinition.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.BankDefinition.#ctor
+  isExternal: false
+  name: BankDefinition
+  nameWithType: BankDefinition.BankDefinition
+  fullName: Yort.OnlineEftpos.BankDefinition.BankDefinition
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  nameWithType: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Yort.OnlineEftpos.BankDetails.BankId
+  commentId: P:Yort.OnlineEftpos.BankDetails.BankId
+- uid: Yort.OnlineEftpos.BankDefinition.Id*
+  commentId: Overload:Yort.OnlineEftpos.BankDefinition.Id
+  isExternal: false
+  name: Id
+  nameWithType: BankDefinition.Id
+  fullName: Yort.OnlineEftpos.BankDefinition.Id
+- uid: Yort.OnlineEftpos.BankDefinition.DisplayName*
+  commentId: Overload:Yort.OnlineEftpos.BankDefinition.DisplayName
+  isExternal: false
+  name: DisplayName
+  nameWithType: BankDefinition.DisplayName
+  fullName: Yort.OnlineEftpos.BankDefinition.DisplayName
+- uid: Yort.OnlineEftpos.BankDefinition.PayerIdTypes*
+  commentId: Overload:Yort.OnlineEftpos.BankDefinition.PayerIdTypes
+  isExternal: false
+  name: PayerIdTypes
+  nameWithType: BankDefinition.PayerIdTypes
+  fullName: Yort.OnlineEftpos.BankDefinition.PayerIdTypes

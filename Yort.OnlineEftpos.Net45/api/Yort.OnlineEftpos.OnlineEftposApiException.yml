@@ -1,0 +1,835 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposApiException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiException
+  id: OnlineEftposApiException
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposApiException.#ctor
+  - Yort.OnlineEftpos.OnlineEftposApiException.#ctor(System.String)
+  - Yort.OnlineEftpos.OnlineEftposApiException.#ctor(System.String,System.Exception)
+  - Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent
+  - Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage
+  - Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase
+  - Yort.OnlineEftpos.OnlineEftposApiException.StatusCode
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposApiException
+  nameWithType: OnlineEftposApiException
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException
+  type: Class
+  source:
+    id: OnlineEftposApiException
+    path: ''
+    startLine: 3685
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresent an error returned from the Online Eftpos API.\n"
+  remarks: "\n<p>See the <xref href=\"System.Exception.Data\" data-throw-if-not-resolved=\"false\"></xref> property for more details, if available.</p>\n"
+  example: []
+  syntax:
+    content: 'public class OnlineEftposApiException : OnlineEftposException, ISerializable, _Exception'
+    content.vb: >-
+      Public Class OnlineEftposApiException
+          Inherits OnlineEftposException
+          Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  - Yort.OnlineEftpos.OnlineEftposException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.ToString
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.#ctor
+  commentId: M:Yort.OnlineEftpos.OnlineEftposApiException.#ctor
+  id: '#ctor'
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposApiException()
+  nameWithType: OnlineEftposApiException.OnlineEftposApiException()
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.OnlineEftposApiException()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3693
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRuntime required constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiException()
+    content.vb: Public Sub New
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.#ctor(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposApiException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposApiException(String)
+  nameWithType: OnlineEftposApiException.OnlineEftposApiException(String)
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.OnlineEftposApiException(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3701
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nBasic constructor. Specifies an error message but no other details.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiException(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message for the exception.
+    content.vb: Public Sub New(message As String)
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.#ctor(System.String,System.Exception)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposApiException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposApiException(String, Exception)
+  nameWithType: OnlineEftposApiException.OnlineEftposApiException(String, Exception)
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.OnlineEftposApiException(System.String, System.Exception)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3710
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nPartial constructor. Specifies an error message and inner exception but no other details.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message for the exception.
+    - id: innerException
+      type: System.Exception
+      description: The original exception that caused this one.
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.StatusCode
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiException.StatusCode
+  id: StatusCode
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: OnlineEftposApiException.StatusCode
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.StatusCode
+  type: Property
+  source:
+    id: StatusCode
+    path: ''
+    startLine: 3776
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the <see cref=\"!:System.Net.HttpStatusCode\"></see> from the API response.\n"
+  example: []
+  syntax:
+    content: public HttpStatusCode StatusCode { get; }
+    parameters: []
+    return:
+      type: HttpStatusCode
+    content.vb: Public ReadOnly Property StatusCode As HttpStatusCode
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.StatusCode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase
+  id: ReasonPhrase
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: ReasonPhrase
+  nameWithType: OnlineEftposApiException.ReasonPhrase
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase
+  type: Property
+  source:
+    id: ReasonPhrase
+    path: ''
+    startLine: 3790
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the reason phrase from the API response.\n"
+  example: []
+  syntax:
+    content: public string ReasonPhrase { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ReasonPhrase As String
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage
+  id: ErrorMessage
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: OnlineEftposApiException.ErrorMessage
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage
+  type: Property
+  source:
+    id: ErrorMessage
+    path: ''
+    startLine: 3804
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the error message from the API response body.\n"
+  example: []
+  syntax:
+    content: public string ErrorMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ErrorMessage As String
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent
+  commentId: P:Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent
+  id: ErrorContent
+  parent: Yort.OnlineEftpos.OnlineEftposApiException
+  langs:
+  - csharp
+  - vb
+  name: ErrorContent
+  nameWithType: OnlineEftposApiException.ErrorContent
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent
+  type: Property
+  source:
+    id: ErrorContent
+    path: ''
+    startLine: 3818
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a <xref href=\"Yort.OnlineEftpos.OnlineEftposApiError\" data-throw-if-not-resolved=\"false\"></xref> instance containing details of the error that occurred. Maybe null if no such content was provided from the server for this error.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiError ErrorContent { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiError
+    content.vb: Public ReadOnly Property ErrorContent As OnlineEftposApiError
+  overload: Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Yort.OnlineEftpos.OnlineEftposException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposException
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposException
+  nameWithType: OnlineEftposException
+  fullName: Yort.OnlineEftpos.OnlineEftposException
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Runtime.InteropServices._Exception
+  commentId: T:System.Runtime.InteropServices._Exception
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: _Exception
+  nameWithType: _Exception
+  fullName: System.Runtime.InteropServices._Exception
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    nameWithType: Exception.ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    nameWithType: Exception.ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: Exception.GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: Exception.GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiException.#ctor
+  isExternal: false
+  name: OnlineEftposApiException
+  nameWithType: OnlineEftposApiException.OnlineEftposApiException
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.OnlineEftposApiException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.StatusCode*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiException.StatusCode
+  isExternal: false
+  name: StatusCode
+  nameWithType: OnlineEftposApiException.StatusCode
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.StatusCode
+- uid: HttpStatusCode
+  isExternal: true
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: HttpStatusCode
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase
+  isExternal: false
+  name: ReasonPhrase
+  nameWithType: OnlineEftposApiException.ReasonPhrase
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage
+  isExternal: false
+  name: ErrorMessage
+  nameWithType: OnlineEftposApiException.ErrorMessage
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage
+- uid: Yort.OnlineEftpos.OnlineEftposApiError
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiError
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposApiError
+  nameWithType: OnlineEftposApiError
+  fullName: Yort.OnlineEftpos.OnlineEftposApiError
+- uid: Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent
+  isExternal: false
+  name: ErrorContent
+  nameWithType: OnlineEftposApiException.ErrorContent
+  fullName: Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent
