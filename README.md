@@ -50,7 +50,7 @@ Install the Nuget package like this;
     PM> Install-Package Yort.OnlineEFTPOS
 ```
 
-[![NuGet Badge](https://buildstats.info/nuget/Yort.OnlineEFTPOS)](https://www.nuget.org/packages/Yort.OnlineEFTPOS/)
+[![NuGet Badge](https://buildstats.info/nuget/Yort.OnlineEFTPOS)](https://yortw.github.io/Yort.OnlineEftpos/reference/api/Yort.OnlineEftpos.html)
 
 Create a credential provider initialising it with your API credentials;
 

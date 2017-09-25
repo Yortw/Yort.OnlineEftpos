@@ -1,126 +1,121 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/Yort.OnlineEftpos/assets/css/style.css?v=2431dc96acdb1317333da1b0ded9915c7f55bcfc" media="screen" type="text/css">
-    <link rel="stylesheet" href="/Yort.OnlineEftpos/assets/css/print.css" media="print" type="text/css">
-
+ï»¿<!DOCTYPE HTML>
+<!-- saved from url=(0042)https://yortw.github.io/Yort.OnlineEftpos/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en-US"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+     
+<META charset="utf-8">     
+<META http-equiv="X-UA-Compatible" content="chrome=1">     
+<META name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <LINK href="assets/css.css" rel="stylesheet" type="text/css">     <LINK 
+href="assets/style.css" rel="stylesheet" type="text/css" media="screen">    
+ <LINK href="assets/print.css" rel="stylesheet" type="text/css" media="print"> 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-<!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Yort.OnlineEFTPOS | Yort.OnlineEftpos</title>
-<meta property="og:title" content="Yort.OnlineEFTPOS" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="An unofficial, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services." />
-<meta property="og:description" content="An unofficial, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services." />
-<link rel="canonical" href="https://yortw.github.io/Yort.OnlineEftpos/" />
-<meta property="og:url" content="https://yortw.github.io/Yort.OnlineEftpos/" />
-<meta property="og:site_name" content="Yort.OnlineEftpos" />
-<script type="application/ld+json">
-{"name":"Yort.OnlineEftpos","description":"An unofficial, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services.","author":null,"@type":"WebSite","url":"https://yortw.github.io/Yort.OnlineEftpos/","image":null,"publisher":null,"headline":"Yort.OnlineEFTPOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <a href="https://yortw.github.io/Yort.OnlineEftpos/">
-          <h1>Yort.OnlineEftpos</h1>
-        </a>
-        <h2>An **unofficial**, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services. </h2>
-        
-          <a href="https://github.com/Yortw/Yort.OnlineEftpos" class="button"><small>View project on</small> GitHub</a>
-        
-        
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1 id="yortonlineeftpos">Yort.OnlineEFTPOS</h1>
-<p>An <strong>unofficial</strong>, light-weight, .Net wrapper around the <a href="https://www.paymark.co.nz/">Paymark</a> <a href="http://docs.dev.paymark.nz/oe">Online EFTPOS API</a>. Makes it easy to integrate to the API from .Net applications and services.</p>
-
-<h2 id="what-does-it-do">What does it do?</h2>
-<p>Amongst other things;</p>
-
-<ul>
-  <li>Allows requesting payment, sending refunds, checking transaction status by id, searching for transaction status.</li>
-  <li>Performs digital signature verification for notifications (not available on WinRT/UWP).</li>
-  <li>Provides models that (de)serialise from/to the correct json for requests/responses.</li>
-  <li>Handles OAuth 2.0 authentication/token refresh etc (though credential management is still your problem).</li>
-  <li>Turns error responses into exceptions.</li>
-  <li>Normalises &amp; validates payer ids.</li>
-  <li>Makes it easy to switch code between sandbox/UAT/production environments for accurate testing.</li>
-  <li>Uses interfaces for main components allowing for unit testing of calling code.</li>
-  <li>Uses injectable HttpClient for controllable HTTP pipeline and setup.</li>
-</ul>
-
-<p><a href="https://github.com/Yortw/Yort.OnlineEFTPOS/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="GitHub license" /></a></p>
-
-<h2 id="what-doesnt-it-do">What Doesn’t it do?</h2>
-<p>Obviously lots of things, but specifically this library is <em>NOT</em> designed to;</p>
-
-<ul>
-  <li>Provide credential management.</li>
-  <li>Eliminate the need to read docs, understand the API and how to use it.</li>
-  <li>Provide a high level design that ensures a robust payment integration, i.e correctly implementing rechecks, handling accepted/declined states and implementing auto-refund if necessary should be handled at the application level.</li>
-</ul>
-
-<h2 id="supported-platforms">Supported Platforms</h2>
-<p>Currently;</p>
-
-<ul>
-  <li>.Net Framework 4.0</li>
-  <li>.Net Framework 4.5+</li>
-  <li>.Net Standard 1.3 (supports ASP.Net Core)</li>
-  <li>Xamarin.iOS</li>
-  <li>Xamarin.Android</li>
-  <li>WinRT/UWP</li>
-</ul>
-
-<h2 id="build-status">Build Status</h2>
-<p><a href="https://ci.appveyor.com/project/Yortw/yort-onlineeftpos"><img src="https://ci.appveyor.com/api/projects/status/ul7cdbsb5jqhv2nj?svg=true" alt="Build status" /></a></p>
-
-<h2 id="how-do-i-use-yortonlineeftpos">How do I use Yort.OnlineEFTPOS?</h2>
-<p>There is a very basic sample console application included in the repository, though you’ll need to plugin your merchant id and API credentials to run it. 
-For details on what the API does and how it works, see the <a href="http://docs.dev.paymark.nz/oe">Online EFTPOS API documentation</a>.</p>
-
-<p>There is also <a href="https://yortw.github.io/Yort.OnlineEftpos/reference/index.html">reference documentation for this library’s API</a></p>
-
-<h3 id="quick-start">Quick start</h3>
-
-<p>Install the Nuget package like this;</p>
-
-<div class="language-powershell highlighter-rouge"><pre class="highlight"><code>    PM&gt; Install-Package Yort.OnlineEFTPOS
-</code></pre>
-</div>
-
-<p><a href="https://www.nuget.org/packages/Yort.OnlineEFTPOS/"><img src="https://buildstats.info/nuget/Yort.OnlineEFTPOS" alt="NuGet Badge" /></a></p>
-
-<p>Create a credential provider initialising it with your API credentials;</p>
-
-<p><em>although the difference in security is marginal, use the secure credential provider on platforms that support it. 
-This sample uses the non-secure version for simplicity.</em></p>
-
-<pre><code class="language-C#">var credentialProvider = new OnlineEftposCredentialsProvider(new OnlineEftposCredentials("yourkey", "yoursecret"));
-</code></pre>
-
-<p>Then create a client, specifying the credential provider, target API version and API environment;</p>
-<pre><code class="language-C#">IOnlineEftposClient client = new OnlineEftposClient(credentialProvider, 
+    <![endif]--> <!-- Begin Jekyll SEO tag v2.3.0 --> 
+<TITLE>Yort.OnlineEFTPOS | Yort.OnlineEftpos</TITLE> 
+<META content="Yort.OnlineEFTPOS" property="og:title"> 
+<META content="en_US" property="og:locale"> 
+<META name="description" content="An unofficial, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services."> 
+<META content="An unofficial, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services." 
+property="og:description"> <LINK href="https://yortw.github.io/Yort.OnlineEftpos/" 
+rel="canonical"> 
+<META content="https://yortw.github.io/Yort.OnlineEftpos/" property="og:url"> 
+<META content="Yort.OnlineEftpos" property="og:site_name"> 
+<SCRIPT type="application/ld+json">
+{"name":"Yort.OnlineEftpos","description":"An unofficial, light-weight, .Net wrapper around the Paymark (https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). Makes it easy to integrate to the API from .Net applications and services.","author":null,"@type":"WebSite","url":"https://yortw.github.io/Yort.OnlineEftpos/","image":null,"publisher":null,"headline":"Yort.OnlineEFTPOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</SCRIPT>
+ <!-- End Jekyll SEO tag -->   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY><HEADER>
+<DIV class="inner"><A href="https://yortw.github.io/Yort.OnlineEftpos/">
+<H1>Yort.OnlineEftpos</H1></A>         
+<H2>An **unofficial**, light-weight, .Net wrapper around the Paymark 
+(https://www.paymark.co.nz/) Online EFTPOS API (http://docs.dev.paymark.nz/oe). 
+Makes it easy to integrate to the API from .Net applications and services. 
+</H2><A class="button" 
+href="https://github.com/Yortw/Yort.OnlineEftpos"><SMALL>View project on</SMALL> 
+GitHub</A>                       </DIV></HEADER>
+<DIV id="content-wrapper">
+<DIV class="inner clearfix"><SECTION id="main-content">
+<H1 id="yortonlineeftpos">Yort.OnlineEFTPOS</H1>
+<P>An <STRONG>unofficial</STRONG>, light-weight, .Net wrapper around the <A 
+href="https://www.paymark.co.nz/">Paymark</A> <A href="http://docs.dev.paymark.nz/oe">Online 
+EFTPOS API</A>. Makes it easy to integrate to the API from .Net applications and 
+services.</P>
+<H2 id="what-does-it-do">What does it do?</H2>
+<P>Amongst other things;</P>
+<UL>
+  <LI>Allows requesting payment, sending refunds, checking transaction status by 
+  id, searching for transaction status.</LI>
+  <LI>Performs digital signature verification for notifications (not available 
+  on WinRT/UWP).</LI>
+  <LI>Provides models that (de)serialise from/to the correct json for 
+  requests/responses.</LI>
+  <LI>Handles OAuth 2.0 authentication/token refresh etc (though credential 
+  management is still your problem).</LI>
+  <LI>Turns error responses into exceptions.</LI>
+  <LI>Normalises &amp; validates payer ids.</LI>
+  <LI>Makes it easy to switch code between sandbox/UAT/production environments 
+  for accurate testing.</LI>
+  <LI>Uses interfaces for main components allowing for unit testing of calling 
+  code.</LI>
+  <LI>Uses injectable HttpClient for controllable HTTP pipeline and 
+setup.</LI></UL>
+<P><A 
+href="https://github.com/Yortw/Yort.OnlineEFTPOS/blob/master/LICENSE.md"><IMG 
+alt="GitHub license" src="assets/apistatus.svg"></A></P>
+<H2 id="what-doesnt-it-do">What Doesnâ€™t it do?</H2>
+<P>Obviously lots of things, but specifically this library is <EM>NOT</EM> 
+designed to;</P>
+<UL>
+  <LI>Provide credential management.</LI>
+  <LI>Eliminate the need to read docs, understand the API and how to use 
+it.</LI>
+  <LI>Provide a high level design that ensures a robust payment integration, i.e 
+  correctly implementing rechecks, handling accepted/declined states and 
+  implementing auto-refund if necessary should be handled at the application 
+  level.</LI></UL>
+<H2 id="supported-platforms">Supported Platforms</H2>
+<P>Currently;</P>
+<UL>
+  <LI>.Net Framework 4.0</LI>
+  <LI>.Net Framework 4.5+</LI>
+  <LI>.Net Standard 1.3 (supports ASP.Net Core)</LI>
+  <LI>Xamarin.iOS</LI>
+  <LI>Xamarin.Android</LI>
+  <LI>WinRT/UWP</LI></UL>
+<H2 id="build-status">Build Status</H2>
+<P><A href="https://ci.appveyor.com/project/Yortw/yort-onlineeftpos"><IMG alt="Build status" 
+src="assets/ul7cdbsb5jqhv2nj.svg"></A></P>
+<H2 id="how-do-i-use-yortonlineeftpos">How do I use Yort.OnlineEFTPOS?</H2>
+<P>There is a very basic sample console application included in the repository, 
+though youâ€™ll need to plugin your merchant id and API credentials to run it. 
+ For details on what the API does and how it works, see the <A href="http://docs.dev.paymark.nz/oe">Online 
+EFTPOS API documentation</A>.</P>
+<P>There is also <A href="https://yortw.github.io/Yort.OnlineEftpos/reference/index.html">reference 
+documentation for this libraryâ€™s API</A></P>
+<H3 id="quick-start">Quick start</H3>
+<P>Install the Nuget package like this;</P>
+<DIV class="language-powershell highlighter-rouge">
+<PRE class="highlight"><CODE>    PM&gt; Install-Package Yort.OnlineEFTPOS
+</CODE></PRE></DIV>
+<P><A href="https://www.nuget.org/packages/Yort.OnlineEFTPOS/"><IMG alt="NuGet Badge" 
+src="assets/Yort.svg"></A></P>
+<P>Create a credential provider initialising it with your API credentials;</P>
+<P><EM>although the difference in security is marginal, use the secure 
+credential provider on platforms that support it.  This sample uses the 
+non-secure version for simplicity.</EM></P>
+<PRE><CODE class="language-C#">var credentialProvider = new OnlineEftposCredentialsProvider(new OnlineEftposCredentials("yourkey", "yoursecret"));
+</CODE></PRE>
+<P>Then create a client, specifying the credential provider, target API version 
+and API environment;</P>
+<PRE><CODE class="language-C#">IOnlineEftposClient client = new OnlineEftposClient(credentialProvider, 
     OnlineEftposApiVersion.Latest, 
     OnlineEftposApiEnvironment.Sandbox
 );
-</code></pre>
-
-<p>Now you can request a payment. The simple but long winded way involves passing every value on every request;</p>
-<pre><code class="language-C#">    try
+</CODE></PRE>
+<P>Now you can request a payment. The simple but long winded way involves 
+passing every value on every request;</P>
+<PRE><CODE class="language-C#">    try
     {
         OnlineEftposPaymentStatus result = await client.RequestPayment(new OnlineEftposPaymentRequest()
         {
@@ -160,12 +155,12 @@ This sample uses the non-secure version for simplicity.</em></p>
         // An error response was received from the API
         // Confirm status via recheck, obtain error details from apiex.
     }
-</code></pre>
-
-<p>If you’re making multiple requests over time with mostly the same criteria, you can use the request builder to pre-load most of the request details.
-Note the request builder also takes care of converting decimal amounts into the integer version required by the API for you.</p>
-
-<pre><code class="language-C#">//Create and store a reference to the request builder somewhere (maybe your IoC)
+</CODE></PRE>
+<P>If youâ€™re making multiple requests over time with mostly the same criteria, 
+you can use the request builder to pre-load most of the request details. Note 
+the request builder also takes care of converting decimal amounts into the 
+integer version required by the API for you.</P>
+<PRE><CODE class="language-C#">//Create and store a reference to the request builder somewhere (maybe your IoC)
 _RequestBuilder = new OnlineEftposRequestBuilder()
 {
     CallbackUrlTemplate = "https://www.mycoolsite.com/payments/callback?reference={orderId}",
@@ -182,16 +177,14 @@ _RequestBuilder = new OnlineEftposRequestBuilder()
 //Use the request builder to create a payment request and send it via the client
 var request = _RequestBuilder.CreatePaymentRequest("021555123", "MOBILE", "ASB", "Order1", 10.00M);
 var result = await client.RequestPayment(request);
-</code></pre>
-
-<p>Refunds work similarly, use CreateRefundRequest/SendRefund instead of CreatePaymentRequest/RequestPayment.
-Methods for status checking and transaction search should be self-explanatory after reading the API documentation.</p>
-
-<h3 id="signature-verification">Signature verification</h3>
-
-<p>You can validate that a notification actually came from the Paymark API rather than a malicious actor by using the notification verifier.</p>
-
-<pre><code class="language-C#">// Create a notification using the (string) content sent to the end point.
+</CODE></PRE>
+<P>Refunds work similarly, use CreateRefundRequest/SendRefund instead of 
+CreatePaymentRequest/RequestPayment. Methods for status checking and transaction 
+search should be self-explanatory after reading the API documentation.</P>
+<H3 id="signature-verification">Signature verification</H3>
+<P>You can validate that a notification actually came from the Paymark API 
+rather than a malicious actor by using the notification verifier.</P>
+<PRE><CODE class="language-C#">// Create a notification using the (string) content sent to the end point.
 var notification = new OnlineEftposNotification(content);
 
 // Create a verifier with the appropriate public key for the API environment, the notification came from. 
@@ -202,22 +195,10 @@ var verifier = new Sha512WithRsaVerifier(PublicKey);
 // Now verify the notification			
 if (!verifier.Verify(notification))
     throw new System.Security.SecurityException("Notification did not pass verification.");
-</code></pre>
-
-        </section>
-
-        <aside id="sidebar">
-          
-
-          
-            <p class="repo-owner"><a href="https://github.com/Yortw/Yort.OnlineEftpos">Yort.OnlineEftpos</a> is maintained by <a href="https://github.com/Yortw">Yortw</a>.</p>
-          
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</p>
-        </aside>
-      </div>
-    </div>
-
-    
-  </body>
-</html>
+</CODE></PRE></SECTION><ASIDE 
+id="sidebar">
+<P class="repo-owner"><A 
+href="https://github.com/Yortw/Yort.OnlineEftpos">Yort.OnlineEftpos</A> is 
+maintained by <A href="https://github.com/Yortw">Yortw</A>.</P>
+<P>This page was generated by <A href="https://pages.github.com/">GitHub 
+Pages</A>.</P></ASIDE></DIV></DIV></BODY></HTML>
