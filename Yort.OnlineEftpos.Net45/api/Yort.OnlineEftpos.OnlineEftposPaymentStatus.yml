@@ -1,0 +1,694 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  id: OnlineEftposPaymentStatus
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposPaymentStatus
+  nameWithType: OnlineEftposPaymentStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  type: Class
+  source:
+    id: OnlineEftposPaymentStatus
+    path: ''
+    startLine: 4529
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents the status of a payment transaction.\n"
+  example: []
+  syntax:
+    content: public sealed class OnlineEftposPaymentStatus
+    content.vb: Public NotInheritable Class OnlineEftposPaymentStatus
+  see:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient
+    commentId: T:Yort.OnlineEftpos.OnlineEftposClient
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id
+  id: Id
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: OnlineEftposPaymentStatus.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 4534
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns the unique identifier of the payment.\n"
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
+  id: Status
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: OnlineEftposPaymentStatus.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
+  type: Property
+  source:
+    id: Status
+    path: ''
+    startLine: 4541
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns a text based description of the payment status.\n"
+  example: []
+  syntax:
+    content: public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status*
+  seealso:
+  - linkId: Yort.OnlineEftpos.TransactionStatus
+    commentId: T:Yort.OnlineEftpos.TransactionStatus
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank
+  id: Bank
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Bank
+  nameWithType: OnlineEftposPaymentStatus.Bank
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank
+  type: Property
+  source:
+    id: Bank
+    path: ''
+    startLine: 4547
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns the payer/bank details associated with the transaction.\n"
+  example: []
+  syntax:
+    content: public BankDetails Bank { get; set; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.BankDetails
+    content.vb: Public Property Bank As BankDetails
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant
+  id: Merchant
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Merchant
+  nameWithType: OnlineEftposPaymentStatus.Merchant
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant
+  type: Property
+  source:
+    id: Merchant
+    path: ''
+    startLine: 4553
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns information about the merchant related to this transaction.\n"
+  example: []
+  syntax:
+    content: public MerchantDetails Merchant { get; set; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.MerchantDetails
+    content.vb: Public Property Merchant As MerchantDetails
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+  id: Transaction
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Transaction
+  nameWithType: OnlineEftposPaymentStatus.Transaction
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+  type: Property
+  source:
+    id: Transaction
+    path: ''
+    startLine: 4559
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns the details of the transaction, such as amount.\n"
+  example: []
+  syntax:
+    content: public PaymentDetails Transaction { get; set; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.PaymentDetails
+    content.vb: Public Property Transaction As PaymentDetails
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
+  id: CreationTime
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: CreationTime
+  nameWithType: OnlineEftposPaymentStatus.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
+  type: Property
+  source:
+    id: CreationTime
+    path: ''
+    startLine: 4565
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe date and time the payment was created, as a univeral date time value.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset CreationTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property CreationTime As DateTimeOffset
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime
+  id: ModificationTime
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: ModificationTime
+  nameWithType: OnlineEftposPaymentStatus.ModificationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime
+  type: Property
+  source:
+    id: ModificationTime
+    path: ''
+    startLine: 4571
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe date and time the payment was last updated, as a universal date time value.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset ModificationTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property ModificationTime As DateTimeOffset
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos.OnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.OnlineEftposClient
+  isExternal: false
+  name: OnlineEftposClient
+  nameWithType: OnlineEftposClient
+  fullName: Yort.OnlineEftpos.OnlineEftposClient
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposPaymentRequest
+  nameWithType: OnlineEftposPaymentRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id
+  isExternal: false
+  name: Id
+  nameWithType: OnlineEftposPaymentStatus.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.TransactionStatus
+  commentId: T:Yort.OnlineEftpos.TransactionStatus
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: TransactionStatus
+  nameWithType: TransactionStatus
+  fullName: Yort.OnlineEftpos.TransactionStatus
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
+  isExternal: false
+  name: Status
+  nameWithType: OnlineEftposPaymentStatus.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank
+  isExternal: false
+  name: Bank
+  nameWithType: OnlineEftposPaymentStatus.Bank
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank
+- uid: Yort.OnlineEftpos.BankDetails
+  commentId: T:Yort.OnlineEftpos.BankDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: BankDetails
+  nameWithType: BankDetails
+  fullName: Yort.OnlineEftpos.BankDetails
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant
+  isExternal: false
+  name: Merchant
+  nameWithType: OnlineEftposPaymentStatus.Merchant
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant
+- uid: Yort.OnlineEftpos.MerchantDetails
+  commentId: T:Yort.OnlineEftpos.MerchantDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: MerchantDetails
+  nameWithType: MerchantDetails
+  fullName: Yort.OnlineEftpos.MerchantDetails
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+  isExternal: false
+  name: Transaction
+  nameWithType: OnlineEftposPaymentStatus.Transaction
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+- uid: Yort.OnlineEftpos.PaymentDetails
+  commentId: T:Yort.OnlineEftpos.PaymentDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: PaymentDetails
+  nameWithType: PaymentDetails
+  fullName: Yort.OnlineEftpos.PaymentDetails
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
+  isExternal: false
+  name: CreationTime
+  nameWithType: OnlineEftposPaymentStatus.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime
+  isExternal: false
+  name: ModificationTime
+  nameWithType: OnlineEftposPaymentStatus.ModificationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime

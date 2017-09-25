@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.INotificationVerifier
+  commentId: T:Yort.OnlineEftpos.INotificationVerifier
+  id: INotificationVerifier
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  - Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  langs:
+  - csharp
+  - vb
+  name: INotificationVerifier
+  nameWithType: INotificationVerifier
+  fullName: Yort.OnlineEftpos.INotificationVerifier
+  type: Interface
+  source:
+    id: INotificationVerifier
+    path: ''
+    startLine: 3266
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nInterface for components that can verify a <xref href=\"Yort.OnlineEftpos.OnlineEftposNotification\" data-throw-if-not-resolved=\"false\"></xref> as being valid and sent by the Online EFTPOS system.\n"
+  example: []
+  syntax:
+    content: public interface INotificationVerifier
+    content.vb: Public Interface INotificationVerifier
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  commentId: M:Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  id: Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  parent: Yort.OnlineEftpos.INotificationVerifier
+  langs:
+  - csharp
+  - vb
+  name: Verify(OnlineEftposNotification)
+  nameWithType: INotificationVerifier.Verify(OnlineEftposNotification)
+  fullName: Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  type: Method
+  source:
+    id: Verify
+    path: ''
+    startLine: 3275
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns true if the specified <xref href=\"Yort.OnlineEftpos.OnlineEftposNotification\" data-throw-if-not-resolved=\"false\"></xref> is verified valid and authentic, otherwise false.\n"
+  example: []
+  syntax:
+    content: bool Verify(OnlineEftposNotification notification)
+    parameters:
+    - id: notification
+      type: Yort.OnlineEftpos.OnlineEftposNotification
+      description: The <xref href="Yort.OnlineEftpos.OnlineEftposNotification" data-throw-if-not-resolved="false"></xref> to verify.
+    return:
+      type: System.Boolean
+      description: A boolean indicating if <code data-dev-comment-type="paramref" class="paramref">notification</code> passes verification.
+    content.vb: Function Verify(notification As OnlineEftposNotification) As Boolean
+  overload: Yort.OnlineEftpos.INotificationVerifier.Verify*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">notification</code> is null.
+- uid: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  commentId: M:Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  id: ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  parent: Yort.OnlineEftpos.INotificationVerifier
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNotVerified(OnlineEftposNotification)
+  nameWithType: INotificationVerifier.ThrowIfNotVerified(OnlineEftposNotification)
+  fullName: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  type: Method
+  source:
+    id: ThrowIfNotVerified
+    path: ''
+    startLine: 3283
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nVerifies <code data-dev-comment-type=\"paramref\" class=\"paramref\">notification</code> and throws as <xref href=\"System.Security.SecurityException\" data-throw-if-not-resolved=\"false\"></xref> if the verification fails.\n"
+  example: []
+  syntax:
+    content: void ThrowIfNotVerified(OnlineEftposNotification notification)
+    parameters:
+    - id: notification
+      type: Yort.OnlineEftpos.OnlineEftposNotification
+      description: The <xref href="Yort.OnlineEftpos.OnlineEftposNotification" data-throw-if-not-resolved="false"></xref> to be verified.
+    content.vb: Sub ThrowIfNotVerified(notification As OnlineEftposNotification)
+  overload: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if verification fails.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">notification</code> is null.
+references:
+- uid: Yort.OnlineEftpos.OnlineEftposNotification
+  commentId: T:Yort.OnlineEftpos.OnlineEftposNotification
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposNotification
+  nameWithType: OnlineEftposNotification
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: Yort.OnlineEftpos.INotificationVerifier.Verify*
+  commentId: Overload:Yort.OnlineEftpos.INotificationVerifier.Verify
+  isExternal: false
+  name: Verify
+  nameWithType: INotificationVerifier.Verify
+  fullName: Yort.OnlineEftpos.INotificationVerifier.Verify
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Security.SecurityException
+  commentId: T:System.Security.SecurityException
+- uid: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified*
+  commentId: Overload:Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified
+  isExternal: false
+  name: ThrowIfNotVerified
+  nameWithType: INotificationVerifier.ThrowIfNotVerified
+  fullName: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException

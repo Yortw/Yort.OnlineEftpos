@@ -247,3 +247,6 @@ ModelManifest.xml
 
 .nuget
 *.nupkg
+
+# temp log files
+log.txt

@@ -1,0 +1,708 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.NotificationVerifierBase
+  commentId: T:Yort.OnlineEftpos.NotificationVerifierBase
+  id: NotificationVerifierBase
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.NotificationVerifierBase.#ctor(System.Byte[])
+  - Yort.OnlineEftpos.NotificationVerifierBase.#ctor(System.String)
+  - Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey
+  - Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  - Yort.OnlineEftpos.NotificationVerifierBase.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  langs:
+  - csharp
+  - vb
+  name: NotificationVerifierBase
+  nameWithType: NotificationVerifierBase
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase
+  type: Class
+  source:
+    id: NotificationVerifierBase
+    path: ''
+    startLine: 3506
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nBase class for <xref href=\"Yort.OnlineEftpos.INotificationVerifier\" data-throw-if-not-resolved=\"false\"></xref> providing reusable logic. Prefer <xref href=\"Yort.OnlineEftpos.INotificationVerifier\" data-throw-if-not-resolved=\"false\"></xref> for references.\n"
+  example: []
+  syntax:
+    content: 'public abstract class NotificationVerifierBase : INotificationVerifier'
+    content.vb: >-
+      Public MustInherit Class NotificationVerifierBase
+          Implements INotificationVerifier
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Yort.OnlineEftpos.Sha512WithRsaVerifier
+  implements:
+  - Yort.OnlineEftpos.INotificationVerifier
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.#ctor(System.String)
+  commentId: M:Yort.OnlineEftpos.NotificationVerifierBase.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Yort.OnlineEftpos.NotificationVerifierBase
+  langs:
+  - csharp
+  - vb
+  name: NotificationVerifierBase(String)
+  nameWithType: NotificationVerifierBase.NotificationVerifierBase(String)
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.NotificationVerifierBase(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3523
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nConstructs a new instance using the specified base 64 encoded public key.\n"
+  example: []
+  syntax:
+    content: protected NotificationVerifierBase(string base64PublicKey)
+    parameters:
+    - id: base64PublicKey
+      type: System.String
+      description: A string containing the base 64 encoded public key to use for signature verification.
+    content.vb: Protected Sub New(base64PublicKey As String)
+  overload: Yort.OnlineEftpos.NotificationVerifierBase.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">base64PublicKey</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">base64PublicKey</code> is not a valid base 64 string.
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.#ctor(System.Byte[])
+  commentId: M:Yort.OnlineEftpos.NotificationVerifierBase.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: Yort.OnlineEftpos.NotificationVerifierBase
+  langs:
+  - csharp
+  - vb
+  name: NotificationVerifierBase(Byte[])
+  nameWithType: NotificationVerifierBase.NotificationVerifierBase(Byte[])
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.NotificationVerifierBase(System.Byte[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3533
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nConstructs a new instance using the specified raw bytes for the public key.\n"
+  example: []
+  syntax:
+    content: protected NotificationVerifierBase(byte[] publicKey)
+    parameters:
+    - id: publicKey
+      type: System.Byte[]
+      description: A byte array containing the binary representation of the public key to use when verifying notification signatures.
+    content.vb: Protected Sub New(publicKey As Byte())
+  overload: Yort.OnlineEftpos.NotificationVerifierBase.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">publicKey</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">publicKey</code> is is zero length.
+  nameWithType.vb: NotificationVerifierBase.NotificationVerifierBase(Byte())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Yort.OnlineEftpos.NotificationVerifierBase.NotificationVerifierBase(System.Byte())
+  name.vb: NotificationVerifierBase(Byte())
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  commentId: M:Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  id: ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  parent: Yort.OnlineEftpos.NotificationVerifierBase
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNotVerified(OnlineEftposNotification)
+  nameWithType: NotificationVerifierBase.ThrowIfNotVerified(OnlineEftposNotification)
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  type: Method
+  source:
+    id: ThrowIfNotVerified
+    path: ''
+    startLine: 3547
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nVerifies <code data-dev-comment-type=\"paramref\" class=\"paramref\">notification</code> and throws as <xref href=\"System.Security.SecurityException\" data-throw-if-not-resolved=\"false\"></xref> if the verification fails.\n"
+  example: []
+  syntax:
+    content: public void ThrowIfNotVerified(OnlineEftposNotification notification)
+    parameters:
+    - id: notification
+      type: Yort.OnlineEftpos.OnlineEftposNotification
+      description: The <xref href="Yort.OnlineEftpos.OnlineEftposNotification" data-throw-if-not-resolved="false"></xref> to be verified.
+    content.vb: Public Sub ThrowIfNotVerified(notification As OnlineEftposNotification)
+  overload: Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if verification fails.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">notification</code> is null.
+  implements:
+  - Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  commentId: M:Yort.OnlineEftpos.NotificationVerifierBase.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  id: Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  parent: Yort.OnlineEftpos.NotificationVerifierBase
+  langs:
+  - csharp
+  - vb
+  name: Verify(OnlineEftposNotification)
+  nameWithType: NotificationVerifierBase.Verify(OnlineEftposNotification)
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  type: Method
+  source:
+    id: Verify
+    path: ''
+    startLine: 3558
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns true if the specified <xref href=\"Yort.OnlineEftpos.OnlineEftposNotification\" data-throw-if-not-resolved=\"false\"></xref> is verified valid and authentic, otherwise false.\n"
+  example: []
+  syntax:
+    content: public abstract bool Verify(OnlineEftposNotification notification)
+    parameters:
+    - id: notification
+      type: Yort.OnlineEftpos.OnlineEftposNotification
+      description: The <xref href="Yort.OnlineEftpos.OnlineEftposNotification" data-throw-if-not-resolved="false"></xref> to verify.
+    return:
+      type: System.Boolean
+      description: A boolean indicating if <code data-dev-comment-type="paramref" class="paramref">notification</code> passes verification.
+    content.vb: Public MustOverride Function Verify(notification As OnlineEftposNotification) As Boolean
+  overload: Yort.OnlineEftpos.NotificationVerifierBase.Verify*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">notification</code> is null.
+  implements:
+  - Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey
+  commentId: M:Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey
+  id: GetPublicKey
+  parent: Yort.OnlineEftpos.NotificationVerifierBase
+  langs:
+  - csharp
+  - vb
+  name: GetPublicKey()
+  nameWithType: NotificationVerifierBase.GetPublicKey()
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey()
+  type: Method
+  source:
+    id: GetPublicKey
+    path: ''
+    startLine: 3563
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a byte array containing the raw binary representation of the public key this instance was initialised with.\n"
+  example: []
+  syntax:
+    content: protected byte[] GetPublicKey()
+    return:
+      type: System.Byte[]
+    content.vb: Protected Function GetPublicKey As Byte()
+  overload: Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Yort.OnlineEftpos.INotificationVerifier
+  commentId: T:Yort.OnlineEftpos.INotificationVerifier
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: INotificationVerifier
+  nameWithType: INotificationVerifier
+  fullName: Yort.OnlineEftpos.INotificationVerifier
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.NotificationVerifierBase.#ctor
+  isExternal: false
+  name: NotificationVerifierBase
+  nameWithType: NotificationVerifierBase.NotificationVerifierBase
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.NotificationVerifierBase
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Security.SecurityException
+  commentId: T:System.Security.SecurityException
+- uid: Yort.OnlineEftpos.OnlineEftposNotification
+  commentId: T:Yort.OnlineEftpos.OnlineEftposNotification
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposNotification
+  nameWithType: OnlineEftposNotification
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified*
+  commentId: Overload:Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified
+  isExternal: false
+  name: ThrowIfNotVerified
+  nameWithType: NotificationVerifierBase.ThrowIfNotVerified
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified
+- uid: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  commentId: M:Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  parent: Yort.OnlineEftpos.INotificationVerifier
+  isExternal: false
+  name: ThrowIfNotVerified(OnlineEftposNotification)
+  nameWithType: INotificationVerifier.ThrowIfNotVerified(OnlineEftposNotification)
+  fullName: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+    name: ThrowIfNotVerified
+    nameWithType: INotificationVerifier.ThrowIfNotVerified
+    fullName: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposNotification
+    name: OnlineEftposNotification
+    nameWithType: OnlineEftposNotification
+    fullName: Yort.OnlineEftpos.OnlineEftposNotification
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified(Yort.OnlineEftpos.OnlineEftposNotification)
+    name: ThrowIfNotVerified
+    nameWithType: INotificationVerifier.ThrowIfNotVerified
+    fullName: Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposNotification
+    name: OnlineEftposNotification
+    nameWithType: OnlineEftposNotification
+    fullName: Yort.OnlineEftpos.OnlineEftposNotification
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.Verify*
+  commentId: Overload:Yort.OnlineEftpos.NotificationVerifierBase.Verify
+  isExternal: false
+  name: Verify
+  nameWithType: NotificationVerifierBase.Verify
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.Verify
+- uid: Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  commentId: M:Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  parent: Yort.OnlineEftpos.INotificationVerifier
+  isExternal: false
+  name: Verify(OnlineEftposNotification)
+  nameWithType: INotificationVerifier.Verify(OnlineEftposNotification)
+  fullName: Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+    name: Verify
+    nameWithType: INotificationVerifier.Verify
+    fullName: Yort.OnlineEftpos.INotificationVerifier.Verify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposNotification
+    name: OnlineEftposNotification
+    nameWithType: OnlineEftposNotification
+    fullName: Yort.OnlineEftpos.OnlineEftposNotification
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.INotificationVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)
+    name: Verify
+    nameWithType: INotificationVerifier.Verify
+    fullName: Yort.OnlineEftpos.INotificationVerifier.Verify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposNotification
+    name: OnlineEftposNotification
+    nameWithType: OnlineEftposNotification
+    fullName: Yort.OnlineEftpos.OnlineEftposNotification
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey*
+  commentId: Overload:Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey
+  isExternal: false
+  name: GetPublicKey
+  nameWithType: NotificationVerifierBase.GetPublicKey
+  fullName: Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey

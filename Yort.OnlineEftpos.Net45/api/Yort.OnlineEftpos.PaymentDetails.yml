@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.PaymentDetails
+  commentId: T:Yort.OnlineEftpos.PaymentDetails
+  id: PaymentDetails
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.PaymentDetails.Amount
+  - Yort.OnlineEftpos.PaymentDetails.Currency
+  - Yort.OnlineEftpos.PaymentDetails.Description
+  - Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  - Yort.OnlineEftpos.PaymentDetails.OrderId
+  langs:
+  - csharp
+  - vb
+  name: PaymentDetails
+  nameWithType: PaymentDetails
+  fullName: Yort.OnlineEftpos.PaymentDetails
+  type: Class
+  source:
+    id: PaymentDetails
+    path: ''
+    startLine: 4923
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nProvides transaction details specific to a payment (request).\n"
+  example: []
+  syntax:
+    content: 'public sealed class PaymentDetails : TransactionRequestDetails'
+    content.vb: >-
+      Public NotInheritable Class PaymentDetails
+          Inherits TransactionRequestDetails
+  inheritance:
+  - System.Object
+  - Yort.OnlineEftpos.TransactionRequestDetails
+  inheritedMembers:
+  - Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+  - Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Yort.OnlineEftpos.PaymentDetails.Amount
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.Amount
+  id: Amount
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: PaymentDetails.Amount
+  fullName: Yort.OnlineEftpos.PaymentDetails.Amount
+  type: Property
+  source:
+    id: Amount
+    path: ''
+    startLine: 4934
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns the amount of the payment in the minimum unit of the currency (i.e for NZ, Australia, US this would be cents).\n"
+  remarks: "\n<p>Must be greater than 0.</p>\n"
+  example: []
+  syntax:
+    content: public int Amount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Amount As Integer
+  overload: Yort.OnlineEftpos.PaymentDetails.Amount*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.PaymentDetails.Currency
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.Currency
+  id: Currency
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: PaymentDetails.Currency
+  fullName: Yort.OnlineEftpos.PaymentDetails.Currency
+  type: Property
+  source:
+    id: Currency
+    path: ''
+    startLine: 4943
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns a string containing a three digit code representing the currency of the transaction. If not provided the API will assume a default.\n"
+  remarks: "\n<p>For the Paymark Online Eftpos API the default value assumed if not provided is NZD (New Zealand Dollar).</p>\n"
+  example: []
+  syntax:
+    content: public string Currency { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Currency As String
+  overload: Yort.OnlineEftpos.PaymentDetails.Currency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.PaymentDetails.Description
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.Description
+  id: Description
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: PaymentDetails.Description
+  fullName: Yort.OnlineEftpos.PaymentDetails.Description
+  type: Property
+  source:
+    id: Description
+    path: ''
+    startLine: 4953
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns a string containing a short description of the payment request, potentially shown to the user and/or on their bank statement.\n"
+  remarks: "\n<p>Cannot be more than 12 characters long.</p>\n<p>This value is optional, but recommended.</p>\n"
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Yort.OnlineEftpos.PaymentDetails.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.PaymentDetails.OrderId
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.OrderId
+  id: OrderId
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: OrderId
+  nameWithType: PaymentDetails.OrderId
+  fullName: Yort.OnlineEftpos.PaymentDetails.OrderId
+  type: Property
+  source:
+    id: OrderId
+    path: ''
+    startLine: 4964
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA string containing a client generated reference for this payment, provided by the application code. This value will be passed back to the callback url provided with the transaction when the payment status changes.\n"
+  remarks: "\n<p>This value does not need to be unique, but it is recommended to be unique to facilitate tracking of transactions.</p>\n<p>Cannot be more than 100 characters long. The first 12 characters will be shown on the customer&apos;s bank statement.</p>\n<p>Special characters are not permitted, namely: @ # ^ ’ % &amp; | &lt; > &quot; ; . \\ / ! : ,</p>\n"
+  example: []
+  syntax:
+    content: public string OrderId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OrderId As String
+  overload: Yort.OnlineEftpos.PaymentDetails.OrderId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  commentId: M:Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  id: EnsureValid
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: EnsureValid()
+  nameWithType: PaymentDetails.EnsureValid()
+  fullName: Yort.OnlineEftpos.PaymentDetails.EnsureValid()
+  type: Method
+  source:
+    id: EnsureValid
+    path: ''
+    startLine: 4974
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThrows if the details are invalid.\n"
+  remarks: "\n<p>Throws if any of the properties are null, or EnsureValid method on any of the property values throws.</p>\n"
+  example: []
+  syntax:
+    content: public override void EnsureValid()
+    content.vb: Public Overrides Sub EnsureValid
+  overridden: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+  overload: Yort.OnlineEftpos.PaymentDetails.EnsureValid*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    description: Thrown if the values of this instance are invalid.
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Yort.OnlineEftpos.TransactionRequestDetails
+  commentId: T:Yort.OnlineEftpos.TransactionRequestDetails
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: TransactionRequestDetails
+  nameWithType: TransactionRequestDetails
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails
+- uid: Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+  commentId: P:Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+  parent: Yort.OnlineEftpos.TransactionRequestDetails
+  isExternal: false
+  name: UserAgent
+  nameWithType: TransactionRequestDetails.UserAgent
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails.UserAgent
+- uid: Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+  commentId: P:Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+  parent: Yort.OnlineEftpos.TransactionRequestDetails
+  isExternal: false
+  name: UserIPAddress
+  nameWithType: TransactionRequestDetails.UserIPAddress
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.PaymentDetails.Amount*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.Amount
+  isExternal: false
+  name: Amount
+  nameWithType: PaymentDetails.Amount
+  fullName: Yort.OnlineEftpos.PaymentDetails.Amount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Yort.OnlineEftpos.PaymentDetails.Currency*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.Currency
+  isExternal: false
+  name: Currency
+  nameWithType: PaymentDetails.Currency
+  fullName: Yort.OnlineEftpos.PaymentDetails.Currency
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.PaymentDetails.Description*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.Description
+  isExternal: false
+  name: Description
+  nameWithType: PaymentDetails.Description
+  fullName: Yort.OnlineEftpos.PaymentDetails.Description
+- uid: Yort.OnlineEftpos.PaymentDetails.OrderId*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.OrderId
+  isExternal: false
+  name: OrderId
+  nameWithType: PaymentDetails.OrderId
+  fullName: Yort.OnlineEftpos.PaymentDetails.OrderId
+- uid: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+  commentId: M:Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+  parent: Yort.OnlineEftpos.TransactionRequestDetails
+  isExternal: false
+  name: EnsureValid()
+  nameWithType: TransactionRequestDetails.EnsureValid()
+  fullName: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid()
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+    name: EnsureValid
+    nameWithType: TransactionRequestDetails.EnsureValid
+    fullName: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+    name: EnsureValid
+    nameWithType: TransactionRequestDetails.EnsureValid
+    fullName: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.PaymentDetails.EnsureValid*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.EnsureValid
+  isExternal: false
+  name: EnsureValid
+  nameWithType: PaymentDetails.EnsureValid
+  fullName: Yort.OnlineEftpos.PaymentDetails.EnsureValid
+- uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  isExternal: false
+  name: OnlineEftposInvalidDataException
+  nameWithType: OnlineEftposInvalidDataException
+  fullName: Yort.OnlineEftpos.OnlineEftposInvalidDataException

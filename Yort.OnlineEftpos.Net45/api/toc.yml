@@ -1,0 +1,92 @@
+### YamlMime:TableOfContent
+- uid: Yort.OnlineEftpos
+  name: Yort.OnlineEftpos
+  items:
+  - uid: Yort.OnlineEftpos.ApiErrorMessage
+    name: ApiErrorMessage
+  - uid: Yort.OnlineEftpos.BankDefinition
+    name: BankDefinition
+  - uid: Yort.OnlineEftpos.BankDetails
+    name: BankDetails
+  - uid: Yort.OnlineEftpos.ErasableString
+    name: ErasableString
+  - uid: Yort.OnlineEftpos.HateoasLink
+    name: HateoasLink
+  - uid: Yort.OnlineEftpos.INotificationVerifier
+    name: INotificationVerifier
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient
+    name: IOnlineEftposClient
+  - uid: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+    name: IOnlineEftposCredentialProvider
+  - uid: Yort.OnlineEftpos.IPayerIdType
+    name: IPayerIdType
+  - uid: Yort.OnlineEftpos.KnownBanks
+    name: KnownBanks
+  - uid: Yort.OnlineEftpos.MerchantDetails
+    name: MerchantDetails
+  - uid: Yort.OnlineEftpos.NotificationVerifierBase
+    name: NotificationVerifierBase
+  - uid: Yort.OnlineEftpos.NZMobilePayerIdType
+    name: NZMobilePayerIdType
+  - uid: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+    name: OnlineEftposApiEnvironment
+  - uid: Yort.OnlineEftpos.OnlineEftposApiError
+    name: OnlineEftposApiError
+  - uid: Yort.OnlineEftpos.OnlineEftposApiException
+    name: OnlineEftposApiException
+  - uid: Yort.OnlineEftpos.OnlineEftposApiVersion
+    name: OnlineEftposApiVersion
+  - uid: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    name: OnlineEftposAuthenticationException
+  - uid: Yort.OnlineEftpos.OnlineEftposClient
+    name: OnlineEftposClient
+  - uid: Yort.OnlineEftpos.OnlineEftposCredentials
+    name: OnlineEftposCredentials
+  - uid: Yort.OnlineEftpos.OnlineEftposCredentialsProvider
+    name: OnlineEftposCredentialsProvider
+  - uid: Yort.OnlineEftpos.OnlineEftposException
+    name: OnlineEftposException
+  - uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    name: OnlineEftposInvalidDataException
+  - uid: Yort.OnlineEftpos.OnlineEftposNotification
+    name: OnlineEftposNotification
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+    name: OnlineEftposPaymentRequest
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+    name: OnlineEftposPaymentSearchResult
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    name: OnlineEftposPaymentStatus
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundRequest
+    name: OnlineEftposRefundRequest
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+    name: OnlineEftposRefundSearchOptions
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+    name: OnlineEftposRefundSearchResult
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    name: OnlineEftposRefundStatus
+  - uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder
+    name: OnlineEftposRequestBuilder
+  - uid: Yort.OnlineEftpos.PayerId
+    name: PayerId
+  - uid: Yort.OnlineEftpos.PaymentDetails
+    name: PaymentDetails
+  - uid: Yort.OnlineEftpos.PaymentStatus
+    name: PaymentStatus
+  - uid: Yort.OnlineEftpos.RefundDetails
+    name: RefundDetails
+  - uid: Yort.OnlineEftpos.RefundStatus
+    name: RefundStatus
+  - uid: Yort.OnlineEftpos.Resource
+    name: Resource
+  - uid: Yort.OnlineEftpos.Resource.Attribute
+    name: Resource.Attribute
+  - uid: Yort.OnlineEftpos.Resource.String
+    name: Resource.String
+  - uid: Yort.OnlineEftpos.Sha512WithRsaVerifier
+    name: Sha512WithRsaVerifier
+  - uid: Yort.OnlineEftpos.TransactionRequestDetails
+    name: TransactionRequestDetails
+  - uid: Yort.OnlineEftpos.TransactionStatus
+    name: TransactionStatus

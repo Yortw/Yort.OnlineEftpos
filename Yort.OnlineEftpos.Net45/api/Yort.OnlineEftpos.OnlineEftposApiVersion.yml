@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposApiVersion
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiVersion
+  id: OnlineEftposApiVersion
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposApiVersion.None
+  - Yort.OnlineEftpos.OnlineEftposApiVersion.V1P1
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposApiVersion
+  nameWithType: OnlineEftposApiVersion
+  fullName: Yort.OnlineEftpos.OnlineEftposApiVersion
+  type: Enum
+  source:
+    id: OnlineEftposApiVersion
+    path: ''
+    startLine: 3841
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nProvides a list of the known and supported Online Eftpos API versions.\n"
+  example: []
+  syntax:
+    content: public enum OnlineEftposApiVersion
+    content.vb: Public Enum OnlineEftposApiVersion
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Yort.OnlineEftpos.OnlineEftposApiVersion.None
+  commentId: F:Yort.OnlineEftpos.OnlineEftposApiVersion.None
+  id: None
+  parent: Yort.OnlineEftpos.OnlineEftposApiVersion
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OnlineEftposApiVersion.None
+  fullName: Yort.OnlineEftpos.OnlineEftposApiVersion.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 3846
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nIndicates no API segment should be included in call paths. This is the default from version 2.0 onwards as the API no longer uses versioned paths.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Yort.OnlineEftpos.OnlineEftposApiVersion.V1P1
+  commentId: F:Yort.OnlineEftpos.OnlineEftposApiVersion.V1P1
+  id: V1P1
+  parent: Yort.OnlineEftpos.OnlineEftposApiVersion
+  langs:
+  - csharp
+  - vb
+  name: V1P1
+  nameWithType: OnlineEftposApiVersion.V1P1
+  fullName: Yort.OnlineEftpos.OnlineEftposApiVersion.V1P1
+  type: Field
+  source:
+    id: V1P1
+    path: ''
+    startLine: 3850
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nVersion 1.1.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use OnlineEftposApiVersion.None - from February 2017 on the API no longer uses versioned URLs.")]
+
+      V1P1 = 1
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+    content.vb: >-
+      <Obsolete("Use OnlineEftposApiVersion.None - from February 2017 on the API no longer uses versioned URLs.")>
+
+      V1P1 = 1
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use OnlineEftposApiVersion.None - from February 2017 on the API no longer uses versioned URLs.
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: Yort.OnlineEftpos.OnlineEftposApiVersion
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiVersion
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposApiVersion
+  nameWithType: OnlineEftposApiVersion
+  fullName: Yort.OnlineEftpos.OnlineEftposApiVersion

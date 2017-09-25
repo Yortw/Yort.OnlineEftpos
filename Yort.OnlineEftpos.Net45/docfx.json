@@ -1,0 +1,76 @@
+{
+	"metadata": [
+			{
+				"src": [
+					{
+						"files": [ "**.cs" ],
+						"src": "..",
+						"exclude": [
+							"**/obj/**",
+							"**/bin/**",
+							"**Test**",
+							"**Mock**",
+							"**NetStandard**"
+						]
+					}
+				],
+				"dest": "api",
+				"properties": {
+					"TargetFramework": "net45"
+				}
+			}
+	],
+	"build": {
+		"content": [
+			{
+				"files": [
+					"api/**.yml"
+				]
+			},
+			{
+				"files": [
+					"articles/**.md",
+					"toc.yml",
+					"*.md"
+				],
+				"exclude": [
+					"obj/**"
+				]
+			}
+		],
+		"resource": [
+			{
+				"files": [
+					"images/**"
+				],
+				"exclude": [
+					"obj/**"
+				]
+			}
+		],
+		"overwrite": [
+			{
+				"files": [
+					"api/**.md"
+				],
+				"exclude": [
+					"obj/**"
+				]
+			}
+		],
+		"dest": "..\\docs\\reference",
+		"globalMetadataFiles": [],
+		"globalMetadata": {
+			"_appTitle": "Yort.OnlineEftpos",
+			"_appFaviconPath": "images/OnlineEftposIcon.ico",
+			"_appLogoPath": "images/OnlineEftposIconSmall.png",
+			"_appFooter": "Copyright (c) 2017 Troy Willmot"
+		},
+		"fileMetadataFiles": [],
+		"template": [ "statictoc", "memberpage/2.24.0/content" ],
+		"postProcessors": [],
+		"noLangKeyword": false,
+		"keepFileLink": false,
+		"cleanupCacheHistory": false
+	}
+}

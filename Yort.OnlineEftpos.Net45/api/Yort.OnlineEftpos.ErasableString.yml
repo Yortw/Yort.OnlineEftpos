@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.ErasableString
+  commentId: T:Yort.OnlineEftpos.ErasableString
+  id: ErasableString
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.ErasableString.#ctor(System.String)
+  - Yort.OnlineEftpos.ErasableString.Clear
+  - Yort.OnlineEftpos.ErasableString.Dispose
+  - Yort.OnlineEftpos.ErasableString.IsCleared
+  - Yort.OnlineEftpos.ErasableString.IsDisposed
+  - Yort.OnlineEftpos.ErasableString.Value
+  langs:
+  - csharp
+  - vb
+  name: ErasableString
+  nameWithType: ErasableString
+  fullName: Yort.OnlineEftpos.ErasableString
+  type: Class
+  source:
+    id: ErasableString
+    path: ''
+    startLine: 1267
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents a string that is pinned in memory and can be overwritten when finished with, limiting the time window where the stored value can be obtained.\n"
+  remarks: "\n<p>In theory this improves (but does not guarantee) security by reducing the amount of time an unencrypted credential is available in memory. No guarantees or promises are made about the security provided by this class.</p>\n<p>Note, failure to explicitly dispose this class may reduce/eliminate it&apos;s effectiveness. <xref href=\"Yort.OnlineEftpos.ErasableString.Dispose\" data-throw-if-not-resolved=\"false\"></xref> should be called as early as possible, but no earlier.</p>\n"
+  example: []
+  syntax:
+    content: 'public sealed class ErasableString : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class ErasableString
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Yort.OnlineEftpos.ErasableString.#ctor(System.String)
+  commentId: M:Yort.OnlineEftpos.ErasableString.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Yort.OnlineEftpos.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: ErasableString(String)
+  nameWithType: ErasableString.ErasableString(String)
+  fullName: Yort.OnlineEftpos.ErasableString.ErasableString(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1286
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFull constructor.\n"
+  example: []
+  syntax:
+    content: public ErasableString(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The .Net string to manage, used as the return value for the <xref href="Yort.OnlineEftpos.ErasableString.Value" data-throw-if-not-resolved="false"></xref> property.
+    content.vb: Public Sub New(value As String)
+  overload: Yort.OnlineEftpos.ErasableString.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.ErasableString.IsDisposed
+  commentId: P:Yort.OnlineEftpos.ErasableString.IsDisposed
+  id: IsDisposed
+  parent: Yort.OnlineEftpos.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: ErasableString.IsDisposed
+  fullName: Yort.OnlineEftpos.ErasableString.IsDisposed
+  type: Property
+  source:
+    id: IsDisposed
+    path: ''
+    startLine: 1299
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns true if the <xref href=\"Yort.OnlineEftpos.ErasableString.Dispose\" data-throw-if-not-resolved=\"false\"></xref> method has been called.\n"
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: Yort.OnlineEftpos.ErasableString.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.ErasableString.IsCleared
+  commentId: P:Yort.OnlineEftpos.ErasableString.IsCleared
+  id: IsCleared
+  parent: Yort.OnlineEftpos.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: IsCleared
+  nameWithType: ErasableString.IsCleared
+  fullName: Yort.OnlineEftpos.ErasableString.IsCleared
+  type: Property
+  source:
+    id: IsCleared
+    path: ''
+    startLine: 1307
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns true if the <xref href=\"Yort.OnlineEftpos.ErasableString.Clear\" data-throw-if-not-resolved=\"false\"></xref> method has been called.\n"
+  example: []
+  syntax:
+    content: public bool IsCleared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCleared As Boolean
+  overload: Yort.OnlineEftpos.ErasableString.IsCleared*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.ErasableString.Value
+  commentId: P:Yort.OnlineEftpos.ErasableString.Value
+  id: Value
+  parent: Yort.OnlineEftpos.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ErasableString.Value
+  fullName: Yort.OnlineEftpos.ErasableString.Value
+  type: Property
+  source:
+    id: Value
+    path: ''
+    startLine: 1315
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the value of the string. This will be a string of character zero, for the length of the original string, if it has been cleared.\n"
+  example: []
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Value As String
+  overload: Yort.OnlineEftpos.ErasableString.Value*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.ErasableString.Clear
+  commentId: M:Yort.OnlineEftpos.ErasableString.Clear
+  id: Clear
+  parent: Yort.OnlineEftpos.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ErasableString.Clear()
+  fullName: Yort.OnlineEftpos.ErasableString.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 1332
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nOverwrites the string value contained by this instance with a series of character zero values.\n"
+  example: []
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public void Clear()
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub Clear
+  overload: Yort.OnlineEftpos.ErasableString.Clear*
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.ErasableString.Dispose
+  commentId: M:Yort.OnlineEftpos.ErasableString.Dispose
+  id: Dispose
+  parent: Yort.OnlineEftpos.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ErasableString.Dispose()
+  fullName: Yort.OnlineEftpos.ErasableString.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 1372
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nDisposes this instance.\n"
+  remarks: "\n<p>Clears the string if the <xref href=\"Yort.OnlineEftpos.ErasableString.Clear\" data-throw-if-not-resolved=\"false\"></xref> method has not already been called, and unpins the wrapped string in memory.</p>\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Yort.OnlineEftpos.ErasableString.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos.ErasableString.Dispose
+  commentId: M:Yort.OnlineEftpos.ErasableString.Dispose
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.ErasableString.Value
+  commentId: P:Yort.OnlineEftpos.ErasableString.Value
+- uid: Yort.OnlineEftpos.ErasableString.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.ErasableString.#ctor
+  isExternal: false
+  name: ErasableString
+  nameWithType: ErasableString.ErasableString
+  fullName: Yort.OnlineEftpos.ErasableString.ErasableString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.ErasableString.IsDisposed*
+  commentId: Overload:Yort.OnlineEftpos.ErasableString.IsDisposed
+  isExternal: false
+  name: IsDisposed
+  nameWithType: ErasableString.IsDisposed
+  fullName: Yort.OnlineEftpos.ErasableString.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Yort.OnlineEftpos.ErasableString.Clear
+  commentId: M:Yort.OnlineEftpos.ErasableString.Clear
+- uid: Yort.OnlineEftpos.ErasableString.IsCleared*
+  commentId: Overload:Yort.OnlineEftpos.ErasableString.IsCleared
+  isExternal: false
+  name: IsCleared
+  nameWithType: ErasableString.IsCleared
+  fullName: Yort.OnlineEftpos.ErasableString.IsCleared
+- uid: Yort.OnlineEftpos.ErasableString.Value*
+  commentId: Overload:Yort.OnlineEftpos.ErasableString.Value
+  isExternal: false
+  name: Value
+  nameWithType: ErasableString.Value
+  fullName: Yort.OnlineEftpos.ErasableString.Value
+- uid: Yort.OnlineEftpos.ErasableString.Clear*
+  commentId: Overload:Yort.OnlineEftpos.ErasableString.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: ErasableString.Clear
+  fullName: Yort.OnlineEftpos.ErasableString.Clear
+- uid: Yort.OnlineEftpos.ErasableString.Dispose*
+  commentId: Overload:Yort.OnlineEftpos.ErasableString.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: ErasableString.Dispose
+  fullName: Yort.OnlineEftpos.ErasableString.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

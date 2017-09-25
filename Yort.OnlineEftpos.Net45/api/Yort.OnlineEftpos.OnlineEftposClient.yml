@@ -1,0 +1,1975 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.OnlineEftposClient
+  id: OnlineEftposClient
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  - Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  - Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  - Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  - Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  - Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  - Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  - Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  - Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  - Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  - Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  - Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  - Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  - Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  - Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  - Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  - Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  - Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  - Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  - Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposClient
+  nameWithType: OnlineEftposClient
+  fullName: Yort.OnlineEftpos.OnlineEftposClient
+  type: Class
+  source:
+    id: OnlineEftposClient
+    path: ''
+    startLine: 1731
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCore class for communication with the PayMark Online Eftpos API. Provides methods for performing transactions such as payments and refunds.\n"
+  example: []
+  syntax:
+    content: 'public sealed class OnlineEftposClient : IOnlineEftposClient, IDisposable'
+    content.vb: >-
+      Public NotInheritable Class OnlineEftposClient
+          Implements IOnlineEftposClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  id: '#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)'
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment)
+  nameWithType: OnlineEftposClient.OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.OnlineEftposClient(Yort.OnlineEftpos.IOnlineEftposCredentialProvider, Yort.OnlineEftpos.OnlineEftposApiVersion, Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 159
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nMinium constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment)
+    parameters:
+    - id: credentialProvider
+      type: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+      description: A <xref href="Yort.OnlineEftpos.IOnlineEftposCredentialProvider" data-throw-if-not-resolved="false"></xref> instance that can provide credentials used to obtain a token from the API for subsequent calls. See <xref href="Yort.OnlineEftpos.OnlineEftposCredentialsProvider" data-throw-if-not-resolved="false"></xref> for default implementations, or create your own.
+    - id: apiVersion
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiVersion" data-throw-if-not-resolved="false"></xref> enum specifying the version of the Online Eftpos API this client connects to.
+    - id: apiEnvironment
+      type: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment" data-throw-if-not-resolved="false"></xref> enum specifying either a test or live environment for this client to connect to.
+    content.vb: Public Sub New(credentialProvider As IOnlineEftposCredentialProvider, apiVersion As OnlineEftposApiVersion, apiEnvironment As OnlineEftposApiEnvironment)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.#ctor*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  id: '#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)'
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment, HttpClient)
+  nameWithType: OnlineEftposClient.OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment, HttpClient)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.OnlineEftposClient(Yort.OnlineEftpos.IOnlineEftposCredentialProvider, Yort.OnlineEftpos.OnlineEftposApiVersion, Yort.OnlineEftpos.OnlineEftposApiEnvironment, HttpClient)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 173
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFull constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment, HttpClient httpClient)
+    parameters:
+    - id: credentialProvider
+      type: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+      description: A <xref href="Yort.OnlineEftpos.IOnlineEftposCredentialProvider" data-throw-if-not-resolved="false"></xref> instance that can provide credentials used to obtain a token from the API for subsequent calls. See SecureStringOnlineEftposCredentialProvider (if available) or <xref href="Yort.OnlineEftpos.OnlineEftposCredentialsProvider" data-throw-if-not-resolved="false"></xref> for default implementations, or create your own.
+    - id: apiVersion
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiVersion" data-throw-if-not-resolved="false"></xref> enum specifying the version of the Online Eftpos API this client connects to.
+    - id: apiEnvironment
+      type: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment" data-throw-if-not-resolved="false"></xref> enum specifying either a test or live environment for this client to connect to.
+    - id: httpClient
+      type: HttpClient
+      description: A instance of <see cref="!:System.Net.Http.HttpClient"></see> that will be used by this instance to perform all HTTP communication with the Online Eftpos API.
+    content.vb: Public Sub New(credentialProvider As IOnlineEftposCredentialProvider, apiVersion As OnlineEftposApiVersion, apiEnvironment As OnlineEftposApiEnvironment, httpClient As HttpClient)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.#ctor*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  id: ApiVersion
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  nameWithType: OnlineEftposClient.ApiVersion
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  type: Property
+  source:
+    id: ApiVersion
+    path: ''
+    startLine: 186
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a value indicating the version of the Online Eftpos API this client will connect to.\n"
+  remarks: "\n<p>This property is read only, the value is provided when the object is instantiated via the constructor.</p>\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiVersion ApiVersion { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+    content.vb: Public ReadOnly Property ApiVersion As OnlineEftposApiVersion
+  overload: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  id: ApiEnvironment
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: ApiEnvironment
+  nameWithType: OnlineEftposClient.ApiEnvironment
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  type: Property
+  source:
+    id: ApiEnvironment
+    path: ''
+    startLine: 203
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a value indicating the sandbox or production environment of the Online Eftpos API this client will connect to.\n"
+  remarks: "\n<p>This property is read only, the value is provided when the object is instantiated via the constructor.</p>\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiEnvironment ApiEnvironment { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+    content.vb: Public ReadOnly Property ApiEnvironment As OnlineEftposApiEnvironment
+  overload: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  id: RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: RequestPayment(OnlineEftposPaymentRequest)
+  nameWithType: OnlineEftposClient.RequestPayment(OnlineEftposPaymentRequest)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  type: Method
+  source:
+    id: RequestPayment
+    path: ''
+    startLine: 225
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nStarts a payment transaction. Sends a request for payment to the API, which will be forwarded to the payer for approval.\n"
+  remarks: "\n<p>Use the <xref href=\"Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)\" data-throw-if-not-resolved=\"false\"></xref> method to obtain updated status information after the request has been submitted. Usually this is done in response to an HTTP callback from the API.</p>\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposPaymentStatus> RequestPayment(OnlineEftposPaymentRequest paymentRequest)
+    parameters:
+    - id: paymentRequest
+      type: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+      description: An instance of the <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest" data-throw-if-not-resolved="false"></xref> class that provides details of the requested payment.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposPaymentStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposPaymentStatus" data-throw-if-not-resolved="false"></xref> which describes the result of a successfully submitted payment.
+    content.vb: Public Function RequestPayment(paymentRequest As OnlineEftposPaymentRequest) As Task(Of OnlineEftposPaymentStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  id: CheckPaymentStatus(System.String)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: CheckPaymentStatus(String)
+  nameWithType: OnlineEftposClient.CheckPaymentStatus(String)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  type: Method
+  source:
+    id: CheckPaymentStatus
+    path: ''
+    startLine: 240
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns updated status information for a previously submitted payment request.\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposPaymentStatus> CheckPaymentStatus(string transactionId)
+    parameters:
+    - id: transactionId
+      type: System.String
+      description: The unique id of a payment to retrieve the status of.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposPaymentStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposPaymentStatus" data-throw-if-not-resolved="false"></xref> which describes the result of a successfully submitted payment.
+    content.vb: Public Function CheckPaymentStatus(transactionId As String) As Task(Of OnlineEftposPaymentStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  id: PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: PaymentSearch(OnlineEftposPaymentSearchOptions)
+  nameWithType: OnlineEftposClient.PaymentSearch(OnlineEftposPaymentSearchOptions)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  type: Method
+  source:
+    id: PaymentSearch
+    path: ''
+    startLine: 255
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSearches for payments based on one or more provided criteria and returns a <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentSearchResult\" data-throw-if-not-resolved=\"false\"></xref> containing any found transactions.\n"
+  remarks: "\n<p>The <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentSearchResult\" data-throw-if-not-resolved=\"false\"></xref> returned also contains information such as pagination url&apos;s for searches with many results.</p>\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposPaymentSearchResult> PaymentSearch(OnlineEftposPaymentSearchOptions options)
+    parameters:
+    - id: options
+      type: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+      description: A <xref href="Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions" data-throw-if-not-resolved="false"></xref> instance containing the search criteria and options for the search.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposPaymentSearchResult}
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposPaymentSearchResult" data-throw-if-not-resolved="false"></xref> instance containing the initial search results and any related meta-data.
+    content.vb: Public Function PaymentSearch(options As OnlineEftposPaymentSearchOptions) As Task(Of OnlineEftposPaymentSearchResult)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch*
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  id: SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: SendRefund(OnlineEftposRefundRequest)
+  nameWithType: OnlineEftposClient.SendRefund(OnlineEftposRefundRequest)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  type: Method
+  source:
+    id: SendRefund
+    path: ''
+    startLine: 271
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSends a refund for a previous payment to the original payer.\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposRefundStatus> SendRefund(OnlineEftposRefundRequest refundRequest)
+    parameters:
+    - id: refundRequest
+      type: Yort.OnlineEftpos.OnlineEftposRefundRequest
+      description: An instance of the <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> class that provides details of the refund to issue.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposRefundStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> which describes the result of a successfull submitted refund.
+    content.vb: Public Function SendRefund(refundRequest As OnlineEftposRefundRequest) As Task(Of OnlineEftposRefundStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.SendRefund*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposRefundStatus
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  id: CheckRefundStatus(System.String)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: CheckRefundStatus(String)
+  nameWithType: OnlineEftposClient.CheckRefundStatus(String)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  type: Method
+  source:
+    id: CheckRefundStatus
+    path: ''
+    startLine: 286
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns updated status information for a previously submitted refund.\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposRefundStatus> CheckRefundStatus(string transactionId)
+    parameters:
+    - id: transactionId
+      type: System.String
+      description: The unique id of a refund to retrieve the status of.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposRefundStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposRefundStatus" data-throw-if-not-resolved="false"></xref> which describes the result of a successfully submitted refund.
+    content.vb: Public Function CheckRefundStatus(transactionId As String) As Task(Of OnlineEftposRefundStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposRefundStatus
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  id: RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: RefundSearch(OnlineEftposRefundSearchOptions)
+  nameWithType: OnlineEftposClient.RefundSearch(OnlineEftposRefundSearchOptions)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  type: Method
+  source:
+    id: RefundSearch
+    path: ''
+    startLine: 300
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSearches for refunds based on one or more provided criteria and returns a <xref href=\"Yort.OnlineEftpos.OnlineEftposRefundSearchResult\" data-throw-if-not-resolved=\"false\"></xref> containing any found transactions.\n"
+  remarks: "\n<p>The <xref href=\"Yort.OnlineEftpos.OnlineEftposRefundSearchResult\" data-throw-if-not-resolved=\"false\"></xref> returned also contains information such as pagination url&apos;s for searches with many results.</p>\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposRefundSearchResult> RefundSearch(OnlineEftposRefundSearchOptions options)
+    parameters:
+    - id: options
+      type: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+      description: A <xref href="Yort.OnlineEftpos.OnlineEftposRefundSearchOptions" data-throw-if-not-resolved="false"></xref> instance containing the search criteria and options for the search.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposRefundSearchResult}
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult" data-throw-if-not-resolved="false"></xref> instance containing the initial search results and any related meta-data.
+    content.vb: Public Function RefundSearch(options As OnlineEftposRefundSearchOptions) As Task(Of OnlineEftposRefundSearchResult)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch*
+  implements:
+  - Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  id: Dispose
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: OnlineEftposClient.Dispose()
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 309
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nDisposes this instance and all internal resources, except the HttpClient provided in the constructor.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Yort.OnlineEftpos.OnlineEftposClient.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  id: '#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)'
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment)
+  nameWithType: OnlineEftposClient.OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.OnlineEftposClient(Yort.OnlineEftpos.IOnlineEftposCredentialProvider, Yort.OnlineEftpos.OnlineEftposApiVersion, Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1755
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nMinium constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment)
+    parameters:
+    - id: credentialProvider
+      type: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+      description: A <xref href="Yort.OnlineEftpos.IOnlineEftposCredentialProvider" data-throw-if-not-resolved="false"></xref> instance that can provide credentials used to obtain a token from the API for subsequent calls. See <xref href="Yort.OnlineEftpos.OnlineEftposCredentialsProvider" data-throw-if-not-resolved="false"></xref> for default implementations, or create your own.
+    - id: apiVersion
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiVersion" data-throw-if-not-resolved="false"></xref> enum specifying the version of the Online Eftpos API this client connects to.
+    - id: apiEnvironment
+      type: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment" data-throw-if-not-resolved="false"></xref> enum specifying either a test or live environment for this client to connect to.
+    content.vb: Public Sub New(credentialProvider As IOnlineEftposCredentialProvider, apiVersion As OnlineEftposApiVersion, apiEnvironment As OnlineEftposApiEnvironment)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.#ctor*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  id: '#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)'
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment, HttpClient)
+  nameWithType: OnlineEftposClient.OnlineEftposClient(IOnlineEftposCredentialProvider, OnlineEftposApiVersion, OnlineEftposApiEnvironment, HttpClient)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.OnlineEftposClient(Yort.OnlineEftpos.IOnlineEftposCredentialProvider, Yort.OnlineEftpos.OnlineEftposApiVersion, Yort.OnlineEftpos.OnlineEftposApiEnvironment, HttpClient)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1769
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFull constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposClient(IOnlineEftposCredentialProvider credentialProvider, OnlineEftposApiVersion apiVersion, OnlineEftposApiEnvironment apiEnvironment, HttpClient httpClient)
+    parameters:
+    - id: credentialProvider
+      type: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+      description: A <xref href="Yort.OnlineEftpos.IOnlineEftposCredentialProvider" data-throw-if-not-resolved="false"></xref> instance that can provide credentials used to obtain a token from the API for subsequent calls. See SecureStringOnlineEftposCredentialProvider (if available) or <xref href="Yort.OnlineEftpos.OnlineEftposCredentialsProvider" data-throw-if-not-resolved="false"></xref> for default implementations, or create your own.
+    - id: apiVersion
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiVersion" data-throw-if-not-resolved="false"></xref> enum specifying the version of the Online Eftpos API this client connects to.
+    - id: apiEnvironment
+      type: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+      description: A value from the <xref href="Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment" data-throw-if-not-resolved="false"></xref> enum specifying either a test or live environment for this client to connect to.
+    - id: httpClient
+      type: HttpClient
+      description: A instance of <see cref="!:HttpClient"></see> that will be used by this instance to perform all HTTP communication with the Online Eftpos API.
+    content.vb: Public Sub New(credentialProvider As IOnlineEftposCredentialProvider, apiVersion As OnlineEftposApiVersion, apiEnvironment As OnlineEftposApiEnvironment, httpClient As HttpClient)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.#ctor*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+    commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  id: ApiVersion
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  nameWithType: OnlineEftposClient.ApiVersion
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  type: Property
+  source:
+    id: ApiVersion
+    path: ''
+    startLine: 1791
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a value indicating the version of the Online Eftpos API this client will connect to.\n"
+  remarks: "\n<p>This property is read only, the value is provided when the object is instantiated via the constructor.</p>\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiVersion ApiVersion { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiVersion
+    content.vb: Public ReadOnly Property ApiVersion As OnlineEftposApiVersion
+  overload: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  id: ApiEnvironment
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: ApiEnvironment
+  nameWithType: OnlineEftposClient.ApiEnvironment
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  type: Property
+  source:
+    id: ApiEnvironment
+    path: ''
+    startLine: 1807
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a value indicating the sandbox or production environment of the Online Eftpos API this client will connect to.\n"
+  remarks: "\n<p>This property is read only, the value is provided when the object is instantiated via the constructor.</p>\n"
+  example: []
+  syntax:
+    content: public OnlineEftposApiEnvironment ApiEnvironment { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+    content.vb: Public ReadOnly Property ApiEnvironment As OnlineEftposApiEnvironment
+  overload: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment*
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  id: RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: RequestPayment(OnlineEftposPaymentRequest)
+  nameWithType: OnlineEftposClient.RequestPayment(OnlineEftposPaymentRequest)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  type: Method
+  source:
+    id: RequestPayment
+    path: ''
+    startLine: 1830
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nStarts a payment transaction. Sends a request for payment to the API, which will be forwarded to the payer for approval.\n"
+  remarks: "\n<p>Use the <xref href=\"Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)\" data-throw-if-not-resolved=\"false\"></xref> method to obtain updated status information after the request has been submitted. Usually this is done in response to an HTTP callback from the API.</p>\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposPaymentStatus> RequestPayment(OnlineEftposPaymentRequest paymentRequest)
+    parameters:
+    - id: paymentRequest
+      type: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+      description: An instance of the <xref href="Yort.OnlineEftpos.OnlineEftposPaymentRequest" data-throw-if-not-resolved="false"></xref> class that provides details of the requested payment.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposPaymentStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposPaymentStatus" data-throw-if-not-resolved="false"></xref> which describes the result of a successfully submitted payment.
+    content.vb: Public Function RequestPayment(paymentRequest As OnlineEftposPaymentRequest) As Task(Of OnlineEftposPaymentStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  id: CheckPaymentStatus(System.String)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: CheckPaymentStatus(String)
+  nameWithType: OnlineEftposClient.CheckPaymentStatus(String)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  type: Method
+  source:
+    id: CheckPaymentStatus
+    path: ''
+    startLine: 1847
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns updated status information for a previously submitted payment request.\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposPaymentStatus> CheckPaymentStatus(string transactionId)
+    parameters:
+    - id: transactionId
+      type: System.String
+      description: The unique id of a payment to retrieve the status of.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposPaymentStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposPaymentStatus" data-throw-if-not-resolved="false"></xref> which describes the result of a successfully submitted payment.
+    content.vb: Public Function CheckPaymentStatus(transactionId As String) As Task(Of OnlineEftposPaymentStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  id: PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: PaymentSearch(OnlineEftposPaymentSearchOptions)
+  nameWithType: OnlineEftposClient.PaymentSearch(OnlineEftposPaymentSearchOptions)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  type: Method
+  source:
+    id: PaymentSearch
+    path: ''
+    startLine: 1864
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSearches for payments based on one or more provided criteria and returns a <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentSearchResult\" data-throw-if-not-resolved=\"false\"></xref> containing any found transactions.\n"
+  remarks: "\n<p>The <xref href=\"Yort.OnlineEftpos.OnlineEftposPaymentSearchResult\" data-throw-if-not-resolved=\"false\"></xref> returned also contains information such as pagination url&apos;s for searches with many results.</p>\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposPaymentSearchResult> PaymentSearch(OnlineEftposPaymentSearchOptions options)
+    parameters:
+    - id: options
+      type: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+      description: A <xref href="Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions" data-throw-if-not-resolved="false"></xref> instance containing the search criteria and options for the search.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposPaymentSearchResult}
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposPaymentSearchResult" data-throw-if-not-resolved="false"></xref> instance containing the initial search results and any related meta-data.
+    content.vb: Public Function PaymentSearch(options As OnlineEftposPaymentSearchOptions) As Task(Of OnlineEftposPaymentSearchResult)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  id: SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: SendRefund(OnlineEftposRefundRequest)
+  nameWithType: OnlineEftposClient.SendRefund(OnlineEftposRefundRequest)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  type: Method
+  source:
+    id: SendRefund
+    path: ''
+    startLine: 1903
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSends a refund for a previous payment to the original payer.\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposRefundStatus> SendRefund(OnlineEftposRefundRequest refundRequest)
+    parameters:
+    - id: refundRequest
+      type: Yort.OnlineEftpos.OnlineEftposRefundRequest
+      description: An instance of the <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> class that provides details of the refund to issue.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposRefundStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposRefundRequest" data-throw-if-not-resolved="false"></xref> which describes the result of a successfull submitted refund.
+    content.vb: Public Function SendRefund(refundRequest As OnlineEftposRefundRequest) As Task(Of OnlineEftposRefundStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.SendRefund*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposRefundStatus
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  id: CheckRefundStatus(System.String)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: CheckRefundStatus(String)
+  nameWithType: OnlineEftposClient.CheckRefundStatus(String)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  type: Method
+  source:
+    id: CheckRefundStatus
+    path: ''
+    startLine: 1920
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns updated status information for a previously submitted refund.\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposRefundStatus> CheckRefundStatus(string transactionId)
+    parameters:
+    - id: transactionId
+      type: System.String
+      description: The unique id of a refund to retrieve the status of.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposRefundStatus}
+      description: A task whose result is an instance of <xref href="Yort.OnlineEftpos.OnlineEftposRefundStatus" data-throw-if-not-resolved="false"></xref> which describes the result of a successfully submitted refund.
+    content.vb: Public Function CheckRefundStatus(transactionId As String) As Task(Of OnlineEftposRefundStatus)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+    description: Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.
+  - type: Yort.OnlineEftpos.OnlineEftposException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposException
+    description: Thrown if an exception occurs or error information is returned from the API.
+  seealso:
+  - linkId: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+    commentId: M:Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  - linkId: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    commentId: T:Yort.OnlineEftpos.OnlineEftposRefundStatus
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  id: RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: RefundSearch(OnlineEftposRefundSearchOptions)
+  nameWithType: OnlineEftposClient.RefundSearch(OnlineEftposRefundSearchOptions)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  type: Method
+  source:
+    id: RefundSearch
+    path: ''
+    startLine: 1937
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSearches for refunds based on one or more provided criteria and returns a <xref href=\"Yort.OnlineEftpos.OnlineEftposRefundSearchResult\" data-throw-if-not-resolved=\"false\"></xref> containing any found transactions.\n"
+  remarks: "\n<p>The <xref href=\"Yort.OnlineEftpos.OnlineEftposRefundSearchResult\" data-throw-if-not-resolved=\"false\"></xref> returned also contains information such as pagination url&apos;s for searches with many results.</p>\n"
+  example: []
+  syntax:
+    content: public Task<OnlineEftposRefundSearchResult> RefundSearch(OnlineEftposRefundSearchOptions options)
+    parameters:
+    - id: options
+      type: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+      description: A <xref href="Yort.OnlineEftpos.OnlineEftposRefundSearchOptions" data-throw-if-not-resolved="false"></xref> instance containing the search criteria and options for the search.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposRefundSearchResult}
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult" data-throw-if-not-resolved="false"></xref> instance containing the initial search results and any related meta-data.
+    content.vb: Public Function RefundSearch(options As OnlineEftposRefundSearchOptions) As Task(Of OnlineEftposRefundSearchResult)
+  overload: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  id: Dispose
+  parent: Yort.OnlineEftpos.OnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: OnlineEftposClient.Dispose()
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 2040
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nDisposes this instance and all internal resources, except the HttpClient provided in the constructor.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Yort.OnlineEftpos.OnlineEftposClient.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Yort.OnlineEftpos.IOnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.IOnlineEftposClient
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IOnlineEftposClient
+  nameWithType: IOnlineEftposClient
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+  commentId: T:Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IOnlineEftposCredentialProvider
+  nameWithType: IOnlineEftposCredentialProvider
+  fullName: Yort.OnlineEftpos.IOnlineEftposCredentialProvider
+- uid: Yort.OnlineEftpos.OnlineEftposCredentialsProvider
+  commentId: T:Yort.OnlineEftpos.OnlineEftposCredentialsProvider
+  isExternal: false
+  name: OnlineEftposCredentialsProvider
+  nameWithType: OnlineEftposCredentialsProvider
+  fullName: Yort.OnlineEftpos.OnlineEftposCredentialsProvider
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  commentId: P:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.#ctor
+  isExternal: false
+  name: OnlineEftposClient
+  nameWithType: OnlineEftposClient.OnlineEftposClient
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.OnlineEftposClient
+- uid: Yort.OnlineEftpos.OnlineEftposApiVersion
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiVersion
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposApiVersion
+  nameWithType: OnlineEftposApiVersion
+  fullName: Yort.OnlineEftpos.OnlineEftposApiVersion
+- uid: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+  commentId: T:Yort.OnlineEftpos.OnlineEftposApiEnvironment
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposApiEnvironment
+  nameWithType: OnlineEftposApiEnvironment
+  fullName: Yort.OnlineEftpos.OnlineEftposApiEnvironment
+- uid: HttpClient
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.#ctor(Yort.OnlineEftpos.IOnlineEftposCredentialProvider,Yort.OnlineEftpos.OnlineEftposApiVersion,Yort.OnlineEftpos.OnlineEftposApiEnvironment,HttpClient)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+  isExternal: false
+  name: ApiVersion
+  nameWithType: OnlineEftposClient.ApiVersion
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.ApiVersion
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion
+  commentId: P:Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: ApiVersion
+  nameWithType: IOnlineEftposClient.ApiVersion
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion
+- uid: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+  isExternal: false
+  name: ApiEnvironment
+  nameWithType: OnlineEftposClient.ApiEnvironment
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment
+  commentId: P:Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: ApiEnvironment
+  nameWithType: IOnlineEftposClient.ApiEnvironment
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus(System.String)
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposPaymentRequest
+  nameWithType: OnlineEftposPaymentRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  isExternal: false
+  name: OnlineEftposPaymentStatus
+  nameWithType: OnlineEftposPaymentStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment
+  isExternal: false
+  name: RequestPayment
+  nameWithType: OnlineEftposClient.RequestPayment
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: RequestPayment(OnlineEftposPaymentRequest)
+  nameWithType: IOnlineEftposClient.RequestPayment(OnlineEftposPaymentRequest)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    name: RequestPayment
+    nameWithType: IOnlineEftposClient.RequestPayment
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+    name: OnlineEftposPaymentRequest
+    nameWithType: OnlineEftposPaymentRequest
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+    name: RequestPayment
+    nameWithType: IOnlineEftposClient.RequestPayment
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+    name: OnlineEftposPaymentRequest
+    nameWithType: OnlineEftposPaymentRequest
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposAuthenticationException
+  isExternal: false
+  name: OnlineEftposAuthenticationException
+  nameWithType: OnlineEftposAuthenticationException
+  fullName: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+- uid: Yort.OnlineEftpos.OnlineEftposException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposException
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposException
+  nameWithType: OnlineEftposException
+  fullName: Yort.OnlineEftpos.OnlineEftposException
+- uid: Task{Yort.OnlineEftpos.OnlineEftposPaymentStatus}
+  commentId: '!:Task{Yort.OnlineEftpos.OnlineEftposPaymentStatus}'
+  definition: Task`1
+  name: Task<OnlineEftposPaymentStatus>
+  nameWithType: Task<OnlineEftposPaymentStatus>
+  fullName: Task<Yort.OnlineEftpos.OnlineEftposPaymentStatus>
+  nameWithType.vb: Task(Of OnlineEftposPaymentStatus)
+  fullName.vb: Task(Of Yort.OnlineEftpos.OnlineEftposPaymentStatus)
+  name.vb: Task(Of OnlineEftposPaymentStatus)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    name: OnlineEftposPaymentStatus
+    nameWithType: OnlineEftposPaymentStatus
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+    name: OnlineEftposPaymentStatus
+    nameWithType: OnlineEftposPaymentStatus
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus
+  isExternal: false
+  name: CheckPaymentStatus
+  nameWithType: OnlineEftposClient.CheckPaymentStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: true
+  name: CheckPaymentStatus(String)
+  nameWithType: IOnlineEftposClient.CheckPaymentStatus(String)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
+    name: CheckPaymentStatus
+    nameWithType: IOnlineEftposClient.CheckPaymentStatus
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
+    name: CheckPaymentStatus
+    nameWithType: IOnlineEftposClient.CheckPaymentStatus
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+  isExternal: false
+  name: OnlineEftposPaymentSearchResult
+  nameWithType: OnlineEftposPaymentSearchResult
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  commentId: T:Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposPaymentSearchOptions
+  nameWithType: OnlineEftposPaymentSearchOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+- uid: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch
+  isExternal: false
+  name: PaymentSearch
+  nameWithType: OnlineEftposClient.PaymentSearch
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: PaymentSearch(OnlineEftposPaymentSearchOptions)
+  nameWithType: IOnlineEftposClient.PaymentSearch(OnlineEftposPaymentSearchOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+    name: PaymentSearch
+    nameWithType: IOnlineEftposClient.PaymentSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+    nameWithType: OnlineEftposPaymentSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+    name: PaymentSearch
+    nameWithType: IOnlineEftposClient.PaymentSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+    nameWithType: OnlineEftposPaymentSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.OnlineEftpos.OnlineEftposPaymentSearchResult}
+  commentId: '!:Task{Yort.OnlineEftpos.OnlineEftposPaymentSearchResult}'
+  definition: Task`1
+  name: Task<OnlineEftposPaymentSearchResult>
+  nameWithType: Task<OnlineEftposPaymentSearchResult>
+  fullName: Task<Yort.OnlineEftpos.OnlineEftposPaymentSearchResult>
+  nameWithType.vb: Task(Of OnlineEftposPaymentSearchResult)
+  fullName.vb: Task(Of Yort.OnlineEftpos.OnlineEftposPaymentSearchResult)
+  name.vb: Task(Of OnlineEftposPaymentSearchResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+    name: OnlineEftposPaymentSearchResult
+    nameWithType: OnlineEftposPaymentSearchResult
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+    name: OnlineEftposPaymentSearchResult
+    nameWithType: OnlineEftposPaymentSearchResult
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposRefundRequest
+  commentId: T:Yort.OnlineEftpos.OnlineEftposRefundRequest
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposRefundRequest
+  nameWithType: OnlineEftposRefundRequest
+  fullName: Yort.OnlineEftpos.OnlineEftposRefundRequest
+- uid: Yort.OnlineEftpos.OnlineEftposRefundStatus
+  commentId: T:Yort.OnlineEftpos.OnlineEftposRefundStatus
+  isExternal: false
+  name: OnlineEftposRefundStatus
+  nameWithType: OnlineEftposRefundStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposRefundStatus
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus(System.String)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.SendRefund*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.SendRefund
+  isExternal: false
+  name: SendRefund
+  nameWithType: OnlineEftposClient.SendRefund
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.SendRefund
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: SendRefund(OnlineEftposRefundRequest)
+  nameWithType: IOnlineEftposClient.SendRefund(OnlineEftposRefundRequest)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+    name: SendRefund
+    nameWithType: IOnlineEftposClient.SendRefund
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.SendRefund
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundRequest
+    name: OnlineEftposRefundRequest
+    nameWithType: OnlineEftposRefundRequest
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+    name: SendRefund
+    nameWithType: IOnlineEftposClient.SendRefund
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.SendRefund
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundRequest
+    name: OnlineEftposRefundRequest
+    nameWithType: OnlineEftposRefundRequest
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.OnlineEftpos.OnlineEftposRefundStatus}
+  commentId: '!:Task{Yort.OnlineEftpos.OnlineEftposRefundStatus}'
+  definition: Task`1
+  name: Task<OnlineEftposRefundStatus>
+  nameWithType: Task<OnlineEftposRefundStatus>
+  fullName: Task<Yort.OnlineEftpos.OnlineEftposRefundStatus>
+  nameWithType.vb: Task(Of OnlineEftposRefundStatus)
+  fullName.vb: Task(Of Yort.OnlineEftpos.OnlineEftposRefundStatus)
+  name.vb: Task(Of OnlineEftposRefundStatus)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    name: OnlineEftposRefundStatus
+    nameWithType: OnlineEftposRefundStatus
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundStatus
+    name: OnlineEftposRefundStatus
+    nameWithType: OnlineEftposRefundStatus
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus
+  isExternal: false
+  name: CheckRefundStatus
+  nameWithType: OnlineEftposClient.CheckRefundStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: true
+  name: CheckRefundStatus(String)
+  nameWithType: IOnlineEftposClient.CheckRefundStatus(String)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+    name: CheckRefundStatus
+    nameWithType: IOnlineEftposClient.CheckRefundStatus
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+    name: CheckRefundStatus
+    nameWithType: IOnlineEftposClient.CheckRefundStatus
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+  commentId: T:Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+  isExternal: false
+  name: OnlineEftposRefundSearchResult
+  nameWithType: OnlineEftposRefundSearchResult
+  fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+- uid: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+  commentId: T:Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposRefundSearchOptions
+  nameWithType: OnlineEftposRefundSearchOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+- uid: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.RefundSearch
+  isExternal: false
+  name: RefundSearch
+  nameWithType: OnlineEftposClient.RefundSearch
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.RefundSearch
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: RefundSearch(OnlineEftposRefundSearchOptions)
+  nameWithType: IOnlineEftposClient.RefundSearch(OnlineEftposRefundSearchOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+    name: RefundSearch
+    nameWithType: IOnlineEftposClient.RefundSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+    name: OnlineEftposRefundSearchOptions
+    nameWithType: OnlineEftposRefundSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
+    name: RefundSearch
+    nameWithType: IOnlineEftposClient.RefundSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+    name: OnlineEftposRefundSearchOptions
+    nameWithType: OnlineEftposRefundSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.OnlineEftpos.OnlineEftposRefundSearchResult}
+  commentId: '!:Task{Yort.OnlineEftpos.OnlineEftposRefundSearchResult}'
+  definition: Task`1
+  name: Task<OnlineEftposRefundSearchResult>
+  nameWithType: Task<OnlineEftposRefundSearchResult>
+  fullName: Task<Yort.OnlineEftpos.OnlineEftposRefundSearchResult>
+  nameWithType.vb: Task(Of OnlineEftposRefundSearchResult)
+  fullName.vb: Task(Of Yort.OnlineEftpos.OnlineEftposRefundSearchResult)
+  name.vb: Task(Of OnlineEftposRefundSearchResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+    name: OnlineEftposRefundSearchResult
+    nameWithType: OnlineEftposRefundSearchResult
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+    name: OnlineEftposRefundSearchResult
+    nameWithType: OnlineEftposRefundSearchResult
+    fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposClient.Dispose*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: OnlineEftposClient.Dispose
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

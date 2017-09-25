@@ -1,0 +1,619 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposNotification
+  commentId: T:Yort.OnlineEftpos.OnlineEftposNotification
+  id: OnlineEftposNotification
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposNotification.#ctor(System.String)
+  - Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId
+  - Yort.OnlineEftpos.OnlineEftposNotification.Signature
+  - Yort.OnlineEftpos.OnlineEftposNotification.SignedData
+  - Yort.OnlineEftpos.OnlineEftposNotification.Status
+  - Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposNotification
+  nameWithType: OnlineEftposNotification
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification
+  type: Class
+  source:
+    id: OnlineEftposNotification
+    path: ''
+    startLine: 4062
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents a notification about a payment status change from the Online EFTPOS system.\n"
+  example: []
+  syntax:
+    content: public sealed class OnlineEftposNotification
+    content.vb: Public NotInheritable Class OnlineEftposNotification
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.#ctor(System.String)
+  commentId: M:Yort.OnlineEftpos.OnlineEftposNotification.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposNotification(String)
+  nameWithType: OnlineEftposNotification.OnlineEftposNotification(String)
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.OnlineEftposNotification(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4096
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nFull constructor.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposNotification(string formUrlEncodedContent)
+    parameters:
+    - id: formUrlEncodedContent
+      type: System.String
+      description: The content of the notification which should be form url encoded data.
+    content.vb: Public Sub New(formUrlEncodedContent As String)
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "Thrown if \n\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">formUrlEncodedContent</code> is null.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId
+  id: MerchantOrderId
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: MerchantOrderId
+  nameWithType: OnlineEftposNotification.MerchantOrderId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId
+  type: Property
+  source:
+    id: MerchantOrderId
+    path: ''
+    startLine: 4119
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the merchant id of the notification.\n"
+  example: []
+  syntax:
+    content: public string MerchantOrderId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MerchantOrderId As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+  id: TransactionId
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: TransactionId
+  nameWithType: OnlineEftposNotification.TransactionId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+  type: Property
+  source:
+    id: TransactionId
+    path: ''
+    startLine: 4133
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the Paymark transaction id included in the notification, representing the transaction the notification is for.\n"
+  remarks: "\n<p>This value is included in transactions from February 2017 onwards, may not be included in earlier notifications and may return null or &quot;&quot; instead.</p>\n"
+  example: []
+  syntax:
+    content: public string TransactionId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TransactionId As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.TransactionId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.Status
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.Status
+  id: Status
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: OnlineEftposNotification.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.Status
+  type: Property
+  source:
+    id: Status
+    path: ''
+    startLine: 4143
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the status of the notification.\n"
+  example: []
+  syntax:
+    content: public string Status { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Status As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.Status*
+  seealso:
+  - linkId: Yort.OnlineEftpos.PaymentStatus
+    commentId: T:Yort.OnlineEftpos.PaymentStatus
+  - linkId: Yort.OnlineEftpos.RefundStatus
+    commentId: T:Yort.OnlineEftpos.RefundStatus
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.Signature
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.Signature
+  id: Signature
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: Signature
+  nameWithType: OnlineEftposNotification.Signature
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.Signature
+  type: Property
+  source:
+    id: Signature
+    path: ''
+    startLine: 4157
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the signature of the notification.\n"
+  remarks: "\n<p>At time of writing the signature is an SHA512withRSA signature.</p>\n"
+  example: []
+  syntax:
+    content: public string Signature { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Signature As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.Signature*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.SignedData
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.SignedData
+  id: SignedData
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: SignedData
+  nameWithType: OnlineEftposNotification.SignedData
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.SignedData
+  type: Property
+  source:
+    id: SignedData
+    path: ''
+    startLine: 4168
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the content of the notification that was signed as proof of authenticity.\n"
+  example: []
+  syntax:
+    content: public string SignedData { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SignedData As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.SignedData*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.#ctor*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.#ctor
+  isExternal: false
+  name: OnlineEftposNotification
+  nameWithType: OnlineEftposNotification.OnlineEftposNotification
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.OnlineEftposNotification
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId
+  isExternal: false
+  name: MerchantOrderId
+  nameWithType: OnlineEftposNotification.MerchantOrderId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TransactionId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+  isExternal: false
+  name: TransactionId
+  nameWithType: OnlineEftposNotification.TransactionId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+- uid: Yort.OnlineEftpos.PaymentStatus
+  commentId: T:Yort.OnlineEftpos.PaymentStatus
+  isExternal: false
+  name: PaymentStatus
+  nameWithType: PaymentStatus
+  fullName: Yort.OnlineEftpos.PaymentStatus
+- uid: Yort.OnlineEftpos.RefundStatus
+  commentId: T:Yort.OnlineEftpos.RefundStatus
+  isExternal: false
+  name: RefundStatus
+  nameWithType: RefundStatus
+  fullName: Yort.OnlineEftpos.RefundStatus
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.Status*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.Status
+  isExternal: false
+  name: Status
+  nameWithType: OnlineEftposNotification.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.Status
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.Signature*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.Signature
+  isExternal: false
+  name: Signature
+  nameWithType: OnlineEftposNotification.Signature
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.Signature
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.SignedData*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.SignedData
+  isExternal: false
+  name: SignedData
+  nameWithType: OnlineEftposNotification.SignedData
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.SignedData
