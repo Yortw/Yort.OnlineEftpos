@@ -34,13 +34,13 @@ Currently;
 * WinRT/UWP  
 
 ## Build Status
-[![Build status](https://ci.appveyor.com/api/projects/status/ul7cdbsb5jqhv2nj?svg=true)](https://ci.appveyor.com/project/Yortw/yort-onlineeftpos)
+[![Build status](https://ci.appveyor.com/api/projects/status/f4e33as09yx0lsn4?svg=true)](https://ci.appveyor.com/project/Yortw/Yort.OnlineEFTPOS) 
 
 ## How do I use Yort.OnlineEFTPOS?
 There is a very basic sample console application included in the repository, though you'll need to plugin your merchant id and API credentials to run it. 
 For details on what the API does and how it works, see the [Online EFTPOS API documentation](http://docs.dev.paymark.nz/oe).
 
-There is also [reference documentation for this library's API](https://yortw.github.io/Yort.OnlineEftpos/reference/index.html)
+There is also [reference documentation for this library's API](https://yortw.github.io/Yort.OnlineEftpos/reference/api/Yort.OnlineEftpos.html)
 
 ### Quick start
 
