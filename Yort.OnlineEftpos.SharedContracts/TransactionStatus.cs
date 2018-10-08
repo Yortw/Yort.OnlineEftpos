@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -108,7 +108,7 @@ namespace Yort.OnlineEftpos
 		public static bool operator ==(TransactionStatus status, string comparisonValue)
 		{
 			// If both are null, or both are same instance, return true.
-			if (((object)status == null) || ((object)comparisonValue == null)) return false;
+			if ((status is null) || (comparisonValue is null)) return false;
 
 			// Return true if the fields match:
 			return String.Compare(status.Name, comparisonValue, StringComparison.OrdinalIgnoreCase) == 0;
@@ -123,7 +123,7 @@ namespace Yort.OnlineEftpos
 		/// <returns>True if the string is NOT a case insensitive match to the <see cref="TransactionStatus.Name"/> value.</returns>
 		public static bool operator !=(TransactionStatus status, string comparisonValue)
 		{
-			if (((object)status == null) || ((object)comparisonValue == null)) return false;
+			if ((status is null) || (comparisonValue is null)) return false;
 
 			return String.Compare(status.Name, comparisonValue, StringComparison.OrdinalIgnoreCase) != 0;
 		}
@@ -138,7 +138,7 @@ namespace Yort.OnlineEftpos
 		public static bool operator ==(string comparisonValue, TransactionStatus status)
 		{
 			// If both are null, or both are same instance, return true.
-			if (((object)comparisonValue == null) || ((object)status == null)) return false;
+			if ((comparisonValue is null) || (status is null)) return false;
 
 			// Return true if the fields match:
 			return String.Compare(comparisonValue, status.Name, StringComparison.OrdinalIgnoreCase) == 0;
@@ -153,7 +153,7 @@ namespace Yort.OnlineEftpos
 		/// <returns>True if the string is NOT a case insensitive match to the <see cref="TransactionStatus.Name"/> value.</returns>
 		public static bool operator !=(string comparisonValue, TransactionStatus status)
 		{
-			if (((object)comparisonValue == null) || ((object)status == null)) return false;
+			if ((comparisonValue is null) || (status is null)) return false;
 
 			return String.Compare(comparisonValue, status.Name, StringComparison.OrdinalIgnoreCase) != 0;
 		}

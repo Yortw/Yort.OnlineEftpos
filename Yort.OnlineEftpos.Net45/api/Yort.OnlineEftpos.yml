@@ -7,6 +7,7 @@ items:
   - Yort.OnlineEftpos.ApiErrorMessage
   - Yort.OnlineEftpos.BankDefinition
   - Yort.OnlineEftpos.BankDetails
+  - Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
   - Yort.OnlineEftpos.ErasableString
   - Yort.OnlineEftpos.HateoasLink
   - Yort.OnlineEftpos.INotificationVerifier
@@ -37,6 +38,7 @@ items:
   - Yort.OnlineEftpos.OnlineEftposRefundSearchResult
   - Yort.OnlineEftpos.OnlineEftposRefundStatus
   - Yort.OnlineEftpos.OnlineEftposRequestBuilder
+  - Yort.OnlineEftpos.OnlineEftposTransactionTypes
   - Yort.OnlineEftpos.PayerId
   - Yort.OnlineEftpos.PaymentDetails
   - Yort.OnlineEftpos.PaymentStatus
@@ -48,6 +50,8 @@ items:
   - Yort.OnlineEftpos.Sha512WithRsaVerifier
   - Yort.OnlineEftpos.TransactionRequestDetails
   - Yort.OnlineEftpos.TransactionStatus
+  - Yort.OnlineEftpos.TrustStatus
+  - Yort.OnlineEftpos.WestpacCustomerIdPayerId
   langs:
   - csharp
   - vb
@@ -113,6 +117,12 @@ references:
   name: Resource.String
   nameWithType: Resource.String
   fullName: Yort.OnlineEftpos.Resource.String
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  commentId: T:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  isExternal: false
+  name: CooperativeBankCustomerIdPayerId
+  nameWithType: CooperativeBankCustomerIdPayerId
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
 - uid: Yort.OnlineEftpos.ErasableString
   commentId: T:Yort.OnlineEftpos.ErasableString
   isExternal: false
@@ -131,6 +141,12 @@ references:
   name: Sha512WithRsaVerifier
   nameWithType: Sha512WithRsaVerifier
   fullName: Yort.OnlineEftpos.Sha512WithRsaVerifier
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId
+  commentId: T:Yort.OnlineEftpos.WestpacCustomerIdPayerId
+  isExternal: false
+  name: WestpacCustomerIdPayerId
+  nameWithType: WestpacCustomerIdPayerId
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId
 - uid: Yort.OnlineEftpos.BankDefinition
   commentId: T:Yort.OnlineEftpos.BankDefinition
   parent: Yort.OnlineEftpos
@@ -304,6 +320,12 @@ references:
   name: OnlineEftposRefundStatus
   nameWithType: OnlineEftposRefundStatus
   fullName: Yort.OnlineEftpos.OnlineEftposRefundStatus
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  commentId: T:Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  isExternal: false
+  name: OnlineEftposTransactionTypes
+  nameWithType: OnlineEftposTransactionTypes
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes
 - uid: Yort.OnlineEftpos.PaymentDetails
   commentId: T:Yort.OnlineEftpos.PaymentDetails
   parent: Yort.OnlineEftpos
@@ -344,6 +366,13 @@ references:
   name: TransactionStatus
   nameWithType: TransactionStatus
   fullName: Yort.OnlineEftpos.TransactionStatus
+- uid: Yort.OnlineEftpos.TrustStatus
+  commentId: T:Yort.OnlineEftpos.TrustStatus
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: TrustStatus
+  nameWithType: TrustStatus
+  fullName: Yort.OnlineEftpos.TrustStatus
 - uid: Yort.OnlineEftpos
   commentId: N:Yort.OnlineEftpos
   isExternal: false

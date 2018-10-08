@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IOnlineEftposClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IOnlineEftposClient
+   ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yort.OnlineEftpos.IOnlineEftposClient">
+  
+  
+  <h1 id="Yort_OnlineEftpos_IOnlineEftposClient" data-uid="Yort.OnlineEftpos.IOnlineEftposClient" class="text-break">Interface IOnlineEftposClient
+  </h1>
+  <div class="markdown level0 summary"><p>Primary interface for the <a class="xref" href="Yort.OnlineEftpos.OnlineEftposClient.html">OnlineEftposClient</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yort.OnlineEftpos.html">Yort.OnlineEftpos</a></h6>
+  <h6><strong>Assembly</strong>: Yort.OnlineEftpos.dll</h6>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IOnlineEftposClient : IDisposable</code></pre>
+  </div>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Use of this interface makes it possible to mock/stub/fake out the <a class="xref" href="Yort.OnlineEftpos.OnlineEftposClient.html">OnlineEftposClient</a> instance in application code for testing purposes.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_ApiEnvironment.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L33">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_ApiEnvironment_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_ApiEnvironment" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment">ApiEnvironment</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating the sandbox or production environment of the Online Eftpos API this client will connect to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OnlineEftposApiEnvironment ApiEnvironment { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposApiEnvironment.html">OnlineEftposApiEnvironment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_ApiEnvironment_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is read only, the value is provided when the object is instantiated via the constructor.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_ApiVersion.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L22">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_ApiVersion_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_ApiVersion" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion">ApiVersion</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating the version of the Online Eftpos API this client will connect to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OnlineEftposApiVersion ApiVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposApiVersion.html">OnlineEftposApiVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_ApiVersion_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is read only, the value is provided when the object is instantiated via the constructor.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_CheckPaymentStatus_System_String_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L62">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_CheckPaymentStatus_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_CheckPaymentStatus_System_String_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)">CheckPaymentStatus(String)</h4>
+  <div class="markdown level1 summary"><p>Returns updated status information for a previously submitted payment request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;OnlineEftposPaymentStatus&gt; CheckPaymentStatus(string transactionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td><p>The unique id of a payment to retrieve the status of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentStatus.html">OnlineEftposPaymentStatus</a>&gt;</td>
+        <td><p>A task whose result is an instance of <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentStatus.html">OnlineEftposPaymentStatus</a> which describes the result of a successfully submitted payment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposAuthenticationException.html">OnlineEftposAuthenticationException</a></td>
+        <td><p>Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposException.html">OnlineEftposException</a></td>
+        <td><p>Thrown if an exception occurs or error information is returned from the API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_CheckPaymentStatus_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.html#Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_Yort_OnlineEftpos_OnlineEftposPaymentRequest_">RequestPayment(OnlineEftposPaymentRequest)</a></div>
+      <div><a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentStatus.html">OnlineEftposPaymentStatus</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_CheckRefundStatus_System_String_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L85">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_CheckRefundStatus_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_CheckRefundStatus_System_String_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)">CheckRefundStatus(String)</h4>
+  <div class="markdown level1 summary"><p>Returns updated status information for a previously submitted refund.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;OnlineEftposRefundStatus&gt; CheckRefundStatus(string transactionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td><p>The unique id of a refund to retrieve the status of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundStatus.html">OnlineEftposRefundStatus</a>&gt;</td>
+        <td><p>A task whose result is an instance of <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundStatus.html">OnlineEftposRefundStatus</a> which describes the result of a successfully submitted refund.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposAuthenticationException.html">OnlineEftposAuthenticationException</a></td>
+        <td><p>Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposException.html">OnlineEftposException</a></td>
+        <td><p>Thrown if an exception occurs or error information is returned from the API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_CheckRefundStatus_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.html#Yort_OnlineEftpos_IOnlineEftposClient_SendRefund_Yort_OnlineEftpos_OnlineEftposRefundRequest_">SendRefund(OnlineEftposRefundRequest)</a></div>
+      <div><a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundStatus.html">OnlineEftposRefundStatus</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_PaymentSearch_Yort_OnlineEftpos_OnlineEftposPaymentSearchOptions_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L95">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_PaymentSearch_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_PaymentSearch_Yort_OnlineEftpos_OnlineEftposPaymentSearchOptions_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)">PaymentSearch(OnlineEftposPaymentSearchOptions)</h4>
+  <div class="markdown level1 summary"><p>Searches for payments based on one or more provided criteria and returns a <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.html">OnlineEftposPaymentSearchResult</a> containing any found transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;OnlineEftposPaymentSearchResult&gt; PaymentSearch(OnlineEftposPaymentSearchOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.html">OnlineEftposPaymentSearchOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>A <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.html">OnlineEftposPaymentSearchOptions</a> instance containing the search criteria and options for the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.html">OnlineEftposPaymentSearchResult</a>&gt;</td>
+        <td><p>An <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.html">OnlineEftposPaymentSearchResult</a> instance containing the initial search results and any related meta-data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_PaymentSearch_Yort_OnlineEftpos_OnlineEftposPaymentSearchOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.html">OnlineEftposPaymentSearchResult</a> returned also contains information such as pagination url&apos;s for searches with many results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_RefundSearch_Yort_OnlineEftpos_OnlineEftposRefundSearchOptions_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L105">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_RefundSearch_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_RefundSearch_Yort_OnlineEftpos_OnlineEftposRefundSearchOptions_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)">RefundSearch(OnlineEftposRefundSearchOptions)</h4>
+  <div class="markdown level1 summary"><p>Searches for refunds based on one or more provided criteria and returns a <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult.html">OnlineEftposRefundSearchResult</a> containing any found transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;OnlineEftposRefundSearchResult&gt; RefundSearch(OnlineEftposRefundSearchOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.html">OnlineEftposRefundSearchOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>A <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.html">OnlineEftposRefundSearchOptions</a> instance containing the search criteria and options for the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult.html">OnlineEftposRefundSearchResult</a>&gt;</td>
+        <td><p>An <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult.html">OnlineEftposRefundSearchResult</a> instance containing the initial search results and any related meta-data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_RefundSearch_Yort_OnlineEftpos_OnlineEftposRefundSearchOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult.html">OnlineEftposRefundSearchResult</a> returned also contains information such as pagination url&apos;s for searches with many results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_Yort_OnlineEftpos_OnlineEftposPaymentRequest_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L51">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_Yort_OnlineEftpos_OnlineEftposPaymentRequest_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)">RequestPayment(OnlineEftposPaymentRequest)</h4>
+  <div class="markdown level1 summary"><p>Starts a payment transaction. Sends a request for payment to the API, which will be forwarded to the payer for approval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;OnlineEftposPaymentStatus&gt; RequestPayment(OnlineEftposPaymentRequest paymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentRequest.html">OnlineEftposPaymentRequest</a></td>
+        <td><span class="parametername">paymentRequest</span></td>
+        <td><p>An instance of the <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentRequest.html">OnlineEftposPaymentRequest</a> class that provides details of the requested payment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentStatus.html">OnlineEftposPaymentStatus</a>&gt;</td>
+        <td><p>A task whose result is an instance of <a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentStatus.html">OnlineEftposPaymentStatus</a> which describes the result of a successfully submitted payment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_Yort_OnlineEftpos_OnlineEftposPaymentRequest__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use the <a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.html#Yort_OnlineEftpos_IOnlineEftposClient_CheckPaymentStatus_System_String_">CheckPaymentStatus(String)</a> method to obtain updated status information after the request has been submitted. Usually this is done in response to an HTTP callback from the API.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposAuthenticationException.html">OnlineEftposAuthenticationException</a></td>
+        <td><p>Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposException.html">OnlineEftposException</a></td>
+        <td><p>Thrown if an exception occurs or error information is returned from the API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_Yort_OnlineEftpos_OnlineEftposPaymentRequest__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentRequest.html">OnlineEftposPaymentRequest</a></div>
+      <div><a class="xref" href="Yort.OnlineEftpos.OnlineEftposPaymentStatus.html">OnlineEftposPaymentStatus</a></div>
+      <div><a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.html#Yort_OnlineEftpos_IOnlineEftposClient_CheckPaymentStatus_System_String_">CheckPaymentStatus(String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient_SendRefund_Yort_OnlineEftpos_OnlineEftposRefundRequest_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L74">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_IOnlineEftposClient_SendRefund_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.SendRefund*"></a>
+  <h4 id="Yort_OnlineEftpos_IOnlineEftposClient_SendRefund_Yort_OnlineEftpos_OnlineEftposRefundRequest_" data-uid="Yort.OnlineEftpos.IOnlineEftposClient.SendRefund(Yort.OnlineEftpos.OnlineEftposRefundRequest)">SendRefund(OnlineEftposRefundRequest)</h4>
+  <div class="markdown level1 summary"><p>Sends a refund for a previous payment to the original payer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;OnlineEftposRefundStatus&gt; SendRefund(OnlineEftposRefundRequest refundRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundRequest.html">OnlineEftposRefundRequest</a></td>
+        <td><span class="parametername">refundRequest</span></td>
+        <td><p>An instance of the <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundRequest.html">OnlineEftposRefundRequest</a> class that provides details of the refund to issue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundStatus.html">OnlineEftposRefundStatus</a>&gt;</td>
+        <td><p>A task whose result is an instance of <a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundRequest.html">OnlineEftposRefundRequest</a> which describes the result of a successfull submitted refund.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposAuthenticationException.html">OnlineEftposAuthenticationException</a></td>
+        <td><p>Thrown if a token cannot be obtained from the API. Usually this indicates incorrect credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposException.html">OnlineEftposException</a></td>
+        <td><p>Thrown if an exception occurs or error information is returned from the API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_IOnlineEftposClient_SendRefund_Yort_OnlineEftpos_OnlineEftposRefundRequest__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.html#Yort_OnlineEftpos_IOnlineEftposClient_RequestPayment_Yort_OnlineEftpos_OnlineEftposPaymentRequest_">RequestPayment(OnlineEftposPaymentRequest)</a></div>
+      <div><a class="xref" href="Yort.OnlineEftpos.OnlineEftposRefundStatus.html">OnlineEftposRefundStatus</a></div>
+      <div><a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.html#Yort_OnlineEftpos_IOnlineEftposClient_CheckRefundStatus_System_String_">CheckRefundStatus(String)</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_IOnlineEftposClient.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.IOnlineEftposClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.SharedContracts/IOnlineEftposClient.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -10,6 +10,7 @@ items:
   - Yort.OnlineEftpos.PaymentDetails.Description
   - Yort.OnlineEftpos.PaymentDetails.EnsureValid
   - Yort.OnlineEftpos.PaymentDetails.OrderId
+  - Yort.OnlineEftpos.PaymentDetails.TransactionType
   langs:
   - csharp
   - vb
@@ -20,7 +21,7 @@ items:
   source:
     id: PaymentDetails
     path: ''
-    startLine: 4923
+    startLine: 5188
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -66,7 +67,7 @@ items:
   source:
     id: Amount
     path: ''
-    startLine: 4934
+    startLine: 5199
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -100,7 +101,7 @@ items:
   source:
     id: Currency
     path: ''
-    startLine: 4943
+    startLine: 5208
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -134,7 +135,7 @@ items:
   source:
     id: Description
     path: ''
-    startLine: 4953
+    startLine: 5218
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -168,7 +169,7 @@ items:
   source:
     id: OrderId
     path: ''
-    startLine: 4964
+    startLine: 5229
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -182,6 +183,40 @@ items:
       type: System.String
     content.vb: Public Property OrderId As String
   overload: Yort.OnlineEftpos.PaymentDetails.OrderId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.PaymentDetails.TransactionType
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.TransactionType
+  id: TransactionType
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  nameWithType: PaymentDetails.TransactionType
+  fullName: Yort.OnlineEftpos.PaymentDetails.TransactionType
+  type: Property
+  source:
+    id: TransactionType
+    path: ''
+    startLine: 5239
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns a string describing the type of transaction to be performed.\n"
+  remarks: "\n<p>See <xref href=\"Yort.OnlineEftpos.OnlineEftposTransactionTypes\" data-throw-if-not-resolved=\"false\"></xref> for constants providing known trnasaction types.</p>\n<p>Defaults to <xref href=\"Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  example: []
+  syntax:
+    content: public string TransactionType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TransactionType As String
+  overload: Yort.OnlineEftpos.PaymentDetails.TransactionType*
   modifiers.csharp:
   - public
   - get
@@ -202,7 +237,7 @@ items:
   source:
     id: EnsureValid
     path: ''
-    startLine: 4974
+    startLine: 5249
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -582,6 +617,20 @@ references:
   name: OrderId
   nameWithType: PaymentDetails.OrderId
   fullName: Yort.OnlineEftpos.PaymentDetails.OrderId
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  commentId: T:Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  isExternal: false
+  name: OnlineEftposTransactionTypes
+  nameWithType: OnlineEftposTransactionTypes
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
+  commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
+- uid: Yort.OnlineEftpos.PaymentDetails.TransactionType*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.TransactionType
+  isExternal: false
+  name: TransactionType
+  nameWithType: PaymentDetails.TransactionType
+  fullName: Yort.OnlineEftpos.PaymentDetails.TransactionType
 - uid: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
   commentId: M:Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
   parent: Yort.OnlineEftpos.TransactionRequestDetails

@@ -1,0 +1,1066 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.TrustStatus
+  commentId: T:Yort.OnlineEftpos.TrustStatus
+  id: TrustStatus
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.TrustStatus.Active
+  - Yort.OnlineEftpos.TrustStatus.Cancelled
+  - Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  - Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  - Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  - Yort.OnlineEftpos.TrustStatus.GetHashCode
+  - Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  - Yort.OnlineEftpos.TrustStatus.op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
+  - Yort.OnlineEftpos.TrustStatus.op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  - Yort.OnlineEftpos.TrustStatus.ToString
+  langs:
+  - csharp
+  - vb
+  name: TrustStatus
+  nameWithType: TrustStatus
+  fullName: Yort.OnlineEftpos.TrustStatus
+  type: Class
+  source:
+    id: TrustStatus
+    path: ''
+    startLine: 5914
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents the status of a trust relationship for Online EFTPOS.\n"
+  example: []
+  syntax:
+    content: 'public class TrustStatus : IEqualityComparer<TrustStatus>'
+    content.vb: >-
+      Public Class TrustStatus
+          Implements IEqualityComparer(Of TrustStatus)
+  seealso:
+  - linkId: Yort.OnlineEftpos.TrustStatus.Active
+    commentId: P:Yort.OnlineEftpos.TrustStatus.Active
+  - linkId: Yort.OnlineEftpos.TrustStatus.Cancelled
+    commentId: P:Yort.OnlineEftpos.TrustStatus.Cancelled
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.TrustStatus.op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  commentId: M:Yort.OnlineEftpos.TrustStatus.op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  id: op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Implicit(TrustStatus to String)
+  nameWithType: TrustStatus.Implicit(TrustStatus to String)
+  fullName: Yort.OnlineEftpos.TrustStatus.Implicit(Yort.OnlineEftpos.TrustStatus to System.String)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: ''
+    startLine: 5928
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nConverts a <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> to it&apos;s name/string representation.\n"
+  example: []
+  syntax:
+    content: public static implicit operator string (TrustStatus status)
+    parameters:
+    - id: status
+      type: Yort.OnlineEftpos.TrustStatus
+      description: The status to convert.
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(status As TrustStatus) As String
+  overload: Yort.OnlineEftpos.TrustStatus.op_Implicit*
+  nameWithType.vb: TrustStatus.Widening(TrustStatus to String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening(Yort.OnlineEftpos.TrustStatus to System.String)
+  name.vb: Widening(TrustStatus to String)
+- uid: Yort.OnlineEftpos.TrustStatus.op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
+  commentId: M:Yort.OnlineEftpos.TrustStatus.op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
+  id: op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Implicit(String to TrustStatus)
+  nameWithType: TrustStatus.Implicit(String to TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.Implicit(System.String to Yort.OnlineEftpos.TrustStatus)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: ''
+    startLine: 5940
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nPerforms a case insensitive conversion of a string (&apos;active&apos; or &apos;cancelled&apos;) to either <xref href=\"Yort.OnlineEftpos.TrustStatus.Active\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Yort.OnlineEftpos.TrustStatus.Cancelled\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\n<p>Unrecognised strings will be converted to null.</p>\n"
+  example: []
+  syntax:
+    content: public static implicit operator TrustStatus(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The string to convert.
+    return:
+      type: Yort.OnlineEftpos.TrustStatus
+    content.vb: Public Shared Widening Operator CType(name As String) As TrustStatus
+  overload: Yort.OnlineEftpos.TrustStatus.op_Implicit*
+  nameWithType.vb: TrustStatus.Widening(String to TrustStatus)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening(System.String to Yort.OnlineEftpos.TrustStatus)
+  name.vb: Widening(String to TrustStatus)
+- uid: Yort.OnlineEftpos.TrustStatus.GetHashCode
+  commentId: M:Yort.OnlineEftpos.TrustStatus.GetHashCode
+  id: GetHashCode
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: TrustStatus.GetHashCode()
+  fullName: Yort.OnlineEftpos.TrustStatus.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 5956
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the hashcode for this item.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Yort.OnlineEftpos.TrustStatus.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Yort.OnlineEftpos.TrustStatus.ToString
+  commentId: M:Yort.OnlineEftpos.TrustStatus.ToString
+  id: ToString
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TrustStatus.ToString()
+  fullName: Yort.OnlineEftpos.TrustStatus.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 5965
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the name of the item, i.e Active, Cancelled etc.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string containing the name of this status.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Yort.OnlineEftpos.TrustStatus.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  commentId: M:Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: TrustStatus.Equals(Object)
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 5975
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCompares two <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instances and returns true if they represent the same status.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: A <xref href="Yort.OnlineEftpos.TrustStatus" data-throw-if-not-resolved="false"></xref> to compare to.
+    return:
+      type: System.Boolean
+      description: True if <code data-dev-comment-type="paramref" class="paramref">obj</code> is a <xref href="Yort.OnlineEftpos.TrustStatus" data-throw-if-not-resolved="false"></xref> instance representing the same state as this instance.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Yort.OnlineEftpos.TrustStatus.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  commentId: M:Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  id: Equals(Yort.OnlineEftpos.TrustStatus)
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Equals(TrustStatus)
+  nameWithType: TrustStatus.Equals(TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 5988
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCompares two <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instances and returns true if they represent the same status.\n"
+  example: []
+  syntax:
+    content: public bool Equals(TrustStatus other)
+    parameters:
+    - id: other
+      type: Yort.OnlineEftpos.TrustStatus
+      description: A <xref href="Yort.OnlineEftpos.TrustStatus" data-throw-if-not-resolved="false"></xref> to compare to.
+    return:
+      type: System.Boolean
+      description: True if <code data-dev-comment-type="paramref" class="paramref">other</code> is a <xref href="Yort.OnlineEftpos.TrustStatus" data-throw-if-not-resolved="false"></xref> instance representing the same state as this instance.
+    content.vb: Public Function Equals(other As TrustStatus) As Boolean
+  overload: Yort.OnlineEftpos.TrustStatus.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  commentId: M:Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  id: Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Equals(TrustStatus, TrustStatus)
+  nameWithType: TrustStatus.Equals(TrustStatus, TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus, Yort.OnlineEftpos.TrustStatus)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 6002
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nCompares two <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instances and returns true if they represent the same status, or are both null.\n"
+  example: []
+  syntax:
+    content: public bool Equals(TrustStatus x, TrustStatus y)
+    parameters:
+    - id: x
+      type: Yort.OnlineEftpos.TrustStatus
+      description: The first status to compare.
+    - id: y
+      type: Yort.OnlineEftpos.TrustStatus
+      description: The second status to compare.
+    return:
+      type: System.Boolean
+      description: True if both instances are null or represent the same status, otherwise false.
+    content.vb: Public Function Equals(x As TrustStatus, y As TrustStatus) As Boolean
+  overload: Yort.OnlineEftpos.TrustStatus.Equals*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  commentId: M:Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  id: GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(TrustStatus)
+  nameWithType: TrustStatus.GetHashCode(TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 6015
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the hash code for the given <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instance.\n"
+  example: []
+  syntax:
+    content: public int GetHashCode(TrustStatus obj)
+    parameters:
+    - id: obj
+      type: Yort.OnlineEftpos.TrustStatus
+      description: A <xref href="Yort.OnlineEftpos.TrustStatus" data-throw-if-not-resolved="false"></xref> instance to return the hash code for.
+    return:
+      type: System.Int32
+      description: An integer containnig a hash code.
+    content.vb: Public Function GetHashCode(obj As TrustStatus) As Integer
+  overload: Yort.OnlineEftpos.TrustStatus.GetHashCode*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.TrustStatus.Active
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Active
+  id: Active
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: TrustStatus.Active
+  fullName: Yort.OnlineEftpos.TrustStatus.Active
+  type: Property
+  source:
+    id: Active
+    path: ''
+    startLine: 6032
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instance indicating that a trust relationship exists and is active.\n"
+  example: []
+  syntax:
+    content: public static TrustStatus Active { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TrustStatus
+    content.vb: Public Shared ReadOnly Property Active As TrustStatus
+  overload: Yort.OnlineEftpos.TrustStatus.Active*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.TrustStatus.Cancelled
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Cancelled
+  id: Cancelled
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: TrustStatus.Cancelled
+  fullName: Yort.OnlineEftpos.TrustStatus.Cancelled
+  type: Property
+  source:
+    id: Cancelled
+    path: ''
+    startLine: 6040
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instance indicating that a trust relationship has been cancelled.\n"
+  example: []
+  syntax:
+    content: public static TrustStatus Cancelled { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TrustStatus
+    content.vb: Public Shared ReadOnly Property Cancelled As TrustStatus
+  overload: Yort.OnlineEftpos.TrustStatus.Cancelled*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Yort.OnlineEftpos.TrustStatus.Active
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Active
+- uid: Yort.OnlineEftpos.TrustStatus.Cancelled
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Cancelled
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}
+  commentId: T:System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<TrustStatus>
+  nameWithType: IEqualityComparer<TrustStatus>
+  fullName: System.Collections.Generic.IEqualityComparer<Yort.OnlineEftpos.TrustStatus>
+  nameWithType.vb: IEqualityComparer(Of TrustStatus)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Yort.OnlineEftpos.TrustStatus)
+  name.vb: IEqualityComparer(Of TrustStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Yort.OnlineEftpos.TrustStatus
+  commentId: T:Yort.OnlineEftpos.TrustStatus
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: TrustStatus
+  nameWithType: TrustStatus
+  fullName: Yort.OnlineEftpos.TrustStatus
+- uid: Yort.OnlineEftpos.TrustStatus.op_Implicit*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.op_Implicit
+  isExternal: false
+  name: Implicit
+  nameWithType: TrustStatus.Implicit
+  fullName: Yort.OnlineEftpos.TrustStatus.Implicit
+  nameWithType.vb: TrustStatus.Widening
+  fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening
+  name.vb: Widening
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.TrustStatus.GetHashCode*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: TrustStatus.GetHashCode
+  fullName: Yort.OnlineEftpos.TrustStatus.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.TrustStatus.ToString*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: TrustStatus.ToString
+  fullName: Yort.OnlineEftpos.TrustStatus.ToString
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.TrustStatus.Equals*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: TrustStatus.Equals
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  parent: System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}
+  definition: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  name: Equals(TrustStatus, TrustStatus)
+  nameWithType: IEqualityComparer<TrustStatus>.Equals(TrustStatus, TrustStatus)
+  fullName: System.Collections.Generic.IEqualityComparer<Yort.OnlineEftpos.TrustStatus>.Equals(Yort.OnlineEftpos.TrustStatus, Yort.OnlineEftpos.TrustStatus)
+  nameWithType.vb: IEqualityComparer(Of TrustStatus).Equals(TrustStatus, TrustStatus)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Yort.OnlineEftpos.TrustStatus).Equals(Yort.OnlineEftpos.TrustStatus, Yort.OnlineEftpos.TrustStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer<TrustStatus>.Equals
+    fullName: System.Collections.Generic.IEqualityComparer<Yort.OnlineEftpos.TrustStatus>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer(Of TrustStatus).Equals
+    fullName: System.Collections.Generic.IEqualityComparer(Of Yort.OnlineEftpos.TrustStatus).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  isExternal: true
+  name: Equals(T, T)
+  nameWithType: IEqualityComparer<T>.Equals(T, T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: IEqualityComparer(Of T).Equals(T, T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer<T>.Equals
+    fullName: System.Collections.Generic.IEqualityComparer<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer(Of T).Equals
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  parent: System.Collections.Generic.IEqualityComparer{Yort.OnlineEftpos.TrustStatus}
+  definition: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  name: GetHashCode(TrustStatus)
+  nameWithType: IEqualityComparer<TrustStatus>.GetHashCode(TrustStatus)
+  fullName: System.Collections.Generic.IEqualityComparer<Yort.OnlineEftpos.TrustStatus>.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  nameWithType.vb: IEqualityComparer(Of TrustStatus).GetHashCode(TrustStatus)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Yort.OnlineEftpos.TrustStatus).GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer<TrustStatus>.GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer<Yort.OnlineEftpos.TrustStatus>.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer(Of TrustStatus).GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer(Of Yort.OnlineEftpos.TrustStatus).GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+    nameWithType: TrustStatus
+    fullName: Yort.OnlineEftpos.TrustStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  isExternal: true
+  name: GetHashCode(T)
+  nameWithType: IEqualityComparer<T>.GetHashCode(T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: IEqualityComparer(Of T).GetHashCode(T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer<T>.GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer(Of T).GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.TrustStatus.Active*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Active
+  isExternal: false
+  name: Active
+  nameWithType: TrustStatus.Active
+  fullName: Yort.OnlineEftpos.TrustStatus.Active
+- uid: Yort.OnlineEftpos.TrustStatus.Cancelled*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Cancelled
+  isExternal: false
+  name: Cancelled
+  nameWithType: TrustStatus.Cancelled
+  fullName: Yort.OnlineEftpos.TrustStatus.Cancelled

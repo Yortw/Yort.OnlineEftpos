@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ErasableString
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ErasableString
+   ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yort.OnlineEftpos.ErasableString">
+  
+  
+  <h1 id="Yort_OnlineEftpos_ErasableString" data-uid="Yort.OnlineEftpos.ErasableString" class="text-break">Class ErasableString
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a string that is pinned in memory and can be overwritten when finished with, limiting the time window where the stored value can be obtained.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ErasableString</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yort.OnlineEftpos.html">Yort.OnlineEftpos</a></h6>
+  <h6><strong>Assembly</strong>: Yort.OnlineEftpos.dll</h6>
+  <h5 id="Yort_OnlineEftpos_ErasableString_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ErasableString : IDisposable</code></pre>
+  </div>
+  <h5 id="Yort_OnlineEftpos_ErasableString_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In theory this improves (but does not guarantee) security by reducing the amount of time an unencrypted credential is available in memory. No guarantees or promises are made about the security provided by this class.</p>
+<p>Note, failure to explicitly dispose this class may reduce/eliminate it&apos;s effectiveness. <a class="xref" href="Yort.OnlineEftpos.ErasableString.html#Yort_OnlineEftpos_ErasableString_Dispose">Dispose()</a> should be called as early as possible, but no earlier.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString__ctor_System_String_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L34">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_ErasableString__ctor_" data-uid="Yort.OnlineEftpos.ErasableString.#ctor*"></a>
+  <h4 id="Yort_OnlineEftpos_ErasableString__ctor_System_String_" data-uid="Yort.OnlineEftpos.ErasableString.#ctor(System.String)">ErasableString(String)</h4>
+  <div class="markdown level1 summary"><p>Full constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErasableString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The .Net string to manage, used as the return value for the <a class="xref" href="Yort.OnlineEftpos.ErasableString.html#Yort_OnlineEftpos_ErasableString_Value">Value</a> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString_IsCleared.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString.IsCleared%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L55">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_ErasableString_IsCleared_" data-uid="Yort.OnlineEftpos.ErasableString.IsCleared*"></a>
+  <h4 id="Yort_OnlineEftpos_ErasableString_IsCleared" data-uid="Yort.OnlineEftpos.ErasableString.IsCleared">IsCleared</h4>
+  <div class="markdown level1 summary"><p>Returns true if the <a class="xref" href="Yort.OnlineEftpos.ErasableString.html#Yort_OnlineEftpos_ErasableString_Clear">Clear()</a> method has been called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCleared { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString_IsDisposed.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString.IsDisposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L47">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_ErasableString_IsDisposed_" data-uid="Yort.OnlineEftpos.ErasableString.IsDisposed*"></a>
+  <h4 id="Yort_OnlineEftpos_ErasableString_IsDisposed" data-uid="Yort.OnlineEftpos.ErasableString.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Returns true if the <a class="xref" href="Yort.OnlineEftpos.ErasableString.html#Yort_OnlineEftpos_ErasableString_Dispose">Dispose()</a> method has been called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString_Value.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L63">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_ErasableString_Value_" data-uid="Yort.OnlineEftpos.ErasableString.Value*"></a>
+  <h4 id="Yort_OnlineEftpos_ErasableString_Value" data-uid="Yort.OnlineEftpos.ErasableString.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the string. This will be a string of character zero, for the length of the original string, if it has been cleared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString_Clear.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L80">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_ErasableString_Clear_" data-uid="Yort.OnlineEftpos.ErasableString.Clear*"></a>
+  <h4 id="Yort_OnlineEftpos_ErasableString_Clear" data-uid="Yort.OnlineEftpos.ErasableString.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Overwrites the string value contained by this instance with a series of character zero values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityCritical]
+public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString_Dispose.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L120">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_ErasableString_Dispose_" data-uid="Yort.OnlineEftpos.ErasableString.Dispose*"></a>
+  <h4 id="Yort_OnlineEftpos_ErasableString_Dispose" data-uid="Yort.OnlineEftpos.ErasableString.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h5 id="Yort_OnlineEftpos_ErasableString_Dispose_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Clears the string if the <a class="xref" href="Yort.OnlineEftpos.ErasableString.html#Yort_OnlineEftpos_ErasableString_Clear">Clear()</a> method has not already been called, and unpins the wrapped string in memory.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_ErasableString.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.ErasableString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/ErasableString.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

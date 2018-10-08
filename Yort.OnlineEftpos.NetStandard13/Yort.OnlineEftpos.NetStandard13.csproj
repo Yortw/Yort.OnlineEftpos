@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_CAS;NETSTANDARD</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;CODE_ANALYSIS;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_CAS;NETSTANDARD;DOESNOTSUPPORT_TLS12</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
@@ -34,7 +34,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;CODE_ANALYSIS;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_CAS;NETSTANDARD</DefineConstants>
+    <DefineConstants>TRACE;CODE_ANALYSIS;CODE_ANALYSIS;SUPPORTS_COMPILEDREGEX;SUPPORTS_IPADDRESSTYPE;SUPPORTS_CAS;NETSTANDARD;DOESNOTSUPPORT_TLS12</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>

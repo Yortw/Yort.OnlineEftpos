@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -19,7 +19,7 @@ namespace Yort.OnlineEftpos
 		private readonly OnlineEftposRequestAuthoriser _RequestAuthoriser;
 		private readonly OnlineEftposApiRouter _ApiRouter;
 		private HttpClient _HttpClient;
-		private bool _HttpClientIsOwned;
+		private readonly bool _HttpClientIsOwned;
 
 		private const string OnlineEftposContentType = "application/vnd.paymark_api+json";
 
@@ -53,6 +53,14 @@ namespace Yort.OnlineEftpos
 		{
 			credentialProvider.GuardNull(nameof(credentialProvider));
 			httpClient.GuardNull(nameof(httpClient));
+
+			//Ensure TLS 1.2 is enabled, as it is required.
+#if !DOESNOTSUPPORT_TLS12
+			if ((System.Net.ServicePointManager.SecurityProtocol & System.Net.SecurityProtocolType.Tls12) != System.Net.SecurityProtocolType.Tls12)
+			{
+				System.Net.ServicePointManager.SecurityProtocol = (System.Net.ServicePointManager.SecurityProtocol | System.Net.SecurityProtocolType.Tls12);
+			}
+#endif
 
 			_HttpClient = httpClient;
 			_ApiRouter = new OnlineEftposApiRouter(apiEnvironment, apiVersion);
@@ -148,7 +156,7 @@ namespace Yort.OnlineEftpos
 		{
 			options.GuardNull(nameof(options));
 
-			Uri requestUri = options.PaginationUri;
+			var requestUri = options.PaginationUri;
 			if (requestUri == null)
 			{
 				var queryStr = options.BuildSearchQueryString();
@@ -221,7 +229,7 @@ namespace Yort.OnlineEftpos
 		{
 			options.GuardNull(nameof(options));
 
-			Uri requestUri = options.PaginationUri;
+			var requestUri = options.PaginationUri;
 			if (requestUri == null)
 			{
 				var queryStr = options.BuildSearchQueryString();

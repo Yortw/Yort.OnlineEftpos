@@ -9,8 +9,10 @@
     <Import_RootNamespace>Yort.OnlineEftpos</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)WestpacCustomerIdPayerId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ErasableString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)KnownBanks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CooperativeBankCustomerIdPayerId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiRouter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposCredentials.cs" />

@@ -1,4 +1,4 @@
-﻿namespace Yort.OnlineEftpos
+namespace Yort.OnlineEftpos
 {
 	/// <summary>
 	/// Common interface for components that can validate and normalise user input for a particular type of payer id.
@@ -10,6 +10,12 @@
 		/// Returns the name of this payer id type as known by the Online EFTPOS API.
 		/// </summary>
 		string Name { get; }
+
+		/// <summary>
+		/// Returns a more friendly, human readable version of <see cref="Name"/> for displaying to customers/users.
+		/// </summary>
+		string DisplayName { get; }
+
 		/// <summary>
 		/// Takes the given <paramref name="userInput"/> and attempts to 'normalise' it, that is remove unneccesary characters, format and validate the result.
 		/// </summary>

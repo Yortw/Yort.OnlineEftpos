@@ -5,6 +5,7 @@ items:
   id: NZMobilePayerIdType
   parent: Yort.OnlineEftpos
   children:
+  - Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
   - Yort.OnlineEftpos.NZMobilePayerIdType.IsValid(System.String)
   - Yort.OnlineEftpos.NZMobilePayerIdType.Name
   - Yort.OnlineEftpos.NZMobilePayerIdType.Normalize(System.String)
@@ -18,7 +19,7 @@ items:
   source:
     id: NZMobilePayerIdType
     path: ''
-    startLine: 1506
+    startLine: 1599
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -61,7 +62,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1521
+    startLine: 1614
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -82,6 +83,41 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  commentId: P:Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  id: DisplayName
+  parent: Yort.OnlineEftpos.NZMobilePayerIdType
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: NZMobilePayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  type: Property
+  source:
+    id: DisplayName
+    path: ''
+    startLine: 1619
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the string &quot;NZ Mobile Number&quot; without the quotes.\n"
+  example: []
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayName As String
+  overload: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName*
+  implements:
+  - Yort.OnlineEftpos.IPayerIdType.DisplayName
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Yort.OnlineEftpos.NZMobilePayerIdType.Normalize(System.String)
   commentId: M:Yort.OnlineEftpos.NZMobilePayerIdType.Normalize(System.String)
   id: Normalize(System.String)
@@ -96,7 +132,7 @@ items:
   source:
     id: Normalize
     path: ''
-    startLine: 1535
+    startLine: 1636
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -144,7 +180,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 1568
+    startLine: 1669
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -493,6 +529,19 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName*
+  commentId: Overload:Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  isExternal: false
+  name: DisplayName
+  nameWithType: NZMobilePayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+- uid: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  commentId: P:Yort.OnlineEftpos.IPayerIdType.DisplayName
+  parent: Yort.OnlineEftpos.IPayerIdType
+  isExternal: false
+  name: DisplayName
+  nameWithType: IPayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.IPayerIdType.DisplayName
 - uid: Yort.OnlineEftpos.NZMobilePayerIdType.IsValid(System.String)
   commentId: M:Yort.OnlineEftpos.NZMobilePayerIdType.IsValid(System.String)
 - uid: Yort.OnlineEftpos.NZMobilePayerIdType.Normalize*

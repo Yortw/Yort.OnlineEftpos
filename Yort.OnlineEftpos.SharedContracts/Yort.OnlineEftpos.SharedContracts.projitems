@@ -34,6 +34,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposTransactionTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RefundStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PaymentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RefundDetails.cs" />
@@ -42,5 +43,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposRefundStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PaymentDetails.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TransactionStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TrustStatus.cs" />
   </ItemGroup>
 </Project>

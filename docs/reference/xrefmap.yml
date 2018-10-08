@@ -157,6 +157,60 @@ references:
   commentId: Overload:Yort.OnlineEftpos.BankDetails.PayerIdType
   fullName: Yort.OnlineEftpos.BankDetails.PayerIdType
   nameWithType: BankDetails.PayerIdType
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  name: CooperativeBankCustomerIdPayerId
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.html
+  commentId: T:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  nameWithType: CooperativeBankCustomerIdPayerId
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName.html#Yort_OnlineEftpos_CooperativeBankCustomerIdPayerId_DisplayName
+  commentId: P:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  nameWithType: CooperativeBankCustomerIdPayerId.DisplayName
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName*
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName.html
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  nameWithType: CooperativeBankCustomerIdPayerId.DisplayName
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  name: IsValid(String)
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid.html#Yort_OnlineEftpos_CooperativeBankCustomerIdPayerId_IsValid_System_String_
+  commentId: M:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  nameWithType: CooperativeBankCustomerIdPayerId.IsValid(String)
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid*
+  name: IsValid
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid.html
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid
+  nameWithType: CooperativeBankCustomerIdPayerId.IsValid
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  name: Name
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name.html#Yort_OnlineEftpos_CooperativeBankCustomerIdPayerId_Name
+  commentId: P:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  nameWithType: CooperativeBankCustomerIdPayerId.Name
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name*
+  name: Name
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name.html
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  nameWithType: CooperativeBankCustomerIdPayerId.Name
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  name: Normalize(String)
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize.html#Yort_OnlineEftpos_CooperativeBankCustomerIdPayerId_Normalize_System_String_
+  commentId: M:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  nameWithType: CooperativeBankCustomerIdPayerId.Normalize(String)
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize*
+  name: Normalize
+  href: api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize.html
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize
+  nameWithType: CooperativeBankCustomerIdPayerId.Normalize
 - uid: Yort.OnlineEftpos.ErasableString
   name: ErasableString
   href: api/Yort.OnlineEftpos.ErasableString.html
@@ -433,6 +487,18 @@ references:
   commentId: T:Yort.OnlineEftpos.IPayerIdType
   fullName: Yort.OnlineEftpos.IPayerIdType
   nameWithType: IPayerIdType
+- uid: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.IPayerIdType.DisplayName.html#Yort_OnlineEftpos_IPayerIdType_DisplayName
+  commentId: P:Yort.OnlineEftpos.IPayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  nameWithType: IPayerIdType.DisplayName
+- uid: Yort.OnlineEftpos.IPayerIdType.DisplayName*
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.IPayerIdType.DisplayName.html
+  commentId: Overload:Yort.OnlineEftpos.IPayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  nameWithType: IPayerIdType.DisplayName
 - uid: Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
   name: IsValid(String)
   href: api/Yort.OnlineEftpos.IPayerIdType.IsValid.html#Yort_OnlineEftpos_IPayerIdType_IsValid_System_String_
@@ -646,6 +712,18 @@ references:
   commentId: T:Yort.OnlineEftpos.NZMobilePayerIdType
   fullName: Yort.OnlineEftpos.NZMobilePayerIdType
   nameWithType: NZMobilePayerIdType
+- uid: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName.html#Yort_OnlineEftpos_NZMobilePayerIdType_DisplayName
+  commentId: P:Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  nameWithType: NZMobilePayerIdType.DisplayName
+- uid: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName*
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName.html
+  commentId: Overload:Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName
+  nameWithType: NZMobilePayerIdType.DisplayName
 - uid: Yort.OnlineEftpos.NZMobilePayerIdType.IsValid(System.String)
   name: IsValid(String)
   href: api/Yort.OnlineEftpos.NZMobilePayerIdType.IsValid.html#Yort_OnlineEftpos_NZMobilePayerIdType_IsValid_System_String_
@@ -1300,6 +1378,30 @@ references:
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
   fullName: Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
   nameWithType: OnlineEftposNotification.TransactionId
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  name: TrustId
+  href: api/Yort.OnlineEftpos.OnlineEftposNotification.TrustId.html#Yort_OnlineEftpos_OnlineEftposNotification_TrustId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  nameWithType: OnlineEftposNotification.TrustId
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustId*
+  name: TrustId
+  href: api/Yort.OnlineEftpos.OnlineEftposNotification.TrustId.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  nameWithType: OnlineEftposNotification.TrustId
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  name: TrustStatus
+  href: api/Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus.html#Yort_OnlineEftpos_OnlineEftposNotification_TrustStatus
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  nameWithType: OnlineEftposNotification.TrustStatus
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus*
+  name: TrustStatus
+  href: api/Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  nameWithType: OnlineEftposNotification.TrustStatus
 - uid: Yort.OnlineEftpos.OnlineEftposPaymentRequest
   name: OnlineEftposPaymentRequest
   href: api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.html
@@ -2098,6 +2200,24 @@ references:
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
   fullName: Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate
   nameWithType: OnlineEftposRequestBuilder.RefundReasonTemplate
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  name: OnlineEftposTransactionTypes
+  href: api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.html
+  commentId: T:Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  nameWithType: OnlineEftposTransactionTypes
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
+  name: Regular
+  href: api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular.html#Yort_OnlineEftpos_OnlineEftposTransactionTypes_Regular
+  commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
+  nameWithType: OnlineEftposTransactionTypes.Regular
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
+  name: TrustSetup
+  href: api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup.html#Yort_OnlineEftpos_OnlineEftposTransactionTypes_TrustSetup
+  commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
+  nameWithType: OnlineEftposTransactionTypes.TrustSetup
 - uid: Yort.OnlineEftpos.PayerId
   name: PayerId
   href: api/Yort.OnlineEftpos.PayerId.html
@@ -2194,6 +2314,18 @@ references:
   commentId: Overload:Yort.OnlineEftpos.PaymentDetails.OrderId
   fullName: Yort.OnlineEftpos.PaymentDetails.OrderId
   nameWithType: PaymentDetails.OrderId
+- uid: Yort.OnlineEftpos.PaymentDetails.TransactionType
+  name: TransactionType
+  href: api/Yort.OnlineEftpos.PaymentDetails.TransactionType.html#Yort_OnlineEftpos_PaymentDetails_TransactionType
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.TransactionType
+  fullName: Yort.OnlineEftpos.PaymentDetails.TransactionType
+  nameWithType: PaymentDetails.TransactionType
+- uid: Yort.OnlineEftpos.PaymentDetails.TransactionType*
+  name: TransactionType
+  href: api/Yort.OnlineEftpos.PaymentDetails.TransactionType.html
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.TransactionType
+  fullName: Yort.OnlineEftpos.PaymentDetails.TransactionType
+  nameWithType: PaymentDetails.TransactionType
 - uid: Yort.OnlineEftpos.PaymentStatus
   name: PaymentStatus
   href: api/Yort.OnlineEftpos.PaymentStatus.html
@@ -2665,3 +2797,168 @@ references:
   commentId: Overload:Yort.OnlineEftpos.TransactionStatus.op_Inequality
   fullName: Yort.OnlineEftpos.TransactionStatus.Inequality
   nameWithType: TransactionStatus.Inequality
+- uid: Yort.OnlineEftpos.TrustStatus
+  name: TrustStatus
+  href: api/Yort.OnlineEftpos.TrustStatus.html
+  commentId: T:Yort.OnlineEftpos.TrustStatus
+  fullName: Yort.OnlineEftpos.TrustStatus
+  nameWithType: TrustStatus
+- uid: Yort.OnlineEftpos.TrustStatus.Active
+  name: Active
+  href: api/Yort.OnlineEftpos.TrustStatus.Active.html#Yort_OnlineEftpos_TrustStatus_Active
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Active
+  fullName: Yort.OnlineEftpos.TrustStatus.Active
+  nameWithType: TrustStatus.Active
+- uid: Yort.OnlineEftpos.TrustStatus.Active*
+  name: Active
+  href: api/Yort.OnlineEftpos.TrustStatus.Active.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Active
+  fullName: Yort.OnlineEftpos.TrustStatus.Active
+  nameWithType: TrustStatus.Active
+- uid: Yort.OnlineEftpos.TrustStatus.Cancelled
+  name: Cancelled
+  href: api/Yort.OnlineEftpos.TrustStatus.Cancelled.html#Yort_OnlineEftpos_TrustStatus_Cancelled
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Cancelled
+  fullName: Yort.OnlineEftpos.TrustStatus.Cancelled
+  nameWithType: TrustStatus.Cancelled
+- uid: Yort.OnlineEftpos.TrustStatus.Cancelled*
+  name: Cancelled
+  href: api/Yort.OnlineEftpos.TrustStatus.Cancelled.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Cancelled
+  fullName: Yort.OnlineEftpos.TrustStatus.Cancelled
+  nameWithType: TrustStatus.Cancelled
+- uid: Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Yort.OnlineEftpos.TrustStatus.Equals.html#Yort_OnlineEftpos_TrustStatus_Equals_System_Object_
+  commentId: M:Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals(System.Object)
+  nameWithType: TrustStatus.Equals(Object)
+- uid: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  name: Equals(TrustStatus)
+  href: api/Yort.OnlineEftpos.TrustStatus.Equals.html#Yort_OnlineEftpos_TrustStatus_Equals_Yort_OnlineEftpos_TrustStatus_
+  commentId: M:Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus)
+  nameWithType: TrustStatus.Equals(TrustStatus)
+- uid: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  name: Equals(TrustStatus, TrustStatus)
+  href: api/Yort.OnlineEftpos.TrustStatus.Equals.html#Yort_OnlineEftpos_TrustStatus_Equals_Yort_OnlineEftpos_TrustStatus_Yort_OnlineEftpos_TrustStatus_
+  commentId: M:Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus,Yort.OnlineEftpos.TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals(Yort.OnlineEftpos.TrustStatus, Yort.OnlineEftpos.TrustStatus)
+  nameWithType: TrustStatus.Equals(TrustStatus, TrustStatus)
+- uid: Yort.OnlineEftpos.TrustStatus.Equals*
+  name: Equals
+  href: api/Yort.OnlineEftpos.TrustStatus.Equals.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Equals
+  fullName: Yort.OnlineEftpos.TrustStatus.Equals
+  nameWithType: TrustStatus.Equals
+- uid: Yort.OnlineEftpos.TrustStatus.GetHashCode
+  name: GetHashCode()
+  href: api/Yort.OnlineEftpos.TrustStatus.GetHashCode.html#Yort_OnlineEftpos_TrustStatus_GetHashCode
+  commentId: M:Yort.OnlineEftpos.TrustStatus.GetHashCode
+  fullName: Yort.OnlineEftpos.TrustStatus.GetHashCode()
+  nameWithType: TrustStatus.GetHashCode()
+- uid: Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  name: GetHashCode(TrustStatus)
+  href: api/Yort.OnlineEftpos.TrustStatus.GetHashCode.html#Yort_OnlineEftpos_TrustStatus_GetHashCode_Yort_OnlineEftpos_TrustStatus_
+  commentId: M:Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
+  nameWithType: TrustStatus.GetHashCode(TrustStatus)
+- uid: Yort.OnlineEftpos.TrustStatus.GetHashCode*
+  name: GetHashCode
+  href: api/Yort.OnlineEftpos.TrustStatus.GetHashCode.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.GetHashCode
+  fullName: Yort.OnlineEftpos.TrustStatus.GetHashCode
+  nameWithType: TrustStatus.GetHashCode
+- uid: Yort.OnlineEftpos.TrustStatus.op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
+  name: Implicit(String to TrustStatus)
+  href: api/Yort.OnlineEftpos.TrustStatus.op_Implicit.html#Yort_OnlineEftpos_TrustStatus_op_Implicit_System_String__Yort_OnlineEftpos_TrustStatus
+  commentId: M:Yort.OnlineEftpos.TrustStatus.op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
+  name.vb: Widening(String to TrustStatus)
+  fullName: Yort.OnlineEftpos.TrustStatus.Implicit(System.String to Yort.OnlineEftpos.TrustStatus)
+  fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening(System.String to Yort.OnlineEftpos.TrustStatus)
+  nameWithType: TrustStatus.Implicit(String to TrustStatus)
+  nameWithType.vb: TrustStatus.Widening(String to TrustStatus)
+- uid: Yort.OnlineEftpos.TrustStatus.op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  name: Implicit(TrustStatus to String)
+  href: api/Yort.OnlineEftpos.TrustStatus.op_Implicit.html#Yort_OnlineEftpos_TrustStatus_op_Implicit_Yort_OnlineEftpos_TrustStatus__System_String
+  commentId: M:Yort.OnlineEftpos.TrustStatus.op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  name.vb: Widening(TrustStatus to String)
+  fullName: Yort.OnlineEftpos.TrustStatus.Implicit(Yort.OnlineEftpos.TrustStatus to System.String)
+  fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening(Yort.OnlineEftpos.TrustStatus to System.String)
+  nameWithType: TrustStatus.Implicit(TrustStatus to String)
+  nameWithType.vb: TrustStatus.Widening(TrustStatus to String)
+- uid: Yort.OnlineEftpos.TrustStatus.op_Implicit*
+  name: Implicit
+  href: api/Yort.OnlineEftpos.TrustStatus.op_Implicit.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.op_Implicit
+  name.vb: Widening
+  fullName: Yort.OnlineEftpos.TrustStatus.Implicit
+  fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening
+  nameWithType: TrustStatus.Implicit
+  nameWithType.vb: TrustStatus.Widening
+- uid: Yort.OnlineEftpos.TrustStatus.ToString
+  name: ToString()
+  href: api/Yort.OnlineEftpos.TrustStatus.ToString.html#Yort_OnlineEftpos_TrustStatus_ToString
+  commentId: M:Yort.OnlineEftpos.TrustStatus.ToString
+  fullName: Yort.OnlineEftpos.TrustStatus.ToString()
+  nameWithType: TrustStatus.ToString()
+- uid: Yort.OnlineEftpos.TrustStatus.ToString*
+  name: ToString
+  href: api/Yort.OnlineEftpos.TrustStatus.ToString.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.ToString
+  fullName: Yort.OnlineEftpos.TrustStatus.ToString
+  nameWithType: TrustStatus.ToString
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId
+  name: WestpacCustomerIdPayerId
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.html
+  commentId: T:Yort.OnlineEftpos.WestpacCustomerIdPayerId
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId
+  nameWithType: WestpacCustomerIdPayerId
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName.html#Yort_OnlineEftpos_WestpacCustomerIdPayerId_DisplayName
+  commentId: P:Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName
+  nameWithType: WestpacCustomerIdPayerId.DisplayName
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName*
+  name: DisplayName
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName.html
+  commentId: Overload:Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName
+  nameWithType: WestpacCustomerIdPayerId.DisplayName
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid(System.String)
+  name: IsValid(String)
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid.html#Yort_OnlineEftpos_WestpacCustomerIdPayerId_IsValid_System_String_
+  commentId: M:Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid(System.String)
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid(System.String)
+  nameWithType: WestpacCustomerIdPayerId.IsValid(String)
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid*
+  name: IsValid
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid.html
+  commentId: Overload:Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid
+  nameWithType: WestpacCustomerIdPayerId.IsValid
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name
+  name: Name
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name.html#Yort_OnlineEftpos_WestpacCustomerIdPayerId_Name
+  commentId: P:Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name
+  nameWithType: WestpacCustomerIdPayerId.Name
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name*
+  name: Name
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name.html
+  commentId: Overload:Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name
+  nameWithType: WestpacCustomerIdPayerId.Name
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize(System.String)
+  name: Normalize(String)
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize.html#Yort_OnlineEftpos_WestpacCustomerIdPayerId_Normalize_System_String_
+  commentId: M:Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize(System.String)
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize(System.String)
+  nameWithType: WestpacCustomerIdPayerId.Normalize(String)
+- uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize*
+  name: Normalize
+  href: api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize.html
+  commentId: Overload:Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize
+  fullName: Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize
+  nameWithType: WestpacCustomerIdPayerId.Normalize

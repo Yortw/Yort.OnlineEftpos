@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  commentId: T:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  id: CooperativeBankCustomerIdPayerId
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  - Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  - Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  - Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  langs:
+  - csharp
+  - vb
+  name: CooperativeBankCustomerIdPayerId
+  nameWithType: CooperativeBankCustomerIdPayerId
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  type: Class
+  source:
+    id: CooperativeBankCustomerIdPayerId
+    path: ''
+    startLine: 1267
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nProvides methods for validation and normalising a Co-operative Bank customer id.\n"
+  example: []
+  syntax:
+    content: 'public class CooperativeBankCustomerIdPayerId : IPayerIdType'
+    content.vb: >-
+      Public Class CooperativeBankCustomerIdPayerId
+          Implements IPayerIdType
+  inheritance:
+  - System.Object
+  implements:
+  - Yort.OnlineEftpos.IPayerIdType
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  commentId: P:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  id: Name
+  parent: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CooperativeBankCustomerIdPayerId.Name
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 1281
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the string &quot;CUSTOMERID&quot; (without the quotes).\n"
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name*
+  implements:
+  - Yort.OnlineEftpos.IPayerIdType.Name
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  commentId: P:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  id: DisplayName
+  parent: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: CooperativeBankCustomerIdPayerId.DisplayName
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  type: Property
+  source:
+    id: DisplayName
+    path: ''
+    startLine: 1286
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the string &quot;Customer ID&quot; without the quotes.\n"
+  example: []
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayName As String
+  overload: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName*
+  implements:
+  - Yort.OnlineEftpos.IPayerIdType.DisplayName
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  commentId: M:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  id: Normalize(System.String)
+  parent: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  langs:
+  - csharp
+  - vb
+  name: Normalize(String)
+  nameWithType: CooperativeBankCustomerIdPayerId.Normalize(String)
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize(System.String)
+  type: Method
+  source:
+    id: Normalize
+    path: ''
+    startLine: 1300
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nAttempts to normalise a string containing a phone number to a form that can be used as a payer id.\n"
+  remarks: "\n<p>This method will remove non-numeric characters commonly used in phone numbers (+ ( ) - etc) as well as whitespace in the string provided. The result is validated via the <xref href=\"Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)\" data-throw-if-not-resolved=\"false\"></xref> method before being returned, and if invalid an exception is thrown.</p>\n<p>This method will also attempt to convert international numbers (i.e those starting with +642x or 642x) to local numbers.</p>\n"
+  example: []
+  syntax:
+    content: public string Normalize(string userInput)
+    parameters:
+    - id: userInput
+      type: System.String
+      description: A string containing a phone number.
+    return:
+      type: System.String
+      description: A new string containing the normalised form of the phone number.
+    content.vb: Public Function Normalize(userInput As String) As String
+  overload: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">userInput</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">userInput</code> is an empty string or contains only whitespace characters.
+  - type: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    description: Thrown if the converted <code data-dev-comment-type="paramref" class="paramref">userInput</code> value does not pass validation by the <xref href="Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)" data-throw-if-not-resolved="false"></xref> method, or if it contains non-numeric characters that are not commonly used in phone numbers.
+  implements:
+  - Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  commentId: M:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  id: IsValid(System.String)
+  parent: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+  langs:
+  - csharp
+  - vb
+  name: IsValid(String)
+  nameWithType: CooperativeBankCustomerIdPayerId.IsValid(String)
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  type: Method
+  source:
+    id: IsValid
+    path: ''
+    startLine: 1329
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns true if the specified strings matches the pattern for a Co-operative Bank customer id.\n"
+  remarks: "\n<p>Ensures the value is exactly 7 digits long and starts with a character from 1-9 (inclusive).</p>\n"
+  example: []
+  syntax:
+    content: public bool IsValid(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: A string containing the customer id to check.
+    return:
+      type: System.Boolean
+      description: True if the string matches the pattern for a Co-operative Bank customer id.
+    content.vb: Public Function IsValid(value As String) As Boolean
+  overload: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid*
+  implements:
+  - Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Yort.OnlineEftpos.IPayerIdType
+  commentId: T:Yort.OnlineEftpos.IPayerIdType
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IPayerIdType
+  nameWithType: IPayerIdType
+  fullName: Yort.OnlineEftpos.IPayerIdType
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name*
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+  isExternal: false
+  name: Name
+  nameWithType: CooperativeBankCustomerIdPayerId.Name
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name
+- uid: Yort.OnlineEftpos.IPayerIdType.Name
+  commentId: P:Yort.OnlineEftpos.IPayerIdType.Name
+  parent: Yort.OnlineEftpos.IPayerIdType
+  isExternal: false
+  name: Name
+  nameWithType: IPayerIdType.Name
+  fullName: Yort.OnlineEftpos.IPayerIdType.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName*
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+  isExternal: false
+  name: DisplayName
+  nameWithType: CooperativeBankCustomerIdPayerId.DisplayName
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName
+- uid: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  commentId: P:Yort.OnlineEftpos.IPayerIdType.DisplayName
+  parent: Yort.OnlineEftpos.IPayerIdType
+  isExternal: false
+  name: DisplayName
+  nameWithType: IPayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.IPayerIdType.DisplayName
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+  commentId: M:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid(System.String)
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize*
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize
+  isExternal: false
+  name: Normalize
+  nameWithType: CooperativeBankCustomerIdPayerId.Normalize
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize
+- uid: Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
+  commentId: M:Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
+  parent: Yort.OnlineEftpos.IPayerIdType
+  isExternal: true
+  name: Normalize(String)
+  nameWithType: IPayerIdType.Normalize(String)
+  fullName: Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
+    name: Normalize
+    nameWithType: IPayerIdType.Normalize
+    fullName: Yort.OnlineEftpos.IPayerIdType.Normalize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
+    name: Normalize
+    nameWithType: IPayerIdType.Normalize
+    fullName: Yort.OnlineEftpos.IPayerIdType.Normalize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  isExternal: false
+  name: OnlineEftposInvalidDataException
+  nameWithType: OnlineEftposInvalidDataException
+  fullName: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+- uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid*
+  commentId: Overload:Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid
+  isExternal: false
+  name: IsValid
+  nameWithType: CooperativeBankCustomerIdPayerId.IsValid
+  fullName: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid
+- uid: Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
+  commentId: M:Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
+  parent: Yort.OnlineEftpos.IPayerIdType
+  isExternal: true
+  name: IsValid(String)
+  nameWithType: IPayerIdType.IsValid(String)
+  fullName: Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
+    name: IsValid
+    nameWithType: IPayerIdType.IsValid
+    fullName: Yort.OnlineEftpos.IPayerIdType.IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
+    name: IsValid
+    nameWithType: IPayerIdType.IsValid
+    fullName: Yort.OnlineEftpos.IPayerIdType.IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

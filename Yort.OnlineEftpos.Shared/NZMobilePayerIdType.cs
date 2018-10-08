@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
 
 namespace Yort.OnlineEftpos
 {
@@ -26,6 +26,14 @@ namespace Yort.OnlineEftpos
 		public string Name { get { return "MOBILE"; } }
 
 		/// <summary>
+		/// Returns the string "NZ Mobile Number" without the quotes.
+		/// </summary>
+		public string DisplayName
+		{
+			get { return "NZ Mobile Number"; }
+		}
+
+		/// <summary>
 		/// Attempts to normalise a string containing a phone number to a form that can be used as a payer id.
 		/// </summary>
 		/// <param name="userInput">A string containing a phone number.</param>
@@ -37,14 +45,14 @@ namespace Yort.OnlineEftpos
 		/// <exception cref="ArgumentNullException">Thrown if <paramref name="userInput"/> is null.</exception>
 		/// <exception cref="ArgumentException">Thrown if <paramref name="userInput"/> is an empty string or contains only whitespace characters.</exception>
 		/// <exception cref="OnlineEftposInvalidDataException">Thrown if the converted <paramref name="userInput"/> value does not pass validation by the <see cref="IsValid(string)"/> method, or if it contains non-numeric characters that are not commonly used in phone numbers.</exception>
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", MessageId = "0", Justification="Argument is validated, but code analysis doesn't recognise this due to extension method used.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", MessageId = "0", Justification = "Argument is validated, but code analysis doesn't recognise this due to extension method used.")]
 		public string Normalize(string userInput)
 		{
 			userInput.GuardNullEmptyOrWhitespace(nameof(userInput));
 
 			var sb = new StringBuilder(userInput.Length);
 			var chars = userInput.ToCharArray();
-			for (int cnt = 0; cnt < chars.Length; cnt++)
+			for (var cnt = 0; cnt < chars.Length; cnt++)
 			{
 				var thisChar = chars[cnt];
 				if (Char.IsWhiteSpace(thisChar) || IgnoredChars.Contains(thisChar)) continue;

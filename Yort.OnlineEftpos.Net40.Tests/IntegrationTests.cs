@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +14,21 @@ namespace Yort.OnlineEftpos.Net40.Tests
 	{
 		#region Payment Tests
 
+		[TestInitializeAttribute]
+		public void InitialiseTests()
+		{
+			if (!System.Net.ServicePointManager.SecurityProtocol.HasFlag(System.Net.SecurityProtocolType.Tls12))
+				System.Net.ServicePointManager.SecurityProtocol = (System.Net.ServicePointManager.SecurityProtocol | System.Net.SecurityProtocolType.Tls12);
+
+			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
+			System.Net.ServicePointManager.Expect100Continue = false;
+			System.Net.ServicePointManager.UseNagleAlgorithm = false;
+		}
+
 		[TestMethod]
 		[TestCategory("Integration")]
 		public async Task Integration_RequestPayment()
 		{
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
-
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
@@ -68,6 +75,57 @@ namespace Yort.OnlineEftpos.Net40.Tests
 																						// have been asked to ensure we don't overrun the system.
 		}
 
+		[TestMethod]
+		[TestCategory("Integration")]
+		public async Task Integration_RequestPayment_WithTrustSetup()
+		{
+			var credProvider = new SecureStringOnlineEftposCredentialProvider(
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
+				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
+			);
+
+			IOnlineEftposClient client = new OnlineEftpos.OnlineEftposClient(credProvider, OnlineEftposApiVersion.None, OnlineEftposApiEnvironment.Sandbox);
+			var orderId = System.Guid.NewGuid().ToString();
+			var result = await client.RequestPayment(new OnlineEftpos.OnlineEftposPaymentRequest()
+			{
+				Bank = new BankDetails()
+				{
+					BankId = "ASB",
+					PayerIdType = "MOBILE",
+					PayerId = "021555123"
+				},
+				Merchant = new MerchantDetails()
+				{
+					CallbackUrl = new Uri(Environment.GetEnvironmentVariable("PaymarkTestCallbackUrl")),
+					MerchantIdCode = Environment.GetEnvironmentVariable("PaymarkMerchantId"),
+					MerchantUrl = new Uri("http://www.ontempo.co.nz")
+				},
+				Transaction = new PaymentDetails()
+				{
+					Amount = 1000,
+					Currency = "NZD",
+					Description = "Test Tran",
+					OrderId = orderId,
+					TransactionType = OnlineEftposTransactionTypes.TrustSetup,
+					UserAgent = "Yort.OnlineEftpos.Tests",
+					UserIPAddress = "10.10.10.100"
+				}
+			}).ConfigureAwait(false);
+
+			Assert.IsNotNull(result);
+			Assert.IsTrue(!String.IsNullOrWhiteSpace(result.Id), "Invalid (blank) id returned.");
+			Assert.AreEqual(result.Bank.BankId, "ASB");
+			Assert.AreEqual(result.Bank.PayerId, "021555123");
+			Assert.AreEqual(result.Bank.PayerIdType, "MOBILE");
+			Assert.AreEqual(result.Transaction.Amount, 1000);
+			Assert.AreEqual(result.Transaction.Description, "Test Tran");
+			Assert.AreEqual(result.Transaction.OrderId, orderId);
+			Assert.AreEqual(result.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
+																						// have been asked to ensure we don't overrun the system.
+		}
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -78,10 +136,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		{
 
 			#region Test Setup
-
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
 
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
@@ -145,11 +199,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		{
 
 			#region Test Setup
-
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
-
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
@@ -219,10 +268,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			#region Test Setup
 
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
-
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
@@ -263,10 +308,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			#region Test Setup
 
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
-
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
@@ -290,10 +331,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		public async Task Integration_SendRefund()
 		{
 			#region Test Setup
-
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
 
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
@@ -376,10 +413,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		public async Task Integration_CheckRefundStatus()
 		{
 			#region Test Setup
-
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
 
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
@@ -473,10 +506,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		{
 			#region Test Setup
 
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
-
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
@@ -566,10 +595,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		{
 			#region Test Setup
 
-			System.Net.ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => { return true; };
-			System.Net.ServicePointManager.Expect100Continue = false;
-			System.Net.ServicePointManager.UseNagleAlgorithm = false;
-
 			var credProvider = new SecureStringOnlineEftposCredentialProvider(
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatKey")),
 				SecureStringFromString(Environment.GetEnvironmentVariable("PaymarkUatSecret"))
@@ -607,6 +632,8 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		private SecureString SecureStringFromString(string sourceText)
 		{
 			var retVal = new SecureString();
+			if (sourceText == null) return retVal;
+
 			foreach (var c in sourceText)
 			{
 				retVal.AppendChar(c);

@@ -20,7 +20,7 @@ items:
   source:
     id: NotificationVerifierBase
     path: ''
-    startLine: 3506
+    startLine: 3708
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -67,7 +67,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3523
+    startLine: 3725
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -106,7 +106,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3533
+    startLine: 3735
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -148,7 +148,7 @@ items:
   source:
     id: ThrowIfNotVerified
     path: ''
-    startLine: 3547
+    startLine: 3749
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -189,7 +189,7 @@ items:
   source:
     id: Verify
     path: ''
-    startLine: 3558
+    startLine: 3760
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -232,7 +232,7 @@ items:
   source:
     id: GetPublicKey
     path: ''
-    startLine: 3563
+    startLine: 3765
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

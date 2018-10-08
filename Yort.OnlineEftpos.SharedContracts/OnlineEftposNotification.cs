@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,8 +22,10 @@ namespace Yort.OnlineEftpos
 		private string _MerchantOrderId;
 		private string _Status;
 		private string _TransactionId;
+		private string _TrustStatus;
+		private string _TrustId;
 		private string _Signature;
-		private string _SignedData;
+		private readonly string _SignedData;
 		
 		#endregion
 
@@ -97,6 +99,30 @@ namespace Yort.OnlineEftpos
 		}
 
 		/// <summary>
+		/// Status of the trust, could be either ACTIVE or CANCELLED. Only contains a value when there was a Trust Setup with the payment.
+		/// </summary>
+		/// <see cref="TrustId"/>
+		public string TrustStatus
+		{
+			get
+			{
+				return _TrustStatus;
+			}
+		}
+
+		/// <summary>
+		/// Id of the trust. Only contains value when there was a Trust Setup with the payment.
+		/// </summary>
+		/// <see cref="TrustStatus"/>
+		public string TrustId
+		{
+			get
+			{
+				return _TrustId;
+			}
+		}
+
+		/// <summary>
 		/// Returns the signature of the notification.
 		/// </summary>
 		/// <remarks>
@@ -146,6 +172,12 @@ namespace Yort.OnlineEftpos
 					break;
 				case "STATUS":
 					_Status = value;
+					break;
+				case "OETRUSTSTATUS":
+					_TrustStatus = value;
+					break;
+				case "OETRUSTID":
+					_TrustId = value;
 					break;
 				case "SIGNATURE":
 					_Signature = value;

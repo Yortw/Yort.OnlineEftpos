@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Yort.OnlineEftpos.Net40.Tests
 {
 	[TestClass]
-	public class PayerIdTests
+	public class NzMobilePayerIdTests
 	{
 
 		#region Constants

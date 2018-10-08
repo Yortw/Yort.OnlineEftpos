@@ -5,6 +5,7 @@ items:
   id: IPayerIdType
   parent: Yort.OnlineEftpos
   children:
+  - Yort.OnlineEftpos.IPayerIdType.DisplayName
   - Yort.OnlineEftpos.IPayerIdType.IsValid(System.String)
   - Yort.OnlineEftpos.IPayerIdType.Name
   - Yort.OnlineEftpos.IPayerIdType.Normalize(System.String)
@@ -18,7 +19,7 @@ items:
   source:
     id: IPayerIdType
     path: ''
-    startLine: 3423
+    startLine: 3619
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -47,7 +48,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 3429
+    startLine: 3625
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -60,6 +61,37 @@ items:
       type: System.String
     content.vb: ReadOnly Property Name As String
   overload: Yort.OnlineEftpos.IPayerIdType.Name*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  commentId: P:Yort.OnlineEftpos.IPayerIdType.DisplayName
+  id: DisplayName
+  parent: Yort.OnlineEftpos.IPayerIdType
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: IPayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.IPayerIdType.DisplayName
+  type: Property
+  source:
+    id: DisplayName
+    path: ''
+    startLine: 3630
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a more friendly, human readable version of <xref href=\"Yort.OnlineEftpos.IPayerIdType.Name\" data-throw-if-not-resolved=\"false\"></xref> for displaying to customers/users.\n"
+  example: []
+  syntax:
+    content: string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DisplayName As String
+  overload: Yort.OnlineEftpos.IPayerIdType.DisplayName*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -78,7 +110,7 @@ items:
   source:
     id: Normalize
     path: ''
-    startLine: 3436
+    startLine: 3638
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -113,7 +145,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 3445
+    startLine: 3647
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -157,6 +189,26 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Yort.OnlineEftpos.IPayerIdType.Name
+  commentId: P:Yort.OnlineEftpos.IPayerIdType.Name
+  parent: Yort.OnlineEftpos.IPayerIdType
+  isExternal: false
+  name: Name
+  nameWithType: IPayerIdType.Name
+  fullName: Yort.OnlineEftpos.IPayerIdType.Name
+- uid: Yort.OnlineEftpos.IPayerIdType.DisplayName*
+  commentId: Overload:Yort.OnlineEftpos.IPayerIdType.DisplayName
+  isExternal: false
+  name: DisplayName
+  nameWithType: IPayerIdType.DisplayName
+  fullName: Yort.OnlineEftpos.IPayerIdType.DisplayName
+- uid: Yort.OnlineEftpos.IPayerIdType
+  commentId: T:Yort.OnlineEftpos.IPayerIdType
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IPayerIdType
+  nameWithType: IPayerIdType
+  fullName: Yort.OnlineEftpos.IPayerIdType
 - uid: Yort.OnlineEftpos.IPayerIdType.Normalize*
   commentId: Overload:Yort.OnlineEftpos.IPayerIdType.Normalize
   isExternal: false
@@ -221,10 +273,3 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: Yort.OnlineEftpos.IPayerIdType
-  commentId: T:Yort.OnlineEftpos.IPayerIdType
-  parent: Yort.OnlineEftpos
-  isExternal: false
-  name: IPayerIdType
-  nameWithType: IPayerIdType
-  fullName: Yort.OnlineEftpos.IPayerIdType

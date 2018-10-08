@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +23,30 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		public void KnownBanks_LoadsCooperativeBank()
+		{
+			Assert.IsNotNull(KnownBanks.GetBank("Cooperative"));
+		}
+
+		[TestMethod]
+		public void KnownBanks_LoadsWestpacBank()
+		{
+			Assert.IsNotNull(KnownBanks.GetBank("Westpac"));
+		}
+
+		[TestMethod]
 		public void KnownBanks_IdLookupIsCaseInsensitive()
 		{
 			Assert.IsNotNull(KnownBanks.GetBank("ASB"));
 			Assert.IsNotNull(KnownBanks.GetBank("Asb"));
 			Assert.IsNotNull(KnownBanks.GetBank("aSB"));
 			Assert.IsNotNull(KnownBanks.GetBank("aSb"));
+			Assert.IsNotNull(KnownBanks.GetBank("westpac"));
+			Assert.IsNotNull(KnownBanks.GetBank("Westpac"));
+			Assert.IsNotNull(KnownBanks.GetBank("WESTPAC"));
+			Assert.IsNotNull(KnownBanks.GetBank("cooperative"));
+			Assert.IsNotNull(KnownBanks.GetBank("Cooperative"));
+			Assert.IsNotNull(KnownBanks.GetBank("COOPERATIVE"));
 		}
 
 		#region AddBank Tests

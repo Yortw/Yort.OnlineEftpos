@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Sha512WithRsaVerifier
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Sha512WithRsaVerifier
+   ">
+    <meta name="generator" content="docfx 2.25.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier">
+  
+  
+  <h1 id="Yort_OnlineEftpos_Sha512WithRsaVerifier" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier" class="text-break">Class Sha512WithRsaVerifier
+  </h1>
+  <div class="markdown level0 summary"><p>Default verifier for Online EFTPOS notifications, using SHA512withRSA signature verification.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Yort.OnlineEftpos.NotificationVerifierBase.html">NotificationVerifierBase</a></div>
+    <div class="level2"><span class="xref">Sha512WithRsaVerifier</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yort.OnlineEftpos.INotificationVerifier.html">INotificationVerifier</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Yort.OnlineEftpos.NotificationVerifierBase.html#Yort_OnlineEftpos_NotificationVerifierBase_ThrowIfNotVerified_Yort_OnlineEftpos_OnlineEftposNotification_">NotificationVerifierBase.ThrowIfNotVerified(OnlineEftposNotification)</a>
+    </div>
+    <div>
+      <a class="xref" href="Yort.OnlineEftpos.NotificationVerifierBase.html#Yort_OnlineEftpos_NotificationVerifierBase_GetPublicKey">NotificationVerifierBase.GetPublicKey()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yort.OnlineEftpos.html">Yort.OnlineEftpos</a></h6>
+  <h6><strong>Assembly</strong>: Yort.OnlineEftpos.dll</h6>
+  <h5 id="Yort_OnlineEftpos_Sha512WithRsaVerifier_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Sha512WithRsaVerifier : NotificationVerifierBase, INotificationVerifier, IDisposable</code></pre>
+  </div>
+  <h5 id="Yort_OnlineEftpos_Sha512WithRsaVerifier_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is not available in WinRT/UWP projects.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.Sha512WithRsaVerifier.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/Sha512WithRsaVerifier.cs/#L59">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.#ctor*"></a>
+  <h4 id="Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_System_Byte___" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.#ctor(System.Byte[])">Sha512WithRsaVerifier(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance using the raw binary data provided as the public key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sha512WithRsaVerifier(byte[] publicKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">publicKey</span></td>
+        <td><p>A byte array containing the bytes representing the public key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">publicKey</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">publicKey</code> is zero length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_System_String_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.Sha512WithRsaVerifier.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/Sha512WithRsaVerifier.cs/#L49">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.#ctor*"></a>
+  <h4 id="Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_System_String_" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.#ctor(System.String)">Sha512WithRsaVerifier(String)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance using a public key encoded as as base 64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sha512WithRsaVerifier(string base64PublicKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">base64PublicKey</span></td>
+        <td><p>A string containing the base 64 encoded public key to use for verification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yort_OnlineEftpos_Sha512WithRsaVerifier__ctor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the string provided is in the common format using a header an footer to mark the key extent, these headers are removed before the key is parsed, i.e;
+
+-----BEGIN PUBLIC KEY-----
+xxx
+-----END PUBLIC KEY-----
+
+will have the begin/end public key lines removed.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">base64PublicKey</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">base64PublicKey</code> is empty or not a valid base 64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_Sha512WithRsaVerifier_Dispose.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.Sha512WithRsaVerifier.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/Sha512WithRsaVerifier.cs/#L227">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_Sha512WithRsaVerifier_Dispose_" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.Dispose*"></a>
+  <h4 id="Yort_OnlineEftpos_Sha512WithRsaVerifier_Dispose" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes this instance and all internal resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_Sha512WithRsaVerifier_Verify_Yort_OnlineEftpos_OnlineEftposNotification_.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.Sha512WithRsaVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/Sha512WithRsaVerifier.cs/#L73">View Source</a>
+  </span>
+  <a id="Yort_OnlineEftpos_Sha512WithRsaVerifier_Verify_" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.Verify*"></a>
+  <h4 id="Yort_OnlineEftpos_Sha512WithRsaVerifier_Verify_Yort_OnlineEftpos_OnlineEftposNotification_" data-uid="Yort.OnlineEftpos.Sha512WithRsaVerifier.Verify(Yort.OnlineEftpos.OnlineEftposNotification)">Verify(OnlineEftposNotification)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the specified <a class="xref" href="Yort.OnlineEftpos.OnlineEftposNotification.html">OnlineEftposNotification</a> is verified valid and authentic, otherwise false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Verify(OnlineEftposNotification notification)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yort.OnlineEftpos.OnlineEftposNotification.html">OnlineEftposNotification</a></td>
+        <td><span class="parametername">notification</span></td>
+        <td><p>The <a class="xref" href="Yort.OnlineEftpos.OnlineEftposNotification.html">OnlineEftposNotification</a> to verify.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A boolean indicating if <code data-dev-comment-type="paramref" class="paramref">notification</code> passes verification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Yort.OnlineEftpos.NotificationVerifierBase.html#Yort_OnlineEftpos_NotificationVerifierBase_Verify_Yort_OnlineEftpos_OnlineEftposNotification_">NotificationVerifierBase.Verify(OnlineEftposNotification)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">notification</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yort.OnlineEftpos.INotificationVerifier.html">INotificationVerifier</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.OnlineEftpos/new/master/apiSpec/new?filename=Yort_OnlineEftpos_Sha512WithRsaVerifier.md&amp;value=---%0Auid%3A%20Yort.OnlineEftpos.Sha512WithRsaVerifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Yortw/Yort.OnlineEftpos/blob/master/Yort.OnlineEftpos.Shared/Sha512WithRsaVerifier.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

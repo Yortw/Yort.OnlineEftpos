@@ -8,6 +8,8 @@
     name: BankDefinition
   - uid: Yort.OnlineEftpos.BankDetails
     name: BankDetails
+  - uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
+    name: CooperativeBankCustomerIdPayerId
   - uid: Yort.OnlineEftpos.ErasableString
     name: ErasableString
   - uid: Yort.OnlineEftpos.HateoasLink
@@ -68,6 +70,8 @@
     name: OnlineEftposRefundStatus
   - uid: Yort.OnlineEftpos.OnlineEftposRequestBuilder
     name: OnlineEftposRequestBuilder
+  - uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+    name: OnlineEftposTransactionTypes
   - uid: Yort.OnlineEftpos.PayerId
     name: PayerId
   - uid: Yort.OnlineEftpos.PaymentDetails
@@ -90,3 +94,7 @@
     name: TransactionRequestDetails
   - uid: Yort.OnlineEftpos.TransactionStatus
     name: TransactionStatus
+  - uid: Yort.OnlineEftpos.TrustStatus
+    name: TrustStatus
+  - uid: Yort.OnlineEftpos.WestpacCustomerIdPayerId
+    name: WestpacCustomerIdPayerId

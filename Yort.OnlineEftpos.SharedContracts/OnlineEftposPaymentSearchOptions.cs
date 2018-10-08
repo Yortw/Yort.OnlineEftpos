@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -111,7 +111,7 @@ namespace Yort.OnlineEftpos
 			{
 				sb.Append("&fields=");
 
-				bool doneOne = false;
+				var doneOne = false;
 				foreach (var fieldName in Fields)
 				{
 					if (!doneOne)

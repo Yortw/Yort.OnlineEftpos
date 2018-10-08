@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -53,6 +53,16 @@ namespace Yort.OnlineEftpos
 		public string OrderId { get; set; }
 
 		/// <summary>
+		/// Sets or returns a string describing the type of transaction to be performed.
+		/// </summary>
+		/// <remarks>
+		/// <para>See <see cref="OnlineEftposTransactionTypes"/> for constants providing known trnasaction types.</para>
+		/// <para>Defaults to <see cref="OnlineEftposTransactionTypes.Regular"/>.</para>
+		/// </remarks>
+		[JsonProperty("transactionType")]
+		public string TransactionType { get; set; } = OnlineEftposTransactionTypes.Regular;
+
+		/// <summary>
 		/// Throws if the details are invalid.
 		/// </summary>
 		/// <remarks>
@@ -68,6 +78,7 @@ namespace Yort.OnlineEftpos
 				Amount.GuardMinValue(1, nameof(Amount));
 
 				Description.GuardMaxLength(12, nameof(Description));
+				TransactionType.GuardNullEmptyOrWhitespace(nameof(TransactionType));
 				ValidateOrderId(OrderId);
 				ValidateCurrency(Currency);
 			}

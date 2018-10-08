@@ -23,7 +23,7 @@ items:
   source:
     id: IOnlineEftposClient
     path: ''
-    startLine: 3300
+    startLine: 3496
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -57,7 +57,7 @@ items:
   source:
     id: ApiVersion
     path: ''
-    startLine: 3308
+    startLine: 3504
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -89,7 +89,7 @@ items:
   source:
     id: ApiEnvironment
     path: ''
-    startLine: 3319
+    startLine: 3515
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -121,7 +121,7 @@ items:
   source:
     id: RequestPayment
     path: ''
-    startLine: 3337
+    startLine: 3533
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -167,7 +167,7 @@ items:
   source:
     id: CheckPaymentStatus
     path: ''
-    startLine: 3348
+    startLine: 3544
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -210,7 +210,7 @@ items:
   source:
     id: SendRefund
     path: ''
-    startLine: 3360
+    startLine: 3556
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -255,7 +255,7 @@ items:
   source:
     id: CheckRefundStatus
     path: ''
-    startLine: 3371
+    startLine: 3567
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -298,7 +298,7 @@ items:
   source:
     id: PaymentSearch
     path: ''
-    startLine: 3381
+    startLine: 3577
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -330,7 +330,7 @@ items:
   source:
     id: RefundSearch
     path: ''
-    startLine: 3391
+    startLine: 3587
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

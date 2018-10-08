@@ -11,6 +11,8 @@ items:
   - Yort.OnlineEftpos.OnlineEftposNotification.SignedData
   - Yort.OnlineEftpos.OnlineEftposNotification.Status
   - Yort.OnlineEftpos.OnlineEftposNotification.TransactionId
+  - Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  - Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
   langs:
   - csharp
   - vb
@@ -21,7 +23,7 @@ items:
   source:
     id: OnlineEftposNotification
     path: ''
-    startLine: 4062
+    startLine: 4264
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -62,7 +64,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4096
+    startLine: 4300
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -101,7 +103,7 @@ items:
   source:
     id: MerchantOrderId
     path: ''
-    startLine: 4119
+    startLine: 4323
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -134,7 +136,7 @@ items:
   source:
     id: TransactionId
     path: ''
-    startLine: 4133
+    startLine: 4337
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -168,7 +170,7 @@ items:
   source:
     id: Status
     path: ''
-    startLine: 4143
+    startLine: 4347
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -192,6 +194,78 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  id: TrustStatus
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: TrustStatus
+  nameWithType: OnlineEftposNotification.TrustStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  type: Property
+  source:
+    id: TrustStatus
+    path: ''
+    startLine: 4359
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nStatus of the trust, could be either ACTIVE or CANCELLED. Only contains a value when there was a Trust Setup with the payment.\n"
+  example: []
+  syntax:
+    content: public string TrustStatus { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TrustStatus As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus*
+  see:
+  - linkId: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+    commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  id: TrustId
+  parent: Yort.OnlineEftpos.OnlineEftposNotification
+  langs:
+  - csharp
+  - vb
+  name: TrustId
+  nameWithType: OnlineEftposNotification.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  type: Property
+  source:
+    id: TrustId
+    path: ''
+    startLine: 4371
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nId of the trust. Only contains value when there was a Trust Setup with the payment.\n"
+  example: []
+  syntax:
+    content: public string TrustId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TrustId As String
+  overload: Yort.OnlineEftpos.OnlineEftposNotification.TrustId*
+  see:
+  - linkId: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+    commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Yort.OnlineEftpos.OnlineEftposNotification.Signature
   commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.Signature
   id: Signature
@@ -206,7 +280,7 @@ items:
   source:
     id: Signature
     path: ''
-    startLine: 4157
+    startLine: 4385
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -240,7 +314,7 @@ items:
   source:
     id: SignedData
     path: ''
-    startLine: 4168
+    startLine: 4396
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -605,6 +679,22 @@ references:
   name: Status
   nameWithType: OnlineEftposNotification.Status
   fullName: Yort.OnlineEftpos.OnlineEftposNotification.Status
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  isExternal: false
+  name: TrustStatus
+  nameWithType: OnlineEftposNotification.TrustStatus
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+  commentId: P:Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus
+- uid: Yort.OnlineEftpos.OnlineEftposNotification.TrustId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.TrustId
+  isExternal: false
+  name: TrustId
+  nameWithType: OnlineEftposNotification.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposNotification.TrustId
 - uid: Yort.OnlineEftpos.OnlineEftposNotification.Signature*
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposNotification.Signature
   isExternal: false

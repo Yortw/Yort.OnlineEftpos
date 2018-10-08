@@ -41,7 +41,7 @@ items:
   source:
     id: OnlineEftposRequestBuilder
     path: ''
-    startLine: 2469
+    startLine: 2578
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -98,7 +98,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 458
+    startLine: 459
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -126,7 +126,7 @@ items:
   source:
     id: DefaultCurrency
     path: ''
-    startLine: 470
+    startLine: 471
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -159,7 +159,7 @@ items:
   source:
     id: DefaultCurrencyMultiplier
     path: ''
-    startLine: 478
+    startLine: 479
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -193,7 +193,7 @@ items:
   source:
     id: PurchaseDescriptionTemplate
     path: ''
-    startLine: 489
+    startLine: 490
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -227,7 +227,7 @@ items:
   source:
     id: RefundReasonTemplate
     path: ''
-    startLine: 503
+    startLine: 504
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -261,7 +261,7 @@ items:
   source:
     id: DefaultUserAgent
     path: ''
-    startLine: 511
+    startLine: 512
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -294,7 +294,7 @@ items:
   source:
     id: DefaultUserIP
     path: ''
-    startLine: 515
+    startLine: 516
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -327,7 +327,7 @@ items:
   source:
     id: DefaultMerchantUrl
     path: ''
-    startLine: 520
+    startLine: 521
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -360,7 +360,7 @@ items:
   source:
     id: DefaultMerchantId
     path: ''
-    startLine: 524
+    startLine: 525
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -393,7 +393,7 @@ items:
   source:
     id: CallbackUrlTemplate
     path: ''
-    startLine: 533
+    startLine: 534
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -427,7 +427,7 @@ items:
   source:
     id: CreatePaymentRequest
     path: ''
-    startLine: 549
+    startLine: 550
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -474,7 +474,7 @@ items:
   source:
     id: CreateRefundRequest
     path: ''
-    startLine: 562
+    startLine: 563
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -515,7 +515,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 2477
+    startLine: 2586
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -543,7 +543,7 @@ items:
   source:
     id: DefaultCurrency
     path: ''
-    startLine: 2491
+    startLine: 2600
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -576,7 +576,7 @@ items:
   source:
     id: DefaultCurrencyMultiplier
     path: ''
-    startLine: 2499
+    startLine: 2608
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -610,7 +610,7 @@ items:
   source:
     id: PurchaseDescriptionTemplate
     path: ''
-    startLine: 2510
+    startLine: 2619
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -644,7 +644,7 @@ items:
   source:
     id: RefundReasonTemplate
     path: ''
-    startLine: 2524
+    startLine: 2633
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -678,7 +678,7 @@ items:
   source:
     id: DefaultUserAgent
     path: ''
-    startLine: 2532
+    startLine: 2641
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -711,7 +711,7 @@ items:
   source:
     id: DefaultUserIP
     path: ''
-    startLine: 2536
+    startLine: 2645
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -744,7 +744,7 @@ items:
   source:
     id: DefaultMerchantUrl
     path: ''
-    startLine: 2541
+    startLine: 2650
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -777,7 +777,7 @@ items:
   source:
     id: DefaultMerchantIdCode
     path: ''
-    startLine: 2545
+    startLine: 2654
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -810,7 +810,7 @@ items:
   source:
     id: CallbackUrlTemplate
     path: ''
-    startLine: 2554
+    startLine: 2663
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -844,7 +844,7 @@ items:
   source:
     id: CreatePaymentRequest
     path: ''
-    startLine: 2570
+    startLine: 2679
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -891,7 +891,7 @@ items:
   source:
     id: CreatePaymentRequest
     path: ''
-    startLine: 2586
+    startLine: 2695
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -944,7 +944,7 @@ items:
   source:
     id: CreateRefundRequest
     path: ''
-    startLine: 2622
+    startLine: 2731
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -985,7 +985,7 @@ items:
   source:
     id: CreateRefundRequest
     path: ''
-    startLine: 2636
+    startLine: 2745
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

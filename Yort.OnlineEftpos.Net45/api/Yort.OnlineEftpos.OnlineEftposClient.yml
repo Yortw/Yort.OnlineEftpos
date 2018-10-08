@@ -37,7 +37,7 @@ items:
   source:
     id: OnlineEftposClient
     path: ''
-    startLine: 1731
+    startLine: 1832
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -83,7 +83,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 159
+    startLine: 160
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -126,7 +126,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 173
+    startLine: 174
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -172,7 +172,7 @@ items:
   source:
     id: ApiVersion
     path: ''
-    startLine: 186
+    startLine: 187
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -213,7 +213,7 @@ items:
   source:
     id: ApiEnvironment
     path: ''
-    startLine: 203
+    startLine: 204
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -254,7 +254,7 @@ items:
   source:
     id: RequestPayment
     path: ''
-    startLine: 225
+    startLine: 226
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -306,7 +306,7 @@ items:
   source:
     id: CheckPaymentStatus
     path: ''
-    startLine: 240
+    startLine: 241
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -355,7 +355,7 @@ items:
   source:
     id: PaymentSearch
     path: ''
-    startLine: 255
+    startLine: 256
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -393,7 +393,7 @@ items:
   source:
     id: SendRefund
     path: ''
-    startLine: 271
+    startLine: 272
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -444,7 +444,7 @@ items:
   source:
     id: CheckRefundStatus
     path: ''
-    startLine: 286
+    startLine: 287
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -493,7 +493,7 @@ items:
   source:
     id: RefundSearch
     path: ''
-    startLine: 300
+    startLine: 301
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -531,7 +531,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 309
+    startLine: 310
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -561,7 +561,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1755
+    startLine: 1856
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -604,7 +604,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1769
+    startLine: 1870
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -650,7 +650,7 @@ items:
   source:
     id: ApiVersion
     path: ''
-    startLine: 1791
+    startLine: 1900
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -689,7 +689,7 @@ items:
   source:
     id: ApiEnvironment
     path: ''
-    startLine: 1807
+    startLine: 1916
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -728,7 +728,7 @@ items:
   source:
     id: RequestPayment
     path: ''
-    startLine: 1830
+    startLine: 1939
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -778,7 +778,7 @@ items:
   source:
     id: CheckPaymentStatus
     path: ''
-    startLine: 1847
+    startLine: 1956
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -825,7 +825,7 @@ items:
   source:
     id: PaymentSearch
     path: ''
-    startLine: 1864
+    startLine: 1973
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -861,7 +861,7 @@ items:
   source:
     id: SendRefund
     path: ''
-    startLine: 1903
+    startLine: 2012
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -910,7 +910,7 @@ items:
   source:
     id: CheckRefundStatus
     path: ''
-    startLine: 1920
+    startLine: 2029
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -957,7 +957,7 @@ items:
   source:
     id: RefundSearch
     path: ''
-    startLine: 1937
+    startLine: 2046
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -993,7 +993,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 2040
+    startLine: 2149
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

@@ -82,19 +82,22 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TrustStatusTests.cs" />
     <Compile Include="BankDetailsTests.cs" />
+    <Compile Include="WestpacCustomerIdPayerIdTests.cs" />
     <Compile Include="ErasableStringTests.cs" />
     <Compile Include="IntegrationTests.cs" />
     <Compile Include="KnownBanksTests.cs" />
     <Compile Include="MerchantDetailsTests.cs" />
     <Compile Include="MockHttpClientHandler.cs" />
+    <Compile Include="CooperativeBankCustomerIdPayerIdTests.cs" />
     <Compile Include="OnlineEftposApiExceptionTests.cs" />
     <Compile Include="OnlineEftposApiRouterTests.cs" />
     <Compile Include="OnlineEftposCredentialsProviderTests.cs" />
     <Compile Include="OnlineEftposCredentialsTests.cs" />
     <Compile Include="OnlineEftposNotificationTests.cs" />
     <Compile Include="OnlineEftposRequestAuthoriserTests.cs" />
-    <Compile Include="PayerIdTests.cs" />
+    <Compile Include="NzMobilePayerIdTests.cs" />
     <Compile Include="PaymentDetailsTests.cs" />
     <Compile Include="PaymentSerialisationTests.cs" />
     <Compile Include="RefundDetailsTests.cs" />

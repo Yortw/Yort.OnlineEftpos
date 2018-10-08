@@ -21,7 +21,7 @@ items:
   source:
     id: ErasableString
     path: ''
-    startLine: 1267
+    startLine: 1358
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -67,7 +67,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1286
+    startLine: 1377
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -99,7 +99,7 @@ items:
   source:
     id: IsDisposed
     path: ''
-    startLine: 1299
+    startLine: 1390
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -132,7 +132,7 @@ items:
   source:
     id: IsCleared
     path: ''
-    startLine: 1307
+    startLine: 1398
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -165,7 +165,7 @@ items:
   source:
     id: Value
     path: ''
-    startLine: 1315
+    startLine: 1406
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -198,7 +198,7 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 1332
+    startLine: 1423
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -236,7 +236,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 1372
+    startLine: 1463
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

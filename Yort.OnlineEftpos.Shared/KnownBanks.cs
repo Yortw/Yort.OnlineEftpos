@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Text;
@@ -33,6 +33,8 @@ namespace Yort.OnlineEftpos
 			_Banks = new ConcurrentDictionary<string, BankDefinition>(StringComparer.OrdinalIgnoreCase);
 			
 			AddBank(new BankDefinition("ASB", new List<string>(1) { "MOBILE" }));
+			AddBank(new BankDefinition("COOPERATIVE", new List<string>(1) { "MOBILE", "CUSTOMERID" }));
+			AddBank(new BankDefinition("WESTPAC", new List<string>(1) { "MOBILE", "WESTPAC1ID" }));
 		}
 
 		#endregion
