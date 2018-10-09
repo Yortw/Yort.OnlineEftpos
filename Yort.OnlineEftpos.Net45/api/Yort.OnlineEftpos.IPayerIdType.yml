@@ -19,7 +19,7 @@ items:
   source:
     id: IPayerIdType
     path: ''
-    startLine: 3619
+    startLine: 3621
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -48,7 +48,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 3625
+    startLine: 3627
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -79,7 +79,7 @@ items:
   source:
     id: DisplayName
     path: ''
-    startLine: 3630
+    startLine: 3632
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -110,7 +110,7 @@ items:
   source:
     id: Normalize
     path: ''
-    startLine: 3638
+    startLine: 3640
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -145,7 +145,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 3647
+    startLine: 3649
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

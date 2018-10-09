@@ -27,5 +27,14 @@ namespace Yort.OnlineEftpos
 		/// <para>Returns the string "TRUSTSETUP" (without the quotes).</para>
 		/// </remarks>
 		public const string TrustSetup = "TRUSTSETUP";
+
+		/// <summary>
+		/// A transaction type that indicates a regular payment or refund transaction should be made using an existing trusted relationship, 
+		/// which means the customer will not be prompted to confirm the payment.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns the string "TRUSTED" (without the quotes).</para>
+		/// </remarks>
+		public const string Trusted = "TRUSTED";
 	}
 }

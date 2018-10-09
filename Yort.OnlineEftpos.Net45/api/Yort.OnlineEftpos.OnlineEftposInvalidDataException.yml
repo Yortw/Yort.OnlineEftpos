@@ -18,7 +18,7 @@ items:
   source:
     id: OnlineEftposInvalidDataException
     path: ''
-    startLine: 4223
+    startLine: 4226
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -76,7 +76,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4228
+    startLine: 4231
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -104,7 +104,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4233
+    startLine: 4236
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -136,7 +136,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4239
+    startLine: 4242
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

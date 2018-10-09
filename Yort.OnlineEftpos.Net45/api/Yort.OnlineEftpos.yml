@@ -39,6 +39,7 @@ items:
   - Yort.OnlineEftpos.OnlineEftposRefundStatus
   - Yort.OnlineEftpos.OnlineEftposRequestBuilder
   - Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  - Yort.OnlineEftpos.OnlineEftposTrust
   - Yort.OnlineEftpos.PayerId
   - Yort.OnlineEftpos.PaymentDetails
   - Yort.OnlineEftpos.PaymentStatus
@@ -326,6 +327,13 @@ references:
   name: OnlineEftposTransactionTypes
   nameWithType: OnlineEftposTransactionTypes
   fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+- uid: Yort.OnlineEftpos.OnlineEftposTrust
+  commentId: T:Yort.OnlineEftpos.OnlineEftposTrust
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposTrust
+  nameWithType: OnlineEftposTrust
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust
 - uid: Yort.OnlineEftpos.PaymentDetails
   commentId: T:Yort.OnlineEftpos.PaymentDetails
   parent: Yort.OnlineEftpos

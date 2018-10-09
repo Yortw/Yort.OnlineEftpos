@@ -120,6 +120,10 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.AreEqual(result.Transaction.Amount, 1000);
 			Assert.AreEqual(result.Transaction.Description, "Test Tran");
 			Assert.AreEqual(result.Transaction.OrderId, orderId);
+			Assert.AreEqual(result.Transaction.TransactionType, OnlineEftposTransactionTypes.TrustSetup);
+			Assert.AreEqual(result.Transaction.TransactionType, OnlineEftposTransactionTypes.TrustSetup);
+			Assert.IsNotNull(result.Trust.Id);
+			Assert.IsNotNull(result.Trust.Status);
 			Assert.AreEqual(result.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
 
 			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,

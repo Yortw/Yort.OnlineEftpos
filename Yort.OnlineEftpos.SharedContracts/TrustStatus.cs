@@ -123,6 +123,7 @@ namespace Yort.OnlineEftpos
 
 		private static TrustStatus s_Active;
 		private static TrustStatus s_Cancelled;
+		private static TrustStatus s_Pending;
 
 		/// <summary>
 		/// Returns a <see cref="TrustStatus"/> instance indicating that a trust relationship exists and is active.
@@ -138,6 +139,14 @@ namespace Yort.OnlineEftpos
 		public static TrustStatus Cancelled
 		{
 			get { return s_Cancelled ?? (s_Cancelled = new TrustStatus("CANCELLED")); ; }
+		}
+
+		/// <summary>
+		/// Returns a <see cref="TrustStatus"/> instance indicating that a trust relationship has been requested but not yet approved.
+		/// </summary>
+		public static TrustStatus Pending
+		{
+			get { return s_Pending ?? (s_Pending = new TrustStatus("PENDING")); ; }
 		}
 
 		#endregion

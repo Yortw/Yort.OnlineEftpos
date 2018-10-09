@@ -14,6 +14,7 @@ items:
   - Yort.OnlineEftpos.TrustStatus.GetHashCode(Yort.OnlineEftpos.TrustStatus)
   - Yort.OnlineEftpos.TrustStatus.op_Implicit(System.String)~Yort.OnlineEftpos.TrustStatus
   - Yort.OnlineEftpos.TrustStatus.op_Implicit(Yort.OnlineEftpos.TrustStatus)~System.String
+  - Yort.OnlineEftpos.TrustStatus.Pending
   - Yort.OnlineEftpos.TrustStatus.ToString
   langs:
   - csharp
@@ -25,7 +26,7 @@ items:
   source:
     id: TrustStatus
     path: ''
-    startLine: 5914
+    startLine: 5957
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -70,7 +71,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 5928
+    startLine: 5971
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -109,7 +110,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 5940
+    startLine: 5983
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -149,7 +150,7 @@ items:
   source:
     id: GetHashCode
     path: ''
-    startLine: 5956
+    startLine: 5999
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -183,7 +184,7 @@ items:
   source:
     id: ToString
     path: ''
-    startLine: 5965
+    startLine: 6008
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -217,7 +218,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 5975
+    startLine: 6018
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -255,7 +256,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 5988
+    startLine: 6031
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -290,7 +291,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 6002
+    startLine: 6045
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -330,7 +331,7 @@ items:
   source:
     id: GetHashCode
     path: ''
-    startLine: 6015
+    startLine: 6058
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -367,7 +368,7 @@ items:
   source:
     id: Active
     path: ''
-    startLine: 6032
+    startLine: 6076
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -402,7 +403,7 @@ items:
   source:
     id: Cancelled
     path: ''
-    startLine: 6040
+    startLine: 6084
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -415,6 +416,41 @@ items:
       type: Yort.OnlineEftpos.TrustStatus
     content.vb: Public Shared ReadOnly Property Cancelled As TrustStatus
   overload: Yort.OnlineEftpos.TrustStatus.Cancelled*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Yort.OnlineEftpos.TrustStatus.Pending
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Pending
+  id: Pending
+  parent: Yort.OnlineEftpos.TrustStatus
+  langs:
+  - csharp
+  - vb
+  name: Pending
+  nameWithType: TrustStatus.Pending
+  fullName: Yort.OnlineEftpos.TrustStatus.Pending
+  type: Property
+  source:
+    id: Pending
+    path: ''
+    startLine: 6092
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns a <xref href=\"Yort.OnlineEftpos.TrustStatus\" data-throw-if-not-resolved=\"false\"></xref> instance indicating that a trust relationship has been requested but not yet approved.\n"
+  example: []
+  syntax:
+    content: public static TrustStatus Pending { get; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.TrustStatus
+    content.vb: Public Shared ReadOnly Property Pending As TrustStatus
+  overload: Yort.OnlineEftpos.TrustStatus.Pending*
   modifiers.csharp:
   - public
   - static
@@ -1064,3 +1100,9 @@ references:
   name: Cancelled
   nameWithType: TrustStatus.Cancelled
   fullName: Yort.OnlineEftpos.TrustStatus.Cancelled
+- uid: Yort.OnlineEftpos.TrustStatus.Pending*
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Pending
+  isExternal: false
+  name: Pending
+  nameWithType: TrustStatus.Pending
+  fullName: Yort.OnlineEftpos.TrustStatus.Pending

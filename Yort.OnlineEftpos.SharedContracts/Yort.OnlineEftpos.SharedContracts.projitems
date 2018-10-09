@@ -35,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentSearchResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposPaymentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposTransactionTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposTrust.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RefundStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PaymentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RefundDetails.cs" />

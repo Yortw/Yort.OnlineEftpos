@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -44,6 +44,11 @@ namespace Yort.OnlineEftpos
 		/// </summary>
 		[JsonProperty("transaction")]
 		public PaymentDetails Transaction { get; set; }
+
+		/// <summary>
+		/// Sets or returns the details of a trust relationship associated with this transaction, if any, otherwise null.
+		/// </summary>
+		public OnlineEftposTrust Trust { get; set; }
 
 		/// <summary>
 		/// The date and time the payment was created, as a univeral date time value.

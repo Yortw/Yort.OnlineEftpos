@@ -19,7 +19,7 @@ items:
   source:
     id: CooperativeBankCustomerIdPayerId
     path: ''
-    startLine: 1267
+    startLine: 1269
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -62,7 +62,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1281
+    startLine: 1283
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -97,7 +97,7 @@ items:
   source:
     id: DisplayName
     path: ''
-    startLine: 1286
+    startLine: 1288
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -132,7 +132,7 @@ items:
   source:
     id: Normalize
     path: ''
-    startLine: 1300
+    startLine: 1302
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -180,7 +180,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 1329
+    startLine: 1331
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

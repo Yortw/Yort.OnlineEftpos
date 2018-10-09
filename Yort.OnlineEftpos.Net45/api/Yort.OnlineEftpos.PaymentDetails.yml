@@ -21,7 +21,7 @@ items:
   source:
     id: PaymentDetails
     path: ''
-    startLine: 5188
+    startLine: 5231
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -67,7 +67,7 @@ items:
   source:
     id: Amount
     path: ''
-    startLine: 5199
+    startLine: 5242
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -101,7 +101,7 @@ items:
   source:
     id: Currency
     path: ''
-    startLine: 5208
+    startLine: 5251
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -135,7 +135,7 @@ items:
   source:
     id: Description
     path: ''
-    startLine: 5218
+    startLine: 5261
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -169,7 +169,7 @@ items:
   source:
     id: OrderId
     path: ''
-    startLine: 5229
+    startLine: 5272
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -203,7 +203,7 @@ items:
   source:
     id: TransactionType
     path: ''
-    startLine: 5239
+    startLine: 5282
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -237,7 +237,7 @@ items:
   source:
     id: EnsureValid
     path: ''
-    startLine: 5249
+    startLine: 5292
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

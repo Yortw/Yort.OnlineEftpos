@@ -72,6 +72,8 @@
     name: OnlineEftposRequestBuilder
   - uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes
     name: OnlineEftposTransactionTypes
+  - uid: Yort.OnlineEftpos.OnlineEftposTrust
+    name: OnlineEftposTrust
   - uid: Yort.OnlineEftpos.PayerId
     name: PayerId
   - uid: Yort.OnlineEftpos.PaymentDetails

@@ -1726,6 +1726,18 @@ references:
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
   fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
   nameWithType: OnlineEftposPaymentStatus.Transaction
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  name: Trust
+  href: api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust.html#Yort_OnlineEftpos_OnlineEftposPaymentStatus_Trust
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  nameWithType: OnlineEftposPaymentStatus.Trust
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust*
+  name: Trust
+  href: api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  nameWithType: OnlineEftposPaymentStatus.Trust
 - uid: Yort.OnlineEftpos.OnlineEftposRefundRequest
   name: OnlineEftposRefundRequest
   href: api/Yort.OnlineEftpos.OnlineEftposRefundRequest.html
@@ -2212,12 +2224,48 @@ references:
   commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
   fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
   nameWithType: OnlineEftposTransactionTypes.Regular
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
+  name: Trusted
+  href: api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted.html#Yort_OnlineEftpos_OnlineEftposTransactionTypes_Trusted
+  commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
+  nameWithType: OnlineEftposTransactionTypes.Trusted
 - uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
   name: TrustSetup
   href: api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup.html#Yort_OnlineEftpos_OnlineEftposTransactionTypes_TrustSetup
   commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
   fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
   nameWithType: OnlineEftposTransactionTypes.TrustSetup
+- uid: Yort.OnlineEftpos.OnlineEftposTrust
+  name: OnlineEftposTrust
+  href: api/Yort.OnlineEftpos.OnlineEftposTrust.html
+  commentId: T:Yort.OnlineEftpos.OnlineEftposTrust
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust
+  nameWithType: OnlineEftposTrust
+- uid: Yort.OnlineEftpos.OnlineEftposTrust.Id
+  name: Id
+  href: api/Yort.OnlineEftpos.OnlineEftposTrust.Id.html#Yort_OnlineEftpos_OnlineEftposTrust_Id
+  commentId: P:Yort.OnlineEftpos.OnlineEftposTrust.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust.Id
+  nameWithType: OnlineEftposTrust.Id
+- uid: Yort.OnlineEftpos.OnlineEftposTrust.Id*
+  name: Id
+  href: api/Yort.OnlineEftpos.OnlineEftposTrust.Id.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposTrust.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust.Id
+  nameWithType: OnlineEftposTrust.Id
+- uid: Yort.OnlineEftpos.OnlineEftposTrust.Status
+  name: Status
+  href: api/Yort.OnlineEftpos.OnlineEftposTrust.Status.html#Yort_OnlineEftpos_OnlineEftposTrust_Status
+  commentId: P:Yort.OnlineEftpos.OnlineEftposTrust.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust.Status
+  nameWithType: OnlineEftposTrust.Status
+- uid: Yort.OnlineEftpos.OnlineEftposTrust.Status*
+  name: Status
+  href: api/Yort.OnlineEftpos.OnlineEftposTrust.Status.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposTrust.Status
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust.Status
+  nameWithType: OnlineEftposTrust.Status
 - uid: Yort.OnlineEftpos.PayerId
   name: PayerId
   href: api/Yort.OnlineEftpos.PayerId.html
@@ -2896,6 +2944,18 @@ references:
   fullName.vb: Yort.OnlineEftpos.TrustStatus.Widening
   nameWithType: TrustStatus.Implicit
   nameWithType.vb: TrustStatus.Widening
+- uid: Yort.OnlineEftpos.TrustStatus.Pending
+  name: Pending
+  href: api/Yort.OnlineEftpos.TrustStatus.Pending.html#Yort_OnlineEftpos_TrustStatus_Pending
+  commentId: P:Yort.OnlineEftpos.TrustStatus.Pending
+  fullName: Yort.OnlineEftpos.TrustStatus.Pending
+  nameWithType: TrustStatus.Pending
+- uid: Yort.OnlineEftpos.TrustStatus.Pending*
+  name: Pending
+  href: api/Yort.OnlineEftpos.TrustStatus.Pending.html
+  commentId: Overload:Yort.OnlineEftpos.TrustStatus.Pending
+  fullName: Yort.OnlineEftpos.TrustStatus.Pending
+  nameWithType: TrustStatus.Pending
 - uid: Yort.OnlineEftpos.TrustStatus.ToString
   name: ToString()
   href: api/Yort.OnlineEftpos.TrustStatus.ToString.html#Yort_OnlineEftpos_TrustStatus_ToString

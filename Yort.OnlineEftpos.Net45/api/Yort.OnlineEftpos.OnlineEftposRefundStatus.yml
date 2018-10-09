@@ -21,7 +21,7 @@ items:
   source:
     id: OnlineEftposRefundStatus
     path: ''
-    startLine: 5106
+    startLine: 5114
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -71,7 +71,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 5112
+    startLine: 5120
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -104,7 +104,7 @@ items:
   source:
     id: Status
     path: ''
-    startLine: 5119
+    startLine: 5127
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -140,7 +140,7 @@ items:
   source:
     id: Merchant
     path: ''
-    startLine: 5125
+    startLine: 5133
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -173,7 +173,7 @@ items:
   source:
     id: Transaction
     path: ''
-    startLine: 5131
+    startLine: 5139
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -206,7 +206,7 @@ items:
   source:
     id: CreationTime
     path: ''
-    startLine: 5137
+    startLine: 5145
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -239,7 +239,7 @@ items:
   source:
     id: ModificationTime
     path: ''
-    startLine: 5143
+    startLine: 5151
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

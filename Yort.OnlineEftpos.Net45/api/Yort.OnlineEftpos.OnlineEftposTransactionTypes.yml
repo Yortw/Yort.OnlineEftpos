@@ -6,6 +6,7 @@ items:
   parent: Yort.OnlineEftpos
   children:
   - Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular
+  - Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
   - Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup
   langs:
   - csharp
@@ -17,7 +18,7 @@ items:
   source:
     id: OnlineEftposTransactionTypes
     path: ''
-    startLine: 5157
+    startLine: 5165
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -60,7 +61,7 @@ items:
   source:
     id: Regular
     path: ''
-    startLine: 5165
+    startLine: 5173
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -92,7 +93,7 @@ items:
   source:
     id: TrustSetup
     path: ''
-    startLine: 5175
+    startLine: 5183
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -104,6 +105,38 @@ items:
     return:
       type: System.String
     content.vb: Public Const TrustSetup As String = "TRUSTSETUP"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
+  commentId: F:Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
+  id: Trusted
+  parent: Yort.OnlineEftpos.OnlineEftposTransactionTypes
+  langs:
+  - csharp
+  - vb
+  name: Trusted
+  nameWithType: OnlineEftposTransactionTypes.Trusted
+  fullName: Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted
+  type: Field
+  source:
+    id: Trusted
+    path: ''
+    startLine: 5192
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nA transaction type that indicates a regular payment or refund transaction should be made using an existing trusted relationship, \nwhich means the customer will not be prompted to confirm the payment.\n"
+  remarks: "\n<p>Returns the string &quot;TRUSTED&quot; (without the quotes).</p>\n"
+  example: []
+  syntax:
+    content: public const string Trusted = "TRUSTED"
+    return:
+      type: System.String
+    content.vb: Public Const Trusted As String = "TRUSTED"
   modifiers.csharp:
   - public
   - const

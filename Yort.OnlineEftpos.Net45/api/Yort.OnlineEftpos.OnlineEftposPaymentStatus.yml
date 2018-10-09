@@ -12,6 +12,7 @@ items:
   - Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime
   - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status
   - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction
+  - Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
   langs:
   - csharp
   - vb
@@ -22,7 +23,7 @@ items:
   source:
     id: OnlineEftposPaymentStatus
     path: ''
-    startLine: 4763
+    startLine: 4766
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -72,7 +73,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 4768
+    startLine: 4771
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -105,7 +106,7 @@ items:
   source:
     id: Status
     path: ''
-    startLine: 4775
+    startLine: 4778
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -141,7 +142,7 @@ items:
   source:
     id: Bank
     path: ''
-    startLine: 4781
+    startLine: 4784
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -174,7 +175,7 @@ items:
   source:
     id: Merchant
     path: ''
-    startLine: 4787
+    startLine: 4790
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -207,7 +208,7 @@ items:
   source:
     id: Transaction
     path: ''
-    startLine: 4793
+    startLine: 4796
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -220,6 +221,39 @@ items:
       type: Yort.OnlineEftpos.PaymentDetails
     content.vb: Public Property Transaction As PaymentDetails
   overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  commentId: P:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  id: Trust
+  parent: Yort.OnlineEftpos.OnlineEftposPaymentStatus
+  langs:
+  - csharp
+  - vb
+  name: Trust
+  nameWithType: OnlineEftposPaymentStatus.Trust
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  type: Property
+  source:
+    id: Trust
+    path: ''
+    startLine: 4802
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nSets or returns the details of a trust relationship associated with this transaction, if any, otherwise null.\n"
+  example: []
+  syntax:
+    content: public OnlineEftposTrust Trust { get; set; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.OnlineEftposTrust
+    content.vb: Public Property Trust As OnlineEftposTrust
+  overload: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust*
   modifiers.csharp:
   - public
   - get
@@ -240,7 +274,7 @@ items:
   source:
     id: CreationTime
     path: ''
-    startLine: 4799
+    startLine: 4807
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -273,7 +307,7 @@ items:
   source:
     id: ModificationTime
     path: ''
-    startLine: 4805
+    startLine: 4813
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -673,6 +707,19 @@ references:
   name: PaymentDetails
   nameWithType: PaymentDetails
   fullName: Yort.OnlineEftpos.PaymentDetails
+- uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+  isExternal: false
+  name: Trust
+  nameWithType: OnlineEftposPaymentStatus.Trust
+  fullName: Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust
+- uid: Yort.OnlineEftpos.OnlineEftposTrust
+  commentId: T:Yort.OnlineEftpos.OnlineEftposTrust
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposTrust
+  nameWithType: OnlineEftposTrust
+  fullName: Yort.OnlineEftpos.OnlineEftposTrust
 - uid: Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime*
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime
   isExternal: false

@@ -19,7 +19,7 @@ items:
   source:
     id: NZMobilePayerIdType
     path: ''
-    startLine: 1599
+    startLine: 1601
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -62,7 +62,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1614
+    startLine: 1616
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -97,7 +97,7 @@ items:
   source:
     id: DisplayName
     path: ''
-    startLine: 1619
+    startLine: 1621
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -132,7 +132,7 @@ items:
   source:
     id: Normalize
     path: ''
-    startLine: 1636
+    startLine: 1638
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -180,7 +180,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 1669
+    startLine: 1671
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

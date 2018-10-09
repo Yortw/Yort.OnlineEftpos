@@ -23,7 +23,7 @@ items:
   source:
     id: KnownBanks
     path: ''
-    startLine: 1505
+    startLine: 1507
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -221,7 +221,7 @@ items:
   source:
     id: AddBank
     path: ''
-    startLine: 1540
+    startLine: 1542
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -265,7 +265,7 @@ items:
   source:
     id: RemoveBank
     path: ''
-    startLine: 1554
+    startLine: 1556
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -306,7 +306,7 @@ items:
   source:
     id: GetBank
     path: ''
-    startLine: 1567
+    startLine: 1569
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -343,7 +343,7 @@ items:
   source:
     id: All
     path: ''
-    startLine: 1583
+    startLine: 1585
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

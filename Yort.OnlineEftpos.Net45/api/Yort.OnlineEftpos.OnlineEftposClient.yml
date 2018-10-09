@@ -37,7 +37,7 @@ items:
   source:
     id: OnlineEftposClient
     path: ''
-    startLine: 1832
+    startLine: 1834
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -561,7 +561,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1856
+    startLine: 1858
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -604,7 +604,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1870
+    startLine: 1872
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -650,7 +650,7 @@ items:
   source:
     id: ApiVersion
     path: ''
-    startLine: 1900
+    startLine: 1902
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -689,7 +689,7 @@ items:
   source:
     id: ApiEnvironment
     path: ''
-    startLine: 1916
+    startLine: 1918
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -728,7 +728,7 @@ items:
   source:
     id: RequestPayment
     path: ''
-    startLine: 1939
+    startLine: 1941
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -778,7 +778,7 @@ items:
   source:
     id: CheckPaymentStatus
     path: ''
-    startLine: 1956
+    startLine: 1958
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -825,7 +825,7 @@ items:
   source:
     id: PaymentSearch
     path: ''
-    startLine: 1973
+    startLine: 1975
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -861,7 +861,7 @@ items:
   source:
     id: SendRefund
     path: ''
-    startLine: 2012
+    startLine: 2014
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -910,7 +910,7 @@ items:
   source:
     id: CheckRefundStatus
     path: ''
-    startLine: 2029
+    startLine: 2031
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -957,7 +957,7 @@ items:
   source:
     id: RefundSearch
     path: ''
-    startLine: 2046
+    startLine: 2048
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -993,7 +993,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 2149
+    startLine: 2151
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

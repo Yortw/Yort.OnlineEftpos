@@ -23,7 +23,7 @@ items:
   source:
     id: PaymentStatus
     path: ''
-    startLine: 5299
+    startLine: 5342
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -63,7 +63,7 @@ items:
   source:
     id: New
     path: ''
-    startLine: 5319
+    startLine: 5362
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -99,7 +99,7 @@ items:
   source:
     id: Error
     path: ''
-    startLine: 5334
+    startLine: 5377
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -135,7 +135,7 @@ items:
   source:
     id: Submitted
     path: ''
-    startLine: 5349
+    startLine: 5392
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -171,7 +171,7 @@ items:
   source:
     id: Authorised
     path: ''
-    startLine: 5364
+    startLine: 5407
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -207,7 +207,7 @@ items:
   source:
     id: Declined
     path: ''
-    startLine: 5379
+    startLine: 5422
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -243,7 +243,7 @@ items:
   source:
     id: Expired
     path: ''
-    startLine: 5394
+    startLine: 5437
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -279,7 +279,7 @@ items:
   source:
     id: Refunded
     path: ''
-    startLine: 5409
+    startLine: 5452
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -315,7 +315,7 @@ items:
   source:
     id: FromString
     path: ''
-    startLine: 5423
+    startLine: 5466
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

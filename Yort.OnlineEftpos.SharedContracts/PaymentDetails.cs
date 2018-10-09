@@ -63,6 +63,15 @@ namespace Yort.OnlineEftpos
 		public string TransactionType { get; set; } = OnlineEftposTransactionTypes.Regular;
 
 		/// <summary>
+		/// If known, the date and time the transaction was actually settled with the bank.
+		/// </summary>
+		/// <remarks>
+		/// <para>Usually only returned from <see cref="IOnlineEftposClient.PaymentSearch(OnlineEftposPaymentSearchOptions)"/> for older transactions that have been settled, otherwise null.</para>
+		/// </remarks>
+		[JsonProperty("actualSettlementDate")]
+		public DateTimeOffset SettlementDate { get; set; }
+
+		/// <summary>
 		/// Throws if the details are invalid.
 		/// </summary>
 		/// <remarks>

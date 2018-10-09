@@ -18,7 +18,7 @@ items:
   source:
     id: OnlineEftposRefundRequest
     path: ''
-    startLine: 4819
+    startLine: 4827
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -59,7 +59,7 @@ items:
   source:
     id: Merchant
     path: ''
-    startLine: 4825
+    startLine: 4833
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -92,7 +92,7 @@ items:
   source:
     id: Transaction
     path: ''
-    startLine: 4831
+    startLine: 4839
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -125,7 +125,7 @@ items:
   source:
     id: EnsureValid
     path: ''
-    startLine: 4841
+    startLine: 4849
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

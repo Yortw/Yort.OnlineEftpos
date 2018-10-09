@@ -23,6 +23,13 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			Assert.IsNotNull(TrustStatus.Cancelled);
 		}
 
+
+		[TestMethod]
+		public void TrustStatus_Pending_ReturnsInstance()
+		{
+			Assert.IsNotNull(TrustStatus.Pending);
+		}
+
 		[TestMethod]
 		public void TrustStatus_Active_EqualsStringRepresentation()
 		{
@@ -38,9 +45,28 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		public void TrustStatus_Pending_EqualsStringRepresentation_CaseInsensitive()
+		{
+			Assert.IsTrue("PENDING" == TrustStatus.Pending);
+			Assert.IsTrue((TrustStatus)"pending" == TrustStatus.Pending);
+		}
+
+		[TestMethod]
 		public void TrustStatus_Active_Is_Not_Cancelled()
 		{
 			Assert.AreNotEqual<TrustStatus>(TrustStatus.Active, TrustStatus.Cancelled);
+		}
+
+		[TestMethod]
+		public void TrustStatus_Active_Is_Not_Pending()
+		{
+			Assert.AreNotEqual<TrustStatus>(TrustStatus.Active, TrustStatus.Pending);
+		}
+
+		[TestMethod]
+		public void TrustStatus_Cancelled_Is_Not_Pending()
+		{
+			Assert.AreNotEqual<TrustStatus>(TrustStatus.Cancelled, TrustStatus.Pending);
 		}
 
 		[TestMethod]
@@ -58,9 +84,28 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		[TestMethod]
+		public void TrustStatus_Pending_Is_EqualTo_Itself()
+		{
+			TrustStatus status = "pending";
+			Assert.AreEqual<TrustStatus>(TrustStatus.Pending, status);
+		}
+
+		[TestMethod]
 		public void TrustStatus_Active_And_Cancelled_Have_Different_Hashcodes()
 		{
 			Assert.AreNotEqual<int>(TrustStatus.Cancelled.GetHashCode(), TrustStatus.Active.GetHashCode());
+		}
+
+		[TestMethod]
+		public void TrustStatus_Active_And_Pending_Have_Different_Hashcodes()
+		{
+			Assert.AreNotEqual<int>(TrustStatus.Pending.GetHashCode(), TrustStatus.Active.GetHashCode());
+		}
+
+		[TestMethod]
+		public void TrustStatus_Cancelled_And_Pending_Have_Different_Hashcodes()
+		{
+			Assert.AreNotEqual<int>(TrustStatus.Pending.GetHashCode(), TrustStatus.Cancelled.GetHashCode());
 		}
 
 		[TestMethod]
@@ -73,6 +118,12 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		public void TrustStatus_Cancelled_ToString_Returns_Cancelled()
 		{
 			Assert.AreEqual<string>("CANCELLED", TrustStatus.Cancelled.ToString());
+		}
+
+		[TestMethod]
+		public void TrustStatus_Pending_ToString_Returns_Pending()
+		{
+			Assert.AreEqual<string>("PENDING", TrustStatus.Pending.ToString());
 		}
 
 	}

@@ -25,7 +25,7 @@ items:
   source:
     id: OnlineEftposPaymentSearchOptions
     path: ''
-    startLine: 4521
+    startLine: 4524
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -64,7 +64,7 @@ items:
   source:
     id: OrderId
     path: ''
-    startLine: 4529
+    startLine: 4532
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -97,7 +97,7 @@ items:
   source:
     id: MerchantIdCode
     path: ''
-    startLine: 4533
+    startLine: 4536
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -130,7 +130,7 @@ items:
   source:
     id: PayerId
     path: ''
-    startLine: 4537
+    startLine: 4540
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -163,7 +163,7 @@ items:
   source:
     id: CreationTime
     path: ''
-    startLine: 4541
+    startLine: 4544
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -196,7 +196,7 @@ items:
   source:
     id: Status
     path: ''
-    startLine: 4545
+    startLine: 4548
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -229,7 +229,7 @@ items:
   source:
     id: Fields
     path: ''
-    startLine: 4553
+    startLine: 4556
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -263,7 +263,7 @@ items:
   source:
     id: Limit
     path: ''
-    startLine: 4559
+    startLine: 4562
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -296,7 +296,7 @@ items:
   source:
     id: Offset
     path: ''
-    startLine: 4567
+    startLine: 4570
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -330,7 +330,7 @@ items:
   source:
     id: PaginationUri
     path: ''
-    startLine: 4572
+    startLine: 4575
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -363,7 +363,7 @@ items:
   source:
     id: BuildSearchQueryString
     path: ''
-    startLine: 4582
+    startLine: 4585
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
