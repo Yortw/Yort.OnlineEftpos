@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Property UserAgent
+    <title>Property SettlementDate
    | Yort.OnlineEftpos </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Property UserAgent
+    <meta name="title" content="Property SettlementDate
    | Yort.OnlineEftpos ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -832,8 +832,8 @@
                                 <li class="">
                                   <a href="Yort.OnlineEftpos.PaymentDetails.OrderId.html" title="OrderId" class="">OrderId</a>
                                 </li>
-                                <li class="">
-                                  <a href="Yort.OnlineEftpos.PaymentDetails.SettlementDate.html" title="SettlementDate" class="">SettlementDate</a>
+                                <li class="active">
+                                  <a href="Yort.OnlineEftpos.PaymentDetails.SettlementDate.html" title="SettlementDate" class="active">SettlementDate</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.OnlineEftpos.PaymentDetails.TransactionType.html" title="TransactionType" class="">TransactionType</a>
@@ -952,8 +952,8 @@
                                 <li class="">
                                   <a href="Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid.html" title="EnsureValid" class="">EnsureValid</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Yort.OnlineEftpos.TransactionRequestDetails.UserAgent.html" title="UserAgent" class="active">UserAgent</a>
+                                <li class="">
+                                  <a href="Yort.OnlineEftpos.TransactionRequestDetails.UserAgent.html" title="UserAgent" class="">UserAgent</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress.html" title="UserIPAddress" class="">UserIPAddress</a>
@@ -1039,23 +1039,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.OnlineEftpos.TransactionRequestDetails.UserAgent*">
+            <article class="content wrap" id="_content" data-uid="Yort.OnlineEftpos.PaymentDetails.SettlementDate*">
 
-<h1 id="Yort_OnlineEftpos_TransactionRequestDetails_UserAgent_" data-uid="Yort.OnlineEftpos.TransactionRequestDetails.UserAgent*">Property UserAgent
+<h1 id="Yort_OnlineEftpos_PaymentDetails_SettlementDate_" data-uid="Yort.OnlineEftpos.PaymentDetails.SettlementDate*">Property SettlementDate
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="Yort_OnlineEftpos_TransactionRequestDetails_UserAgent_" data-uid="Yort.OnlineEftpos.TransactionRequestDetails.UserAgent*"></a>
-<h4 id="Yort_OnlineEftpos_TransactionRequestDetails_UserAgent" data-uid="Yort.OnlineEftpos.TransactionRequestDetails.UserAgent">UserAgent</h4>
-<div class="markdown level1 summary"><p>Sets or returns the user agent string of the client used to start the transaction. Required.</p>
+<a id="Yort_OnlineEftpos_PaymentDetails_SettlementDate_" data-uid="Yort.OnlineEftpos.PaymentDetails.SettlementDate*"></a>
+<h4 id="Yort_OnlineEftpos_PaymentDetails_SettlementDate" data-uid="Yort.OnlineEftpos.PaymentDetails.SettlementDate">SettlementDate</h4>
+<div class="markdown level1 summary"><p>If known, the date and time the transaction was actually settled with the bank.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string UserAgent { get; set; }</code></pre>
+  <pre><code class="lang-csharp hljs">public DateTimeOffset SettlementDate { get; set; }</code></pre>
 </div>
 <h5 class="propertyValue">Property Value</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -1067,13 +1067,13 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.String</span></td>
+      <td><span class="xref">System.DateTimeOffset</span></td>
       <td></td>
     </tr>
   </tbody>
 </table>
-<h5 id="Yort_OnlineEftpos_TransactionRequestDetails_UserAgent_remarks">Remarks</h5>
-<div class="markdown level1 remarks"><p>Maximum length is 8192 characters.</p>
+<h5 id="Yort_OnlineEftpos_PaymentDetails_SettlementDate_remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Usually only returned from <a class="xref" href="Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch.html#Yort_OnlineEftpos_IOnlineEftposClient_PaymentSearch_Yort_OnlineEftpos_OnlineEftposPaymentSearchOptions_">PaymentSearch(OnlineEftposPaymentSearchOptions)</a> for older transactions that have been settled, otherwise null.</p>
 </div>
 </article>
           </div>

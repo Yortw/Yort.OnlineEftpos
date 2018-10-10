@@ -10,6 +10,7 @@ items:
   - Yort.OnlineEftpos.PaymentDetails.Description
   - Yort.OnlineEftpos.PaymentDetails.EnsureValid
   - Yort.OnlineEftpos.PaymentDetails.OrderId
+  - Yort.OnlineEftpos.PaymentDetails.SettlementDate
   - Yort.OnlineEftpos.PaymentDetails.TransactionType
   langs:
   - csharp
@@ -223,6 +224,40 @@ items:
   - set
   modifiers.vb:
   - Public
+- uid: Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  id: SettlementDate
+  parent: Yort.OnlineEftpos.PaymentDetails
+  langs:
+  - csharp
+  - vb
+  name: SettlementDate
+  nameWithType: PaymentDetails.SettlementDate
+  fullName: Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  type: Property
+  source:
+    id: SettlementDate
+    path: ''
+    startLine: 5291
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nIf known, the date and time the transaction was actually settled with the bank.\n"
+  remarks: "\n<p>Usually only returned from <xref href=\"Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)\" data-throw-if-not-resolved=\"false\"></xref> for older transactions that have been settled, otherwise null.</p>\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset SettlementDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property SettlementDate As DateTimeOffset
+  overload: Yort.OnlineEftpos.PaymentDetails.SettlementDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: Yort.OnlineEftpos.PaymentDetails.EnsureValid
   commentId: M:Yort.OnlineEftpos.PaymentDetails.EnsureValid
   id: EnsureValid
@@ -237,7 +272,7 @@ items:
   source:
     id: EnsureValid
     path: ''
-    startLine: 5292
+    startLine: 5301
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -631,6 +666,63 @@ references:
   name: TransactionType
   nameWithType: PaymentDetails.TransactionType
   fullName: Yort.OnlineEftpos.PaymentDetails.TransactionType
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: PaymentSearch(OnlineEftposPaymentSearchOptions)
+  nameWithType: IOnlineEftposClient.PaymentSearch(OnlineEftposPaymentSearchOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+    name: PaymentSearch
+    nameWithType: IOnlineEftposClient.PaymentSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+    nameWithType: OnlineEftposPaymentSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
+    name: PaymentSearch
+    nameWithType: IOnlineEftposClient.PaymentSearch
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+    name: OnlineEftposPaymentSearchOptions
+    nameWithType: OnlineEftposPaymentSearchOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.PaymentDetails.SettlementDate*
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  isExternal: false
+  name: SettlementDate
+  nameWithType: PaymentDetails.SettlementDate
+  fullName: Yort.OnlineEftpos.PaymentDetails.SettlementDate
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.OnlineEftpos.IOnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.IOnlineEftposClient
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IOnlineEftposClient
+  nameWithType: IOnlineEftposClient
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient
 - uid: Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
   commentId: M:Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid
   parent: Yort.OnlineEftpos.TransactionRequestDetails

@@ -225,6 +225,7 @@
   "Yort.OnlineEftpos.PaymentDetails.Description": "Yort.OnlineEftpos.PaymentDetails.yml",
   "Yort.OnlineEftpos.PaymentDetails.EnsureValid": "Yort.OnlineEftpos.PaymentDetails.yml",
   "Yort.OnlineEftpos.PaymentDetails.OrderId": "Yort.OnlineEftpos.PaymentDetails.yml",
+  "Yort.OnlineEftpos.PaymentDetails.SettlementDate": "Yort.OnlineEftpos.PaymentDetails.yml",
   "Yort.OnlineEftpos.PaymentDetails.TransactionType": "Yort.OnlineEftpos.PaymentDetails.yml",
   "Yort.OnlineEftpos.PaymentStatus": "Yort.OnlineEftpos.PaymentStatus.yml",
   "Yort.OnlineEftpos.PaymentStatus.Authorised": "Yort.OnlineEftpos.PaymentStatus.yml",

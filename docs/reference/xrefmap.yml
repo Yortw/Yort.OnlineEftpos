@@ -2362,6 +2362,18 @@ references:
   commentId: Overload:Yort.OnlineEftpos.PaymentDetails.OrderId
   fullName: Yort.OnlineEftpos.PaymentDetails.OrderId
   nameWithType: PaymentDetails.OrderId
+- uid: Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  name: SettlementDate
+  href: api/Yort.OnlineEftpos.PaymentDetails.SettlementDate.html#Yort_OnlineEftpos_PaymentDetails_SettlementDate
+  commentId: P:Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  fullName: Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  nameWithType: PaymentDetails.SettlementDate
+- uid: Yort.OnlineEftpos.PaymentDetails.SettlementDate*
+  name: SettlementDate
+  href: api/Yort.OnlineEftpos.PaymentDetails.SettlementDate.html
+  commentId: Overload:Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  fullName: Yort.OnlineEftpos.PaymentDetails.SettlementDate
+  nameWithType: PaymentDetails.SettlementDate
 - uid: Yort.OnlineEftpos.PaymentDetails.TransactionType
   name: TransactionType
   href: api/Yort.OnlineEftpos.PaymentDetails.TransactionType.html#Yort_OnlineEftpos_PaymentDetails_TransactionType
