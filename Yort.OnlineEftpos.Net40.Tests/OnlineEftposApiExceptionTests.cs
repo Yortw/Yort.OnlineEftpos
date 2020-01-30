@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +40,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				}
 			);
 
-			Assert.AreEqual("Error: (404) Payment not found.\r\nPayment not found.", ex.Message);
+			Assert.AreEqual("Error: (404) Payment not found.\r\nPayment not found.: Not found.", ex.Message);
 			Assert.AreEqual(ex.ReasonPhrase, "Payment not found.");
 			Assert.AreEqual(ex.StatusCode, System.Net.HttpStatusCode.NotFound);
 			Assert.AreEqual(1, ex.ErrorContent.Messages.Count());

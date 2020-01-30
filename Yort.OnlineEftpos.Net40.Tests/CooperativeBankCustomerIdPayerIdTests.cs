@@ -17,7 +17,8 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		{
 			"1234567",
 			"5467891",
-			"9012439"
+			"9012439",
+			"123 456"
 		};
 
 		private readonly string[] InvalidPayerIds = new string[]
@@ -25,7 +26,6 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			"021-012-345",
 			"0123456",
 			"A123456",
-			"123 456",
 			"1",
 			null,
 			String.Empty,
@@ -34,7 +34,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		};
 
 		#endregion
-		
+
 		#region IsValid Tests
 
 		[TestMethod]

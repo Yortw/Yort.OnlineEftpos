@@ -111,7 +111,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 					UserIPAddress = "10.10.10.100"
 				}
 			}).ConfigureAwait(false);
-
+			
 			Assert.IsNotNull(result);
 			Assert.IsTrue(!String.IsNullOrWhiteSpace(result.Id), "Invalid (blank) id returned.");
 			Assert.AreEqual(result.Bank.BankId, "ASB");
@@ -184,13 +184,13 @@ namespace Yort.OnlineEftpos.Net40.Tests
 
 			var statusResult = await client.CheckPaymentStatus(result.Id).ConfigureAwait(false);
 
-			Assert.AreEqual(paymentId, result.Transaction.OrderId);
-			Assert.AreEqual(109 * 100, result.Transaction.Amount);
-			Assert.AreEqual("NZD", result.Transaction.Currency);
-			Assert.AreEqual("ASB", result.Bank.BankId);
-			Assert.AreEqual("MOBILE", result.Bank.PayerIdType);
-			Assert.AreEqual("021555123", result.Bank.PayerId);
-			Assert.AreEqual(Environment.GetEnvironmentVariable("PaymarkMerchantId"), result.Merchant.MerchantIdCode);
+			Assert.AreEqual(paymentId, statusResult.Transaction.OrderId);
+			Assert.AreEqual(109 * 100, statusResult.Transaction.Amount);
+			Assert.AreEqual("NZD", statusResult.Transaction.Currency);
+			Assert.AreEqual("ASB", statusResult.Bank.BankId);
+			Assert.AreEqual("MOBILE", statusResult.Bank.PayerIdType);
+			Assert.AreEqual("021555123", statusResult.Bank.PayerId);
+			Assert.AreEqual(Environment.GetEnvironmentVariable("PaymarkMerchantId"), statusResult.Merchant.MerchantIdCode);
 
 			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
 																						// have been asked to ensure we don't overrun the system.
@@ -322,7 +322,9 @@ namespace Yort.OnlineEftpos.Net40.Tests
 			#endregion
 
 			var paymentId = System.Guid.NewGuid().ToString();
+#pragma warning disable IDE0059 // Unnecessary assignment of a value
 			var statusResult = await client.CheckPaymentStatus(paymentId).ConfigureAwait(false);
+#pragma warning restore IDE0059 // Unnecessary assignment of a value
 		}
 		
 		#endregion
