@@ -158,7 +158,7 @@ namespace Yort.OnlineEftpos
 
 		private static string BuildErrorMessage(HttpStatusCode statusCode, string reasonPhase, OnlineEftposApiError errorContent)
 		{
-			return $"Error: ({((int)statusCode).ToString(System.Globalization.CultureInfo.InvariantCulture)}) {reasonPhase}\r\n{errorContent?.Error}: {errorContent.Messages?.FirstOrDefault()?.Message}";
+			return $"Error: ({((int)statusCode).ToString(System.Globalization.CultureInfo.InvariantCulture)}) {reasonPhase}\r\n{errorContent?.Error}: {errorContent?.Messages?.FirstOrDefault()?.Message}";
 		}
 	}
 }

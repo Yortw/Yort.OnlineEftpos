@@ -18,7 +18,7 @@ namespace Yort.OnlineEftpos
 
 		private readonly OnlineEftposRequestAuthoriser _RequestAuthoriser;
 		private readonly OnlineEftposApiRouter _ApiRouter;
-		private HttpClient _HttpClient;
+		private readonly HttpClient _HttpClient;
 		private readonly bool _HttpClientIsOwned;
 
 		private const string OnlineEftposContentType = "application/vnd.paymark_api+json";
