@@ -13,7 +13,7 @@ namespace Yort.OnlineEftpos
 	{
 		#region Instance Implementation
 
-		private string _Name;
+		private readonly string _Name;
 		private TrustStatus(string name)
 		{
 			_Name = name;
@@ -43,6 +43,8 @@ namespace Yort.OnlineEftpos
 				return TrustStatus.Active;
 			else if (String.Equals(name, TrustStatus.Cancelled._Name, StringComparison.OrdinalIgnoreCase))
 				return TrustStatus.Cancelled;
+			else if (String.Equals(name, TrustStatus.Pending._Name, StringComparison.OrdinalIgnoreCase))
+				return TrustStatus.Pending;
 
 			return null;
 		}
