@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -104,5 +104,11 @@ namespace Yort.OnlineEftpos
 		/// <returns>An <see cref="OnlineEftposRefundSearchResult"/> instance containing the initial search results and any related meta-data.</returns>
 		Task<OnlineEftposRefundSearchResult> RefundSearch(OnlineEftposRefundSearchOptions options);
 
+		/// <summary>
+		/// Deletes a trust/autopay relationship previously established via <see cref="RequestPayment(OnlineEftposPaymentRequest)"/>.
+		/// </summary>
+		/// <param name="options">The details of the trust/autopay relationship to delete.</param>
+		/// <returns>An <see cref="OnlineEftposDeleteTrustResult"/> instance containing details about the result of the request.</returns>
+		Task<OnlineEftposDeleteTrustResult> DeleteTrust(OnlineEftposDeleteTrustOptions options);
 	}
 }

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Yort.OnlineEftpos</id>
-        <version>2.0.1</version>
+        <version>3.0.0</version>
         <title>Yort.OnlineEFTPOS</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
@@ -14,7 +14,7 @@
         <summary>An unofficial, lightweight .Net wrapper around the Paymark Online Eftpos API.</summary>
         <copyright />
         <language>en-NZ</language>
-        <tags>online eftpos paymark</tags>
+        <tags>online eftpos paymark onlineeftpos payment netstandard net40 ios android</tags>
         <dependencies>
             <group targetFramework="MonoTouch0.0">
                 <dependency id="Newtonsoft.Json" version="8.0.2" />

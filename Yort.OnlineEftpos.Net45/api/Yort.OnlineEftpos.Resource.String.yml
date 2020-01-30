@@ -17,7 +17,7 @@ items:
   source:
     id: String
     path: ''
-    startLine: 724
+    startLine: 744
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -54,7 +54,7 @@ items:
   source:
     id: ApplicationName
     path: ''
-    startLine: 728
+    startLine: 748
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -83,7 +83,7 @@ items:
   source:
     id: Hello
     path: ''
-    startLine: 731
+    startLine: 751
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

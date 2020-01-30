@@ -17,7 +17,7 @@ items:
   source:
     id: PayerId
     path: ''
-    startLine: 582
+    startLine: 595
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -57,7 +57,7 @@ items:
   source:
     id: FromPhoneNumber
     path: ''
-    startLine: 595
+    startLine: 608
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -105,7 +105,7 @@ items:
   source:
     id: IsPhoneNumberValidId
     path: ''
-    startLine: 607
+    startLine: 620
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

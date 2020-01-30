@@ -8,11 +8,23 @@
       "source_relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.Field.html",
-          "hash": "8ABmS7LQcTMt6JlAJI+UjA=="
+          "relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.html",
+          "hash": "M8O5ij2cfWNK3FnQpYEPrg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.Field.html",
+          "hash": "B2EkdeRWeyMKKrglQV2R0g=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,22 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.Message.html",
-          "hash": "jIKqhvCR+zprq4b/Amgi/A=="
+          "hash": "fH/TsNUUCPHPdScT5f8oSw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.ApiErrorMessage.html",
-          "hash": "wxpCjUnK9NRrYNajbztbwA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDefinition.html",
-          "hash": "UmkTCx7do0eCoEaQLHxRQw=="
+          "hash": "tFgeCEb/BlDvDjNkBq653Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDefinition.-ctor.html",
-          "hash": "OfRqu7hxu95BAtXwK1RKWA=="
+          "hash": "6LTBGyqfKSynIKcUmP1raA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDefinition.Id.html",
-          "hash": "4pbMqkLOU5A3RdYeIYnKTA=="
+          "hash": "poETPC3o2YKfMH+DTZmntg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDefinition.DisplayName.html",
-          "hash": "fwWack3BnYzg2VZbwlNlgw=="
+          "hash": "R/fckBlRl2DFuXk9yxdONw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,34 +93,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDefinition.PayerIdTypes.html",
-          "hash": "ivp2UaUB+fdRfdweNPU8oA=="
+          "hash": "ugWCagYu46UVdEExIo52YA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.BankDetails.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.BankDeletedTrustRelationship.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.BankDetails.PayerId.html",
-          "hash": "SeIEdqeQaIdy/aWlr8KB0g=="
+          "relative_path": "api/Yort.OnlineEftpos.BankDeletedTrustRelationship.html",
+          "hash": "9l8auL9HUR9XYLOZuF9M0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.BankDetails.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.BankDeletedTrustRelationship.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.BankDetails.PayerIdType.html",
-          "hash": "wmA5CgG4BdgMdle1V2kL4Q=="
+          "relative_path": "api/Yort.OnlineEftpos.BankDeletedTrustRelationship.Id.html",
+          "hash": "9OlmnCuG/WCqh/bN9ogt2A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.BankDeletedTrustRelationship.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.BankDeletedTrustRelationship.Status.html",
+          "hash": "WQoqGj2IPWBY9xIcAp+Uxw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDetails.BankId.html",
-          "hash": "aPzA96qa9xdbZCQNzWlAXw=="
+          "hash": "3wBRpJ5wgLbvEsoMuRoNWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +153,34 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDetails.EnsureValid.html",
-          "hash": "wTfZ6jhwl00qQToNqXSiTA=="
+          "hash": "QQxwoxXnhhvXKCqlitE+mQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.BankDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.BankDetails.PayerIdType.html",
+          "hash": "19+JqWwPt5YIkbesJc9bAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.BankDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.BankDetails.PayerId.html",
+          "hash": "DUXOXFt7PLOc8Bf5nnux3A=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,22 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.BankDetails.html",
-          "hash": "+M073cGKFVJVr9OLwphb3w=="
+          "hash": "lzML49rxz001K81NitR/sg=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.html",
-          "hash": "H2R38x+jEfr+izYEwc8/4Q=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Name.html",
-          "hash": "cygz/IX117Jv/Yk2LvrjVg=="
+          "hash": "RC4i9JH5v5Zc36OnHhLS9w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.DisplayName.html",
-          "hash": "0Pa8SjVAQH0p1372jaZ2DQ=="
+          "hash": "LvKkH1o7eQ058yvqMXiaow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.Normalize.html",
-          "hash": "4WlLUvoWTJTinbBEMn+i5w=="
+          "hash": "pVwG1EZwtCj1n+B1y+kWJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +237,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.IsValid.html",
-          "hash": "ZFQJlSqtTZtTXsfaKRlu6A=="
+          "hash": "R6c7hEwUT+MyElXCztVvNQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId.html",
+          "hash": "IIH63HM99iySxSa7WqReEw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.-ctor.html",
-          "hash": "W7+SrsMotyF1MDkBvfYYPw=="
+          "hash": "juULNn24b00dY18ikjNyZg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.IsDisposed.html",
-          "hash": "+dMGkBpL8VGiHNsat0WSSA=="
+          "hash": "CpeOQQsNi1PIaYohDDQP3g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.IsCleared.html",
-          "hash": "Kcr6z30DF414w66+vhdOtQ=="
+          "hash": "SwFEDOP2AFJP96SFsI0+5Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.Value.html",
-          "hash": "y1EdveJ8ln4I7g6mFZG3wA=="
+          "hash": "rRzxh0TeGumLF9QknTcNCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.Clear.html",
-          "hash": "lQbXBS5tyIFz931Hz6aNrg=="
+          "hash": "/LQB3q453EDPLAXNeW1J8w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.Dispose.html",
-          "hash": "lD16CnbAShFtGyCbJIxB5g=="
+          "hash": "w8BZzZm/lY3kW/TM+c3s4Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.ErasableString.html",
-          "hash": "yEqdRpinC5IfrUdkDTV2oA=="
+          "hash": "bng4ChYROYRKulVc0rEIog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.HateoasLink.Href.html",
-          "hash": "tajL2fYgcO/ytdeybl9S4w=="
+          "hash": "GkOIJ1GBDgsq523pwjWm7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.HateoasLink.Rel.html",
-          "hash": "SBSYVrupfdAPoV1PIP+T6g=="
+          "hash": "59LSh3l3VWWSrcqD38+1OQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.HateoasLink.Title.html",
-          "hash": "pngahBbqXND5YT+R8nGeOg=="
+          "hash": "FURjQ/fWkRFRj7Q5crTd4Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.HateoasLink.html",
-          "hash": "DcIrtso8jxjGm+dVSH9KAQ=="
+          "hash": "l1EiV32299twnoQA8JrJHg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.INotificationVerifier.Verify.html",
-          "hash": "0SAyh4QSgTRhi7/pcHYjlw=="
+          "hash": "HHVGpNQ9Ow2/m/BE+LZC/g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.INotificationVerifier.ThrowIfNotVerified.html",
-          "hash": "RLU4bhtMDUJXhB30Z5vNaA=="
+          "hash": "KQJ5mhUikOmPWdYZeA1FIg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.INotificationVerifier.html",
-          "hash": "8vpqk4ub72qlcsLoknJBTA=="
+          "hash": "B3/ueyTCArOnzBe5TgzA+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion.html",
-          "hash": "cFN6WTDrtBqt4pNx82OoFQ=="
+          "hash": "YxOuJwEhB0cz+lZtVhUvVg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.ApiEnvironment.html",
-          "hash": "twkHTPg1M4Xh/2Cd+rZF6Q=="
+          "hash": "6cVCHkdut5rP512MDUhzDQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment.html",
-          "hash": "l1UU/UImBec2Y9GQ7mA2gA=="
+          "hash": "I8/TdG1pUVuYpULAEkq+sQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus.html",
-          "hash": "NCI6xxEVrP55SHdymngcpw=="
+          "hash": "uEBnj8pD7ktcbvQjpBsRNA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.SendRefund.html",
-          "hash": "dSVDO255NdJbiPBUFCI79A=="
+          "hash": "Ncfaf5c0OuDQCTcHe6+kdw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus.html",
-          "hash": "xuv/q2fah7ddXExjrJEBGA=="
+          "hash": "usVeRIGByX3gJsGxyvPLew=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch.html",
-          "hash": "iI7GPqOA9Eo77BWZdMkuWw=="
+          "hash": "WmJQoos2XvfARYBrSqjMsg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +513,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch.html",
-          "hash": "0MQ1Ip8ZAhEwfUP+SwhN9g=="
+          "hash": "gghHW9d9Z01Wc5rD1JfLUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust.html",
+          "hash": "diJjqNAvJTab+Po5RwKpbQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,22 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposClient.html",
-          "hash": "9OmtXeqRT4H5pP5v16Wb1Q=="
+          "hash": "aTtBJ6/Ax9AB7yFNfv4EEA=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.IOnlineEftposCredentialProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposCredentialProvider.GetCredentials.html",
-          "hash": "BSFWUbUOF6tMZ0R8+ejTAQ=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +549,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposCredentialProvider.html",
-          "hash": "DA+ujckfjYslGN/wfDBdHA=="
+          "hash": "d9NOQNpuh+uG0H1wI1r/gA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.IOnlineEftposCredentialProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.IOnlineEftposCredentialProvider.GetCredentials.html",
+          "hash": "Nm9FGVyr9GYEWSAmswNGgg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IPayerIdType.html",
-          "hash": "6VdEIomROmzOAsZezGG/Iw=="
+          "hash": "zBESU+lckqXG+kOJw3smLw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IPayerIdType.Name.html",
-          "hash": "eDkp97KXSkDPWBfu1amV3Q=="
+          "hash": "5HPfD+1xX73clyC/Bssjog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IPayerIdType.DisplayName.html",
-          "hash": "3x8B2lGmWcnQ2z3t1Zf2ww=="
+          "hash": "8lAPvq2OHcZGlRv+jBsQXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IPayerIdType.Normalize.html",
-          "hash": "l2u4SCv27cs2C1cnF7oWhg=="
+          "hash": "Aw0Jyaj/mq85XZje/MUryA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.IPayerIdType.IsValid.html",
-          "hash": "7ay243R1zU8GIMCFSbi5Rw=="
+          "hash": "WRYu+Sic2n97KFDrm8dQnQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.KnownBanks.AddBank.html",
-          "hash": "P8XSfhL6MwuqTcx8+hYuCA=="
+          "hash": "Gf6IdIz7+f82VmyYQ9G8Ig=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.KnownBanks.RemoveBank.html",
-          "hash": "BoGSnU8lrjogd9CPljJw3g=="
+          "hash": "4naiq56aowOoiDDEDbNMWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.KnownBanks.GetBank.html",
-          "hash": "E2sECkGDHSO5oziihmTswA=="
+          "hash": "jfU0oCjWbI/dMdooR8toaA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.KnownBanks.All.html",
-          "hash": "qM/CuqmyqyFjfkXLuwasxA=="
+          "hash": "Wxz6u4MwO2W7Y7s2Vzx15A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.KnownBanks.html",
-          "hash": "WY9c0LoDn4xhTz3/fQOSSg=="
+          "hash": "YF0Doqt/uKg/UUcWkwnoBg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.MerchantDetails.MerchantIdCode.html",
-          "hash": "2QXELStefFSlZMS+8wAfRQ=="
+          "hash": "ZE8eE9QBsqSfbNmxQKHV/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.MerchantDetails.MerchantUrl.html",
-          "hash": "lnoIYyDoPg6NJJYd2hNRyg=="
+          "hash": "orFRhsiWG6HxcG4Ty6u+tA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.MerchantDetails.CallbackUrl.html",
-          "hash": "JjUcCqG4nRPH4kjBEHr5YQ=="
+          "hash": "KVGWRMSekHjNMJlqdJk3Kw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.MerchantDetails.EnsureValid.html",
-          "hash": "pedJzdYpWdazdF5TzQTsRw=="
+          "hash": "p0pUg4jeBjCTw/PnpzAR8A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.MerchantDetails.html",
-          "hash": "euU2HbVXAmiz7o1s11O7VQ=="
+          "hash": "ZdbPW7thnvgcg6XQ5T6nhw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NZMobilePayerIdType.html",
-          "hash": "5H8UsWfjzbdUck8n20eC8g=="
+          "hash": "9lhlU3BmC7kkCp0D/z8TZg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NZMobilePayerIdType.Name.html",
-          "hash": "Y+k5seseo9jKji2LYxqYBg=="
+          "hash": "QOI4R/Zq7U9YRBNRvcnaRA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NZMobilePayerIdType.DisplayName.html",
-          "hash": "uG4ZKjzTSvpwHMRbNa89+A=="
+          "hash": "4tIiLXd0BVyMfkhcaGpsqw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NZMobilePayerIdType.Normalize.html",
-          "hash": "1b3lyagqNQyNSN93oWgf+Q=="
+          "hash": "m7rnIR0XbdAAv/VvBHAIsQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NZMobilePayerIdType.IsValid.html",
-          "hash": "nuiK/3Tifj6y5u038DzsVQ=="
+          "hash": "/eDYxWEs92E82zdQ/fRMkQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NotificationVerifierBase.-ctor.html",
-          "hash": "CJTAeVZffFV0/AHoNWCAyQ=="
+          "hash": "Q9Gk2wOp1Vbj6faAZLq4Og=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NotificationVerifierBase.ThrowIfNotVerified.html",
-          "hash": "fL2pTEguVXh4WUDkwzUtEA=="
+          "hash": "u42ItjmgSUKGPG1kuQ7rrg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NotificationVerifierBase.Verify.html",
-          "hash": "NKkYQf0812fnDF8+ZVfWQA=="
+          "hash": "eW8Zx5DqR49KUie2F+JUEw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NotificationVerifierBase.GetPublicKey.html",
-          "hash": "wrZ+Y78OT7viS7HTUeUwGA=="
+          "hash": "tGH2btB2SMlqdVy1fqRlzQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.NotificationVerifierBase.html",
-          "hash": "BbRy36mLOT7seD/rE2MXhA=="
+          "hash": "nMOhUD69h4VoyPegBQ9T7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiEnvironment.Sandbox.html",
-          "hash": "u5/lN5aZ4aU07oRuRbX/aA=="
+          "hash": "ZpNC2QFtfEGqT7Oqj8rZOA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -837,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiEnvironment.Uat.html",
-          "hash": "6UoKEskmGqTcNkXfD2e9Hw=="
+          "hash": "bBrNTMK+4ctU8qxxK8ShEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -849,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiEnvironment.Live.html",
-          "hash": "tG3bufFu4HeHcSIPewQSWg=="
+          "hash": "brYhETnH6AvqCX7N7BGsCA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,22 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiEnvironment.html",
-          "hash": "E9efQf3lojq2O9IHDvfa+w=="
+          "hash": "HWnTqynImvoHxcMBvRwObw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.html",
-          "hash": "JmBi1Q9/g/QKs7S2npcd/A=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,10 +921,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.Error.html",
-          "hash": "47lAUJ3mZinM3TjnxafrMg=="
+          "hash": "81c2wD5CBERXu2gw5rNYpQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.html",
+          "hash": "iCI03umlzPUA32MfMC8omQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.Reference.html",
-          "hash": "IimaptvqkWJhxYPXNt7Ohg=="
+          "hash": "IufcL6Oj0OG23Mmpg3eZyQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiError.Messages.html",
-          "hash": "SWuf2uRsBACGpFEN2AuoYQ=="
+          "hash": "hSBHcV7wq/pU1gUVpBGDAQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiException.-ctor.html",
-          "hash": "EWjaw7bb0nk6L5aj0jlvmQ=="
+          "hash": "tL5gZYg7ReoNKpxRajPfCA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiException.StatusCode.html",
-          "hash": "UE4FFrGYjSqTtos/KVtu9g=="
+          "hash": "hgeFOgXEHXlZ4FboHvBvBA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +993,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiException.ReasonPhrase.html",
-          "hash": "hydZXmjUiBNhxPH8jd5vsQ=="
+          "hash": "g08xaSm5gtR0NozF8bsJ1g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -957,10 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiException.ErrorMessage.html",
-          "hash": "w6XvB3kCohgVslH7QnMOJw=="
+          "hash": "lifWSjJzQekJ+mWa3qUNlA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -969,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiException.ErrorContent.html",
-          "hash": "cEsh7y569wcXOzth68XAiQ=="
+          "hash": "JGxRBbNvHmkYNJmFeBCnvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -981,10 +1029,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiException.html",
-          "hash": "47mBGIW7ctKyC1IhpkrifQ=="
+          "hash": "vGdhW+ix3nPlX/jFfUwkFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -993,10 +1041,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiVersion.None.html",
-          "hash": "gT1zbWeTXe+g+F3g5Zd+xw=="
+          "hash": "rmUofcHGSeRtZHdPYp1UKw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1005,10 +1053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiVersion.V1P1.html",
-          "hash": "20jjH57we+IbkRQkcHojlQ=="
+          "hash": "vxiJty4azbaVYWGGiGbmAw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1017,46 +1065,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposApiVersion.html",
-          "hash": "kXUtUZaKgEMH4/kxPwKMPw=="
+          "hash": "xUWuOWQLRJnA/HqptiJ71w=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.ErrorUrl.html",
-          "hash": "YbayNy0jJGITiLqFv1AymQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.StatusCode.html",
-          "hash": "xUbqY+gfoKVPPLGMAp7TyQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.ReasonPhrase.html",
-          "hash": "KDuVjd5nXSUiQSlz73FrFg=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1065,10 +1077,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.html",
-          "hash": "HXsly+c+8MPDbh2wLWW4vg=="
+          "hash": "afEC3yvhpJAwUCtpEM2fog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1077,10 +1089,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.-ctor.html",
-          "hash": "TbijB3jZuyyeEtzsoWm2lA=="
+          "hash": "stW6o73beKEnCOS333xOkw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1089,10 +1101,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.Error.html",
-          "hash": "5tad6pijSYZJ+JJAudtoZA=="
+          "hash": "Y+kWeZOYGnTsL7JfaHflWg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1101,10 +1113,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.ErrorDescription.html",
-          "hash": "g1yFtqdZK+/SrlTy7b20Yg=="
+          "hash": "3W7KVXHjnvxvBcwHmNdrOA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.ErrorUrl.html",
+          "hash": "+DYOr7rSUshgvPSHkC9ZwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.StatusCode.html",
+          "hash": "WserFZZqJH1s2/wPZ6halQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposAuthenticationException.ReasonPhrase.html",
+          "hash": "p6Bg9vPWdz8iTtrQkVIrlw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1113,10 +1161,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.-ctor.html",
-          "hash": "MaQp6XyWfSlDMh4F+GIrpQ=="
+          "hash": "t/0i5KmUl7avuS+hGousKQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1125,10 +1173,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.ApiVersion.html",
-          "hash": "3drqnToEIhksSUDdH2Bhlg=="
+          "hash": "aRhjC+Y6rKB1dNDAPcNBTQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1137,10 +1185,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.ApiEnvironment.html",
-          "hash": "eNnAbL43Cihj+0GhiYfXOg=="
+          "hash": "YjEN/fQ51Orbc9LM6gHsCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1149,10 +1197,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.RequestPayment.html",
-          "hash": "MM9sNWirgMtZ87g6IPq8fQ=="
+          "hash": "dd43OuXOwFAS9s2QjLwmHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1161,10 +1209,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.CheckPaymentStatus.html",
-          "hash": "KHaRepweWactQz3N44BLpw=="
+          "hash": "xY77FLcW8GS0duLXO0YwuA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1173,10 +1221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.PaymentSearch.html",
-          "hash": "QndZlEWzNDjw4WCEKuxvuA=="
+          "hash": "gw0bJ7+lPsPCeqE+xop6lg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1185,10 +1233,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.SendRefund.html",
-          "hash": "yvxk0YA/xDnHUe7vw4D4hg=="
+          "hash": "R4NRcuKiLT00y1NBNENHXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1197,10 +1245,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus.html",
-          "hash": "et+AqDQjrk3GJ39Wpkz2Bw=="
+          "hash": "FQCzMnpW1Yw36UB2rA52GA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1209,10 +1257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.RefundSearch.html",
-          "hash": "+oxIcAv5B7O9gY4JjJ0gaA=="
+          "hash": "PCnL4Z6oU3B67RWKQNKhkg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1221,10 +1269,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.Dispose.html",
-          "hash": "l/Hy+ZQN7SoBH+HdL7cUHg=="
+          "hash": "DoH70Bl543euBV+TCkfEdw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust.html",
+          "hash": "oDgIVKxNM+Igk7IPTh7mgw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1233,10 +1293,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposClient.html",
-          "hash": "1rvR/Aob0xTh6TDwS4XBAQ=="
+          "hash": "Ymm9a03IzmGTjr3Bze8tYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1245,10 +1305,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentials.-ctor.html",
-          "hash": "OLyCzvT413L9aVZM9wqVVA=="
+          "hash": "kC/fwlfylV5sLoGCP+2OHA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1257,10 +1317,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentials.ConsumerKey.html",
-          "hash": "sEOGLQVxaUT5odN4PLw1bA=="
+          "hash": "VfDYNWKrUFqRTzmrCfKCoQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1269,10 +1329,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentials.ConsumerSecret.html",
-          "hash": "kgeKcGJqNL//8+AispnvrA=="
+          "hash": "s6hPcnPXxcem//7eHxeUUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1281,10 +1341,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentials.Dispose.html",
-          "hash": "yYKja3jv4xEef+WbVDKhcg=="
+          "hash": "s4U2AXqIm2RLuianKe3k9Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1293,46 +1353,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentials.html",
-          "hash": "EhDLIeYIdbq6dfxCUhYaZw=="
+          "hash": "MooTIRR0RETkh+5Xbbj8dg=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.GetCredentials.html",
-          "hash": "zkowAbUJcbXl/wDDRvR2Tg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.Dispose.html",
-          "hash": "OlsOXo1fZu61DH8QJqv/BQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.-ctor.html",
-          "hash": "o1tbss/drGgeqqTgu0t9PQ=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1341,22 +1365,202 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.html",
-          "hash": "f9mTOuDLVgDeqE/es/13Sg=="
+          "hash": "wzxinUdqD/CrQs93GqvlXQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposException.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposException.-ctor.html",
-          "hash": "K1lh4wQ8QhoOLQ21TKxirQ=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.GetCredentials.html",
+          "hash": "BvfsOv6T5y/JuC7M280H2A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.Dispose.html",
+          "hash": "u0ESw1tvjpzHTjnS//8ozA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposCredentialsProvider.-ctor.html",
+          "hash": "xHMmvETTgYTDypFnrtBLNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.html",
+          "hash": "VF/sz+M/KdtdaR11YUJTjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId.html",
+          "hash": "0bQejOj0Rwy++eeTbWm6cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid.html",
+          "hash": "pDLESU/QypteN/Wc0j0Z9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links.html",
+          "hash": "qehtc/pOFoxwLYWatH5wvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id.html",
+          "hash": "tFzrEQO1r2LkU4Shfd+HZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId.html",
+          "hash": "ObVOHd+w61XwvYBViPhwsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType.html",
+          "hash": "LYNNTFKUPKG5D+/VF5bb5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId.html",
+          "hash": "B/Wdp6oeRPakY0UZtZUSww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode.html",
+          "hash": "OI3A6NCWvXEtP3DQ84FCOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank.html",
+          "hash": "8nAKQA9dx+JwlKeHpPw1ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime.html",
+          "hash": "I2AjUcZKD9/MG+8o0mqXAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime.html",
+          "hash": "FH8ldsspQsCk8uMaORAdUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.html",
+          "hash": "4hEgUf/jiHmmeLhTnZ+eUA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1365,10 +1569,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposException.html",
-          "hash": "u4opBuzQNhm6EPkLTWEn5A=="
+          "hash": "5XZdBt5R92C9fX+qjfsgqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposException.-ctor.html",
+          "hash": "KP/ayxbEcjZVmtTKTiwRjQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1377,10 +1593,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposInvalidDataException.-ctor.html",
-          "hash": "eg7vD6657hJuY30keE3POA=="
+          "hash": "yywL2Cm2fbWuqzEBuWu+pA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1389,82 +1605,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposInvalidDataException.html",
-          "hash": "6apN2maAKgRcXwp/A8U1rg=="
+          "hash": "LTSM8NQ68EXaqhJ9U6GPdg=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.html",
-          "hash": "yfD4v83oAL0lX3tURlVrTg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.-ctor.html",
-          "hash": "ZISOEAIn4pDHrzP6I7nEuA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId.html",
-          "hash": "YgUT8SPbodxQ6pXUMsQ5cw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.TransactionId.html",
-          "hash": "c/hAWeokeBrFoXGCGj7v+Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.Status.html",
-          "hash": "rN9Y+ILCM3esIJOiIctXWg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus.html",
-          "hash": "ydr34a9PWb2dkdBcskJaYg=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1473,10 +1617,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.TrustId.html",
-          "hash": "3cw6xXsGGHvnKtqT6bXwWg=="
+          "hash": "6v5MTWNShQQ+lH7U34aciw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1485,10 +1629,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.Signature.html",
-          "hash": "LCT60iuQd++iMqhMu0qwLA=="
+          "hash": "5myEAufc+ROWVANImCpZgw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1497,22 +1641,82 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.SignedData.html",
-          "hash": "0CA0WnOoJOUuv2LFRxHJVg=="
+          "hash": "2smmB0kv8uyyRSPDtSRiMA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.html",
-          "hash": "oSW6J7XZh8aQhRrXK3YmIw=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.-ctor.html",
+          "hash": "eQSsiWzdY7qW+xZWwUBa4Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.MerchantOrderId.html",
+          "hash": "tRFwYEkTC6YcQdJRCGdo7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.TransactionId.html",
+          "hash": "1vqm//6qnXhTOa4F6dG4Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.Status.html",
+          "hash": "RtYsVAGCkJ8qO+xsyizO2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.TrustStatus.html",
+          "hash": "a+SveHoHGxsZfnR0ob+y7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposNotification.html",
+          "hash": "HsQFKDHvRQFiuo8WTl8xzw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1521,10 +1725,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.Bank.html",
-          "hash": "v7ZR++Ijg/L8GumyaBqgwg=="
+          "hash": "6sexinhLL0oXwVPHdkogKQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1533,10 +1737,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.Merchant.html",
-          "hash": "WQqHk7PU5FrPszcPL8xmLw=="
+          "hash": "r+TcArCpdr2BlsC9toL0YA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1545,10 +1749,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.Transaction.html",
-          "hash": "X0kpKPp5Vp4DB4gW4TE2tw=="
+          "hash": "1CyC/nNjIwMytEr26ByMpQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1557,22 +1761,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.EnsureValid.html",
-          "hash": "w7jfH1rGo4wZk2RQjM8tWg=="
+          "hash": "cV2kAOdmjaxZWWDU+oba/Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString.html",
-          "hash": "KUC9JBAb/xjffTEL2klkaw=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentRequest.html",
+          "hash": "qWbH1N943Wr0EZ333btfOw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1581,10 +1785,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.html",
-          "hash": "CL9SiKc+vzxav1+V9MyfCA=="
+          "hash": "J5H8JoGeLxFJFBVnjtNtYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1593,10 +1797,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.OrderId.html",
-          "hash": "K3syB1obweonDBJp5bJ9XQ=="
+          "hash": "KoCVsuRD5Oiz768+uInsCA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1605,10 +1809,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.MerchantIdCode.html",
-          "hash": "r8ZlsjNSC86jbqmOkdkeIA=="
+          "hash": "o+RP6UHmq19An5+2EmGiUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1617,10 +1821,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PayerId.html",
-          "hash": "QPYeVY9KTgZpebZWMIdTng=="
+          "hash": "Z20CXDTO3K/GNVUL6uLg0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1629,10 +1833,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.CreationTime.html",
-          "hash": "nMQzgl5vupOJfBm079FpIg=="
+          "hash": "ApkiWJ2+TF2STt4zQMhyFA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1641,10 +1845,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Status.html",
-          "hash": "0A6+avsjUYBS3MxO3a4HzQ=="
+          "hash": "WFlhFeP1/gyWlr61cD7Gbw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1653,10 +1857,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Fields.html",
-          "hash": "rUwF6guBEoMXp4d+QittJw=="
+          "hash": "e1cFaTDUQbMQyGjE/d659w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1665,10 +1869,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Limit.html",
-          "hash": "a24gzCKieFLsw6IAZlVCvg=="
+          "hash": "K/bHCTrtjX1b+16NLUah5g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1677,10 +1881,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.Offset.html",
-          "hash": "Tf9LJs6HebJ4I0tD4qabsQ=="
+          "hash": "NJa2rK+AhhlYuqORuzZGYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1689,58 +1893,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.PaginationUri.html",
-          "hash": "tRMQoBdRVWnn3conwJWZ/w=="
+          "hash": "xNqfdmvlaJ6w064uwC3ueA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.Links.html",
-          "hash": "gEpv2dCKqHRN+ZwAUrlG0w=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions.BuildSearchQueryString.html",
+          "hash": "vtcpCs0wF4YMY8FYHXaT8w=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.NextPageUri.html",
-          "hash": "5VzhXXbo4K4bGoNCXJRLoQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.PreviousPageUri.html",
-          "hash": "I/vORhloyu+P0dIM1BPl9A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.Payments.html",
-          "hash": "2PxzzhQjMwnpG+a4edp3xg=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1749,22 +1917,58 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.html",
-          "hash": "E17DUp8yYozRQTZK07VnEA=="
+          "hash": "CEU8JGWKYoAgbGzCO5F+AQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.html",
-          "hash": "DpqSZw8ujxuB1CX8hN3iHg=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.Links.html",
+          "hash": "sSItQJQIGvCEOJqLKXoCaw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.NextPageUri.html",
+          "hash": "PIe6xN8O5T+2AysvpJ8sMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.PreviousPageUri.html",
+          "hash": "APvhA8lwLL94wv/RmHLLCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentSearchResult.Payments.html",
+          "hash": "YvBRjINtC7lQvcLzXZRKpQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1773,10 +1977,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Id.html",
-          "hash": "3S/PWVnTM9LirApPBIQEUw=="
+          "hash": "xToqmN4zVHqo98sEUmWp6g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1785,10 +1989,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Status.html",
-          "hash": "+4V2kzLnQgr+WiCZyb1xKA=="
+          "hash": "dahGEiZ4QNEscNUcLI7Paw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1797,10 +2001,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Bank.html",
-          "hash": "iIt8J3Pf7uaGCeCh4C/i1w=="
+          "hash": "+BMIT+fd9q0PlWbIBiBuWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1809,10 +2013,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Merchant.html",
-          "hash": "hq8iIKW/SAWv1o9ziNRfCw=="
+          "hash": "doG9SukkGF6MhFj4N74MbA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1821,10 +2025,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Transaction.html",
-          "hash": "XH7pasXIJhbGCINnOR83oQ=="
+          "hash": "rB6b7chfc6UV4IBdmXOaxw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1833,10 +2037,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.Trust.html",
-          "hash": "N/L6NpB2mIyfdR3aK804Jw=="
+          "hash": "SZHNNAaNWzFcGzzm8OXnhw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1845,10 +2049,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.CreationTime.html",
-          "hash": "95silaARJDDqCeVWRYuSnw=="
+          "hash": "Sj4BKZD0nX8HVJ3jkLKNaA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1857,10 +2061,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.ModificationTime.html",
-          "hash": "ZCRXQPQO6x956G6zh8ygdg=="
+          "hash": "2o/8cNyHUNeWGjflyLrumA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposPaymentStatus.html",
+          "hash": "c6q75OOirfkk/BoZt/uJRA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1869,10 +2085,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundRequest.html",
-          "hash": "XYS6sBhrqDf+JcQVhsElbQ=="
+          "hash": "/ChSd5KH63G+WNDHLbtG+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1881,10 +2097,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundRequest.Merchant.html",
-          "hash": "WtyA3CS33K8HsoJAHg5qyg=="
+          "hash": "bwECZfmO/z4mzDhGiL+Hjg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1893,10 +2109,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundRequest.Transaction.html",
-          "hash": "ytf1tWDDwS0Z/9ma2SEmaQ=="
+          "hash": "YsWuUNc9v8c7RATqO4pxJw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1905,10 +2121,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundRequest.EnsureValid.html",
-          "hash": "tRTHSFpHwfP4b+o8eISV6g=="
+          "hash": "dgNZIw1hR/5lCYd4du2/SQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1917,10 +2133,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.RefundId.html",
-          "hash": "CEBmPgDULvVWRETiluUEsA=="
+          "hash": "1+qXD2CxwtMaDhXKX/NVgA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1929,10 +2145,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.MerchantIdCode.html",
-          "hash": "cpU2f6XvDzBDdpmD6Go/lg=="
+          "hash": "RhQnlqgXzLj5aqutM1cxTQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1941,10 +2157,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.PayerId.html",
-          "hash": "BxP7JNPtoL8sija9dTeCLg=="
+          "hash": "09BGtN2GCZmQm4XqjJ4n6A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1953,10 +2169,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.CreationTime.html",
-          "hash": "VArxXThKN8SNzZ2SbJOaLA=="
+          "hash": "apZwA702+9lGRCi9zi8SIw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1965,10 +2181,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.Status.html",
-          "hash": "q+cJXWqXC40dnKFC4L0fzQ=="
+          "hash": "jO6g0YSNdgd+JZJ9pls/rw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1977,10 +2193,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.Fields.html",
-          "hash": "/qXCyBFbIxx0HjrNOd9TOA=="
+          "hash": "ECGlyC2xN5S5RjvZ3cdc/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1989,10 +2205,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.Limit.html",
-          "hash": "XxryQwFzUAFsTwK5SzQy0Q=="
+          "hash": "yXeWsBkRl4IzDGC4Bkarqg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2001,10 +2217,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.Offset.html",
-          "hash": "Ut9SBLNq2JyO8FjhTdFo5Q=="
+          "hash": "7Wy7pNkFMAdSZ6y1HN8bqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2013,10 +2229,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.PaginationUri.html",
-          "hash": "MDrg63uyOvRPE9t+0KXKlw=="
+          "hash": "aRIdXGJ4G4ANU3/ZROR2Pw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2025,10 +2241,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.BuildSearchQueryString.html",
-          "hash": "3tQ5aisC4KuXx/GIny+FOg=="
+          "hash": "9xxca4ubXF1/ZM0WhJ1OMw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2037,10 +2253,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchOptions.html",
-          "hash": "5ECMZqC+0mKzMAI+4GQ3hw=="
+          "hash": "7GaXqvWl7TBR3ovmnMAQ/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2049,10 +2265,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchResult.Links.html",
-          "hash": "R5BUwOTTHmzkN+ZMIigw4g=="
+          "hash": "Dv7nIr9DX4/vPVpkWoQIiA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2061,10 +2277,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchResult.NextPageUri.html",
-          "hash": "87W+KvcY0L1Dmco6Vd/gXA=="
+          "hash": "bkTHNpaMKrk4n4+2mDhOtg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2073,10 +2289,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchResult.PreviousPageUri.html",
-          "hash": "N4Xd+V67dtdvBnF1TOwWNg=="
+          "hash": "w/ZZaqqRv0v7zL5IFqJSPQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2085,10 +2301,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchResult.Refunds.html",
-          "hash": "4f6SV8PmvjkCK5IIzkXbSQ=="
+          "hash": "7fXEndYtqkUVa7gMTZ0cHA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2097,82 +2313,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundSearchResult.html",
-          "hash": "SaLctP9OQNayMEHcglYVkA=="
+          "hash": "3zyJJT4lYy6Nw54G9H1l3w=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Id.html",
-          "hash": "k/9pONwcVJtpt8o04KskwA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Status.html",
-          "hash": "PATG8aNPTt/cpI7EucRhhg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Merchant.html",
-          "hash": "Olzvz3Dve+1o92aH/ZA5Sg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Transaction.html",
-          "hash": "0KNDFqAuokDbi2Dda3X8NA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.CreationTime.html",
-          "hash": "p9gQpFoLNCeOa4/1Bi1lOw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.ModificationTime.html",
-          "hash": "VZgJSwjI+aFmRP6qRUbtgg=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2181,22 +2325,82 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.html",
-          "hash": "NJ4zqh+IMi/xFb5AfMmCtw=="
+          "hash": "63Cbq0pkpv0rNyF5Rtjluw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.html",
-          "hash": "j4AexuOvAteyM+UQMBFFRg=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Id.html",
+          "hash": "KTfvo1CPqzoF6zyLXUt3tA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Status.html",
+          "hash": "BlWoBpm8E6u3Dy1WjdrG6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Merchant.html",
+          "hash": "poMGkWjsuGxHp23t7y9j/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.Transaction.html",
+          "hash": "2yvySKABcOGcCf5foFriHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.CreationTime.html",
+          "hash": "sUR/t9P+Jlv8vzB3AqvnAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRefundStatus.ModificationTime.html",
+          "hash": "YgrVodW4YSK39zrmX5WbxQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2205,10 +2409,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.-ctor.html",
-          "hash": "XzkUAX0vhos+JGeGMvGtKQ=="
+          "hash": "8URG/7BLygcCV3b7EvRXAQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2217,10 +2421,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrency.html",
-          "hash": "cwa0WRMJvaqGy+MHpF3nBQ=="
+          "hash": "YzH+fFvAda5nDSW/dBMv9Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2229,10 +2433,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultCurrencyMultiplier.html",
-          "hash": "2Q72RyLi0nw9qxvyREvGAg=="
+          "hash": "VBkMuSqbqFiWuUGPvlnHKQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2241,10 +2445,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.PurchaseDescriptionTemplate.html",
-          "hash": "i80DWBkba7RBl6x6ehguNA=="
+          "hash": "erfXYQqgpV2k56HooDhX2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2253,10 +2457,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.RefundReasonTemplate.html",
-          "hash": "EagPZ8z/JlhyWzZBxjIYAQ=="
+          "hash": "8nhbWtGM40E9IkPNBdxVMw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2265,10 +2469,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserAgent.html",
-          "hash": "yNSWe9syNoOOOAffIUdxiw=="
+          "hash": "4d8JgVHrgqH+Yn4gYAyxdg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2277,70 +2481,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultUserIP.html",
-          "hash": "meKDivw6Cxpdx3CowphboA=="
+          "hash": "UIBnXepEFsT80w0KKwBQdw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId.html",
-          "hash": "ARnqoWwstr+sfmjhIRs9RQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate.html",
-          "hash": "zbEowcbPUG4wdtUNkxd9tg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest.html",
-          "hash": "wh8KyDbyg9EM/jrOcPpQ2w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest.html",
-          "hash": "q3U4T+YKR0lCDWnXedixMA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode.html",
-          "hash": "sQ5KrShWdUdfCTimgOPsXQ=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2349,10 +2493,82 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantUrl.html",
-          "hash": "T/Ae6lRBrlPRycf5sEstdw=="
+          "hash": "qy2MruCZ3B7YYZc6e11PJQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantId.html",
+          "hash": "3xfU0q4pn8zBsXzgxunCbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.CallbackUrlTemplate.html",
+          "hash": "TrBxRulxirWidV1CKBTobg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreatePaymentRequest.html",
+          "hash": "G+xWwHVOmN+Xc0wmiKvL5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.CreateRefundRequest.html",
+          "hash": "IxLAXBeSd/hMEjfgHYv7lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.DefaultMerchantIdCode.html",
+          "hash": "skD0h9ARs5GrFyW4fCisAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposRequestBuilder.html",
+          "hash": "tiuLViX22ywr6PgzOVshAw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2361,10 +2577,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.html",
-          "hash": "cqPG0SqBNkv6wLfdyZ2v1Q=="
+          "hash": "/axDVnchPX3mTvajGWemLg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2373,10 +2589,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.Regular.html",
-          "hash": "0L5KGJ7OEhJ4rYRx1oonYQ=="
+          "hash": "gfBDIS8BL0zszpL088cfRA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2385,10 +2601,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.TrustSetup.html",
-          "hash": "XWHt3Tqd7/23BzTourNKEA=="
+          "hash": "N7B0X20C73r8mCRX7Xh32Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2397,22 +2613,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTransactionTypes.Trusted.html",
-          "hash": "SJXPDmMWpSRhECkQHJBPkw=="
+          "hash": "27DLfMDOHV6YnH0RHW5LfQ=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposTrust.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTrust.html",
-          "hash": "eFbNivVE62Ek9l7L0nHHVw=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2421,10 +2625,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTrust.Id.html",
-          "hash": "C62vzVOrCDHI4ZPRwxmRQQ=="
+          "hash": "bV8awPeLO9kwyvTUuhW6RA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2433,34 +2637,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTrust.Status.html",
-          "hash": "vkSLGcITd9+FCK43X8rp0w=="
+          "hash": "il10IPI2xqV+Wn4bgcXsVw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PayerId.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.OnlineEftposTrust.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PayerId.FromPhoneNumber.html",
-          "hash": "remRwDDHIf4HjkIFs8ESdg=="
+          "relative_path": "api/Yort.OnlineEftpos.OnlineEftposTrust.html",
+          "hash": "MK+Uj+j3JpTKKxR5N1xZdA=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PayerId.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId.html",
-          "hash": "nmiwXP8mkGCfJwnFf3ZFKQ=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2469,82 +2661,34 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PayerId.html",
-          "hash": "LCveCQ0FrP5EGmg9nsE8JQ=="
+          "hash": "Vx8OliTAFg9VQa1ZiqJvKg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.PayerId.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.TransactionType.html",
-          "hash": "tXQBLDAvwQlQVumtMVmscg=="
+          "relative_path": "api/Yort.OnlineEftpos.PayerId.FromPhoneNumber.html",
+          "hash": "ihiYPSuVjUzgx1B4LDrjHQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.PayerId.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.SettlementDate.html",
-          "hash": "QGHXCF8tdKJgfLTrzusyXg=="
+          "relative_path": "api/Yort.OnlineEftpos.PayerId.IsPhoneNumberValidId.html",
+          "hash": "VATvP6tdYLctdBWiR7AMpA=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.EnsureValid.html",
-          "hash": "1KU8eWOvsTDZfFGAd0UviA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.Amount.html",
-          "hash": "w7nxFIJfPpdCSUK7VwWwWQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.Currency.html",
-          "hash": "zi0r47a2Nj08EQqBtzUkYQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.Description.html",
-          "hash": "+o6rURjjNafuN22uQ1eqBg=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2553,10 +2697,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.html",
-          "hash": "4qVW0SZ+qSBSYO6pPFwcaA=="
+          "hash": "k5KqHZ8e35dfaI6E4wHcTw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.Amount.html",
+          "hash": "0q7cPP0Q7QiXOQabQYZa0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.Currency.html",
+          "hash": "3QnBuuWt6SpVbvCi3GklAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.Description.html",
+          "hash": "jaojGNtzzriWaWyEFHawWw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2565,10 +2745,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.OrderId.html",
-          "hash": "zHHvrF50gnk/CeKaTUbflw=="
+          "hash": "jytUpkotfaRZvk3+zC7vNQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.TransactionType.html",
+          "hash": "F+5JOOQG3i+M7H2Rdo3LTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.SettlementDate.html",
+          "hash": "eVWpBCpYLzI7q8U+AawjHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.PaymentDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.PaymentDetails.EnsureValid.html",
+          "hash": "BRM+QnKbLqh7O5KRRIePDQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2577,10 +2793,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.New.html",
-          "hash": "lqiy/Ce+I8KN4fmMT1Yufg=="
+          "hash": "luFnzuZ+FAmqFwoBIim70Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2589,10 +2805,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.Error.html",
-          "hash": "v5wELhGJ5KA3Ax+42Pd6Ow=="
+          "hash": "4SxoVhJ2rQRDm7Rz7NrpOg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2601,10 +2817,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.Submitted.html",
-          "hash": "AcVseUK40yA9tInC/p6ztw=="
+          "hash": "dDCscg4t4LUpGD4lcN3kdA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2613,10 +2829,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.Authorised.html",
-          "hash": "UT17jgfn2ymfA1wahdkoqg=="
+          "hash": "QLobTcUA/b4+BuAuWHr3CA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2625,10 +2841,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.Declined.html",
-          "hash": "f1puOkFZ2jA3Ifkdh++rfA=="
+          "hash": "nfljWI/34U59fo0SbTFgcA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2637,10 +2853,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.Expired.html",
-          "hash": "w4ntOSs6gfvEkjz7IoviJA=="
+          "hash": "rvsa8Y/76P1DGW55HbMb1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2649,10 +2865,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.Refunded.html",
-          "hash": "Vr+GtQWNsdVkxlwaDC0BhA=="
+          "hash": "apAKgvWS/ZlqT42cD31+GA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2661,10 +2877,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.FromString.html",
-          "hash": "y176uP3NzP2nQua50GPInw=="
+          "hash": "KSZNU4navG03xqPXUiaxRg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2673,34 +2889,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.PaymentStatus.html",
-          "hash": "xWUY0S7ClHvUxR1mF4W/NA=="
+          "hash": "vtAx32O2fLame5lMSBQOHw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.RefundDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.RefundDetails.EnsureValid.html",
-          "hash": "Fr5jxYj7YkUEhHsY2c1ljA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.RefundDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.RefundDetails.html",
-          "hash": "Pg0BFSrIASXQBBu/723aUA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2709,10 +2901,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundDetails.RefundAmount.html",
-          "hash": "1OqLj6v1vTmsOhwR7+bi8g=="
+          "hash": "0ePowynoB2tzE+BFvOeg7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2721,10 +2913,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundDetails.RefundReason.html",
-          "hash": "UylIEKOt04x4prOFcHStlA=="
+          "hash": "MF7XZPhRh1Ym+UcgQxUMeQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2733,10 +2925,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundDetails.OriginalPaymentId.html",
-          "hash": "kQNS9vLeyLPQT0AfvotfSw=="
+          "hash": "h9VtaouZlaVcsrzgpbPdkg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2745,10 +2937,34 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundDetails.RefundId.html",
-          "hash": "qEWi3HqOQmZOvBOQ2fjRsQ=="
+          "hash": "xxXKvYhymVponZHWeFlxag=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.RefundDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.RefundDetails.EnsureValid.html",
+          "hash": "fp7wya6E2tRtgXVoasnGHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.RefundDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.RefundDetails.html",
+          "hash": "kuhtiBL/YSxUnaavz0JGaw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2757,10 +2973,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundStatus.Unsubmitted.html",
-          "hash": "cTpMS3JbnQvlCgkbsQSIrg=="
+          "hash": "GlrSON3G5Ny77CzIzJaN2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2769,10 +2985,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundStatus.Refunded.html",
-          "hash": "Qs8eI6vG/eGp4IseI9BvIg=="
+          "hash": "9xzsKCH/mutXOu54JDDLng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2781,10 +2997,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundStatus.Declined.html",
-          "hash": "FlJNDBFemnqn+Pgkd5EKHw=="
+          "hash": "vH+7MgybB41BR+divz3nZA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2793,10 +3009,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundStatus.Error.html",
-          "hash": "QAkKR76BgsD1USJdgiTrAQ=="
+          "hash": "f/u4o/HoN8n9Lfqt6VZx+Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2805,10 +3021,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundStatus.FromString.html",
-          "hash": "K8oILpo59ZNXmr4xaQJdXQ=="
+          "hash": "fZKtLny3INgSHOagnSNlIA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2817,10 +3033,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.RefundStatus.html",
-          "hash": "MfXj2Om+oCpZqLFpsqVxPw=="
+          "hash": "oDZVwVc+uODdGrV3uJ7z4A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2829,10 +3045,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.Resource.Attribute.html",
-          "hash": "tvMISIq4YbDvAvH2a44lqQ=="
+          "hash": "ZqHBegvy0/+z3IpclJP6qg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2841,10 +3057,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.Resource.String.ApplicationName.html",
-          "hash": "cQ0MqorvWX4UNU3LdtOXdA=="
+          "hash": "rgHUQ6tHJw4yOVUyc9b/9Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2853,10 +3069,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.Resource.String.Hello.html",
-          "hash": "vFOsVLzGzgg6H84fXv1Sdg=="
+          "hash": "1xSfX3wZtVvCjM70t5KL/g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2865,10 +3081,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.Resource.String.html",
-          "hash": "+tFoEOqCE1ueTItxdWmdkA=="
+          "hash": "5Qsk7yI7M53+01O8zptmAQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2877,46 +3093,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.Resource.html",
-          "hash": "3aC0y6YjaKWWWArhkwJ69Q=="
+          "hash": "ghch6nrep3ymH/IVMgpFgw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.Dispose.html",
-          "hash": "vrVkWDxNaS4QPrc7/gbLrg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.-ctor.html",
-          "hash": "Dq0lauSR2Hip0D6gG2couQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.Verify.html",
-          "hash": "DxeLux8q66BtnINOd94L0Q=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2925,10 +3105,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.html",
-          "hash": "vCOPExLGtr86WJzpZWWEdg=="
+          "hash": "QPzodVI7mQQcM7td1QN16w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.-ctor.html",
+          "hash": "X8betnGEvT4SX3CbqMQzaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.Verify.html",
+          "hash": "5FvUUykuPwOxNydkBR4xHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.Sha512WithRsaVerifier.Dispose.html",
+          "hash": "p5lwfNmdlQiSqJyDx63cig=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2937,10 +3153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionRequestDetails.UserAgent.html",
-          "hash": "8JZUCIPj7rXmgK3NjDKvRA=="
+          "hash": "BSaP37ZrYNlinklSgwLxBQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2949,10 +3165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionRequestDetails.UserIPAddress.html",
-          "hash": "Ew7el7oBTnQ44HXfDsh7Iw=="
+          "hash": "Qxe2ElxRHQ4ffxK1ksBQWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2961,10 +3177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionRequestDetails.EnsureValid.html",
-          "hash": "SD1l8fEW1C4mepBZuRDeJA=="
+          "hash": "tO27gwhqwCVoSdoWZzYvHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2973,10 +3189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionRequestDetails.html",
-          "hash": "eEU1arje/vk1X5w16lAReQ=="
+          "hash": "LcfMGPOvMgd3p4+iM3b/bw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2985,10 +3201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.Name.html",
-          "hash": "/fzpc6PYxQ9B1h9SQrYfPw=="
+          "hash": "7WHy531fNVJuwh7SoHgZEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2997,10 +3213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.IsTerminal.html",
-          "hash": "bwNksc11u+EGdYQhYRn4Gg=="
+          "hash": "sutv3F0mSurbMhzBSSx3rQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3009,10 +3225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.Description.html",
-          "hash": "6aU6lsDpQTUVqz/7rY9BVA=="
+          "hash": "CeoOWLJO7zM1tYezS3d1XA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3021,10 +3237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.Equals.html",
-          "hash": "LqwKUocJ6pRZ04KA08wocA=="
+          "hash": "g0tA5UU2PIxFMcGRxZOJbQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3033,10 +3249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.GetHashCode.html",
-          "hash": "QOqyXMHU2/Gx2QZq59HlRQ=="
+          "hash": "QDpV1wb7tgYvGTSPUFRsdg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3045,10 +3261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.op_Equality.html",
-          "hash": "sa7u9EPM1G/vCc1vJDbsng=="
+          "hash": "Y58ck2r5J4rJRi5qGZAzog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3057,10 +3273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.op_Inequality.html",
-          "hash": "nwZfq6OQylK5NUIz2yD6oA=="
+          "hash": "V24oy3i5HPAF95Sdg3K0mw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3069,94 +3285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TransactionStatus.html",
-          "hash": "T7fLvqJn0AkRelkfuMTlXA=="
+          "hash": "afyeqfJRSed9n3FCQp6g/Q=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.GetHashCode.html",
-          "hash": "wOcvcNW7zVR0DfzcVH3lAQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.ToString.html",
-          "hash": "wk9RFu2vS5aHSidOBbfrYg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Equals.html",
-          "hash": "lknxxPjhm2IC4V/XVv9mYA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Active.html",
-          "hash": "0oVnBRkpuu9c1vizW/5WIQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Cancelled.html",
-          "hash": "X8RMeRpq1PJy2jw/qfrtyg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Pending.html",
-          "hash": "ZwcBy8+60Xs5K1v1lHT7Mw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.html",
-          "hash": "pnB04lvdV1xD5es2gvb3bA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3165,46 +3297,94 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.TrustStatus.op_Implicit.html",
-          "hash": "ag1ZpdvhHMJ2hIcualIszA=="
+          "hash": "UIr8cRAYI1xh5Nupj49vlg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name.html",
-          "hash": "hlXy52BGwYV9nQ2vhTg2HA=="
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.GetHashCode.html",
+          "hash": "nWWgb+C1BWVl+XO/Lth5tg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName.html",
-          "hash": "9BwcHl74nDjR0dHE/xa8Kw=="
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.ToString.html",
+          "hash": "m4ClIP4X0j//z1I+5MopQw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.yml",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize.html",
-          "hash": "41EtSIwN0gM/esZsWQV9jQ=="
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Equals.html",
+          "hash": "jVgZXjUtiuK1GLmo7bw3ow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Active.html",
+          "hash": "QaD6Wsq6GjlstIuFY7ZU8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Cancelled.html",
+          "hash": "ByJmZlJiXqAUDQ8kRHSa7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.Pending.html",
+          "hash": "CrKmjihGADChcWAKoCmSog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.TrustStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.TrustStatus.html",
+          "hash": "vHBQG7o5iBB64Kj8zXinVw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3213,10 +3393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.IsValid.html",
-          "hash": "5gEagTu3UYa6+3mWO/+yqg=="
+          "hash": "AvKuLvEJjCupfaveU2p/Vw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3225,10 +3405,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.html",
-          "hash": "QC5rIkNbrh6/edok3p3EUg=="
+          "hash": "e9kn39SxqLg5CI+Kgoqb4Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Name.html",
+          "hash": "BVGj41us+Pe2puKbeqLqHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.DisplayName.html",
+          "hash": "N6E65/NjXFsLIgIHdPmiHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.OnlineEftpos.WestpacCustomerIdPayerId.Normalize.html",
+          "hash": "FdGgVGzy2ySkEWPnfT3L7Q=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3237,10 +3453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.OnlineEftpos.html",
-          "hash": "N5GXGVZq05jd5AfKZaXaZA=="
+          "hash": "m1cwehs3kT9mcYHGOUF6yA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3249,7 +3465,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "aOYqGTTkAY7CkcZ+dKUoWg=="
+          "hash": "uIW+EqQr/p4wT9lvV+Foeg=="
         }
       },
       "is_incremental": true,
@@ -3283,7 +3499,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "yJ1Y7v08qJFu991Q8OEQyQ=="
+          "hash": "GjbOUrjOJMCBniYyYXOmxA=="
         }
       },
       "is_incremental": true,
@@ -3307,11 +3523,11 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },

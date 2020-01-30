@@ -23,7 +23,7 @@ items:
   source:
     id: OnlineEftposNotification
     path: ''
-    startLine: 4267
+    startLine: 4463
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -64,7 +64,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4303
+    startLine: 4499
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -103,7 +103,7 @@ items:
   source:
     id: MerchantOrderId
     path: ''
-    startLine: 4326
+    startLine: 4522
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -136,7 +136,7 @@ items:
   source:
     id: TransactionId
     path: ''
-    startLine: 4340
+    startLine: 4536
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -170,7 +170,7 @@ items:
   source:
     id: Status
     path: ''
-    startLine: 4350
+    startLine: 4546
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -208,7 +208,7 @@ items:
   source:
     id: TrustStatus
     path: ''
-    startLine: 4362
+    startLine: 4558
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -244,7 +244,7 @@ items:
   source:
     id: TrustId
     path: ''
-    startLine: 4374
+    startLine: 4570
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -280,7 +280,7 @@ items:
   source:
     id: Signature
     path: ''
-    startLine: 4388
+    startLine: 4584
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -314,7 +314,7 @@ items:
   source:
     id: SignedData
     path: ''
-    startLine: 4399
+    startLine: 4595
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

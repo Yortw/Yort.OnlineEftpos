@@ -19,7 +19,7 @@ items:
   source:
     id: OnlineEftposPaymentSearchResult
     path: ''
-    startLine: 4672
+    startLine: 4868
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -58,7 +58,7 @@ items:
   source:
     id: Links
     path: ''
-    startLine: 4687
+    startLine: 4883
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -91,7 +91,7 @@ items:
   source:
     id: NextPageUri
     path: ''
-    startLine: 4696
+    startLine: 4892
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -125,7 +125,7 @@ items:
   source:
     id: PreviousPageUri
     path: ''
-    startLine: 4713
+    startLine: 4909
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -159,7 +159,7 @@ items:
   source:
     id: Payments
     path: ''
-    startLine: 4727
+    startLine: 4923
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

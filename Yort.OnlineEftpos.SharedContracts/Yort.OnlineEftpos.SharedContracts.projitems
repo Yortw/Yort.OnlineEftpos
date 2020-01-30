@@ -25,6 +25,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposApiVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposAuthenticationException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposDeleteTrustOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposDeleteTrustRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposDeleteTrustResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposInvalidDataException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OnlineEftposNotification.cs" />

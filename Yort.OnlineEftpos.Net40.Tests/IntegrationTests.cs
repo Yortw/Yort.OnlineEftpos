@@ -92,7 +92,7 @@ namespace Yort.OnlineEftpos.Net40.Tests
 				{
 					BankId = "ASB",
 					PayerIdType = "MOBILE",
-					PayerId = "021555123"
+					PayerId = "021555125"
 				},
 				Merchant = new MerchantDetails()
 				{
@@ -111,22 +111,29 @@ namespace Yort.OnlineEftpos.Net40.Tests
 					UserIPAddress = "10.10.10.100"
 				}
 			}).ConfigureAwait(false);
-			
-			Assert.IsNotNull(result);
-			Assert.IsTrue(!String.IsNullOrWhiteSpace(result.Id), "Invalid (blank) id returned.");
-			Assert.AreEqual(result.Bank.BankId, "ASB");
-			Assert.AreEqual(result.Bank.PayerId, "021555123");
-			Assert.AreEqual(result.Bank.PayerIdType, "MOBILE");
-			Assert.AreEqual(result.Transaction.Amount, 1000);
-			Assert.AreEqual(result.Transaction.Description, "Test Tran");
-			Assert.AreEqual(result.Transaction.OrderId, orderId);
-			Assert.AreEqual(result.Transaction.TransactionType, OnlineEftposTransactionTypes.TrustSetup);
-			Assert.IsNotNull(result.Trust.Id);
-			Assert.IsNotNull(result.Trust.Status);
-			Assert.AreEqual(result.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
 
-			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,
-																						// have been asked to ensure we don't overrun the system.
+			try
+			{
+				Assert.IsNotNull(result);
+				Assert.IsTrue(!String.IsNullOrWhiteSpace(result.Id), "Invalid (blank) id returned.");
+				Assert.AreEqual(result.Bank.BankId, "ASB");
+				Assert.AreEqual(result.Bank.PayerId, "021555125");
+				Assert.AreEqual(result.Bank.PayerIdType, "MOBILE");
+				Assert.AreEqual(result.Transaction.Amount, 1000);
+				Assert.AreEqual(result.Transaction.Description, "Test Tran");
+				Assert.AreEqual(result.Transaction.OrderId, orderId);
+				Assert.AreEqual(result.Transaction.TransactionType, OnlineEftposTransactionTypes.TrustSetup);
+				Assert.IsNotNull(result.Trust.Id);
+				Assert.IsNotNull(result.Trust.Status);
+				Assert.AreEqual(result.Merchant.MerchantIdCode, Environment.GetEnvironmentVariable("PaymarkMerchantId"));
+			}
+			finally
+			{
+				if (!String.IsNullOrEmpty(result?.Trust?.Id))
+					await DeleteTrustRelationshipAsync(client, result.Trust.Id);
+			}
+
+			System.Threading.Thread.Sleep(10000); // Sandbox environment not designed to cope with more than 1 transaction per 5-10 seconds,																						// have been asked to ensure we don't overrun the system.
 		}
 
 		/// <summary>
@@ -633,6 +640,18 @@ namespace Yort.OnlineEftpos.Net40.Tests
 		}
 
 		#endregion
+
+		private async Task DeleteTrustRelationshipAsync(IOnlineEftposClient client, string id)
+		{
+			try
+			{
+				var result = await client.DeleteTrust(new OnlineEftposDeleteTrustOptions() { TrustId = id });
+			}
+			catch (Exception ex)
+			{
+				System.Diagnostics.Trace.WriteLine("Failed to remove test trust relationship: " + ex.ToString());
+			}
+		}
 
 		private SecureString SecureStringFromString(string sourceText)
 		{

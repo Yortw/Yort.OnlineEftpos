@@ -18,7 +18,7 @@ items:
   source:
     id: OnlineEftposTransactionTypes
     path: ''
-    startLine: 5165
+    startLine: 5360
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -61,7 +61,7 @@ items:
   source:
     id: Regular
     path: ''
-    startLine: 5173
+    startLine: 5368
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -93,7 +93,7 @@ items:
   source:
     id: TrustSetup
     path: ''
-    startLine: 5183
+    startLine: 5378
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -125,7 +125,7 @@ items:
   source:
     id: Trusted
     path: ''
-    startLine: 5192
+    startLine: 5387
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

@@ -103,6 +103,36 @@ references:
   commentId: Overload:Yort.OnlineEftpos.BankDefinition.PayerIdTypes
   fullName: Yort.OnlineEftpos.BankDefinition.PayerIdTypes
   nameWithType: BankDefinition.PayerIdTypes
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship
+  name: BankDeletedTrustRelationship
+  href: api/Yort.OnlineEftpos.BankDeletedTrustRelationship.html
+  commentId: T:Yort.OnlineEftpos.BankDeletedTrustRelationship
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship
+  nameWithType: BankDeletedTrustRelationship
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship.Id
+  name: Id
+  href: api/Yort.OnlineEftpos.BankDeletedTrustRelationship.Id.html#Yort_OnlineEftpos_BankDeletedTrustRelationship_Id
+  commentId: P:Yort.OnlineEftpos.BankDeletedTrustRelationship.Id
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship.Id
+  nameWithType: BankDeletedTrustRelationship.Id
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship.Id*
+  name: Id
+  href: api/Yort.OnlineEftpos.BankDeletedTrustRelationship.Id.html
+  commentId: Overload:Yort.OnlineEftpos.BankDeletedTrustRelationship.Id
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship.Id
+  nameWithType: BankDeletedTrustRelationship.Id
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship.Status
+  name: Status
+  href: api/Yort.OnlineEftpos.BankDeletedTrustRelationship.Status.html#Yort_OnlineEftpos_BankDeletedTrustRelationship_Status
+  commentId: P:Yort.OnlineEftpos.BankDeletedTrustRelationship.Status
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship.Status
+  nameWithType: BankDeletedTrustRelationship.Status
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship.Status*
+  name: Status
+  href: api/Yort.OnlineEftpos.BankDeletedTrustRelationship.Status.html
+  commentId: Overload:Yort.OnlineEftpos.BankDeletedTrustRelationship.Status
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship.Status
+  nameWithType: BankDeletedTrustRelationship.Status
 - uid: Yort.OnlineEftpos.BankDetails
   name: BankDetails
   href: api/Yort.OnlineEftpos.BankDetails.html
@@ -415,6 +445,18 @@ references:
   commentId: Overload:Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus
   fullName: Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus
   nameWithType: IOnlineEftposClient.CheckRefundStatus
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  name: DeleteTrust(OnlineEftposDeleteTrustOptions)
+  href: api/Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust.html#Yort_OnlineEftpos_IOnlineEftposClient_DeleteTrust_Yort_OnlineEftpos_OnlineEftposDeleteTrustOptions_
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  nameWithType: IOnlineEftposClient.DeleteTrust(OnlineEftposDeleteTrustOptions)
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust*
+  name: DeleteTrust
+  href: api/Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust.html
+  commentId: Overload:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  nameWithType: IOnlineEftposClient.DeleteTrust
 - uid: Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
   name: PaymentSearch(OnlineEftposPaymentSearchOptions)
   href: api/Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch.html#Yort_OnlineEftpos_IOnlineEftposClient_PaymentSearch_Yort_OnlineEftpos_OnlineEftposPaymentSearchOptions_
@@ -1084,6 +1126,18 @@ references:
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus
   fullName: Yort.OnlineEftpos.OnlineEftposClient.CheckRefundStatus
   nameWithType: OnlineEftposClient.CheckRefundStatus
+- uid: Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  name: DeleteTrust(OnlineEftposDeleteTrustOptions)
+  href: api/Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust.html#Yort_OnlineEftpos_OnlineEftposClient_DeleteTrust_Yort_OnlineEftpos_OnlineEftposDeleteTrustOptions_
+  commentId: M:Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  nameWithType: OnlineEftposClient.DeleteTrust(OnlineEftposDeleteTrustOptions)
+- uid: Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust*
+  name: DeleteTrust
+  href: api/Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust
+  fullName: Yort.OnlineEftpos.OnlineEftposClient.DeleteTrust
+  nameWithType: OnlineEftposClient.DeleteTrust
 - uid: Yort.OnlineEftpos.OnlineEftposClient.Dispose
   name: Dispose()
   href: api/Yort.OnlineEftpos.OnlineEftposClient.Dispose.html#Yort_OnlineEftpos_OnlineEftposClient_Dispose
@@ -1240,6 +1294,150 @@ references:
   commentId: Overload:Yort.OnlineEftpos.OnlineEftposCredentialsProvider.GetCredentials
   fullName: Yort.OnlineEftpos.OnlineEftposCredentialsProvider.GetCredentials
   nameWithType: OnlineEftposCredentialsProvider.GetCredentials
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  name: OnlineEftposDeleteTrustOptions
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.html
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  nameWithType: OnlineEftposDeleteTrustOptions
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  name: EnsureValid()
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustOptions_EnsureValid
+  commentId: M:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid()
+  nameWithType: OnlineEftposDeleteTrustOptions.EnsureValid()
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid*
+  name: EnsureValid
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  nameWithType: OnlineEftposDeleteTrustOptions.EnsureValid
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  name: TrustId
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustOptions_TrustId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  nameWithType: OnlineEftposDeleteTrustOptions.TrustId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId*
+  name: TrustId
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  nameWithType: OnlineEftposDeleteTrustOptions.TrustId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  name: OnlineEftposDeleteTrustResult
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.html
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  nameWithType: OnlineEftposDeleteTrustResult
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  name: Bank
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_Bank
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  nameWithType: OnlineEftposDeleteTrustResult.Bank
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank*
+  name: Bank
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  nameWithType: OnlineEftposDeleteTrustResult.Bank
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  name: BankId
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_BankId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  nameWithType: OnlineEftposDeleteTrustResult.BankId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId*
+  name: BankId
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  nameWithType: OnlineEftposDeleteTrustResult.BankId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  name: CreationTime
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_CreationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  nameWithType: OnlineEftposDeleteTrustResult.CreationTime
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime*
+  name: CreationTime
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  nameWithType: OnlineEftposDeleteTrustResult.CreationTime
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  name: Id
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_Id
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  nameWithType: OnlineEftposDeleteTrustResult.Id
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id*
+  name: Id
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  nameWithType: OnlineEftposDeleteTrustResult.Id
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  name: Links
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_Links
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  nameWithType: OnlineEftposDeleteTrustResult.Links
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links*
+  name: Links
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  nameWithType: OnlineEftposDeleteTrustResult.Links
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  name: MerchantIdCode
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_MerchantIdCode
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  nameWithType: OnlineEftposDeleteTrustResult.MerchantIdCode
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode*
+  name: MerchantIdCode
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  nameWithType: OnlineEftposDeleteTrustResult.MerchantIdCode
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  name: ModificationTime
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_ModificationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  nameWithType: OnlineEftposDeleteTrustResult.ModificationTime
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime*
+  name: ModificationTime
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  nameWithType: OnlineEftposDeleteTrustResult.ModificationTime
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  name: PayerId
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_PayerId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  nameWithType: OnlineEftposDeleteTrustResult.PayerId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId*
+  name: PayerId
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  nameWithType: OnlineEftposDeleteTrustResult.PayerId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  name: PayerIdType
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType.html#Yort_OnlineEftpos_OnlineEftposDeleteTrustResult_PayerIdType
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  nameWithType: OnlineEftposDeleteTrustResult.PayerIdType
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType*
+  name: PayerIdType
+  href: api/Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType.html
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  nameWithType: OnlineEftposDeleteTrustResult.PayerIdType
 - uid: Yort.OnlineEftpos.OnlineEftposException
   name: OnlineEftposException
   href: api/Yort.OnlineEftpos.OnlineEftposException.html

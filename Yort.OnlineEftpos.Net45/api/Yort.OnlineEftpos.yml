@@ -6,6 +6,7 @@ items:
   children:
   - Yort.OnlineEftpos.ApiErrorMessage
   - Yort.OnlineEftpos.BankDefinition
+  - Yort.OnlineEftpos.BankDeletedTrustRelationship
   - Yort.OnlineEftpos.BankDetails
   - Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
   - Yort.OnlineEftpos.ErasableString
@@ -26,6 +27,8 @@ items:
   - Yort.OnlineEftpos.OnlineEftposClient
   - Yort.OnlineEftpos.OnlineEftposCredentials
   - Yort.OnlineEftpos.OnlineEftposCredentialsProvider
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
   - Yort.OnlineEftpos.OnlineEftposException
   - Yort.OnlineEftpos.OnlineEftposInvalidDataException
   - Yort.OnlineEftpos.OnlineEftposNotification
@@ -249,6 +252,26 @@ references:
   name: OnlineEftposAuthenticationException
   nameWithType: OnlineEftposAuthenticationException
   fullName: Yort.OnlineEftpos.OnlineEftposAuthenticationException
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposDeleteTrustOptions
+  nameWithType: OnlineEftposDeleteTrustOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  isExternal: false
+  name: OnlineEftposDeleteTrustResult
+  nameWithType: OnlineEftposDeleteTrustResult
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship
+  commentId: T:Yort.OnlineEftpos.BankDeletedTrustRelationship
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: BankDeletedTrustRelationship
+  nameWithType: BankDeletedTrustRelationship
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship
 - uid: Yort.OnlineEftpos.OnlineEftposException
   commentId: T:Yort.OnlineEftpos.OnlineEftposException
   parent: Yort.OnlineEftpos

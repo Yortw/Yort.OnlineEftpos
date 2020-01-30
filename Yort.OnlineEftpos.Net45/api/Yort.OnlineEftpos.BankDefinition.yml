@@ -20,7 +20,7 @@ items:
   source:
     id: BankDefinition
     path: ''
-    startLine: 3286
+    startLine: 3325
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -59,7 +59,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3296
+    startLine: 3335
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -104,7 +104,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3308
+    startLine: 3347
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -152,7 +152,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 3324
+    startLine: 3363
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -186,7 +186,7 @@ items:
   source:
     id: DisplayName
     path: ''
-    startLine: 3329
+    startLine: 3368
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -219,7 +219,7 @@ items:
   source:
     id: PayerIdTypes
     path: ''
-    startLine: 3334
+    startLine: 3373
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

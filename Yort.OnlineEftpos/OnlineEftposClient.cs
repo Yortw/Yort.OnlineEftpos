@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -175,5 +175,14 @@ namespace Yort.OnlineEftpos
 			ExceptionHelper.ThrowYoureDoingItWrong();
 		}
 
+		/// <summary>
+		/// Deletes a trust/autopay relationship previously established via <see cref="RequestPayment(OnlineEftposPaymentRequest)"/>.
+		/// </summary>
+		/// <param name="options">The details of the trust/autopay relationship to delete.</param>
+		/// <returns>An <see cref="OnlineEftposDeleteTrustResult"/> instance containing details about the result of the request.</returns>
+		public Task<OnlineEftposDeleteTrustResult> DeleteTrust(OnlineEftposDeleteTrustOptions options)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

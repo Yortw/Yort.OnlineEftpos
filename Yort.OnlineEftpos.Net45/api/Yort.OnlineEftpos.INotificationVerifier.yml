@@ -17,7 +17,7 @@ items:
   source:
     id: INotificationVerifier
     path: ''
-    startLine: 3464
+    startLine: 3503
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -46,7 +46,7 @@ items:
   source:
     id: Verify
     path: ''
-    startLine: 3473
+    startLine: 3512
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -81,7 +81,7 @@ items:
   source:
     id: ThrowIfNotVerified
     path: ''
-    startLine: 3481
+    startLine: 3520
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

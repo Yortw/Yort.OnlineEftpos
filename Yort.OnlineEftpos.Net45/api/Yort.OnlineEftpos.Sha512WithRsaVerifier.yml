@@ -19,7 +19,7 @@ items:
   source:
     id: Sha512WithRsaVerifier
     path: ''
-    startLine: 2942
+    startLine: 2981
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -70,7 +70,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 2971
+    startLine: 3010
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -110,7 +110,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 2981
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -152,7 +152,7 @@ items:
   source:
     id: Verify
     path: ''
-    startLine: 2995
+    startLine: 3034
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -194,7 +194,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 3149
+    startLine: 3188
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

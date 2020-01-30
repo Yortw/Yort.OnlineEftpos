@@ -9,6 +9,7 @@ items:
   - Yort.OnlineEftpos.IOnlineEftposClient.ApiVersion
   - Yort.OnlineEftpos.IOnlineEftposClient.CheckPaymentStatus(System.String)
   - Yort.OnlineEftpos.IOnlineEftposClient.CheckRefundStatus(System.String)
+  - Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
   - Yort.OnlineEftpos.IOnlineEftposClient.PaymentSearch(Yort.OnlineEftpos.OnlineEftposPaymentSearchOptions)
   - Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch(Yort.OnlineEftpos.OnlineEftposRefundSearchOptions)
   - Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)
@@ -23,7 +24,7 @@ items:
   source:
     id: IOnlineEftposClient
     path: ''
-    startLine: 3498
+    startLine: 3537
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -57,7 +58,7 @@ items:
   source:
     id: ApiVersion
     path: ''
-    startLine: 3506
+    startLine: 3545
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -89,7 +90,7 @@ items:
   source:
     id: ApiEnvironment
     path: ''
-    startLine: 3517
+    startLine: 3556
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -121,7 +122,7 @@ items:
   source:
     id: RequestPayment
     path: ''
-    startLine: 3535
+    startLine: 3574
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -167,7 +168,7 @@ items:
   source:
     id: CheckPaymentStatus
     path: ''
-    startLine: 3546
+    startLine: 3585
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -210,7 +211,7 @@ items:
   source:
     id: SendRefund
     path: ''
-    startLine: 3558
+    startLine: 3597
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -255,7 +256,7 @@ items:
   source:
     id: CheckRefundStatus
     path: ''
-    startLine: 3569
+    startLine: 3608
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -298,7 +299,7 @@ items:
   source:
     id: PaymentSearch
     path: ''
-    startLine: 3579
+    startLine: 3618
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -330,7 +331,7 @@ items:
   source:
     id: RefundSearch
     path: ''
-    startLine: 3589
+    startLine: 3628
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -348,6 +349,37 @@ items:
       description: An <xref href="Yort.OnlineEftpos.OnlineEftposRefundSearchResult" data-throw-if-not-resolved="false"></xref> instance containing the initial search results and any related meta-data.
     content.vb: Function RefundSearch(options As OnlineEftposRefundSearchOptions) As Task(Of OnlineEftposRefundSearchResult)
   overload: Yort.OnlineEftpos.IOnlineEftposClient.RefundSearch*
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  id: DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteTrust(OnlineEftposDeleteTrustOptions)
+  nameWithType: IOnlineEftposClient.DeleteTrust(OnlineEftposDeleteTrustOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  type: Method
+  source:
+    id: DeleteTrust
+    path: ''
+    startLine: 3635
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nDeletes a trust/autopay relationship previously established via <xref href=\"Yort.OnlineEftpos.IOnlineEftposClient.RequestPayment(Yort.OnlineEftpos.OnlineEftposPaymentRequest)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: Task<OnlineEftposDeleteTrustResult> DeleteTrust(OnlineEftposDeleteTrustOptions options)
+    parameters:
+    - id: options
+      type: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+      description: The details of the trust/autopay relationship to delete.
+    return:
+      type: Task{Yort.OnlineEftpos.OnlineEftposDeleteTrustResult}
+      description: An <xref href="Yort.OnlineEftpos.OnlineEftposDeleteTrustResult" data-throw-if-not-resolved="false"></xref> instance containing details about the result of the request.
+    content.vb: Function DeleteTrust(options As OnlineEftposDeleteTrustOptions) As Task(Of OnlineEftposDeleteTrustResult)
+  overload: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust*
 references:
 - uid: Yort.OnlineEftpos.OnlineEftposClient
   commentId: T:Yort.OnlineEftpos.OnlineEftposClient
@@ -897,6 +929,66 @@ references:
     name: OnlineEftposRefundSearchResult
     nameWithType: OnlineEftposRefundSearchResult
     fullName: Yort.OnlineEftpos.OnlineEftposRefundSearchResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  isExternal: false
+  name: OnlineEftposDeleteTrustResult
+  nameWithType: OnlineEftposDeleteTrustResult
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust*
+  commentId: Overload:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  isExternal: false
+  name: DeleteTrust
+  nameWithType: IOnlineEftposClient.DeleteTrust
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: OnlineEftposDeleteTrustOptions
+  nameWithType: OnlineEftposDeleteTrustOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+- uid: Task{Yort.OnlineEftpos.OnlineEftposDeleteTrustResult}
+  commentId: '!:Task{Yort.OnlineEftpos.OnlineEftposDeleteTrustResult}'
+  definition: Task`1
+  name: Task<OnlineEftposDeleteTrustResult>
+  nameWithType: Task<OnlineEftposDeleteTrustResult>
+  fullName: Task<Yort.OnlineEftpos.OnlineEftposDeleteTrustResult>
+  nameWithType.vb: Task(Of OnlineEftposDeleteTrustResult)
+  fullName.vb: Task(Of Yort.OnlineEftpos.OnlineEftposDeleteTrustResult)
+  name.vb: Task(Of OnlineEftposDeleteTrustResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+    name: OnlineEftposDeleteTrustResult
+    nameWithType: OnlineEftposDeleteTrustResult
+    fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+    name: OnlineEftposDeleteTrustResult
+    nameWithType: OnlineEftposDeleteTrustResult
+    fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
   - name: )
     nameWithType: )
     fullName: )

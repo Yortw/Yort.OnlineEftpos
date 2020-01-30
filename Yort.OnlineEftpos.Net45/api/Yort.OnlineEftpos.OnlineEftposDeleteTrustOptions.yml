@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  id: OnlineEftposDeleteTrustOptions
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposDeleteTrustOptions
+  nameWithType: OnlineEftposDeleteTrustOptions
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  type: Class
+  source:
+    id: OnlineEftposDeleteTrustOptions
+    path: ''
+    startLine: 4227
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents details of trust/autopay relationship to be deleted via <xref href=\"Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public class OnlineEftposDeleteTrustOptions
+    content.vb: Public Class OnlineEftposDeleteTrustOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  id: TrustId
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  langs:
+  - csharp
+  - vb
+  name: TrustId
+  nameWithType: OnlineEftposDeleteTrustOptions.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  type: Property
+  source:
+    id: TrustId
+    path: ''
+    startLine: 4234
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe unique id of the trust relationship to delete.\n"
+  example: []
+  syntax:
+    content: public string TrustId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TrustId As String
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  commentId: M:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  id: EnsureValid
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  langs:
+  - csharp
+  - vb
+  name: EnsureValid()
+  nameWithType: OnlineEftposDeleteTrustOptions.EnsureValid()
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid()
+  type: Method
+  source:
+    id: EnsureValid
+    path: ''
+    startLine: 4247
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThrows if the details are invalid.\n"
+  remarks: "\n<p>Throws if any of the properties are null, or EnsureValid method on any of the property values throws.</p>\n"
+  example: []
+  syntax:
+    content: public void EnsureValid()
+    content.vb: Public Sub EnsureValid
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid*
+  exceptions:
+  - type: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+    description: Thrown if the values of this instance are invalid.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: DeleteTrust(OnlineEftposDeleteTrustOptions)
+  nameWithType: IOnlineEftposClient.DeleteTrust(OnlineEftposDeleteTrustOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+    name: DeleteTrust
+    nameWithType: IOnlineEftposClient.DeleteTrust
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+    name: OnlineEftposDeleteTrustOptions
+    nameWithType: OnlineEftposDeleteTrustOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+    name: DeleteTrust
+    nameWithType: IOnlineEftposClient.DeleteTrust
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+    name: OnlineEftposDeleteTrustOptions
+    nameWithType: OnlineEftposDeleteTrustOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.IOnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.IOnlineEftposClient
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IOnlineEftposClient
+  nameWithType: IOnlineEftposClient
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+  isExternal: false
+  name: TrustId
+  nameWithType: OnlineEftposDeleteTrustOptions.TrustId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.TrustId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+  isExternal: false
+  name: EnsureValid
+  nameWithType: OnlineEftposDeleteTrustOptions.EnsureValid
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions.EnsureValid
+- uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  commentId: T:Yort.OnlineEftpos.OnlineEftposInvalidDataException
+  isExternal: false
+  name: OnlineEftposInvalidDataException
+  nameWithType: OnlineEftposInvalidDataException
+  fullName: Yort.OnlineEftpos.OnlineEftposInvalidDataException

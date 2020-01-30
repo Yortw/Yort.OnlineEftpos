@@ -19,7 +19,7 @@ items:
   source:
     id: WestpacCustomerIdPayerId
     path: ''
-    startLine: 3170
+    startLine: 3209
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -62,7 +62,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 3184
+    startLine: 3223
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -97,7 +97,7 @@ items:
   source:
     id: DisplayName
     path: ''
-    startLine: 3189
+    startLine: 3228
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -132,7 +132,7 @@ items:
   source:
     id: Normalize
     path: ''
-    startLine: 3203
+    startLine: 3242
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -180,7 +180,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 3232
+    startLine: 3271
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

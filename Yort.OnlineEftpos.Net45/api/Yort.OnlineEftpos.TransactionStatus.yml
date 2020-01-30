@@ -26,7 +26,7 @@ items:
   source:
     id: TransactionStatus
     path: ''
-    startLine: 5802
+    startLine: 5997
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -70,7 +70,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 5819
+    startLine: 6014
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -103,7 +103,7 @@ items:
   source:
     id: IsTerminal
     path: ''
-    startLine: 5830
+    startLine: 6025
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -136,7 +136,7 @@ items:
   source:
     id: Description
     path: ''
-    startLine: 5841
+    startLine: 6036
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -169,7 +169,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 5854
+    startLine: 6049
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -206,7 +206,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 5867
+    startLine: 6062
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -244,7 +244,7 @@ items:
   source:
     id: GetHashCode
     path: ''
-    startLine: 5876
+    startLine: 6071
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -278,7 +278,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 5886
+    startLine: 6081
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -315,7 +315,7 @@ items:
   source:
     id: op_Equality
     path: ''
-    startLine: 5900
+    startLine: 6095
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -356,7 +356,7 @@ items:
   source:
     id: op_Inequality
     path: ''
-    startLine: 5916
+    startLine: 6111
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -397,7 +397,7 @@ items:
   source:
     id: op_Equality
     path: ''
-    startLine: 5930
+    startLine: 6125
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -438,7 +438,7 @@ items:
   source:
     id: op_Inequality
     path: ''
-    startLine: 5946
+    startLine: 6141
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

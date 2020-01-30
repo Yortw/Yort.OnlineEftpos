@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -79,8 +79,7 @@ namespace Yort.OnlineEftpos
 			var link = (from l in links where String.Compare(relationshipName, l.Rel, StringComparison.OrdinalIgnoreCase) == 0 select l).FirstOrDefault();
 			if (link == null) return null;
 				
-			Uri uri = null;
-			Uri.TryCreate(link.Href, UriKind.Absolute, out uri);
+			Uri.TryCreate(link.Href, UriKind.Absolute, out var uri);
 
 			return uri;
 		}

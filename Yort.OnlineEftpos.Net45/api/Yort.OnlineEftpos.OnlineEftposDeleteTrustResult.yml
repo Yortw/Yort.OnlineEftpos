@@ -1,0 +1,856 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  commentId: T:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  id: OnlineEftposDeleteTrustResult
+  parent: Yort.OnlineEftpos
+  children:
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  - Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  langs:
+  - csharp
+  - vb
+  name: OnlineEftposDeleteTrustResult
+  nameWithType: OnlineEftposDeleteTrustResult
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  type: Class
+  source:
+    id: OnlineEftposDeleteTrustResult
+    path: ''
+    startLine: 4288
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nRepresents the result of a request to delete an established trust/autopay relationship.\n"
+  example: []
+  syntax:
+    content: public class OnlineEftposDeleteTrustResult
+    content.vb: Public Class OnlineEftposDeleteTrustResult
+  seealso:
+  - linkId: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+    commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  id: Links
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: Links
+  nameWithType: OnlineEftposDeleteTrustResult.Links
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  type: Property
+  source:
+    id: Links
+    path: ''
+    startLine: 4296
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the list of HATEOAS links included in the search results.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HateoasLink> Links { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Yort.OnlineEftpos.HateoasLink}
+    content.vb: Public Property Links As IEnumerable(Of HateoasLink)
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  id: Id
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: OnlineEftposDeleteTrustResult.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 4302
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nReturns the UUID of the removed autopay/trust relationship.\n"
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  id: PayerId
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: PayerId
+  nameWithType: OnlineEftposDeleteTrustResult.PayerId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  type: Property
+  source:
+    id: PayerId
+    path: ''
+    startLine: 4308
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe payer id associated with the removed autopay/trust relationship.\n"
+  example: []
+  syntax:
+    content: public string PayerId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PayerId As String
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  id: PayerIdType
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: PayerIdType
+  nameWithType: OnlineEftposDeleteTrustResult.PayerIdType
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  type: Property
+  source:
+    id: PayerIdType
+    path: ''
+    startLine: 4314
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe payer id type associated with the removed autopay/trust relationship.\n"
+  example: []
+  syntax:
+    content: public string PayerIdType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PayerIdType As String
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  id: BankId
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: BankId
+  nameWithType: OnlineEftposDeleteTrustResult.BankId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  type: Property
+  source:
+    id: BankId
+    path: ''
+    startLine: 4320
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe bank id associated with the removed autopay/trust relationship.\n"
+  example: []
+  syntax:
+    content: public string BankId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BankId As String
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  id: MerchantIdCode
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: MerchantIdCode
+  nameWithType: OnlineEftposDeleteTrustResult.MerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  type: Property
+  source:
+    id: MerchantIdCode
+    path: ''
+    startLine: 4326
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe merchant id associated with the removed autopay/trust relationship.\n"
+  example: []
+  syntax:
+    content: public string MerchantIdCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MerchantIdCode As String
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  id: Bank
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: Bank
+  nameWithType: OnlineEftposDeleteTrustResult.Bank
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  type: Property
+  source:
+    id: Bank
+    path: ''
+    startLine: 4332
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe merchant id associated with the removed autopay/trust relationship.\n"
+  example: []
+  syntax:
+    content: public BankDeletedTrustRelationship Bank { get; set; }
+    parameters: []
+    return:
+      type: Yort.OnlineEftpos.BankDeletedTrustRelationship
+    content.vb: Public Property Bank As BankDeletedTrustRelationship
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  id: CreationTime
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: CreationTime
+  nameWithType: OnlineEftposDeleteTrustResult.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  type: Property
+  source:
+    id: CreationTime
+    path: ''
+    startLine: 4338
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe date and time the autopay/trust relationship was created.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset CreationTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property CreationTime As DateTimeOffset
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  commentId: P:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  id: ModificationTime
+  parent: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+  langs:
+  - csharp
+  - vb
+  name: ModificationTime
+  nameWithType: OnlineEftposDeleteTrustResult.ModificationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  type: Property
+  source:
+    id: ModificationTime
+    path: ''
+    startLine: 4344
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.OnlineEftpos
+  summary: "\nThe date and time the autopay/trust relationship was last modified.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset ModificationTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property ModificationTime As DateTimeOffset
+  overload: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  commentId: M:Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  parent: Yort.OnlineEftpos.IOnlineEftposClient
+  isExternal: false
+  name: DeleteTrust(OnlineEftposDeleteTrustOptions)
+  nameWithType: IOnlineEftposClient.DeleteTrust(OnlineEftposDeleteTrustOptions)
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+  spec.csharp:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+    name: DeleteTrust
+    nameWithType: IOnlineEftposClient.DeleteTrust
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+    name: OnlineEftposDeleteTrustOptions
+    nameWithType: OnlineEftposDeleteTrustOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust(Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions)
+    name: DeleteTrust
+    nameWithType: IOnlineEftposClient.DeleteTrust
+    fullName: Yort.OnlineEftpos.IOnlineEftposClient.DeleteTrust
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+    name: OnlineEftposDeleteTrustOptions
+    nameWithType: OnlineEftposDeleteTrustOptions
+    fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos
+  commentId: N:Yort.OnlineEftpos
+  isExternal: false
+  name: Yort.OnlineEftpos
+  nameWithType: Yort.OnlineEftpos
+  fullName: Yort.OnlineEftpos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.OnlineEftpos.IOnlineEftposClient
+  commentId: T:Yort.OnlineEftpos.IOnlineEftposClient
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: IOnlineEftposClient
+  nameWithType: IOnlineEftposClient
+  fullName: Yort.OnlineEftpos.IOnlineEftposClient
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+  isExternal: false
+  name: Links
+  nameWithType: OnlineEftposDeleteTrustResult.Links
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Links
+- uid: System.Collections.Generic.IEnumerable{Yort.OnlineEftpos.HateoasLink}
+  commentId: T:System.Collections.Generic.IEnumerable{Yort.OnlineEftpos.HateoasLink}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<HateoasLink>
+  nameWithType: IEnumerable<HateoasLink>
+  fullName: System.Collections.Generic.IEnumerable<Yort.OnlineEftpos.HateoasLink>
+  nameWithType.vb: IEnumerable(Of HateoasLink)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Yort.OnlineEftpos.HateoasLink)
+  name.vb: IEnumerable(Of HateoasLink)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.OnlineEftpos.HateoasLink
+    name: HateoasLink
+    nameWithType: HateoasLink
+    fullName: Yort.OnlineEftpos.HateoasLink
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.OnlineEftpos.HateoasLink
+    name: HateoasLink
+    nameWithType: HateoasLink
+    fullName: Yort.OnlineEftpos.HateoasLink
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+  isExternal: false
+  name: Id
+  nameWithType: OnlineEftposDeleteTrustResult.Id
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+  isExternal: false
+  name: PayerId
+  nameWithType: OnlineEftposDeleteTrustResult.PayerId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+  isExternal: false
+  name: PayerIdType
+  nameWithType: OnlineEftposDeleteTrustResult.PayerIdType
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.PayerIdType
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+  isExternal: false
+  name: BankId
+  nameWithType: OnlineEftposDeleteTrustResult.BankId
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.BankId
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+  isExternal: false
+  name: MerchantIdCode
+  nameWithType: OnlineEftposDeleteTrustResult.MerchantIdCode
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.MerchantIdCode
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+  isExternal: false
+  name: Bank
+  nameWithType: OnlineEftposDeleteTrustResult.Bank
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.Bank
+- uid: Yort.OnlineEftpos.BankDeletedTrustRelationship
+  commentId: T:Yort.OnlineEftpos.BankDeletedTrustRelationship
+  parent: Yort.OnlineEftpos
+  isExternal: false
+  name: BankDeletedTrustRelationship
+  nameWithType: BankDeletedTrustRelationship
+  fullName: Yort.OnlineEftpos.BankDeletedTrustRelationship
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+  isExternal: false
+  name: CreationTime
+  nameWithType: OnlineEftposDeleteTrustResult.CreationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.CreationTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime*
+  commentId: Overload:Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime
+  isExternal: false
+  name: ModificationTime
+  nameWithType: OnlineEftposDeleteTrustResult.ModificationTime
+  fullName: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult.ModificationTime

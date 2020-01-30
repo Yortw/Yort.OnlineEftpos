@@ -17,7 +17,7 @@ items:
   source:
     id: ApiErrorMessage
     path: ''
-    startLine: 3855
+    startLine: 3900
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -58,7 +58,7 @@ items:
   source:
     id: Field
     path: ''
-    startLine: 3864
+    startLine: 3909
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -91,7 +91,7 @@ items:
   source:
     id: Message
     path: ''
-    startLine: 3869
+    startLine: 3914
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

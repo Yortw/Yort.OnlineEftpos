@@ -6,6 +6,8 @@
     name: ApiErrorMessage
   - uid: Yort.OnlineEftpos.BankDefinition
     name: BankDefinition
+  - uid: Yort.OnlineEftpos.BankDeletedTrustRelationship
+    name: BankDeletedTrustRelationship
   - uid: Yort.OnlineEftpos.BankDetails
     name: BankDetails
   - uid: Yort.OnlineEftpos.CooperativeBankCustomerIdPayerId
@@ -46,6 +48,10 @@
     name: OnlineEftposCredentials
   - uid: Yort.OnlineEftpos.OnlineEftposCredentialsProvider
     name: OnlineEftposCredentialsProvider
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustOptions
+    name: OnlineEftposDeleteTrustOptions
+  - uid: Yort.OnlineEftpos.OnlineEftposDeleteTrustResult
+    name: OnlineEftposDeleteTrustResult
   - uid: Yort.OnlineEftpos.OnlineEftposException
     name: OnlineEftposException
   - uid: Yort.OnlineEftpos.OnlineEftposInvalidDataException

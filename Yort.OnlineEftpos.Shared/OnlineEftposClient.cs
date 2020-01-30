@@ -321,6 +321,19 @@ namespace Yort.OnlineEftpos
 			}
 		}
 
+		/// <summary>
+		/// Deletes a trust/autopay relationship previously established via <see cref="RequestPayment(OnlineEftposPaymentRequest)"/>.
+		/// </summary>
+		/// <param name="options">The details of the trust/autopay relationship to delete.</param>
+		/// <returns>An <see cref="OnlineEftposDeleteTrustResult"/> instance containing details about the result of the request.</returns>
+		public async Task<OnlineEftposDeleteTrustResult> DeleteTrust(OnlineEftposDeleteTrustOptions options)
+		{
+			options.GuardNull(nameof(options));
+			options.EnsureValid();
+
+			return await SendApiRequest<OnlineEftposDeleteTrustRequest, OnlineEftposDeleteTrustResult>(new OnlineEftposDeleteTrustRequest(), "oemerchanttrust/" + options.TrustId, HttpMethod.Put, System.Net.HttpStatusCode.OK).ConfigureAwait(false);
+		}
+
 		#endregion
 
 		#region IDisposable Members

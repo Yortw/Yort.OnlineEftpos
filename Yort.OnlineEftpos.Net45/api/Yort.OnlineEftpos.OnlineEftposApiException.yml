@@ -22,7 +22,7 @@ items:
   source:
     id: OnlineEftposApiException
     path: ''
-    startLine: 3890
+    startLine: 3935
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -81,7 +81,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3898
+    startLine: 3943
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -109,7 +109,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3906
+    startLine: 3951
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -141,7 +141,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3915
+    startLine: 3960
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -176,7 +176,7 @@ items:
   source:
     id: StatusCode
     path: ''
-    startLine: 3981
+    startLine: 4026
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -209,7 +209,7 @@ items:
   source:
     id: ReasonPhrase
     path: ''
-    startLine: 3995
+    startLine: 4040
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -242,7 +242,7 @@ items:
   source:
     id: ErrorMessage
     path: ''
-    startLine: 4009
+    startLine: 4054
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -275,7 +275,7 @@ items:
   source:
     id: ErrorContent
     path: ''
-    startLine: 4023
+    startLine: 4068
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

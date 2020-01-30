@@ -19,7 +19,7 @@ items:
   source:
     id: MerchantDetails
     path: ''
-    startLine: 3662
+    startLine: 3707
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -60,7 +60,7 @@ items:
   source:
     id: MerchantIdCode
     path: ''
-    startLine: 3667
+    startLine: 3712
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -93,7 +93,7 @@ items:
   source:
     id: MerchantUrl
     path: ''
-    startLine: 3672
+    startLine: 3717
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -126,7 +126,7 @@ items:
   source:
     id: CallbackUrl
     path: ''
-    startLine: 3677
+    startLine: 3722
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -159,7 +159,7 @@ items:
   source:
     id: EnsureValid
     path: ''
-    startLine: 3687
+    startLine: 3732
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos

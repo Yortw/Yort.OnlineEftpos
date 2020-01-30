@@ -17,7 +17,7 @@ items:
   source:
     id: OnlineEftposApiVersion
     path: ''
-    startLine: 4046
+    startLine: 4091
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -46,7 +46,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 4051
+    startLine: 4096
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
@@ -76,7 +76,7 @@ items:
   source:
     id: V1P1
     path: ''
-    startLine: 4055
+    startLine: 4100
   assemblies:
   - cs.temp.dll
   namespace: Yort.OnlineEftpos
